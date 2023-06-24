@@ -1,0 +1,3126 @@
+{
+    "data": {
+        "challengelisting": [
+            {
+                "id": 114,
+                "publishedId": 50,
+                "priority": "Medium",
+                "shortDescription": "Private products may be created without moderation",
+                "title": "Tweak \"add product\" logic",
+                "status": 2,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "Full-stack Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": null,
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 138,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Adrian McPhee",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 116,
+                "publishedId": 52,
+                "priority": "Low",
+                "shortDescription": "Ability to invite users and such users to be collaborators ",
+                "title": "UserInvitation, ProductInvitation and Contributor role",
+                "status": 2,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": null,
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 140,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Adrian McPhee",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 150,
+                "publishedId": 70,
+                "priority": "Medium",
+                "shortDescription": "We have cypress tests sitting on a PR from sometime ago that need to be checked and updated. We need to make sure that we have the solid foundation for frontend tests required",
+                "title": "Check and update cypress tests, ensure they provide a solid foundation (later: get running in CI/CD pipeline)",
+                "status": 2,
+                "initiative": null,
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": null,
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 176,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Adrian McPhee",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 165,
+                "publishedId": 85,
+                "priority": "High",
+                "shortDescription": "Preparing for having liquid/non-liquid rewards for Challenges and single or multi-skill challenges",
+                "title": "Challenge model Changes",
+                "status": 2,
+                "initiative": {
+                    "id": 20,
+                    "name": "Enable multiple skills on single task, Talent Bounty model and points",
+                    "videoUrl": "https://www.youtube.com/watch?v=9-6P9qQ1kwI ",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "Backend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": true,
+                "videoUrl": "",
+                "assignedToPerson": null,
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 191,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Adrian McPhee",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 39,
+                "publishedId": 20,
+                "priority": "Medium",
+                "shortDescription": "Currently when a video link is pasted in the Video URL, only if it's a YouTube link, the video and its preview appears on the page. We need to look for a generic solution that show videos from other services as well.",
+                "title": "Create a task for preview for Loom videos and table view of tasks",
+                "status": 3,
+                "initiative": {
+                    "id": 3,
+                    "name": "Prepare OU to switch from Trello to OU for managing our product",
+                    "videoUrl": "https://www.loom.com/embed/05730bb4a7324a21a294e1452e918ee6?sharedAppSource=personal_library",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "https://www.loom.com/embed/05730bb4a7324a21a294e1452e918ee6?sharedAppSource=personal_library",
+                "assignedToPerson": null,
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 102,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 99,
+                "publishedId": 39,
+                "priority": "Low",
+                "shortDescription": "This enables product admins and manager to create tasks, initiatives and capabilities more efficiently",
+                "title": "Improve the WYSIWYG Editor for Long Description field",
+                "status": 3,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Mohit",
+                    "slug": "mohitjec06",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 123,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 111,
+                "publishedId": 47,
+                "priority": "Medium",
+                "shortDescription": "There needs to be a link to the created or updated task so a user can navigate to the task which was just created",
+                "title": "Show a hyperlink to a created task in the creation or update confirmation message",
+                "status": 3,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ruth Russell",
+                    "slug": "rrbee200",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 135,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 123,
+                "publishedId": 56,
+                "priority": "Low",
+                "shortDescription": "Currently attaching an image to the task description can be done only through wysiwyg image uploaded. It should be possible to simply add image to the description by pasting or drag and dropping an image into the description",
+                "title": "Allow image upload through pasting or drag and drop",
+                "status": 3,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Dev  Segun",
+                    "slug": "devsegun",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 147,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 153,
+                "publishedId": 73,
+                "priority": "High",
+                "shortDescription": "Currently there's no way for product teams to allocate points on their tasks and specify whether it's a paid or free task",
+                "title": "Create a design for point allocation on tasks",
+                "status": 3,
+                "initiative": {
+                    "id": 20,
+                    "name": "Enable multiple skills on single task, Talent Bounty model and points",
+                    "videoUrl": "https://www.youtube.com/watch?v=9-6P9qQ1kwI ",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "UX/UI Design",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "https://www.youtube.com/watch?v=9-6P9qQ1kwI",
+                "assignedToPerson": {
+                    "firstName": "Yana Canvas",
+                    "slug": "yana",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 179,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 155,
+                "publishedId": 75,
+                "priority": "Medium",
+                "shortDescription": "We need to enable users to provide their preference on getting informed if a relevant task becomes available for them",
+                "title": "Create a UX for the feature that enables users to subscribe to get informed if there's a new relevant task becomes available",
+                "status": 3,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "UX/UI Design",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": null,
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 181,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 156,
+                "publishedId": 76,
+                "priority": "Low",
+                "shortDescription": "Right now when the user submits a profile picture from the profile setting page, the modal stays open even though the picture is submitted already",
+                "title": "Close the upload modal once the profile picture is submitted",
+                "status": 3,
+                "initiative": null,
+                "inReview": false,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Tim Sankara",
+                    "slug": "sankara",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 182,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 159,
+                "publishedId": 79,
+                "priority": "High",
+                "shortDescription": "We need to show the allocated amount of points to the task and whether they are liquid points or non-liquid points",
+                "title": "Show the points for each task",
+                "status": 3,
+                "initiative": {
+                    "id": 20,
+                    "name": "Enable multiple skills on single task, Talent Bounty model and points",
+                    "videoUrl": "https://www.youtube.com/watch?v=9-6P9qQ1kwI ",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Lungile Dlamini",
+                    "slug": "lungilevalencia",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 185,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 161,
+                "publishedId": 81,
+                "priority": "High",
+                "shortDescription": "The current task filteration on OU is obscure and includes irrelevant fields",
+                "title": "Improve the overall task filteration experience",
+                "status": 3,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "Product Management",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Shebuel Inyang",
+                    "slug": "shebuel",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 187,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 163,
+                "publishedId": 83,
+                "priority": "High",
+                "shortDescription": "We need to have a product dashboard where the core team (admins) can manage some aspects of the product, including showcasing the point balance, enabling purchasing points, reviewing and managing contributions, etc.",
+                "title": "Conduct a product discovery for product dashboard for admins",
+                "status": 3,
+                "initiative": null,
+                "inReview": false,
+                "tags": [],
+                "category": "Product Management",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ernest Owojori",
+                    "slug": "ernest",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 189,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 164,
+                "publishedId": 84,
+                "priority": "Low",
+                "shortDescription": "Renaming data models, graphql services and frontend mentions of \"Task\" to reflect the change to \"Challenge\"",
+                "title": "From \"Task\" to \"Challenge\"",
+                "status": 3,
+                "initiative": {
+                    "id": 20,
+                    "name": "Enable multiple skills on single task, Talent Bounty model and points",
+                    "videoUrl": "https://www.youtube.com/watch?v=9-6P9qQ1kwI ",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "Backend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 190,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Adrian McPhee",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 171,
+                "publishedId": 91,
+                "priority": "High",
+                "shortDescription": "Currently wherever we have skill selectors, the expandable items in the drop-down expand only if the user clicks on the arrow next to them which is not intuitive",
+                "title": "Make the skill selector drop-down more intuitive",
+                "status": 3,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "gaspar Zanellini",
+                    "slug": "gaspar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 197,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 176,
+                "publishedId": 94,
+                "priority": "Medium",
+                "shortDescription": "Currently date and time is missing in comments so it's unclear when a comment has been posted",
+                "title": "Add date and time to the comments",
+                "status": 3,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Peter Cooke",
+                    "slug": "pjcooke",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 202,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 2,
+                "publishedId": 11,
+                "priority": "High",
+                "shortDescription": "We need a better, clearer, action-oriented popup for unauthenticated users when they attempt to perform an action that requires authentication",
+                "title": "Unauthenticated user popup",
+                "status": 4,
+                "initiative": {
+                    "id": 3,
+                    "name": "Prepare OU to switch from Trello to OU for managing our product",
+                    "videoUrl": "https://www.loom.com/embed/05730bb4a7324a21a294e1452e918ee6?sharedAppSource=personal_library",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 93,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 4,
+                "publishedId": 10,
+                "priority": "High",
+                "shortDescription": "User who completes their first task on the product should get a contributor role on that product and be listed in the contributor section of product's 'People' tab",
+                "title": "User who completes a task should become a contributor of that product",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 92,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 5,
+                "publishedId": 8,
+                "priority": "High",
+                "shortDescription": "Contribution Guide is a document which outlines guiding information on how to set up the system for the contributions, what are the guidelines for the delivered works to be approved, where the work needs to be delivered, etc.",
+                "title": "Implement \"Contribution Guide\" capability",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 90,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 6,
+                "publishedId": 14,
+                "priority": "Medium",
+                "shortDescription": "Currently there's a \"Target work location*:\" in the task which is confusing and since it'll be mentioned in the Contributing Guide, there's no need for having it in the task as a separate field.",
+                "title": "Remove \"Target work location*\" from task model and modal",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 96,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 7,
+                "publishedId": 24,
+                "priority": "High",
+                "shortDescription": "Use a select for product menu on mobile",
+                "title": "Mobile friendly product menu",
+                "status": 4,
+                "initiative": {
+                    "id": 15,
+                    "name": "UI / UX Enhancements - April 2021",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 106,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 9,
+                "publishedId": 12,
+                "priority": "Medium",
+                "shortDescription": "After posting a task for example, the list of tasks should update without a page refresh",
+                "title": "Update page after action",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 94,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod(Admin of OU & Contributor of AM)",
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 10,
+                "publishedId": 15,
+                "priority": "Medium",
+                "shortDescription": "Currently there's no way to set the priority of the tasks during the task creation and we need to be able to set it in the task modal",
+                "title": "Add a priority field to the task creation modal",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 97,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 11,
+                "publishedId": 13,
+                "priority": "Medium",
+                "shortDescription": "Improve the left-side menu in the product view",
+                "title": "Updates to product menu",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 95,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 17,
+                "publishedId": 17,
+                "priority": "High",
+                "shortDescription": "Product Admin role currently can't e.g. Add Task",
+                "title": "Product Admin should include Product Manager Rights",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 99,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Adrian McPhee",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 23,
+                "publishedId": 2,
+                "priority": "Medium",
+                "shortDescription": "Contributors who already have a claimed task should receive an error when trying to claim a new task on the same product with an error message which includes the currently claimed tasks",
+                "title": "Show the currently claimed task by a contributor who tries to claim a new task",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 76,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 24,
+                "publishedId": 28,
+                "priority": "Medium",
+                "shortDescription": "The new task form should always have the reviewer automatically set to a value that can be overridden ",
+                "title": "Task creation: reviewer not always automatically set",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 110,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 41,
+                "publishedId": 9,
+                "priority": "Medium",
+                "shortDescription": "There needs to be a possibility to create tasks under an initiative or a capability right from within the initiative or capability page.",
+                "title": "Create tasks from initiative and capability page",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 91,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod(Admin of OU & Contributor of AM)",
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 42,
+                "publishedId": 21,
+                "priority": "Medium",
+                "shortDescription": "The default Reviewer in the Task modal creation should be prefilled with the current user who's creating the task but sometimes it works and sometimes it doesn't.",
+                "title": "The default Reviewer for tasks sometimes does not appear during the task creation",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 103,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 50,
+                "publishedId": 18,
+                "priority": "High",
+                "shortDescription": "Create a model that has all the content in a single place for fast loading of listings of Tasks",
+                "title": "TaskListing model",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 100,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 56,
+                "publishedId": 22,
+                "priority": "High",
+                "shortDescription": "Task Creation / Editing: Use Antd Tree Select for selecting Capability ",
+                "title": "Use Antd TreeSelect",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 104,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 57,
+                "publishedId": 4,
+                "priority": "Low",
+                "shortDescription": "Currently there's a field for setting stacks in the capabilities while editing. Capabilities do not have stacks themselves but instead the tasks that related to them have stacks.",
+                "title": "Remove the stack field from capability creation / editing modal",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 78,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod(Admin of OU & Contributor of AM)",
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 59,
+                "publishedId": 5,
+                "priority": "High",
+                "shortDescription": "In certain cases, when a change is applied, the frontend doesn't show the changes and the user have to refresh the page to see the latest state including changes",
+                "title": "Changes to the product data should be immediately reflected",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": "Backend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 79,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod(Admin of OU & Contributor of AM)",
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 60,
+                "publishedId": 23,
+                "priority": "Medium",
+                "shortDescription": "personproduct role listings in admin console have the id of the role whereas they should display e.g. \"Manager\", \"Admin\" etc.",
+                "title": "Improve readability of personproduct list in admin console",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 105,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 80,
+                "publishedId": 7,
+                "priority": "Low",
+                "shortDescription": "- there should be a way to set the priority in the task creation / updating modal\n- the task reviewer field in the task creation / updating modal should be pre-filled with the current user who's creating the task",
+                "title": "Improve the task creation / update modal",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": "Solutions Architecture",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 81,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod(Admin of OU & Contributor of AM)",
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 88,
+                "publishedId": 29,
+                "priority": "High",
+                "shortDescription": "\"Sign In\" should not go to switch-test-user in production",
+                "title": "\"Sign In\" should go straight to AM",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 112,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 91,
+                "publishedId": 32,
+                "priority": "High",
+                "shortDescription": "Currently there's a field in task creation modal and task detail page which is called Stack and it needs to be renamed to \"Skills Required\"",
+                "title": "Rename \"Stack\" in Tasks to \"Skills Required\"",
+                "status": 4,
+                "initiative": {
+                    "id": 3,
+                    "name": "Prepare OU to switch from Trello to OU for managing our product",
+                    "videoUrl": "https://www.loom.com/embed/05730bb4a7324a21a294e1452e918ee6?sharedAppSource=personal_library",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 115,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 94,
+                "publishedId": 34,
+                "priority": "Medium",
+                "shortDescription": "Product task list performance in Google Lighthouse needs to improve, along with SEO",
+                "title": "Product task list performance and SEO - Google Lighthouse",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 118,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "adrian",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 95,
+                "publishedId": 35,
+                "priority": "High",
+                "shortDescription": "Current performance and SEO not acceptable according to Google Lighthouse",
+                "title": "Task Detail page: Improve performance and SEO of page",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 119,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "adrian",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 96,
+                "publishedId": 36,
+                "priority": "High",
+                "shortDescription": "When users click on their username in the header, \"Your Profile\" should the the first item from the drop down which brings the user to the user's profile",
+                "title": "Add \"Your Profile\" to the user profile drop-down menu",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 120,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 97,
+                "publishedId": 37,
+                "priority": "Medium",
+                "shortDescription": "We need to go through all screens and make sure that our platform is responsive on small devices such as mobile.",
+                "title": "Improve the mobile responsiveness",
+                "status": 4,
+                "initiative": {
+                    "id": 15,
+                    "name": "UI / UX Enhancements - April 2021",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 121,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod(Admin of OU & Contributor of AM)",
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 100,
+                "publishedId": 40,
+                "priority": "Medium",
+                "shortDescription": "We would have three licenses. OU managed PF, Self managed PF, Developer local instance. For Stackoverflow launch, we would onlyneed the developer local instance.",
+                "title": "Implement licensing for OU for Developer local instance",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 124,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod(Admin of OU & Contributor of AM)",
+                    "username": "john-smith",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 101,
+                "publishedId": 41,
+                "priority": "Low",
+                "shortDescription": "Users contribution needs to be reviewed by admins or managers and they can either approve or reject the contribution.",
+                "title": "Admin or manager should be able to approve or reject tasks",
+                "status": 4,
+                "initiative": {
+                    "id": 3,
+                    "name": "Prepare OU to switch from Trello to OU for managing our product",
+                    "videoUrl": "https://www.loom.com/embed/05730bb4a7324a21a294e1452e918ee6?sharedAppSource=personal_library",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 125,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 102,
+                "publishedId": 42,
+                "priority": "High",
+                "shortDescription": "Tasks listed on homepage, clearer UX. Products on second tab. ",
+                "title": "Implement new homepage design",
+                "status": 4,
+                "initiative": {
+                    "id": 15,
+                    "name": "UI / UX Enhancements - April 2021",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "OlexiyShevchenko",
+                    "slug": "olexiy26",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 126,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 105,
+                "publishedId": 43,
+                "priority": "High",
+                "shortDescription": "Add about page. Create CreateProductRequest model and connect to \"Add Product\" form in authenticated manner. Remove \"Find Talent\" and search from top bar.",
+                "title": "Important pre-launch hygiene and tweaks",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 129,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 106,
+                "publishedId": 44,
+                "priority": "Medium",
+                "shortDescription": "We need a footer on the site with links:\n\nEnterprise Customers\nContact Us\nPrivacy Policy\nTerms of Use\n",
+                "title": "Site footer and links",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Nazar Revutskyy",
+                    "slug": "nazar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": null,
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 130,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": null,
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 110,
+                "publishedId": 46,
+                "priority": "High",
+                "shortDescription": "There needs to be a sign up button as a main call to action in the navbar and the navbar elements should become responsive",
+                "title": "Add Sign up to the navbar and improve the responsiveness",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": null,
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 134,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 112,
+                "publishedId": 48,
+                "priority": "High",
+                "shortDescription": "Currently we have \"stacks\" in several places in data model and \"Required Skills\" in the UI, we need to be more deliberate",
+                "title": "Completely remove \"stacks\" and add Task Categories and related Expertise",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 136,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "adrian",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 113,
+                "publishedId": 49,
+                "priority": "Medium",
+                "shortDescription": "Tidy up user-related models",
+                "title": "Custom User model and related improvements",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": false,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": null,
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 137,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "adrian",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 120,
+                "publishedId": 53,
+                "priority": "Medium",
+                "shortDescription": "Ensure UX is clear and effective",
+                "title": "Configure AuthMachine for OU launch",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 144,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "adrian",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 121,
+                "publishedId": 54,
+                "priority": "Low",
+                "shortDescription": "Anywhere in the code including the UI where we have a mentioned of Product Map should be renamed to Product Tree",
+                "title": "Rename the Product Map to Product Tree",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 145,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 122,
+                "publishedId": 55,
+                "priority": "High",
+                "shortDescription": "Contributors should be prompted to provide a delivery message when they submit their work for review. Core teams should be able to read the delivery message while reviewing a submitted work.",
+                "title": "Implement Delivery Message capability",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 146,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 125,
+                "publishedId": 58,
+                "priority": "Medium",
+                "shortDescription": "Currently there's no way to open a side bar item (e.g. Product Tree) in a new tab by holding down the control button \u2013 or the command key on a Mac computer or simply right clicking doesn't show an option to open the link in the new tab",
+                "title": "Add the 'possibility' to open all items in OU including the side bar items in new tabs",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "fanny dufresne",
+                    "slug": "fannydufresne",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 149,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 126,
+                "publishedId": 59,
+                "priority": "Low",
+                "shortDescription": "While updating a task in the task update modal, if no additional change are made, it shows an Error \"Error with task updating\" while it should simply close the modal",
+                "title": "[Bug] While updating a task in the task update modal, if no additional change are made, it shows an Error \"Error with task updating\"",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Farbod Saraf",
+                    "slug": "farbod",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 150,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 135,
+                "publishedId": 62,
+                "priority": "High",
+                "shortDescription": "Users should know we are in a \"beta\" phase",
+                "title": "Add Beta \"tag\" to logo in top middle of screen",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 159,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "adrian",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 136,
+                "publishedId": 63,
+                "priority": "High",
+                "shortDescription": "Add cookie popup notification and ensure policies are serving",
+                "title": "Cookie popup, privacy-policy.html and terms-of-service.html",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 160,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "adrian",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 137,
+                "publishedId": 64,
+                "priority": "Medium",
+                "shortDescription": "\"Join us on Discord\" link under logo pointing to https://discord.gg/T3xevYvWey",
+                "title": "Add \"Join us on Discord\" under the logo",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 163,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "adrian",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 138,
+                "publishedId": 65,
+                "priority": "High",
+                "shortDescription": "Currently in many places where the user is mentioned (e.g. the assignee field of a task), the profile picture of the user is not shown and instead a default avatar is presented",
+                "title": "[Bug] Ensure that the user's profile picture is always shown next to their username",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Full-stack Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Jorge Moreira",
+                    "slug": "jorgeaugusto",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 164,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 139,
+                "publishedId": 66,
+                "priority": "Low",
+                "shortDescription": "Currently once an initiative is set on a task, it's impossible to remove it to leave the initiative field empty",
+                "title": "Add a possibility to remove a task from an initiative",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "gaspar Zanellini",
+                    "slug": "gaspar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 165,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 140,
+                "publishedId": 67,
+                "priority": "Low",
+                "shortDescription": "If a priority of a task is switched on the task list page, a message shows that the update was successful while in reality the new priority of the task is not persisted",
+                "title": "[Bug] Changing a priority of the task on the task list does not persist the data",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "https://www.youtube.com/watch?v=mREPv4vsQP4",
+                "assignedToPerson": {
+                    "firstName": "Ian Banda",
+                    "slug": "ibanda",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 166,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 148,
+                "publishedId": 68,
+                "priority": "High",
+                "shortDescription": "When changing a task status from Claimed to Available, the task should be freed up and the assignee tasks should go away",
+                "title": "[Bug] When changing a task status from Claimed to Available, the assignee task does not dissapear",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Full-stack Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 174,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 151,
+                "publishedId": 71,
+                "priority": "Medium",
+                "shortDescription": "Currently the tasks category and skills are not being shown on the task previews on the portfolio. Furthermore, the skills and expertise of the user is not shown identical to the design on the profile.",
+                "title": "Show the skills and expertise on the user profile according to design",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Jorge Moreira",
+                    "slug": "jorgeaugusto",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 177,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 152,
+                "publishedId": 72,
+                "priority": "Medium",
+                "shortDescription": "Currently when the task is submitted for review, there's no information about whom submitted it for review inside the task",
+                "title": "Show which user claimed the task inside the ones that are submitted for reivew",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Full-stack Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 178,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 154,
+                "publishedId": 74,
+                "priority": "Medium",
+                "shortDescription": "Currently all the initiatives that ever existed on the product is listed in the initiative selector of the task creation modal which makes it hard to find the relevant initiatives",
+                "title": "Hide the initiatives that completed from the initiative selector on the task creation modal",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ian Banda",
+                    "slug": "ibanda",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 180,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 157,
+                "publishedId": 77,
+                "priority": "High",
+                "shortDescription": "Upon clicking on \"Add a new guide\", an error will be shown \"An unexpected error has occurred.\"",
+                "title": "[Bug] Fix the issue related to the Contribution Guide capability in the product setting",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 183,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 158,
+                "publishedId": 78,
+                "priority": "Low",
+                "shortDescription": "Currently the number of available initiatives shown on the product also includes the completed initiatives which is wrong ",
+                "title": "Exclude the number of completed initiatives from the number shown on product preview",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ian Banda",
+                    "slug": "ibanda",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 184,
+                    "priority": "Low",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 160,
+                "publishedId": 80,
+                "priority": "High",
+                "shortDescription": "We need to collect permissions from users to inform them when a new task becomes available that matches their skill set",
+                "title": "Collect consent during the onboarding from users to contact them for available tasks",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Full-stack Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Nunzio",
+                    "slug": "mnunzio",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 186,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 162,
+                "publishedId": 82,
+                "priority": "Medium",
+                "shortDescription": "Currently the elements on the header are not in the vertically aligned in the center of the header",
+                "title": "Fix the usability issue on the header",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Jorge Moreira",
+                    "slug": "jorgeaugusto",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 188,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 166,
+                "publishedId": 86,
+                "priority": "High",
+                "shortDescription": "adjustments to the default displayed tasks",
+                "title": "Change filtering logic of Tasks",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": null,
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": null,
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 192,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Adrian McPhee",
+                    "username": "adrian",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 169,
+                "publishedId": 89,
+                "priority": "High",
+                "shortDescription": "We need to show which skill and expertise are required for completing the task on both the challenge card and challenge detail page ",
+                "title": "Show which skill and expertise a challenge requires on the card view",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Ashik Zinnat",
+                    "slug": "ashikzk",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 195,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 170,
+                "publishedId": 90,
+                "priority": "Medium",
+                "shortDescription": "Currently, the privacy banner is shown on top of the page on the mobile screen which is not a standard design pattern",
+                "title": "Move the privacy banner to the below part of the page on mobile",
+                "status": 4,
+                "initiative": null,
+                "inReview": true,
+                "tags": [],
+                "category": "Frontend Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": " ",
+                    "slug": "garg10may",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 196,
+                    "priority": "Medium",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 175,
+                "publishedId": 93,
+                "priority": "High",
+                "shortDescription": "Upon rejection of a task, the product admin should get a prompt on whether they want to make the task available or leave it In Progress under the current person who has it claimed",
+                "title": "Provide additional options to choose when rejecting a contribution",
+                "status": 4,
+                "initiative": {
+                    "id": 14,
+                    "name": "Improve the overall product management experience of OU",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Full-stack Development",
+                "expertise": null,
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "gaspar Zanellini",
+                    "slug": "gaspar",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 201,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            },
+            {
+                "id": 178,
+                "publishedId": 95,
+                "priority": "High",
+                "shortDescription": "Currently there's no notification system on OpenUnited. The goal is to develop the notification system and add the notification email to a couple of events (task claim and task submission).",
+                "title": "Create a notification system for OpenUnited",
+                "status": 4,
+                "initiative": {
+                    "id": 4,
+                    "name": "Improve the activation of OpenUnited",
+                    "videoUrl": "",
+                    "__typename": "InitiativeDictType"
+                },
+                "inReview": true,
+                "tags": [],
+                "category": "Backend Development",
+                "expertise": [
+                    {
+                        "id": "13",
+                        "name": "django",
+                        "__typename": "ExpertiseType"
+                    }
+                ],
+                "blocked": false,
+                "hasActiveDepends": false,
+                "videoUrl": "",
+                "assignedToPerson": {
+                    "firstName": "Nunzio",
+                    "slug": "mnunzio",
+                    "__typename": "AssignedToPersonType"
+                },
+                "product": {
+                    "name": "OpenUnited Platform",
+                    "slug": "openunited-platform",
+                    "owner": "meta",
+                    "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                    "__typename": "ProductDictType"
+                },
+                "challenge": {
+                    "id": 204,
+                    "priority": "High",
+                    "__typename": "ChallengeType"
+                },
+                "reviewer": {
+                    "firstName": "Farbod Saraf",
+                    "username": "farbod",
+                    "__typename": "PersonJSONData"
+                },
+                "__typename": "ChallengeListingType"
+            }
+        ]
+    }
+}
