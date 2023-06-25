@@ -26,4 +26,4 @@ We expect that by doing our UX prototyping/specification this way, and simplifyi
 
 2) **Simple and precise requirements for full-stack developers, with work in this repo acting as an efficient and effective "handover"** from a UX/Web designer to a full-stack developer. Implications: the deliverable for UX/web designers is html/css in this repo in jinja templates, not figma for other design files. UX/web designers must therefore have a basic understanding of html, css, data in json format, flask/python, and git to deliver their work in this repo.
      
-3) **Co-create concrete data concepts, flows and html templates as part of the UX/Web design process** with these being leveraged in the production codebase. Implication: the work in this repo can be enriched and tweaked to be useful in production.
+3) **Co-create concrete data concepts, flows and html templates as part of the UX/Web design process** with these being leveraged in the production codebase. Implication: often, the work in this repo can be enriched and tweaked to be useful in production - this helps to accelerate and avoid issues.
