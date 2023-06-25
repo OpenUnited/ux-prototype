@@ -11,7 +11,11 @@ def screen_list():
 #homepage views
 
 @app.route('/')
-def home():
+def home_splash():
+    return render_template("home_splash.html")
+
+@app.route('/challenges')
+def home_challenges():
     challenge_listings_file = os.path.abspath("data-sets/challenge_listings.json")
     with open(challenge_listings_file) as json_file:
         raw_challenge_listings = json.load(json_file)
