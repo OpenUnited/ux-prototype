@@ -16,7 +16,7 @@ We are simplyfing things, whilst in some ways expecting more of UX/Web Designers
 
 We now expect that UX Developers deliver html/css in this repo, and therefore understand data in json files, a limited amount of python/flask, and git.
 
-The goal is to streamline and simplify the value chain that ideas must to through to be shipped. Separate to this repo, we are also simplifying the tech stack - removing ReactJS and the GraphQL layer, and moving to a single stack and repo.
+The goal is to streamline and simplify the value chain through which ideas flow, to become valuable to customers. Separate to this repo, we are also simplifying the tech stack - removing ReactJS and the GraphQL layer, and moving to a single stack and repo.
 
 It is perhaps unconventional or even controversial these days to ask those responsible for UX to deliver html/css or to understand git, however that is what we are doing. Figma, pen/paper and other tools may be used upstream for thinking if necessary, but we prototype and reason about different UX/UI options in this repo and we call the related role: UX Developer.
 
