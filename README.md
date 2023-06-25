@@ -10,12 +10,12 @@ For OpenUnited to be successful, contributors to the OpenUnited platform need to
 
 Depending on your local environment, something like the following:
 
-`git clone git@github.com:OpenUnited/ux-prototype.git`
-`cd ux-prototype`
-`python3 -m venv env`
-`source env/bin/activate`
-`pip install -r requirements.txt`
-`flask run -p 4001 --debug`
+```git clone git@github.com:OpenUnited/ux-prototype.git
+cd ux-prototype
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+flask run -p 4001 --debug```
 
 Then navigate to: [http://localhost:4001/screen-list](http://localhost:4001/screen-list) in your browser.
 
