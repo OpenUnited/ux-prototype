@@ -26,8 +26,27 @@ def home_products():
 
 @app.route('/product/summary')
 def product_summary():
-    return 'Product page with Summary'
+    return 'Product page with Summary tab active'
 
+@app.route('/product/initiatives')
+def product_initiatives():
+    return 'Product page with Initiatives tab active'
+
+@app.route('/product/challenges')
+def product_challenges():
+    return 'Product page with Challenges tab active'
+
+@app.route('/product/product-tree')
+def product_product_tree():
+    return 'Product page with Product Tree tab active'
+
+@app.route('/product/ideas-and-bugs')
+def product_ideas_bugs():
+    return 'Product page with Ideas & Bugs tab active'
+
+@app.route('/product/people')
+def product_people():
+    return 'Product page with People tab active'
 
 @app.route('/users/sign-up')
 def user_sign_up():
