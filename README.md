@@ -8,15 +8,17 @@ To be successful, we need the OpenUnited ecosystem to be able to ship new ideas 
 
 Experience tells us that at this stage of OpenUnited, having multiple specialised disciplines and tooling doesn't help us rapidly deliver value. In our case, expecting a UX Designer to hand over Figma designs to a Frontend Developer who needs Graphql endpoints that need to be built by a backender, who needs guidance on the data model changes etc. creates unnecessary complexity and lost time. This is hard enough in a company with full-time employees, let alone when we are building a new way to do effective asychronous product management at scale together, and also figuring out how to systemise that.
 
-I (Adrian) believe that using Figma for UX/UI specifications wasn't helping us. Overall the hand-overs were causing the need for too much involvement of the founders, to ship anything. To get an initiative to move, I personally had to make rough UX designs, and create ER Diagrams, and more. Farbod and I then had to do all the testing, and we found things breaking across multiple layers of responsibility. We are therefore simplyfing things, whilst in some ways expecting more of UX/Web designers. i.e. that they deliver html/css and understand git.
+Figma is amazing, however I (Adrian) believe that OpenUnited needs something other than Figma for UX/UI specifications. Overall (not just UX), the hand-overs across product managers/UX Designers/frontenders/backenders/founders were causing the need for too much involvement of the founders, to ship anything. This is also related to the stage we are at - however, to get an initiative to really move, I personally had to make rough UX designs, and create ER Diagrams, and more. My co-founder and I then had to do all the testing, and we found bugs with responsibilities breaking across multiple layers of work and tech complexity.
 
 ## What we are doing
 
-We are changing the way we prototype and express our target UX in html/css with the help of a component library - TailwindUI.  We are also simplifying the codebase and moving to a single repo and server-side rendered views in Django. The goal is to streamline and simplify the value chain that ideas must to through to be shipped. We are also simplifying the tech stack - removing ReactJS and the GraphQL layer.
+We are therefore simplyfing things, whilst in some ways expecting more of UX/Web Designers. We now expect that UX/Web Designers deliver html/css and understand data in json files and git. We are also moving away from a separate ReactJS app/repo towards a more classic Django SSR backend.
+
+We are changing the way we prototype and express our target UX in html/css with the help of a component library - TailwindUI.  We are also simplifying the codebase and moving to a single repo and server-side rendered views in Django. The goal is to streamline and simplify the value chain that ideas must to through to be shipped. We are also simplifying the tech stack - removing ReactJS and the GraphQL layer, and moving to a single stack and repo.
 
 It is perhaps unconventional or even controversial these days to ask UX/Web Designers to deliver html/css or to understand git, however that is what we are doing. Figma, pen/paper and other tools may be used upstream for thinking if necessary, but we prototype and reason about different UX options in this repo.
 
-We expect that by doing our UX prototyping/specification this way, and simplifying the platform's codebase, we can ultimately take a lot of friction and complexity out of the production system and help to improve the chances of OpenUnited's long-term success.
+We expect that by doing our UX prototyping/specification this way, and simplifying the platform's codebase, we can ultimately take friction and complexity out of the value chain, and help to improve the chances of OpenUnited to deliver sufficient value to realise long-term success.
 
 ## The Goals of this repo
 
