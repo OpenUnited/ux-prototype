@@ -4,9 +4,9 @@ tldr; We decided to discontinue using Figma for prototyping and specifying our U
 
 ## A brief explanation / why this repo exists
 
-To be successful, we need the OpenUnited ecosystem to be able to ship new ideas and improvements to production safely, rapidly and at lost cost/effort. 
+To be successful, we need the OpenUnited ecosystem to be able to ship new ideas and improvements to production safely, rapidly and at low cost/effort. 
 
-Experience tells us that at this stage of OpenUnited, having multiple specialised disciplines and tooling doesn't help us rapidly deliver value. In our case, expecting a UX Designer to hand over Figma designs to a Frontend Developer who needs Graphql endpoints that need to be built by a backender, who needs guidance on the data model changes etc. creates unnecessary complexity and lost time. This is hard enough in a company with full-time employees, let alone when we are building a new way to do effective asychronous product management at scale together, and also figuring out how to systemise that.
+Experience tells us that at this stage of OpenUnited, having multiple specialised disciplines and tooling doesn't help us rapidly deliver value. In our case, expecting a UX Designer to hand over Figma designs to a Frontend Developer who needs Graphql endpoints that need to be built by a Backend Developer, who needs guidance on the data model changes etc. creates unnecessary complexity and lost time. This chain is hard enough to do in a company with full-time employees, let alone when we are building a new way to do effective asychronous product management at scale together, and also figuring out how to systemise that, with no outside funding.
 
 Figma is amazing, however I (Adrian) believe that OpenUnited needs something other than Figma for UX/UI specifications. Overall (not just UX), the hand-overs across product managers/UX Designers/frontenders/backenders/founders were causing the need for too much involvement of the founders, to ship anything. This is also related to the stage we are at - however, to get an initiative to really move, I personally had to make rough UX designs, and create ER Diagrams, and more. My co-founder and I then had to do all the testing, and we found bugs with responsibilities breaking across multiple layers of work and tech complexity.
 
