@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Homepage - Challenges Listed{% endblock %}
+{% block content %}
+{% for challenge_listing in challenge_listings %}
+<p>{{ challenge_listing["title"] }}</p>
+{% endfor %}
+{% endblock %}
