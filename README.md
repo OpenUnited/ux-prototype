@@ -1,6 +1,6 @@
 # ux-prototype
 
-tldr; We decided to discontinue using Figma for prototyping and specifying our UX/UI designs. We now do it in code, in this repo, using TailwindUI.
+tldr; We decided to discontinue using Figma for UX/UI prototyping and specifications. We now do it in code, in this repo, using TailwindUI.
 
 ## A brief explanation / why this repo exists
 
