@@ -6,13 +6,13 @@ TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifica
 
 To be successful, the actors contributing to the OpenUnited platform need to be able to generate, validate and ship new ideas and improvements to production safely, together, rapidly and at low cost/effort. 
 
-Experience tells us that at this stage of OpenUnited, having fine-grained specialisation in disciplines and tooling doesn't help us rapidly deliver value. In our case, we saw for example: UX Designer needs detailed input from a founder, hands over Figma designs to a Frontend Developer who needs GraphQL endpoints, GraphQL must to be built by a Backend Developer, who needs guidance on the data model changes from a founder. This chain created unnecessary complexity and lost time.
+Experience tells us that at this stage of OpenUnited, having fine-grained specialisation in disciplines and tooling doesn't help us rapidly deliver value. In our case, we saw for example: UX Designer needs detailed input from a founder, hands over Figma designs to a Frontend Developer who needs GraphQL endpoints, GraphQL must to be built by a Backend Developer, who needs guidance on the data model changes from a founder. This chain created unnecessary complexity, lost time and restricted our ability to get things done.
 
-We have the goal to enable such value chains of specialists through OpenUnited and our product management framework over time, however we realised that it is too ambitious and complex for our own situation for now, especially as we are discovering how to do effective asychronous product management at scale with ad-hoc contributors from around the globe, and also figuring out how to systemise that, with no outside funding and limited time.
+We have the goal to enable value chains of specialists through OpenUnited and our product management framework over time, however we realised that it is too ambitious and complex for our own situation for now, especially as we are discovering how to do effective asychronous product management at scale with ad-hoc contributors from around the globe, and also figuring out how to systemise that, with no outside funding and limited time. Even when chains of hyper specialised contributors are proven using OpenUnited and our product management framework, we intend to keep working with the model of UX Designers for our own product.
 
 ## What we are doing
 
-We are simplyfing things, whilst in some ways expecting more of UX/Web Designers. We are changing the way we prototype and express our target UX in html/css with the help of a component library - TailwindUI. 
+We are simplyfing things, whilst in some ways expecting more of UX/Web Designers, such that they become UX Developers. We are changing the way we prototype and express our target UX in html/css with the help of a component library - TailwindUI. 
 
 We now expect that UX Developers deliver html/css in this repo, and therefore understand data in json files, a limited amount of python/flask, and git.
 
