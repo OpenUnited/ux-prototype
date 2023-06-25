@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/screen-list')
 def screen_list():
-    return render_template('screen-list.html')
+    return render_template('screen_list.html')
 
 #homepage views
 
@@ -20,7 +20,7 @@ def home_challenges():
     with open(challenge_listings_file) as json_file:
         raw_challenge_listings = json.load(json_file)
     challenge_listings = raw_challenge_listings["data"]["challengelisting"]
-    return render_template("home.html", challenge_listings=challenge_listings)
+    return render_template("home_challenges.html", challenge_listings=challenge_listings)
 
 @app.route('/products')
 def home_products():
