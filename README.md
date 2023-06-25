@@ -4,7 +4,7 @@ TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifica
 
 ## A brief explanation / why this repo exists
 
-To be successful, we need actors contributing to OpenUnited to be able to evolve and ship new ideas and improvements to production safely, together, rapidly and at low cost/effort. 
+To be successful, we need actors contributing to the OpenUnited platform to be able to evolve and ship new ideas and improvements to production safely, together, rapidly and at low cost/effort. 
 
 Experience tells us that at this stage of OpenUnited, having multiple specialised disciplines and tooling doesn't help us rapidly deliver value. In our case, expecting a UX Designer to hand over Figma designs to a Frontend Developer who needs Graphql endpoints that need to be built by a Backend Developer, who needs guidance on the data model changes etc. creates unnecessary complexity and lost time. This chain is hard enough to do in a company with full-time employees that know each other, let alone when we are building a new way to do effective asychronous product management at scale with ad-hoc contributors from around the globe, and also figuring out how to systemise that, with no outside funding.
 
@@ -24,7 +24,7 @@ We expect that by doing our UX/UI prototyping/specification this way, and simpli
 
 ## The Goals of this repo
 
-1) **An easy, fast and unambiguous way to explore UX flows and designs** for OpenUnited.com. Implication: we communicate UX prototyping in html/css using a component library. 
+1) **An easy, fast and unambiguous way to explore UX flows and designs** for the OpenUnited platform. Implication: we communicate UX prototyping in html/css using a component library. 
 
 2) **Simple and precise requirements for full-stack developers, with work in this repo acting as an efficient and effective "handover"** from a UX/Web designer to a full-stack developer. Implications: the deliverable for UX/web designers is html/css in this repo in jinja templates, not figma for other design files. UX/web designers must therefore have a basic understanding of html, css, data in json format, flask/python, and git to deliver their work in this repo.
      
