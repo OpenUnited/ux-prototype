@@ -4,7 +4,7 @@ Congratulations, you can now be a "UX Developer"!
 
 TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifications. We now do UX/UI prototyping and specifications as code, in this repo, using TailwindCSS and [TailwindUI](https://tailwindui.com/). 
 
-For OpenUnited to be successful, contributors to the OpenUnited platform need to be able to generate, validate and ship new ideas and improvements to production safely, rapidly and with low cost/effort, together in a value chain. We seek to minimise friction in this total value chain.
+For OpenUnited to be successful, contributors to the OpenUnited platform need to be able to generate, validate and ship new ideas and improvements to production safely, rapidly and with low cost/effort, together in a value chain. We seek to minimise friction in this total value chain of contributors.
 
 ## The Goals of this repo
 
