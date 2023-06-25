@@ -4,7 +4,7 @@ TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifica
 
 ## A brief explanation / why this repo exists
 
-To be successful, we need actors contributing to the OpenUnited platform to be able to evolve and ship new ideas and improvements to production safely, together, rapidly and at low cost/effort. 
+To be successful, the actors contributing to the OpenUnited platform need to be able to generate, validate and ship new ideas and improvements to production safely, together, rapidly and at low cost/effort. 
 
 Experience tells us that at this stage of OpenUnited, having fine-grained specialisation in disciplines and tooling doesn't help us rapidly deliver value. In our case, expecting a UX Designer to hand over Figma designs to a Frontend Developer who needs Graphql endpoints that need to be built by a Backend Developer, who needs guidance on the data model changes etc. creates unnecessary complexity and lost time. This chain is hard enough to do in a company with full-time employees that know each other, let alone when we are building a new way to do effective asychronous product management at scale with ad-hoc contributors from around the globe, and also figuring out how to systemise that, with no outside funding.
 
