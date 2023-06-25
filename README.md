@@ -17,6 +17,9 @@ Depending on your local environment, something like the following:
 `pip install -r requirements.txt`
 `flask run -p 4001 --debug`
 
+Then navigate to: [http://localhost:4001/screen-list](http://localhost:4001/screen-list) in your browser.
+
+
 Not working? Please check this [Digital Ocean Guide](https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3) or the [official Flask documentation](https://flask.palletsprojects.com/en/2.3.x/)
 
 
