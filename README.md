@@ -6,6 +6,20 @@ TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifica
 
 For OpenUnited to be successful, contributors to the OpenUnited platform need to be able to generate, validate and ship new ideas and improvements to production safely, rapidly and with low cost/effort, together in a value chain. We seek to minimise friction in this total value chain of contributors.
 
+## Getting started / how to run this app
+
+Depending on your local environment, something like the following:
+
+`git clone git@github.com:OpenUnited/ux-prototype.git`
+`cd ux-prototype`
+`python3 -m venv env`
+`source env/bin/activate`
+`pip install -r requirements.txt`
+`flask run -p 4001 --debug`
+
+Not working? Please check this [Digital Ocean Guide](https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3) or the [official Flask documentation](https://flask.palletsprojects.com/en/2.3.x/)
+
+
 ## The Goals of this repo
 
 1) **An easy, fast and unambiguous way to explore UX flows and designs** for the OpenUnited platform. Implication: we have UX Developers that communicate UX prototyping in html/css using a component library. 
