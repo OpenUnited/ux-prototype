@@ -2,7 +2,7 @@
 
 Congratulations, you can now be a "UX Developer"!
 
-TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifications. We now do UX/UI prototyping and specifications as code, in this repo, using TailwindUI. 
+TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifications. We now do UX/UI prototyping and specifications as code, in this repo, using TailwindCSS and [TailwindUI](https://tailwindui.com/). 
 
 ## A brief explanation / why this repo exists
 
