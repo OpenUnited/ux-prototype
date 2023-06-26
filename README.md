@@ -39,8 +39,6 @@ We are simplyfing things, whilst in some ways expecting more of UX/Web Designers
 
 We now expect that UX Developers deliver html/css in this repo, and therefore understand data in json files, a limited amount of python/flask, and git. This might be a change for some, but learning is good for you and these technologies are not very complicated.
 
-Our objective is to streamline and simplify the value chain through which ideas flow, to become valuable to customers. Separate to this repo, we are also simplifying the tech stack - removing ReactJS and the GraphQL layer, and moving to a single stack and repo.
-
 It is perhaps unconventional or even controversial these days to ask those responsible for UX to deliver html/css or to understand git, however that is what we are doing. Figma, pen/paper and other tools may be used upstream for thinking if necessary, but we prototype and reason about different UX/UI options in this repo and we call the related role: UX Developer.
 
 By doing our UX/UI prototyping/specification this way, and simplifying the platform's codebase in parallel so that it becomes a single repo with a well-designed Python/Django application, we expect that we can ultimately take friction, complexity and dependencies out of the value chain, which will help to improve the chances of OpenUnited to deliver sufficient value to realise long-term success.
