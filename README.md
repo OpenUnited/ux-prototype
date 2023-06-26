@@ -35,9 +35,9 @@ Not working? Please check this [Digital Ocean Guide](https://www.digitalocean.co
 
 ## UX Developer?
 
-We are simplyfing things, whilst in some ways expecting more of UX/Web Designers, such that they become "UX Developers". We are changing the way we prototype and express our target UX. The target UX is now expressed as code, in html/css with the help of a component library - TailwindUI. in other words, from now on we have "target UX as Code".
+We are simplyfing things, whilst in some ways expecting more of UX/Web Designers, such that they become "UX Developers". We are changing the way we prototype and express our target UX. The target UX is now expressed as code, in html/css with the help of a component library - TailwindUI. In other words, from now on we have "target UX as Code".
 
-We now expect that UX Developers deliver html/css in this repo, and therefore understand data in json files, a limited amount of python/flask, and git. This might be a change for some, but learning is good for you and these technologies are not very complicated.
+We expect that UX Developers deliver html/css in this repo, and therefore understand data in json files, a limited amount of python/flask (jinja templates, how to parse a json file, how to run the app), and git. This might be a change for some, but learning is good for you and these technologies are not very complicated.
 
 It is perhaps unconventional or even controversial these days to ask those responsible for UX to deliver html/css or to understand git, however that is what we are doing. Figma, pen/paper and other tools may be used upstream for thinking if necessary, but we prototype and reason about different UX/UI options in this repo and we call the related role: UX Developer.
 
