@@ -1,0 +1,106 @@
+{
+    "data": {
+        "personInfo": [
+            {
+                "id": "801327ef-e7b7-48fb-823d-bce8d0d700e3",
+                "firstName": "Farbod Saraf",
+                "bio": "Co-founder at OpenUnited",
+                "avatar": "/images/avatar/2022-01-22 21:50:09 a184b26a.png",
+                "slug": "farbod",
+                "skills": [
+                    {
+                        "category": [
+                            "Product, User Experience & Research",
+                            "Product Management"
+                        ],
+                        "expertise": null,
+                        "__typename": "SkillType"
+                    }
+                ],
+                "websites": [
+                    {
+                        "type": 0,
+                        "website": "farbodsaraf.com",
+                        "__typename": "WebsiteType"
+                    }
+                ],
+                "websiteTypes": [
+                    "Personal",
+                    "Company"
+                ],
+                "preferences": {
+                    "sendMeChallenges": true,
+                    "__typename": "PersonPreferencesType"
+                },
+                "__typename": "PersonPortfolioType"
+            },
+            {
+                "id": "8d5c116e-fbdd-4065-af07-e08abca21563",
+                "firstName": "Adrian McPhee",
+                "bio": "",
+                "avatar": "/images/avatar/2022-01-29 13:26:46 728dcd2c.png",
+                "slug": "adrian",
+                "skills": [
+                    {
+                        "category": [
+                            "Software Development (inc. Web, Mobile)",
+                            "Backend Development"
+                        ],
+                        "expertise": [
+                            "django",
+                            "python",
+                            "flask"
+                        ],
+                        "__typename": "SkillType"
+                    },
+                    {
+                        "category": [
+                            "Software Development (inc. Web, Mobile)",
+                            "Frontend Development"
+                        ],
+                        "expertise": [
+                            "react",
+                            "javascript",
+                            "typescript",
+                            "graphql"
+                        ],
+                        "__typename": "SkillType"
+                    },
+                    {
+                        "category": [
+                            "Software Development (inc. Web, Mobile)",
+                            "Full-stack Development"
+                        ],
+                        "expertise": [
+                            "django"
+                        ],
+                        "__typename": "SkillType"
+                    },
+                    {
+                        "category": [
+                            "Information Systems & Networking",
+                            "Cloud Engineering"
+                        ],
+                        "expertise": null,
+                        "__typename": "SkillType"
+                    },
+                    {
+                        "category": [
+                            "Information Systems & Networking",
+                            "DevOps Engineering"
+                        ],
+                        "expertise": null,
+                        "__typename": "SkillType"
+                    }
+                ],
+                "websites": [],
+                "websiteTypes": [
+                    "Personal",
+                    "Company"
+                ],
+                "preferences": null,
+                "__typename": "PersonPortfolioType"
+            }
+        ]
+    }
+}

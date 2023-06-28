@@ -54,7 +54,15 @@ def product_product_tree():
 
 @app.route('/product/ideas-and-bugs')
 def product_ideas_bugs():
-    return 'Product page with Ideas & Bugs tab active'
+    product_ideas_listings_file = os.path.abspath("data-sets/product_ideas_listings.json")
+    person_info_file = os.path.abspath("data-sets/person_info.json")
+    with open(product_ideas_listings_file) as json_file:
+        raw_product_ideas_listings = json.load(json_file)
+    product_ideas_listings = raw_product_ideas_listings["data"]["ideas"]
+    with open(person_info_file) as json_file:
+        raw_person_info = json.load(json_file)
+    person_info_listings = raw_person_info["data"]["personInfo"]    
+    return render_template("product_ideas.html", product_ideas_listings=product_ideas_listings, person_info_listings=person_info_listings, current_page="ideas_page")
 
 @app.route('/product/people')
 def product_people():

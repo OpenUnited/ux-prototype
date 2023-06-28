@@ -74,7 +74,7 @@
                                         <a href=""
                                             class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                             {% else %}
-                                            <a href="#"
+                                            <a href="{{url_for('product_summary')}}"
                                                 class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                                 {% endif %}
                                                 Summary
@@ -85,21 +85,10 @@
                                         <a href=""
                                             class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                             {% else %}
-                                            <a href="#"
+                                            <a href="{{url_for('product_initiatives')}}"
                                                 class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                                 {% endif %}
                                                 Initiatives
-                                            </a>
-                                    </li>
-                                    <li>
-                                        {% if current_page=="projects_page" %}
-                                        <a href=""
-                                            class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                            {% else %}
-                                            <a href="#"
-                                                class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                                {% endif %}
-                                                Projects
                                             </a>
                                     </li>
                                     <li>
@@ -107,7 +96,7 @@
                                         <a href=""
                                             class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                             {% else %}
-                                            <a href="#"
+                                            <a href="{{url_for('product_challenges')}}"
                                                 class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                                 {% endif %}
                                                 Challenges
@@ -118,7 +107,7 @@
                                         <a href=""
                                             class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                             {% else %}
-                                            <a href="#"
+                                            <a href="{{url_for('product_product_tree')}}"
                                                 class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                                 {% endif %}
                                                 Product Tree
@@ -129,8 +118,8 @@
                                         <a href=""
                                             class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                             {% else %}
-                                            <a href="#"
-                                                class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+                                            <a href="{{url_for('product_ideas_bugs')}}" class=" text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex
+                                                gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                                 {% endif %}
                                                 Ideas & Bugs
                                             </a>
@@ -141,7 +130,7 @@
                                         <a href=""
                                             class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                             {% else %}
-                                            <a href="#"
+                                            <a href="{{url_for('product_people')}}"
                                                 class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                                 {% endif %}
                                                 People
@@ -173,7 +162,7 @@
                                 <a href=""
                                     class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                     {% else %}
-                                    <a href="#"
+                                    <a href="{{url_for('product_summary')}}"
                                         class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                         {% endif %}
                                         Summary
@@ -184,21 +173,10 @@
                                 <a href=""
                                     class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                     {% else %}
-                                    <a href="#"
+                                    <a href="{{url_for('product_initiatives')}}"
                                         class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                         {% endif %}
                                         Initiatives
-                                    </a>
-                            </li>
-                            <li>
-                                {% if current_page=="projects_page" %}
-                                <a href=""
-                                    class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                    {% else %}
-                                    <a href="#"
-                                        class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                        {% endif %}
-                                        Projects
                                     </a>
                             </li>
                             <li>
@@ -206,7 +184,7 @@
                                 <a href=""
                                     class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                     {% else %}
-                                    <a href="#"
+                                    <a href="{{url_for('product_challenges')}}"
                                         class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                         {% endif %}
                                         Challenges
@@ -217,7 +195,7 @@
                                 <a href=""
                                     class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                     {% else %}
-                                    <a href="#"
+                                    <a href="{{url_for('product_product_tree')}}"
                                         class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                         {% endif %}
                                         Product Tree
@@ -228,7 +206,7 @@
                                 <a href=""
                                     class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                     {% else %}
-                                    <a href="#"
+                                    <a href="{{url_for('product_ideas_bugs')}}"
                                         class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                         {% endif %}
                                         Ideas & Bugs
@@ -240,7 +218,7 @@
                                 <a href=""
                                     class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                     {% else %}
-                                    <a href="#"
+                                    <a href="{{url_for('product_people')}}"
                                         class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                         {% endif %}
                                         People
@@ -265,7 +243,7 @@
         <div class="flex-1 text-sm font-semibold leading-6 text-gray-900">Dashboard</div>
     </div>
 
-    <section class="py-10">
+    <section class="py-10 lg:flex-1">
         <div class="px-4 sm:px-6 lg:px-8">
             {% block product_content %}{% endblock %}
         </div>
