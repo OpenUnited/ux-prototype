@@ -1,0 +1,9 @@
+{
+  "name": "ux-prototype",
+  "version": "1.0.0",
+  "description": "Congratulations, you can now be a \"UX Developer\"!",
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  }
+}
