@@ -7,7 +7,7 @@
   {% for challenge_listing in product_challenges_listings %}
   <li class="overflow-hidden rounded-xl border border-gray-200">
     <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-4">
-      <a href="/meta/openunited-product-factory/challenges/{{ challenge_listing['publishedId'] }}"
+      <a href="/{{ challenge_listing.product.owner }}/{{ challenge_listing.product.slug }}/challenges/{{ challenge_listing['publishedId'] }}"
         class="text-lg font-medium leading-6 text-blue-400">{{ challenge_listing["title"] }}</a>
     </div>
     <div class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6">
@@ -19,7 +19,8 @@
       <div class="py-3">
         <div class="w-full font-semibold text-gray-500">Product</div>
         <div class="flex justify-between gap-x-2">
-          <div class="flex flex-none items-center">
+          {% if challenge_listing.product.videoUrl %}
+          <button class="flex flex-none items-center cursor-pointer">
             <svg class="h-4 w-4 flex-none" viewBox="64 64 896 896" focusable="false" data-icon="play-square"
               fill="currentColor" aria-hidden="true">
               <path
@@ -29,9 +30,12 @@
                 d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z">
               </path>
             </svg>
-          </div>
+          </button>
+          {% endif %}
           <div class="flex-1">
-            <a class="text-blue-400" href="/meta/openunited-product-factory">OpenUnited Product Factory</a>
+            <a class="text-blue-400"
+              href="{{ challenge_listing.product.owner }}/{{ challenge_listing.product.slug }}/">{{
+              challenge_listing.product.name }}</a>
           </div>
         </div>
       </div>
@@ -39,7 +43,8 @@
       <div class="py-3">
         <div class="w-full font-semibold text-gray-500">Initiative</div>
         <div class="flex justify-between gap-x-2">
-          <div class="flex flex-none items-center">
+          {% if challenge_listing.initiative.videoUrl %}
+          <button class="flex flex-none items-center cursor-pointer">
             <svg class="h-4 w-4 flex-none" viewBox="64 64 896 896" focusable="false" data-icon="play-square"
               fill="currentColor" aria-hidden="true">
               <path
@@ -49,10 +54,11 @@
                 d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z">
               </path>
             </svg>
-          </div>
+          </button>
+          {% endif %}
           <div class="flex-1">
             <a class="text-blue-400"
-              href="/meta/openunited-product-factoryinitiatives/{{ challenge_listing.initiative.id }}">
+              href="/{{ challenge_listing.product.owner }}/{{ challenge_listing.product.slug }}/initiatives/{{ challenge_listing.initiative.id }}">
               {{ challenge_listing.initiative.name }}
             </a>
           </div>
@@ -68,7 +74,15 @@
       <div class="flex gap-x-4 py-3">
         <div class="font-semibold text-gray-500">Status</div>
         <div class="text-gray-500">
-          {{ TASK_CLAIM_TYPES[challenge_listing.status - 1] }}
+          {% if TASK_TYPES[challenge_listing.status] == 'Claimed' %}
+          Claimed by <a class="text-blue-400" href="/{{ challenge_listing.assignedToPerson.slug }}">{{
+            challenge_listing.assignedToPerson.firstName }}</a>
+          {% elif TASK_TYPES[challenge_listing.status] == 'In Review' %}
+          In Review <a class="text-blue-400" href="/{{ challenge_listing.reviewer.username }}">{{
+            challenge_listing.reviewer.firstName }}</a>
+          {% else %}
+          {{ TASK_TYPES[challenge_listing.status] }}
+          {% endif %}
         </div>
       </div>
       {% if challenge_listing.category %}
@@ -77,6 +91,15 @@
         <div>
           <span class="text-gray-600 text-xs bg-gray-100 p-1">
             {{ challenge_listing.category }}
+            {% if challenge_listing.expertise %}
+            (
+            {% for item in challenge_listing.expertise %}
+            {{ item.name }}{% if item != challenge_listing.expertise|last %}
+            {{ ', ' }}
+            {% endif %}
+            {% endfor %}
+            )
+            {% endif %}
           </span>
         </div>
       </div>
