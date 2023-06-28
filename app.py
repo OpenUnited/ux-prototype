@@ -24,7 +24,11 @@ def home_challenges():
 
 @app.route('/products')
 def home_products():
-    return 'Homepage with list of products'
+    products_listings_file = os.path.abspath("data-sets/products_listings.json")
+    with open(products_listings_file) as json_file:
+        raw_products_listings = json.load(json_file)
+    products_listings = raw_products_listings["data"]["products"]
+    return render_template("home_products.html", products_listings=products_listings)
 
 #product pages
 

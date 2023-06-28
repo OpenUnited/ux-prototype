@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Homepage - Products Listed{% endblock %}
+{% block content %}
+
+<ul role="list" class="grid grid-cols-1 gap-5 lg:grid-cols-4">
+    {% for product_listing in products_listings %}
+    <li class="overflow-hidden rounded-xl border border-gray-200">
+        <!-- TODO:
+        Replace placehlder with real youtube iframe -->
+        <div class="h-[200px] bg-gray-400/30"></div>
+        <div class="flex flex-1 flex-col space-y-2 p-4">
+            <h3 class="text-sm font-medium text-gray-900">
+                <a href="{{ product_listing.website }}/{{ product_listing.owner }}/{{ product_listing.slug }}">
+                    {{ product_listing.name }}
+                </a>
+            </h3>
+            <p class="text-sm text-gray-500">
+                {{ product_listing.shortDescription }}
+            </p>
+            <div>
+                <p class="text-sm text-gray-900 flex items-center gap-x-1">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTggMUM0LjEzNDM4IDEgMSA0LjEzNDM4IDEgOEMxIDExLjg2NTYgNC4xMzQzOCAxNSA4IDE1QzExLjg2NTYgMTUgMTUgMTEuODY1NiAxNSA4QzE1IDQuMTM0MzggMTEuODY1NiAxIDggMVpNMTEuMDIzNCA1LjcxNDA2TDcuNzMyODEgMTAuMjc2NkM3LjY4NjgyIDEwLjM0MDggNy42MjYxOSAxMC4zOTMxIDcuNTU1OTUgMTAuNDI5MUM3LjQ4NTcxIDEwLjQ2NTIgNy40MDc4NyAxMC40ODQxIDcuMzI4OTEgMTAuNDg0MUM3LjI0OTk0IDEwLjQ4NDEgNy4xNzIxMSAxMC40NjUyIDcuMTAxODYgMTAuNDI5MUM3LjAzMTYyIDEwLjM5MzEgNi45NzA5OSAxMC4zNDA4IDYuOTI1IDEwLjI3NjZMNC45NzY1NiA3LjU3NjU2QzQuOTE3MTkgNy40OTM3NSA0Ljk3NjU2IDcuMzc4MTMgNS4wNzgxMiA3LjM3ODEzSDUuODEwOTRDNS45NzAzMSA3LjM3ODEzIDYuMTIxODcgNy40NTQ2OSA2LjIxNTYyIDcuNTg1OTRMNy4zMjgxMiA5LjEyOTY5TDkuNzg0MzggNS43MjM0NEM5Ljg3ODEzIDUuNTkzNzUgMTAuMDI4MSA1LjUxNTYyIDEwLjE4OTEgNS41MTU2MkgxMC45MjE5QzExLjAyMzQgNS41MTU2MiAxMS4wODI4IDUuNjMxMjUgMTEuMDIzNCA1LjcxNDA2WiIgZmlsbD0iIzM4OUUwRCIvPgo8L3N2Zz4K"
+                        class="check-circle-icon" alt="status">
+                    <a
+                        href="{{ product_listing.website }}/{{ product_listing.owner }}/{{ product_listing.slug }}/challenges">
+                        {{ product_listing.availableTaskNum }} available challenges
+                    </a>
+                </p>
+                <p class="text-sm text-gray-900">
+                    <a
+                        href="{{ product_listing.website }}/{{ product_listing.owner }}/{{ product_listing.slug }}/initiatives">
+                        {{ product_listing.initiativeSet|count }} available initiatives
+                    </a>
+                </p>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,35 @@
+{
+    "data": {
+        "products": [
+            {
+                "id": "3",
+                "name": "OpenUnited Product Factory",
+                "owner": "meta",
+                "website": "https://openunited.com",
+                "shortDescription": "Open-source software (OSS) has been one of the quietest revolutions in history.",
+                "fullDescription": "Open-source software (OSS) has been one of the quietest revolutions in history. The incredible victory of OSS over proprietary software has been invisible to the majority of the world\u2019s population. OSS is still not understood by most people - despite its tremendous success since the early 1980s and explosion since the early 2000s.",
+                "slug": "openunited-product-factory",
+                "videoUrl": "https://www.youtube.com/watch?v=OWXVryhdoVA",
+                "isPrivate": false,
+                "initiativeSet": [
+                    {
+                        "id": "4",
+                        "__typename": "InitiativeType"
+                    },
+                    {
+                        "id": "14",
+                        "__typename": "InitiativeType"
+                    },
+                    {
+                        "id": "20",
+                        "__typename": "InitiativeType"
+                    }
+                ],
+                "attachment": [],
+                "availableTaskNum": 3,
+                "totalTaskNum": 58,
+                "__typename": "ProductType"
+            }
+        ]
+    }
+}
