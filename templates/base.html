@@ -45,7 +45,7 @@
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
-      <div class="lg:hidden" role="dialog" aria-modal="true">
+      <div class="lg:hidden" style="display: none;" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-0 z-10"></div>
         <div
@@ -67,7 +67,7 @@
       </div>
     </header>
 
-    <main class="container mx-auto flex-1">
+    <main class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 flex-1">
       {% block content %}{% endblock %}
     </main>
     <div class="pointer-events-none fixed inset-x-0 bottom-0 px-6 pb-6 hidden">
