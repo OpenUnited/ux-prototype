@@ -11,9 +11,9 @@
   <body class="h-full">
   ```
 -->
-<div class="flex">
+<div class="lg:flex">
     <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-    <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
+    <div class="relative z-50 lg:hidden" style="display: none;" role="dialog" aria-modal="true">
         <!--
       Off-canvas menu backdrop, show/hide based on off-canvas menu state.
 
@@ -253,7 +253,8 @@
         </div>
     </div>
 
-    <div class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden">
+    <div
+        class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden bg-green-100">
         <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
             <span class="sr-only">Open sidebar</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -262,12 +263,6 @@
             </svg>
         </button>
         <div class="flex-1 text-sm font-semibold leading-6 text-gray-900">Dashboard</div>
-        <a href="#">
-            <span class="sr-only">Your profile</span>
-            <img class="h-8 w-8 rounded-full bg-gray-50"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt="">
-        </a>
     </div>
 
     <section class="py-10">
