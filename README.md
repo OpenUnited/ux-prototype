@@ -6,7 +6,7 @@ TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifica
 
 ## Getting started / how to run this app
 
-Depending on your local environment, something like the following:
+Good if you fork this repo, then depending on your local environment, do something like the following with "OpenUnited" changed for your own GitHub username:
 
 ```
 git clone git@github.com:OpenUnited/ux-prototype.git
