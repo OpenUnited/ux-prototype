@@ -45,7 +45,7 @@ By doing our UX/UI prototyping/specification this way, and simplifying the platf
 
 ## Some additional explanation
 
-Our prior model was intended to empower specialists to create the best things together. In practice however we saw that this set of "optimal in isolation" things created unnecessary complexity, lost time, and restricted our ability to get things done in the context of the total chain. Our goal is to simplify, so that we optimise the value chain, not each part in isolation.
+Using Figma, ReactJS, GraphQL, a separate backend application etc. was intended to empower specialists to create the best things together. In practice however we saw that this set of "optimal in isolation" things created unnecessary complexity, lost time, and restricted our ability to get things done in the context of the total chain. Our goal is to simplify, so that we optimise the value chain, not each part in isolation.
 
 The new flow is that  user research is done, **target UX is prototyped and specified in this repo as code** using TailwindCSS / TailwindUI by a UX Developer, a Full-stack Python/Django Developer can implement things end-to-end and even re-use assets from this repo (htmls/css/templates, data models etc). This means that once the target UX is clear, a single Full-stack Developer can take something into production and re-use work done in the UX phase.
 
