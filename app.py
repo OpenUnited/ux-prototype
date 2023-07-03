@@ -34,7 +34,7 @@ def home_products():
 
 @app.route('/product/summary')
 def product_summary():
-    return 'Product page with Summary tab active'
+    return render_template("product_summary.html", current_page="summary_page")
 
 @app.route('/product/initiatives')
 def product_initiatives():
