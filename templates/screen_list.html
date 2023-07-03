@@ -1,12 +1,175 @@
+{% extends 'base.html' %}
+{% block title %}Homepage - Splash{% endblock %}
+{% block content %}
+
+<div class="flex flex-col flex-grow">
+    <div class="px-4 sm:px-0">
+        <h3 class="text-base font-semibold leading-7 text-gray-900">List of all pages</h3>
+    </div>
+    <div class="mt-6 border-t border-gray-100">
+        <dl class="divide-y divide-gray-100">
+            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Homepage</dt>
+                <dd class="mt-1 flex text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    <span class="flex flex-col flex-grow">
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{ url_for('home_splash') }}">Splash</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{ url_for('home_challenges') }}">Challenges Tab Active</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{ url_for('home_products') }}">Products Tab Active</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+
+                    </span>
+                </dd>
+            </div>
+            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Product</dt>
+                <dd class="mt-1 flex text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    <span class="flex flex-col flex-grow">
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_summary')}}">Summary</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_initiatives')}}">Initiatives</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_challenges')}}">Challenges</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_product_tree')}}">Product Tree</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_ideas_bugs')}}">Ideas & Bugs</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_people')}}">People</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                    </span>
+                </dd>
+            </div>
+            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Bounties</dt>
+                <dd class="mt-1 flex text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    <span class="flex flex-col flex-grow">
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_summary')}}">Claim Flow</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_summary')}}">Work Submission</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                    </span>
+                </dd>
+            </div>
+            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">Review Submission</dt>
+                <dd class="mt-1 flex text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    <span class="flex flex-col flex-grow">
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_summary')}}">Flow</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600 hover:text-indigo-500">
+                                    Status
+                                </div>
+                            </span>
+                        </span>
+                    </span>
+                </dd>
+            </div>
+        </dl>
+    </div>
+</div>
+
 <ul>
-    <li>Homepage
+    <!-- <li>Homepage
         <ul>
             <li><a href="{{ url_for('home_splash') }}">Splash</a></li>
             <li><a href="{{ url_for('home_challenges') }}">Challenges Tab Active</a></li>
             <li><a href="{{ url_for('home_products') }}">Products Tab Active</a></li>
         </ul>
-    </li>
-    <li>Product
+    </li> -->
+    <!-- <li>Product
         <ul>
             <li><a href="{{url_for('product_summary')}}">Summary</a></li>
             <li><a href="{{url_for('product_initiatives')}}">Initiatives</a></li>
@@ -15,13 +178,13 @@
             <li><a href="{{url_for('product_ideas_bugs')}}">Ideas & Bugs</a></li>
             <li><a href="{{url_for('product_people')}}">People</a></li>
         </ul>
-    </li>
-    <li>Bounties
+    </li> -->
+    <!-- <li>Bounties
         <ul>
             <li>Claim Flow</li>
             <li>Work Submission</li>
         </ul>
-    </li>
+    </li> -->
     <li>Review Submission
         <ul>
             <li>Flow</li>
@@ -40,3 +203,5 @@
         </ul>
     </li>
 </ul>
+
+{% endblock %}
