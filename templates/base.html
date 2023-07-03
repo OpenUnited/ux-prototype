@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=line-clamp"></script>
   <!-- <script>
     tailwind.config = {
       theme: {
@@ -162,6 +162,22 @@
       </div>
     </footer>
   </section>
+
+  <script>
+    const showMoreButton = document.getElementById('show-more');
+    const contentElement = document.getElementById('myContent');
+    
+    showMoreButton.addEventListener('click', function () {
+      if (contentElement.classList.contains('line-clamp-3')) {
+        contentElement.classList.remove('line-clamp-3');
+        showMoreButton.textContent = 'Show less';
+      } else {
+        contentElement.classList.add('line-clamp-3');
+        showMoreButton.textContent = 'Show more';
+      }
+    });
+  </script>
+
 </body>
 
 </html>
