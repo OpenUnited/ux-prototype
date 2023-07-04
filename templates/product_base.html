@@ -11,7 +11,7 @@
   <body class="h-full">
   ```
 -->
-<div class="lg:flex flex-grow">
+<div class="lg:flex flex-grow w-full">
     <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
     <div class="relative z-50 lg:hidden" style="display: none;" role="dialog" aria-modal="true">
         <!--
@@ -243,7 +243,7 @@
         <div class="flex-1 text-sm font-semibold leading-6 text-gray-900">Dashboard</div>
     </div>
 
-    <section class="py-10 lg:flex-1">
+    <section class="py-10 lg:flex-1 w-full lg:max-w-[calc(100%_-_288px)]">
         <div class="px-4 sm:px-6 lg:px-8">
             {% block product_content %}{% endblock %}
         </div>
