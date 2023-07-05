@@ -48,6 +48,8 @@
         </svg>
       </button>
     </form>
+
+    <!-- START some part of page from https://openunited.com/meta/openunited-product-factory as version for review -->
     <div class="flex flex-col">
       <div class="flow-root">
         <div class="-my-2 overflow-x-auto">
@@ -335,8 +337,24 @@
         </div>
       </div>
     </div>
+    <!-- END some part of page from https://openunited.com/meta/openunited-product-factory as version for review -->
 
   </div>
 </div>
+
+<script>
+  const showMoreButton = document.getElementById('show-more');
+  const contentElement = document.getElementById('myContent');
+  
+  showMoreButton.addEventListener('click', function () {
+    if (contentElement.classList.contains('line-clamp-3')) {
+      contentElement.classList.remove('line-clamp-3');
+      showMoreButton.textContent = 'Show less';
+    } else {
+      contentElement.classList.add('line-clamp-3');
+      showMoreButton.textContent = 'Show more';
+    }
+  });
+</script>
 
 {% endblock %}

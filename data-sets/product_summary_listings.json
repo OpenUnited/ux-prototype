@@ -1,0 +1,219 @@
+{
+  "data": {
+    "summary": [
+      {
+        "name": "Account management",
+        "link": "#",
+        "children": [
+          {
+            "name": "Sign up",
+            "link": "#",
+            "children": []
+          },
+          {
+            "name": "User onboarding",
+            "link": "#",
+            "children": []
+          },
+          {
+            "name": "Profile",
+            "link": "#",
+            "children": [
+              {
+                "name": "Personal details",
+                "link": "#",
+                "children": []
+              },
+              {
+                "name": "Contributions",
+                "link": "#",
+                "children": []
+              },
+              {
+                "name": "Status",
+                "link": "#",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Product management",
+        "link": "#",
+        "children": [
+          {
+            "name": "Create and manage product",
+            "link": "#",
+            "children": []
+          },
+          {
+            "name": "Discover work",
+            "link": "#",
+            "children": []
+          },
+          {
+            "name": "Product summary",
+            "link": "#",
+            "children": []
+          },
+          {
+            "name": "Product Tree",
+            "link": "#",
+            "children": [
+              {
+                "name": "Capabilities",
+                "link": "#",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Initiatives",
+            "link": "#",
+            "children": []
+          },
+          {
+            "name": "Task",
+            "link": "#",
+            "children": [
+              {
+                "name": "Task claim",
+                "link": "#",
+                "children": [
+                  {
+                    "name": "Request a task claim",
+                    "link": "#",
+                    "children": []
+                  },
+                  {
+                    "name": "Withdraw task claim (Quit task)",
+                    "link": "#",
+                    "children": []
+                  },
+                  {
+                    "name": "Review task claim",
+                    "link": "#",
+                    "children": [
+                      {
+                        "name": "Accept task claim request",
+                        "link": "#",
+                        "children": []
+                      },
+                      {
+                        "name": "Reject task claim request",
+                        "link": "#",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Contribution",
+                "link": "#",
+                "children": [
+                  {
+                    "name": "Submit contibution",
+                    "link": "#",
+                    "children": []
+                  },
+                  {
+                    "name": "Review contribution",
+                    "link": "#",
+                    "children": [
+                      {
+                        "name": "Accept contribution",
+                        "link": "#",
+                        "children": []
+                      },
+                      {
+                        "name": "Reject contribution",
+                        "link": "#",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Delivery Message",
+                    "link": "#",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Contribution destination",
+                "link": "#",
+                "children": []
+              },
+              {
+                "name": "Comments",
+                "link": "#",
+                "children": [
+                  {
+                    "name": "Submit comment",
+                    "link": "#",
+                    "children": []
+                  },
+                  {
+                    "name": "Mention user",
+                    "link": "#",
+                    "children": []
+                  },
+                  {
+                    "name": "Update comment",
+                    "link": "#",
+                    "children": []
+                  },
+                  {
+                    "name": "Delete comment",
+                    "link": "#",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Task management",
+                "link": "#",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Product Setting",
+            "link": "#",
+            "children": [
+              {
+                "name": "Product visibility (public / private)",
+                "link": "#",
+                "children": []
+              },
+              {
+                "name": "Policies",
+                "link": "#",
+                "children": [
+                  {
+                    "name": "Policies",
+                    "link": "#",
+                    "children": [
+                      {
+                        "name": "Set / Update Contribution License Agreement",
+                        "link": "#",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "",
+            "link": "#",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}
