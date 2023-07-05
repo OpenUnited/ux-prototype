@@ -208,9 +208,41 @@
             ]
           },
           {
-            "name": "",
+            "name": "Product People",
             "link": "#",
             "children": []
+          },
+          {
+            "name": "Ideas & Bugs",
+            "link": "#",
+            "children": []
+          },
+          {
+            "name": "Guidelines",
+            "link": "#",
+            "children": [
+              {
+                "name": "Contributing guidelines",
+                "link": "#",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Legal",
+            "link": "#",
+            "children": [
+              {
+                "name": "Product license",
+                "link": "#",
+                "children": []
+              },
+              {
+                "name": "Contributor License Agreement (CLA)",
+                "link": "#",
+                "children": []
+              }
+            ]
           }
         ]
       }
