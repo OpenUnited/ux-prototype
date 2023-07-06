@@ -3,6 +3,22 @@
 {% block title %}Product - Summary{% endblock %}
 {% block product_content %}
 
+{% macro generate_summary_structure(data) %}
+  {% for item in data %}
+  <div class="nested-item pl-3">
+    <div class="nested-item__label">
+      <span class="nested-item__label-icon">+</span>
+      <a href="{{item['link']}}">{{item['name']}}</a>
+    </div>
+    {% if item["children"] %}
+        <div class="nested-item__child hidden">
+            {{ generate_summary_structure(item["children"]) }}
+        </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+{% endmacro %}
+
 <div class="flex flex-col">
   <div class="flex flex-col">
     <h2 class="text-xl md:text-2xl font-semibold tracking-tight text-gray-900">About OpenUnited Product Factory</h2>
@@ -55,7 +71,7 @@
           <div class="inline-block min-w-full py-2 align-middle">
             <div class="min-w-full">
               <div class="js-nested-table bg-white">
-                {{ html_structure | safe }}
+                {{ generate_summary_structure(product_summary_listings) }}
               </div>
             </div>
           </div>

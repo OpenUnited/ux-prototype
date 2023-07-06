@@ -32,18 +32,7 @@ def home_products():
     products_listings = raw_products_listings["data"]["products"]
     return render_template("home_products.html", products_listings=products_listings)
 
-#product pages
-def generate_summary_structure(data):
-    html = ""
-    for item in data:
-        html += "<div class='nested-item pl-3'>"
-        html += f'<div class="nested-item__label"><span class="nested-item__label-icon">+</span><a href="{item["link"]}">{item["name"]}</a></div>'
-        if item["children"]:
-            html += f'<div class="nested-item__child hidden">'
-            html += generate_summary_structure(item["children"])
-            html += "</div>"
-        html += "</div>"
-    return html
+# #product pages
 
 @app.route('/product/summary')
 def product_summary():
@@ -51,8 +40,7 @@ def product_summary():
     with open(product_summary_listings_file) as json_file:
         raw_product_summary_listings = json.load(json_file)
     product_summary_listings = raw_product_summary_listings["data"]["summary"]
-    html_structure = generate_summary_structure(product_summary_listings)
-    return render_template("product_summary.html", html_structure=html_structure, current_page="summary_page")
+    return render_template("product_summary.html", product_summary_listings=product_summary_listings, current_page="summary_page")
 
 @app.route('/product/initiatives')
 def product_initiatives():
