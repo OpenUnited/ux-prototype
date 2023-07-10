@@ -10,7 +10,7 @@
   }
 </style>
 
-{% macro generate_summary_structure_new(data, depth = 0) %}
+{% macro generate_summary_structure(data, depth = 0) %}
   {% for item in data %}
     {% if depth == 0 %} 
     <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -34,7 +34,7 @@
       </dt>
       <dd class="mt-1 flex text-sm leading-6 text-gray-700 font-normal sm:col-span-2 sm:mt-0 ">
         <span class="flex flex-col grow nested-item__wrap"> 
-          {{ generate_summary_structure_new(item["children"], depth + 1) }}
+          {{ generate_summary_structure(item["children"], depth + 1) }}
         </span>
       </dd>
     </div>
@@ -73,32 +73,11 @@
         </div>
         {% if item["children"] %}
           <div class="nested-item__child hidden">
-              {{ generate_summary_structure_new(item["children"], depth + 1) }}
+              {{ generate_summary_structure(item["children"], depth + 1) }}
           </div>
         {% endif %}
       </div>
     {% endif %}
-  {% endfor %}
-{% endmacro %}
-
-{% macro generate_summary_structure(data) %}
-  {% for item in data %}
-  <div class="nested-item py-1 pl-4 bg-gray-50 pr-3 text-left text-sm text-gray-900">
-    <div class="nested-item__label py-2 flex items-center">
-      
-      <button type="button" class="{% if not item["children"] %}opacity-0 pointer-events-none{% endif %} nested-item__label-icon h-8 w-8 mr-3 flex items-center justify-center shrink-0 rounded-full bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-0">
-        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <a href="{{item['link']}}">{{item['name']}}</a>
-    </div>
-    {% if item["children"] %}
-      <div class="nested-item__child hidden">
-          {{ generate_summary_structure(item["children"]) }}
-      </div>
-    {% endif %}
-  </div>
   {% endfor %}
 {% endmacro %}
 
@@ -153,318 +132,10 @@
     <div class="flex flex-col flex-grow">
       <div class="mt-6 border-t border-gray-100">
         <dl class="divide-y divide-gray-100">
-          {{ generate_summary_structure_new(product_summary_listings) }}
+          {{ generate_summary_structure(product_summary_listings) }}
         </dl>
       </div>
     </div>
-
-    <!-- 2nd variant -->
-
-    <div class="flex flex-col">
-      <div class="flow-root">
-        <div class="-my-2 overflow-x-auto">
-          <div class="inline-block min-w-full py-2 align-middle">
-            <div class="min-w-full">
-              <div class="js-nested-table bg-white">
-                {{ generate_summary_structure(product_summary_listings) }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3d variant -->
-
-    <!-- START some part of page from https://openunited.com/meta/openunited-product-factory as version for review -->
-    <div class="flex flex-col pt-10">
-      <div class="flow-root">
-        <div class="-my-2 overflow-x-auto">
-          <div class="inline-block min-w-full py-2 align-middle">
-            <div class="flex flex-col mb-3 space-y-1.5">
-              <div class="inline-flex items-center text-xs text-gray-500">
-                <span class="text-blue-400 pr-1.5 whitespace-nowrap">**</span> - Subcategory of Product Tree, which have additional Subcategories, which u can find in table with bold font
-              </div>
-              <div class="inline-flex items-center text-xs text-gray-500">
-                <span class="text-sm text-gray-900 pr-1.5 font-bold whitespace-nowrap">Any title</span> - Category / Subcategory in Product Tree, which show additional subcategories in it
-              </div>
-            </div>
-            <table class="min-w-full">
-              <tbody class="bg-white">
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <a href="#">Account management</a>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Sign up</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">User onboarding</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Profile <span class="text-blue-400">**</span></a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <span class="flex items-center">
-                      <a href="#" class="opacity-60">Account management</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#">Profile</a> 
-                    </span>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Personal details</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Contributions</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Status</a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <a href="#">Product management</a>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Create and manage product</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Discover work</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Product summary</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Product Tree <span class="text-blue-400">**</span></a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Initiatives</a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Task <span class="text-blue-400">**</span></a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Product Setting <span class="text-blue-400">**</span></a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Product People</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Ideas & Bugs</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                    <a href="#">Guidelines <span class="text-blue-400">**</span></a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Legal <span class="text-blue-400">**</span></a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <span class="flex items-center">
-                      <a href="#" class="opacity-60">Product management</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#">Product Tree</a> 
-                    </span>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Capabilities</a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <span class="flex items-center">
-                      <a href="#" class="opacity-60">Product management</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#">Task</a> 
-                    </span>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Task claim <span class="text-blue-400">**</span></a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Contribution <span class="text-blue-400">**</span></a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Contribution destination</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Comments <span class="text-blue-400">**</span></a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Task management</a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <span class="flex items-center">
-                      <a href="#" class="opacity-60">Product management</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#" class="opacity-60">Task</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#">Task claim</a> 
-                    </span>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Request a task claim</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Withdraw task claim </br>(Quit task)</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Review task claim <span class="text-blue-400">**</span></a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <span class="flex flex-nowrap items-center">
-                      <a href="#" class="opacity-60">Product management</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#" class="opacity-60">Task</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#" class="opacity-60">Task claim</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#" class="">Review task claim</a> 
-                    </span>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Accept task claim request</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Reject task claim request</a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <span class="flex flex-nowrap items-center">
-                      <a href="#" class="opacity-60">Product management</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#" class="opacity-60">Task</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#">Contribution</a> 
-                    </span>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Submit contibution</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Review contribution <span class="text-blue-400">**</span></a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Delivery Message</a>
-                  </td>
-                </tr>
-                <tr class="border-t border-gray-200">
-                  <th colspan="5" scope="colgroup"
-                    class="bg-gray-50 py-2 pl-4 pr-3 text-left text-sm text-gray-900 sm:pl-3">
-                    <span class="flex flex-nowrap items-center">
-                      <a href="#" class="opacity-60">Product management</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#" class="opacity-60">Task</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#" class="opacity-60">Contribution</a> 
-                      <span>
-                        <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
-                        </svg>
-                      </span>
-                      <a href="#">Review contribution</a> 
-                    </span>
-                  </th>
-                </tr>
-                <tr class="border-t border-gray-300">
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Accept contribution</a>
-                  </td>
-                  <td class="whitespace-nowrap px-3 py-4 pl-4 text-sm text-gray-500 sm:pl-3">
-                    <a href="#">Reject contribution</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END some part of page from https://openunited.com/meta/openunited-product-factory as version for review -->
 
   </div>
 </div>
