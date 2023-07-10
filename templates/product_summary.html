@@ -4,7 +4,8 @@
 {% block product_content %}
 
 <style>
-  .nested-item:first-child .nested-item__label:first-child {
+
+  .nested-item__wrap > .nested-item:first-child > .nested-item__label {
     border-top: 0px!important;
   }
 </style>
@@ -15,21 +16,24 @@
     <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
       <dt class="text-sm font-medium leading-6 text-gray-900">
         <span class="flex flex-col">
-          <span class="flex items-center font-semibold">
-            <a href="{{item['link']}}">{{item['name']}}</a>
-            <button class="model-video transition ml-2 px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9]" data-video="{{item['linkYoutubeVideo']}}">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 12 12" fill="none">
+          <span class="flex flex-wrap items-center font-semibold">
+            <a href="{{item['link']}}" class="mr-2">{{item['name']}}</a>
+            <button class="modal-video transition px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9] flex items-center whitespace-nowrap" data-video="{{item['linkYoutubeVideo']}}">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 border border-solid border-white" viewBox="0 0 12 12" fill="none">
                 <path d="M0.875 11.125H11.125V0.875H0.875V11.125ZM4.625 3.55156C4.625 3.40469 4.79531 3.32188 4.91094 3.41406L8.02656 5.8625C8.04736 5.87888 8.06418 5.89976 8.07574 5.92358C8.0873 5.94739 8.09331 5.97353 8.09331 6C8.09331 6.02647 8.0873 6.0526 8.07574 6.07642C8.06418 6.10024 8.04736 6.12112 8.02656 6.1375L4.91094 8.5875C4.79531 8.67812 4.625 8.59687 4.625 8.45V3.55156Z" fill="#FA541C"/>
-                </svg>
+              </svg>
+              <span class="text-neutral-950 text-xs ml-1 font-normal">
+                Video <span class="text-gray-500">(08:18)</span>
+              </span>
             </button>
           </span>
-          <span class="flex text-sm leading-6 text-gray-700 font-normal">
+          <span class="flex text-sm leading-6 text-gray-700 font-normal mt-0.5">
             {{item['description']}}
           </span>
         </span>
       </dt>
       <dd class="mt-1 flex text-sm leading-6 text-gray-700 font-normal sm:col-span-2 sm:mt-0 ">
-        <span class="flex flex-col grow"> 
+        <span class="flex flex-col grow nested-item__wrap"> 
           {{ generate_summary_structure_new(item["children"], depth + 1) }}
         </span>
       </dd>
@@ -51,15 +55,18 @@
               </svg>
           </button>
           <span class="flex flex-col">
-            <span class="flex items-center font-semibold">
-              <a href="{{item['link']}}">{{item['name']}}</a>
-              <button class="model-video transition ml-2 px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9]" data-video="{{item['linkYoutubeVideo']}}">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 12 12" fill="none">
+            <span class="flex flex-wrap items-center font-semibold">
+              <a href="{{item['link']}}" class="mr-2">{{item['name']}}</a>
+              <button class="modal-video transition px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9] flex items-center whitespace-nowrap" data-video="{{item['linkYoutubeVideo']}}">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 border border-solid border-white" viewBox="0 0 12 12" fill="none">
                   <path d="M0.875 11.125H11.125V0.875H0.875V11.125ZM4.625 3.55156C4.625 3.40469 4.79531 3.32188 4.91094 3.41406L8.02656 5.8625C8.04736 5.87888 8.06418 5.89976 8.07574 5.92358C8.0873 5.94739 8.09331 5.97353 8.09331 6C8.09331 6.02647 8.0873 6.0526 8.07574 6.07642C8.06418 6.10024 8.04736 6.12112 8.02656 6.1375L4.91094 8.5875C4.79531 8.67812 4.625 8.59687 4.625 8.45V3.55156Z" fill="#FA541C"/>
-                  </svg>
+                </svg>
+                <span class="text-neutral-950 text-xs ml-1 font-normal">
+                  Video <span class="text-gray-500">(08:18)</span>
+                </span>
               </button>
             </span>
-            <span class="flex text-sm leading-6 text-gray-700 font-normal">
+            <span class="flex text-sm leading-6 text-gray-700 font-normal mt-0.5">
               {{item['description']}}
             </span>
           </span>
@@ -112,7 +119,7 @@
             class="transition-all delay-600 text-blue-400 hover:text-blue-400/[0.85] mr-auto text-xs">Show more</a>
         </div>
       </div>
-      <div class="w-full h-[200px]">
+      <div class="w-full h-[232px]">
         <iframe width="100%" height="100%"
           src="https://www.youtube.com/embed/OWXVryhdoVA?autoplay=0&mute=0&controls=0&origin=https%3A%2F%2Fopenunited.com&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1"
           title="OpenUnited Short Explainer Contributor Focus" frameborder="0"
@@ -144,9 +151,6 @@
     <!-- 1st variant -->
 
     <div class="flex flex-col flex-grow">
-      <div class="px-4 sm:px-0">
-        <h3 class="text-base font-semibold leading-7 text-gray-900">List of all Product Tree pages</h3>
-      </div>
       <div class="mt-6 border-t border-gray-100">
         <dl class="divide-y divide-gray-100">
           {{ generate_summary_structure_new(product_summary_listings) }}
