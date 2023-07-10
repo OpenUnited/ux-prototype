@@ -5,6 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- tailwind version 3.3.2 -->
   <script src="https://cdn.tailwindcss.com?plugins=line-clamp"></script>
   <!-- <script>
     tailwind.config = {
@@ -19,11 +21,14 @@
   <title>{% block title %}{% endblock %}</title>
 
   <style>
-     .menu-wrap .menu-overlay, .menu-wrap .menu {
+     .menu-wrap .menu-overlay, 
+     .menu-wrap .menu {
       right: -100%;
+      transition: right 0.35s ease-in-out;
     }
 
-    .menu-wrap.menu-open .menu-overlay, .menu-wrap.menu-open .menu {
+    .menu-wrap.menu-open .menu-overlay, 
+    .menu-wrap.menu-open .menu {
       right: 0px;
     }
   </style>
@@ -67,7 +72,7 @@
 
         <div class="fixed inset-y-0 w-full z-10 menu-overlay"></div>
         <div
-          class="fixed inset-y-0 z-[11] overflow-y-auto bg-white px-6 py-6 sm:max-w-sm w-full sm:ring-1 sm:ring-gray-900/10 menu">
+          class="fixed inset-y-0 z-[11] overflow-y-auto bg-white px-4 py-6 sm:max-w-sm w-full sm:ring-1 sm:ring-gray-900/10 menu">
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">OpenUnited</span>
@@ -204,12 +209,13 @@
     // Function to open the mobile menu
     function openMobileMenu() {
       menuWrap.classList.add('menu-open');
-      body.classList.add('');
+      body.classList.add('overflow-hidden');
     }
 
     // Function to close the mobile menu
     function closeMobileMenu() {
       menuWrap.classList.remove('menu-open');
+      body.classList.remove('overflow-hidden');
     }
 
     // Event listener for the open menu button
