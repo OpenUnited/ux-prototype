@@ -193,15 +193,9 @@
                 "link": "#",
                 "children": [
                   {
-                    "name": "Policies",
+                    "name": "Set / Update Contribution License Agreement",
                     "link": "#",
-                    "children": [
-                      {
-                        "name": "Set / Update Contribution License Agreement",
-                        "link": "#",
-                        "children": []
-                      }
-                    ]
+                    "children": []
                   }
                 ]
               }

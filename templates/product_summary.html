@@ -3,6 +3,50 @@
 {% block title %}Product - Summary{% endblock %}
 {% block product_content %}
 
+{% macro generate_summary_structure_new(data, depth = 0) %}
+  {% for item in data %}
+    {% if depth == 0 %} 
+    <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+      <dt class="text-sm font-medium leading-6 text-gray-900">
+        <span class="flex flex-col">
+          <span class="flex items-center">
+            <a href="{{item['link']}}">{{item['name']}}</a>
+            <button class="model-video">
+              Click here to watch the video
+            </button>
+          </span>
+          <span class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores velit recusandae voluptas illo voluptatem dignissimos maxime dolore aut repellendus sint quam, natus atque repellat veniam similique laboriosam accusantium doloribus debitis?</span>
+        </span>
+      </dt>
+      <dd class="mt-1 flex text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 ">
+        <span class="flex flex-col"> 
+          {{ generate_summary_structure_new(item["children"], depth + 1) }}
+        </span>
+      </dd>
+    </div>
+    {% endif %}
+
+    {% if not depth == 0 %}
+      <div class="nested-item py-1 pl-4 bg-gray-50 pr-3 text-left text-sm text-gray-900">
+        <div class="nested-item__label py-2 flex items-center">
+          
+          <button type="button" class="{% if not item["children"] %}opacity-0 pointer-events-none{% endif %} nested-item__label-icon h-8 w-8 mr-3 flex items-center justify-center shrink-0 rounded-full bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-0">
+            <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <a href="{{item['link']}}">{{item['name']}}</a>
+        </div>
+        {% if item["children"] %}
+          <div class="nested-item__child hidden">
+              {{ generate_summary_structure_new(item["children"], depth + 1) }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
 {% macro generate_summary_structure(data) %}
   {% for item in data %}
   <div class="nested-item py-1 pl-4 bg-gray-50 pr-3 text-left text-sm text-gray-900">
@@ -70,6 +114,21 @@
       </button>
     </form>
 
+    <!-- 1st variant -->
+
+    <div class="flex flex-col flex-grow">
+      <div class="px-4 sm:px-0">
+        <h3 class="text-base font-semibold leading-7 text-gray-900">List of all Product Tree pages</h3>
+      </div>
+      <div class="mt-6 border-t border-gray-100">
+        <dl class="divide-y divide-gray-100">
+          {{ generate_summary_structure_new(product_summary_listings) }}
+        </dl>
+      </div>
+    </div>
+
+    <!-- 2nd variant -->
+
     <div class="flex flex-col">
       <div class="flow-root">
         <div class="-my-2 overflow-x-auto">
@@ -84,8 +143,10 @@
       </div>
     </div>
 
+    <!-- 3d variant -->
+
     <!-- START some part of page from https://openunited.com/meta/openunited-product-factory as version for review -->
-    <!-- <div class="flex flex-col pt-10">
+    <div class="flex flex-col pt-10">
       <div class="flow-root">
         <div class="-my-2 overflow-x-auto">
           <div class="inline-block min-w-full py-2 align-middle">
@@ -371,14 +432,60 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- END some part of page from https://openunited.com/meta/openunited-product-factory as version for review -->
 
   </div>
 </div>
 
+<div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <!--
+    Background backdrop, show/hide based on modal state.
+
+    Entering: "ease-out duration-300"
+      From: "opacity-0"
+      To: "opacity-100"
+    Leaving: "ease-in duration-200"
+      From: "opacity-100"
+      To: "opacity-0"
+  -->
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-10 overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+      <!--
+        Modal panel, show/hide based on modal state.
+
+        Entering: "ease-out duration-300"
+          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          To: "opacity-100 translate-y-0 sm:scale-100"
+        Leaving: "ease-in duration-200"
+          From: "opacity-100 translate-y-0 sm:scale-100"
+          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+      -->
+      <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+        <div>
+          <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+            <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+          </div>
+          <div class="mt-3 text-center sm:mt-5">
+            <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Payment successful</h3>
+            <div class="mt-2">
+              <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 sm:mt-6">
+          <button type="button" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back to dashboard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
-  const nestedTable = document.querySelector('.js-nested-table');
   const nestedTableNames = document.querySelectorAll('.nested-item__label-icon');
 
   nestedTableNames.forEach(item => {
