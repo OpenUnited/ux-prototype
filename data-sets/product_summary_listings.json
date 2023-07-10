@@ -3,35 +3,49 @@
     "summary": [
       {
         "name": "Account management",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "link": "#",
+        "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
         "children": [
           {
             "name": "Sign up",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": []
           },
           {
             "name": "User onboarding",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": []
           },
           {
             "name": "Profile",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": [
               {
                 "name": "Personal details",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               },
               {
                 "name": "Contributions",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               },
               {
                 "name": "Status",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               }
             ]
@@ -40,69 +54,97 @@
       },
       {
         "name": "Product management",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "link": "#",
+        "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
         "children": [
           {
             "name": "Create and manage product",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": []
           },
           {
             "name": "Discover work",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": []
           },
           {
             "name": "Product summary",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": []
           },
           {
             "name": "Product Tree",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": [
               {
                 "name": "Capabilities",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               }
             ]
           },
           {
             "name": "Initiatives",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": []
           },
           {
             "name": "Task",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": [
               {
                 "name": "Task claim",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": [
                   {
                     "name": "Request a task claim",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   },
                   {
                     "name": "Withdraw task claim (Quit task)",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   },
                   {
                     "name": "Review task claim",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": [
                       {
                         "name": "Accept task claim request",
+                        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         "link": "#",
+                        "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                         "children": []
                       },
                       {
                         "name": "Reject task claim request",
+                        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         "link": "#",
+                        "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                         "children": []
                       }
                     ]
@@ -111,90 +153,124 @@
               },
               {
                 "name": "Contribution",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": [
                   {
                     "name": "Submit contibution",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   },
                   {
                     "name": "Review contribution",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": [
                       {
                         "name": "Accept contribution",
+                        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         "link": "#",
+                        "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                         "children": []
                       },
                       {
                         "name": "Reject contribution",
+                        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         "link": "#",
+                        "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                         "children": []
                       }
                     ]
                   },
                   {
                     "name": "Delivery Message",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   }
                 ]
               },
               {
                 "name": "Contribution destination",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               },
               {
                 "name": "Comments",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": [
                   {
                     "name": "Submit comment",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   },
                   {
                     "name": "Mention user",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   },
                   {
                     "name": "Update comment",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   },
                   {
                     "name": "Delete comment",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   }
                 ]
               },
               {
                 "name": "Task management",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               }
             ]
           },
           {
             "name": "Product Setting",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": [
               {
                 "name": "Product visibility (public / private)",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               },
               {
                 "name": "Policies",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": [
                   {
                     "name": "Set / Update Contribution License Agreement",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
+                    "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                     "children": []
                   }
                 ]
@@ -203,37 +279,51 @@
           },
           {
             "name": "Product People",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": []
           },
           {
             "name": "Ideas & Bugs",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": []
           },
           {
             "name": "Guidelines",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": [
               {
                 "name": "Contributing guidelines",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               }
             ]
           },
           {
             "name": "Legal",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
+            "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
             "children": [
               {
                 "name": "Product license",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               },
               {
                 "name": "Contributor License Agreement (CLA)",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
+                "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
                 "children": []
               }
             ]

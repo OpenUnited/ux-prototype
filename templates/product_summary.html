@@ -11,15 +11,19 @@
         <span class="flex flex-col">
           <span class="flex items-center">
             <a href="{{item['link']}}">{{item['name']}}</a>
-            <button class="model-video">
-              Click here to watch the video
+            <button class="model-video transition ml-2 px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9]" data-video="{{item['linkYoutubeVideo']}}">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 12 12" fill="none">
+                <path d="M0.875 11.125H11.125V0.875H0.875V11.125ZM4.625 3.55156C4.625 3.40469 4.79531 3.32188 4.91094 3.41406L8.02656 5.8625C8.04736 5.87888 8.06418 5.89976 8.07574 5.92358C8.0873 5.94739 8.09331 5.97353 8.09331 6C8.09331 6.02647 8.0873 6.0526 8.07574 6.07642C8.06418 6.10024 8.04736 6.12112 8.02656 6.1375L4.91094 8.5875C4.79531 8.67812 4.625 8.59687 4.625 8.45V3.55156Z" fill="#FA541C"/>
+                </svg>
             </button>
           </span>
-          <span class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores velit recusandae voluptas illo voluptatem dignissimos maxime dolore aut repellendus sint quam, natus atque repellat veniam similique laboriosam accusantium doloribus debitis?</span>
+          <span class="flex text-sm leading-6 text-gray-700">
+            {{item['description']}}
+          </span>
         </span>
       </dt>
       <dd class="mt-1 flex text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0 ">
-        <span class="flex flex-col"> 
+        <span class="flex flex-col grow"> 
           {{ generate_summary_structure_new(item["children"], depth + 1) }}
         </span>
       </dd>
@@ -27,13 +31,18 @@
     {% endif %}
 
     {% if not depth == 0 %}
-      <div class="nested-item py-1 pl-4 bg-gray-50 pr-3 text-left text-sm text-gray-900">
-        <div class="nested-item__label py-2 flex items-center">
+      <div class="nested-item flex flex-col {% if depth > 1 %}pl-6{% endif %}">
+        <div class="nested-item__label flex items-center">
           
-          <button type="button" class="{% if not item["children"] %}opacity-0 pointer-events-none{% endif %} nested-item__label-icon h-8 w-8 mr-3 flex items-center justify-center shrink-0 rounded-full bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-0">
-            <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" fill="#111827" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+          <button type="button" class="{% if not item["children"] %}opacity-0 pointer-events-none{% endif %} nested-item__label-icon h-4 w-4 mr-1 flex items-center justify-center shrink-0 rounded-full focus:outline-none focus:ring-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full folder-close" viewBox="0 0 16 16" fill="none">
+              <path d="M13.75 4.66252H8.14062L6.30781 2.90939C6.28449 2.88756 6.25382 2.87529 6.22188 2.87502H2.25C1.97344 2.87502 1.75 3.09846 1.75 3.37502V12.625C1.75 12.9016 1.97344 13.125 2.25 13.125H13.75C14.0266 13.125 14.25 12.9016 14.25 12.625V5.16252C14.25 4.88596 14.0266 4.66252 13.75 4.66252ZM13.125 12H2.875V4.00002H5.82031L7.68906 5.78752H13.125V12Z" fill="#1890FF"/>
+              <path d="M5.82031 4.00002H2.875V12H13.125V5.78752H7.68906L5.82031 4.00002Z" fill="#E6F7FF"/>
             </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full folder-open" viewBox="0 0 16 16" fill="none">
+              <path d="M2.48438 12H12.0516L13.6672 8.00002H4.09844L2.48438 12Z" fill="#E6F7FF"/>
+              <path d="M14.5 6.93752H12.8125V5.16252C12.8125 4.88595 12.5891 4.66252 12.3125 4.66252H7.39062L5.55781 2.90939C5.53449 2.88756 5.50382 2.87529 5.47188 2.87502H1.5C1.22344 2.87502 1 3.09845 1 3.37502V12.625C1 12.9016 1.22344 13.125 1.5 13.125H12.4062C12.6094 13.125 12.7937 13.0016 12.8703 12.8125L14.9641 7.62502C14.9875 7.56564 15 7.50158 15 7.43752C15 7.16095 14.7766 6.93752 14.5 6.93752ZM2.125 4.00002H5.07031L6.93906 5.78752H11.6875V6.93752H3.71875C3.51562 6.93752 3.33125 7.06095 3.25469 7.25002L2.125 10.05V4.00002ZM12.0516 12H2.48438L4.09844 8.00002H13.6672L12.0516 12Z" fill="#1890FF"/>
+              </svg>
           </button>
           <a href="{{item['link']}}">{{item['name']}}</a>
         </div>
