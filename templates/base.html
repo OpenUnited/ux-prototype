@@ -17,6 +17,16 @@
   </script> -->
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <title>{% block title %}{% endblock %}</title>
+
+  <style>
+     .menu-wrap .menu-overlay, .menu-wrap .menu {
+      right: -100%;
+    }
+
+    .menu-wrap.menu-open .menu-overlay, .menu-wrap.menu-open .menu {
+      right: 0px;
+    }
+  </style>
 </head>
 
 <body>
@@ -36,7 +46,8 @@
           </a>
         </div>
         <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 btn-menu">
+          <button type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 btn-open-menu">
             <span class="sr-only">Open main menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
               aria-hidden="true">
@@ -52,18 +63,19 @@
             up</a>
         </div>
       </nav>
-      <div class="lg:hidden menu" role="dialog" aria-modal="true">
+      <div class="lg:hidden menu-wrap" role="dialog" aria-modal="true">
 
-        <div class="fixed inset-0 z-10 menu-overlay"></div>
+        <div class="fixed inset-y-0 w-full z-10 menu-overlay"></div>
         <div
-          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          class="fixed inset-y-0 z-[11] overflow-y-auto bg-white px-6 py-6 sm:max-w-sm w-full sm:ring-1 sm:ring-gray-900/10 menu">
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">OpenUnited</span>
               <img class="h-8 w-auto"
                 src="https://openunited.com/_next/static/images/logo-62a73cd5a4a250372b5da0e2c84d372a.svg" alt="">
             </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 focus-visible:outline-none btn-close">
+            <button type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700 focus-visible:outline-none btn-close-menu">
               <span class="sr-only">Close menu</span>
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 aria-hidden="true">
@@ -183,8 +195,29 @@
   </section>
 
   <script>
-    const btnMenu = document.querySelector('.btn-menu');
-    const menu = document.querySelector('.menu');
+    const menuWrap = document.querySelector('.menu-wrap');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const openMenuButton = document.querySelector('.btn-open-menu');
+    const closeMenuButton = document.querySelector('.btn-close-menu');
+    const body = document.body;
+
+    // Function to open the mobile menu
+    function openMobileMenu() {
+      menuWrap.classList.add('menu-open');
+      body.classList.add('');
+    }
+
+    // Function to close the mobile menu
+    function closeMobileMenu() {
+      menuWrap.classList.remove('menu-open');
+    }
+
+    // Event listener for the open menu button
+    openMenuButton.addEventListener('click', openMobileMenu);
+    // Event listener for the close menu button
+    closeMenuButton.addEventListener('click', closeMobileMenu);
+    // Event listener for the menu overlay to close the menu when clicked outside
+    menuOverlay.addEventListener('click', closeMobileMenu);
 
   </script>
 </body>
