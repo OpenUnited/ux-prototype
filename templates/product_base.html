@@ -66,79 +66,77 @@
                             alt="OpenUnited">
                     </div>
                     <nav class="flex flex-1 flex-col">
-                        <ul role="list" class="flex flex-1 flex-col gap-y-7">
-                            <li>
-                                <ul role="list" class="-mx-2 space-y-1">
-                                    <li>
-                                        {% if current_page=="summary_page" %}
-                                        <a href=""
-                                            class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                            {% else %}
-                                            <a href="{{url_for('product_summary')}}"
-                                                class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                                {% endif %}
-                                                Summary
-                                            </a>
-                                    </li>
-                                    <li>
-                                        {% if current_page=="initiatives_page" %}
-                                        <a href=""
-                                            class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                            {% else %}
-                                            <a href="{{url_for('product_initiatives')}}"
-                                                class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                                {% endif %}
-                                                Initiatives
-                                            </a>
-                                    </li>
-                                    <li>
-                                        {% if current_page=="challenges_page" %}
-                                        <a href=""
-                                            class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                            {% else %}
-                                            <a href="{{url_for('product_challenges')}}"
-                                                class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                                {% endif %}
-                                                Challenges
-                                            </a>
-                                    </li>
-                                    <li>
-                                        {% if current_page=="tree_page" %}
-                                        <a href=""
-                                            class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                            {% else %}
-                                            <a href="{{url_for('product_product_tree')}}"
-                                                class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                                {% endif %}
-                                                Product Tree
-                                            </a>
-                                    </li>
-                                    <li>
-                                        {% if current_page=="ideas_page" %}
-                                        <a href=""
-                                            class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                            {% else %}
-                                            <a href="{{url_for('product_ideas_bugs')}}" class=" text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex
-                                                gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                                {% endif %}
-                                                Ideas & Bugs
-                                            </a>
-                                    </li>
+                        <div class="flex flex-1 flex-col gap-y-7">
+                            <ul role="list" class="-mx-2 space-y-1">
+                                <li>
+                                    {% if current_page=="summary_page" %}
+                                    <a href=""
+                                        class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                        {% else %}
+                                        <a href="{{url_for('product_summary')}}"
+                                            class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                            {% endif %}
+                                            Summary
+                                        </a>
+                                </li>
+                                <li>
+                                    {% if current_page=="initiatives_page" %}
+                                    <a href=""
+                                        class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                        {% else %}
+                                        <a href="{{url_for('product_initiatives')}}"
+                                            class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                            {% endif %}
+                                            Initiatives
+                                        </a>
+                                </li>
+                                <li>
+                                    {% if current_page=="challenges_page" %}
+                                    <a href=""
+                                        class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                        {% else %}
+                                        <a href="{{url_for('product_challenges')}}"
+                                            class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                            {% endif %}
+                                            Challenges
+                                        </a>
+                                </li>
+                                <li>
+                                    {% if current_page=="tree_page" %}
+                                    <a href=""
+                                        class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                        {% else %}
+                                        <a href="{{url_for('product_product_tree')}}"
+                                            class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                            {% endif %}
+                                            Product Tree
+                                        </a>
+                                </li>
+                                <li>
+                                    {% if current_page=="ideas_page" %}
+                                    <a href=""
+                                        class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                        {% else %}
+                                        <a href="{{url_for('product_ideas_bugs')}}" class=" text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex
+                                            gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                            {% endif %}
+                                            Ideas & Bugs
+                                        </a>
+                                </li>
 
-                                    <li>
-                                        {% if current_page=="people_page" %}
-                                        <a href=""
-                                            class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                            {% else %}
-                                            <a href="{{url_for('product_people')}}"
-                                                class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                                {% endif %}
-                                                People
-                                            </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                                <li>
+                                    {% if current_page=="people_page" %}
+                                    <a href=""
+                                        class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                        {% else %}
+                                        <a href="{{url_for('product_people')}}"
+                                            class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                            {% endif %}
+                                            People
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -146,92 +144,90 @@
     </div>
 
     <!-- Static sidebar for desktop -->
-    <div class="hidden lg:flex lg:w-72 lg:flex-none lg:flex-col">
+    <div class="flex lg:w-72 lg:flex-none lg:flex-col">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
-        <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
-            <div class="flex shrink-0 items-center">
+        <div class="flex grow flex-col gap-y-5 overflow-y-auto lg:border-r border-gray-200 bg-white lg:px-6">
+            <div class="hidden lg:flex shrink-0 items-center">
                 <img class="h-20 w-auto rounded-full overflow-hidden"
                     src="https://openunited.com/images/products/2021-04-17%2014:19:10%20e74c5313.png" alt="OpenUnited">
             </div>
             <nav class="flex flex-1 flex-col">
-                <ul role="list" class="flex flex-1 flex-col gap-y-7">
-                    <li>
-                        <ul role="list" class="-mx-2 space-y-1">
-                            <li>
-                                {% if current_page=="summary_page" %}
-                                <a href=""
-                                    class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                    {% else %}
-                                    <a href="{{url_for('product_summary')}}"
-                                        class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                        {% endif %}
-                                        Summary
-                                    </a>
-                            </li>
-                            <li>
-                                {% if current_page=="initiatives_page" %}
-                                <a href=""
-                                    class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                    {% else %}
-                                    <a href="{{url_for('product_initiatives')}}"
-                                        class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                        {% endif %}
-                                        Initiatives
-                                    </a>
-                            </li>
-                            <li>
-                                {% if current_page=="challenges_page" %}
-                                <a href=""
-                                    class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                    {% else %}
-                                    <a href="{{url_for('product_challenges')}}"
-                                        class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                        {% endif %}
-                                        Challenges
-                                    </a>
-                            </li>
-                            <li>
-                                {% if current_page=="tree_page" %}
-                                <a href=""
-                                    class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                    {% else %}
-                                    <a href="{{url_for('product_product_tree')}}"
-                                        class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                        {% endif %}
-                                        Product Tree
-                                    </a>
-                            </li>
-                            <li>
-                                {% if current_page=="ideas_page" %}
-                                <a href=""
-                                    class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                    {% else %}
-                                    <a href="{{url_for('product_ideas_bugs')}}"
-                                        class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                        {% endif %}
-                                        Ideas & Bugs
-                                    </a>
-                            </li>
+                <div class="flex flex-1 flex-col gap-y-7">
+                    <ul role="list" class="lg:-mx-2 lg:space-y-1 flex flex-row lg:flex-col pb-2 lg:pb-0">
+                        <li>
+                            {% if current_page=="summary_page" %}
+                            <a href=""
+                                class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                {% else %}
+                                <a href="{{url_for('product_summary')}}"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    {% endif %}
+                                    Summary
+                                </a>
+                        </li>
+                        <li>
+                            {% if current_page=="initiatives_page" %}
+                            <a href=""
+                                class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                {% else %}
+                                <a href="{{url_for('product_initiatives')}}"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    {% endif %}
+                                    Initiatives
+                                </a>
+                        </li>
+                        <li>
+                            {% if current_page=="challenges_page" %}
+                            <a href=""
+                                class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                {% else %}
+                                <a href="{{url_for('product_challenges')}}"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    {% endif %}
+                                    Challenges
+                                </a>
+                        </li>
+                        <li>
+                            {% if current_page=="tree_page" %}
+                            <a href=""
+                                class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                {% else %}
+                                <a href="{{url_for('product_product_tree')}}"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    {% endif %}
+                                    Product Tree
+                                </a>
+                        </li>
+                        <li>
+                            {% if current_page=="ideas_page" %}
+                            <a href=""
+                                class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                {% else %}
+                                <a href="{{url_for('product_ideas_bugs')}}"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    {% endif %}
+                                    Ideas & Bugs
+                                </a>
+                        </li>
 
-                            <li>
-                                {% if current_page=="people_page" %}
-                                <a href=""
-                                    class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                    {% else %}
-                                    <a href="{{url_for('product_people')}}"
-                                        class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
-                                        {% endif %}
-                                        People
-                                    </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                        <li>
+                            {% if current_page=="people_page" %}
+                            <a href=""
+                                class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                {% else %}
+                                <a href="{{url_for('product_people')}}"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    {% endif %}
+                                    People
+                                </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
 
-    <div
+    <!-- <div
         class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden bg-green-100">
         <button type="button" class="-m-2.5 p-2.5 text-gray-700 lg:hidden">
             <span class="sr-only">Open sidebar</span>
@@ -241,9 +237,9 @@
             </svg>
         </button>
         <div class="flex-1 text-sm font-semibold leading-6 text-gray-900">Dashboard</div>
-    </div>
+    </div> -->
 
-    <section class="py-10 lg:flex-1 w-full lg:max-w-[calc(100%_-_288px)]">
+    <section class="pb-10 pt-3 lg:pt-10 lg:flex-1 w-full lg:max-w-[calc(100%_-_288px)]">
         <div class="px-0 sm:px-6 lg:px-8">
             {% block product_content %}{% endblock %}
         </div>

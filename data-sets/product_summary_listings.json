@@ -6,12 +6,16 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "link": "#",
         "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+        "nameToutubeVideo": "Video",
+        "durationYoutubeVideo": "(08:18)",
         "children": [
           {
             "name": "Sign up",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": []
           },
           {
@@ -19,6 +23,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": []
           },
           {
@@ -26,12 +32,16 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": [
               {
                 "name": "Personal details",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               },
               {
@@ -39,6 +49,8 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               },
               {
@@ -46,6 +58,8 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               }
             ]
@@ -57,12 +71,16 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "link": "#",
         "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+        "nameToutubeVideo": "Video",
+        "durationYoutubeVideo": "(08:18)",
         "children": [
           {
             "name": "Create and manage product",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": []
           },
           {
@@ -70,6 +88,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": []
           },
           {
@@ -77,6 +97,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": []
           },
           {
@@ -84,12 +106,16 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": [
               {
                 "name": "Capabilities",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               }
             ]
@@ -99,6 +125,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": []
           },
           {
@@ -106,18 +134,24 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": [
               {
                 "name": "Task claim",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": [
                   {
                     "name": "Request a task claim",
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   },
                   {
@@ -125,6 +159,8 @@
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   },
                   {
@@ -132,12 +168,16 @@
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": [
                       {
                         "name": "Accept task claim request",
                         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         "link": "#",
                         "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                        "nameToutubeVideo": "Video",
+                        "durationYoutubeVideo": "(08:18)",
                         "children": []
                       },
                       {
@@ -145,6 +185,8 @@
                         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         "link": "#",
                         "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                        "nameToutubeVideo": "Video",
+                        "durationYoutubeVideo": "(08:18)",
                         "children": []
                       }
                     ]
@@ -156,12 +198,16 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": [
                   {
                     "name": "Submit contibution",
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   },
                   {
@@ -169,12 +215,16 @@
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": [
                       {
                         "name": "Accept contribution",
                         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         "link": "#",
                         "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                        "nameToutubeVideo": "Video",
+                        "durationYoutubeVideo": "(08:18)",
                         "children": []
                       },
                       {
@@ -182,6 +232,8 @@
                         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                         "link": "#",
                         "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                        "nameToutubeVideo": "Video",
+                        "durationYoutubeVideo": "(08:18)",
                         "children": []
                       }
                     ]
@@ -191,6 +243,8 @@
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   }
                 ]
@@ -200,6 +254,8 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               },
               {
@@ -207,12 +263,16 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": [
                   {
                     "name": "Submit comment",
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   },
                   {
@@ -220,6 +280,8 @@
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   },
                   {
@@ -227,6 +289,8 @@
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   },
                   {
@@ -234,6 +298,8 @@
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   }
                 ]
@@ -243,6 +309,8 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               }
             ]
@@ -252,12 +320,16 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": [
               {
                 "name": "Product visibility (public / private)",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               },
               {
@@ -265,12 +337,16 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": [
                   {
                     "name": "Set / Update Contribution License Agreement",
                     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                     "link": "#",
                     "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                    "nameToutubeVideo": "Video",
+                    "durationYoutubeVideo": "(08:18)",
                     "children": []
                   }
                 ]
@@ -282,6 +358,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": []
           },
           {
@@ -289,6 +367,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": []
           },
           {
@@ -296,12 +376,16 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": [
               {
                 "name": "Contributing guidelines",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               }
             ]
@@ -311,12 +395,16 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "link": "#",
             "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+            "nameToutubeVideo": "Video",
+            "durationYoutubeVideo": "(08:18)",
             "children": [
               {
                 "name": "Product license",
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               },
               {
@@ -324,6 +412,8 @@
                 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 "link": "#",
                 "linkYoutubeVideo": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/OWXVryhdoVA' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>",
+                "nameToutubeVideo": "Video",
+                "durationYoutubeVideo": "(08:18)",
                 "children": []
               }
             ]
