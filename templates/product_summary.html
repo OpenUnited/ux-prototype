@@ -7,6 +7,7 @@
 
   .nested-item__wrap > .nested-item:first-child > .nested-item__label {
     border-top: 0px!important;
+    padding-top: 0px!important;
   }
 </style>
 
@@ -18,7 +19,7 @@
         <span class="flex flex-col">
           <span class="flex flex-wrap items-center font-semibold">
             <a href="{{item['link']}}" class="mr-2">{{item['name']}}</a>
-            <button class="modal-video transition px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9] flex items-center whitespace-nowrap" data-video="{{item['linkYoutubeVideo']}}">
+            <button class="btn-video__open transition px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9] flex items-center whitespace-nowrap" data-video="{{item['linkYoutubeVideo']}}">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 border border-solid border-white" viewBox="0 0 12 12" fill="none">
                 <path d="M0.875 11.125H11.125V0.875H0.875V11.125ZM4.625 3.55156C4.625 3.40469 4.79531 3.32188 4.91094 3.41406L8.02656 5.8625C8.04736 5.87888 8.06418 5.89976 8.07574 5.92358C8.0873 5.94739 8.09331 5.97353 8.09331 6C8.09331 6.02647 8.0873 6.0526 8.07574 6.07642C8.06418 6.10024 8.04736 6.12112 8.02656 6.1375L4.91094 8.5875C4.79531 8.67812 4.625 8.59687 4.625 8.45V3.55156Z" fill="#FA541C"/>
               </svg>
@@ -57,7 +58,7 @@
           <span class="flex flex-col">
             <span class="flex flex-wrap items-center font-semibold">
               <a href="{{item['link']}}" class="mr-2">{{item['name']}}</a>
-              <button class="modal-video transition px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9] flex items-center whitespace-nowrap" data-video="{{item['linkYoutubeVideo']}}">
+              <button class="btn-video__open transition px-1.5 py-0.5 bg-[#F5F5F5] rounded border border-solid border-[#D9D9D9] flex items-center whitespace-nowrap" data-video="{{item['linkYoutubeVideo']}}">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 border border-solid border-white" viewBox="0 0 12 12" fill="none">
                   <path d="M0.875 11.125H11.125V0.875H0.875V11.125ZM4.625 3.55156C4.625 3.40469 4.79531 3.32188 4.91094 3.41406L8.02656 5.8625C8.04736 5.87888 8.06418 5.89976 8.07574 5.92358C8.0873 5.94739 8.09331 5.97353 8.09331 6C8.09331 6.02647 8.0873 6.0526 8.07574 6.07642C8.06418 6.10024 8.04736 6.12112 8.02656 6.1375L4.91094 8.5875C4.79531 8.67812 4.625 8.59687 4.625 8.45V3.55156Z" fill="#FA541C"/>
                 </svg>
@@ -140,7 +141,7 @@
   </div>
 </div>
 
-<div class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+<div class="relative z-10 modal-wrap hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
   <!--
     Background backdrop, show/hide based on modal state.
 
@@ -151,7 +152,7 @@
       From: "opacity-100"
       To: "opacity-0"
   -->
-  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
 
   <div class="fixed inset-0 z-10 overflow-y-auto">
     <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
@@ -165,22 +166,14 @@
           From: "opacity-100 translate-y-0 sm:scale-100"
           To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       -->
-      <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
-        <div>
-          <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-            <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-            </svg>
-          </div>
-          <div class="mt-3 text-center sm:mt-5">
-            <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Payment successful</h3>
-            <div class="mt-2">
-              <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
-            </div>
-          </div>
+      <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[620px] sm:p-6">
+        <div class="btn-video__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+          <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+            <path d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z"></path>
+          </svg>
         </div>
-        <div class="mt-5 sm:mt-6">
-          <button type="button" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back to dashboard</button>
+        <div class="max-w-full h-[320px]">
+          <iframe class="w-full h-full" width="" height="" src="https://www.youtube.com/embed/h9MujYgW1mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
         </div>
       </div>
     </div>
@@ -188,6 +181,24 @@
 </div>
 
 <script>
+  const videoBtnsOpen = document.querySelectorAll('.btn-video__open');
+  const modalWrap = document.querySelector('.modal-wrap');
+  const modalWrapCloseBtn = document.querySelector('.btn-video__close');
+
+  modalWrap.querySelector('iframe').src = '';
+
+  videoBtnsOpen.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+      modalWrap.classList.remove('hidden');
+      modalWrap.querySelector('iframe').src = btn.dataset.video;
+    });
+  })
+
+  modalWrapCloseBtn.addEventListener('click', () => {
+    modalWrap.classList.add('hidden');
+  });
+
   const nestedTableNames = document.querySelectorAll('.nested-item__label-icon');
 
   nestedTableNames.forEach(item => {
