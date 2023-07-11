@@ -13,7 +13,7 @@
 {% macro generate_summary_structure(data, depth = 0) %}
   {% for item in data %}
     {% if depth == 0 %} 
-    <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+    <div class="sm:px-4 md:px-0 py-5 lg:py-6 sm:grid sm:grid-cols-3 sm:gap-4">
       <dt class="text-sm font-medium leading-6 text-gray-900">
         <span class="flex flex-col">
           <span class="flex flex-wrap items-center font-semibold">
@@ -41,7 +41,7 @@
     {% endif %}
 
     {% if not depth == 0 %}
-      <div class="nested-item flex flex-col {% if depth > 1 %}pl-8{% endif %}">
+      <div class="nested-item flex flex-col {% if depth > 1 %}pl-4 lg:pl-8{% endif %}">
         <div class="nested-item__label flex items-start py-1.5 border-t border-solid border-gray-100">
           
           <button type="button" class="{% if not item["children"] %}opacity-0 pointer-events-none{% endif %} nested-item__label-icon h-[22px] w-4 mr-1 flex items-center justify-center shrink-0 rounded-full focus:outline-none focus:ring-0">
@@ -112,7 +112,7 @@
   </div>
   <div class="">
     <h3 class="text-xl text-gray-900">Product Tree</h3>
-    <form class="mt-4 mb-7 flex items-center">
+    <form class="mt-4 mb-4 lg:mb-7 flex items-center">
       <input type="text" name="search-field" id="search-field"
         class="block w-full sm:max-w-[200px] rounded-l-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
         placeholder="Search text">
@@ -130,7 +130,7 @@
     <!-- 1st variant -->
 
     <div class="flex flex-col flex-grow">
-      <div class="mt-6 border-t border-gray-100">
+      <div class="mt-4 lg:mt-6 border-t border-gray-100">
         <dl class="divide-y divide-gray-100">
           {{ generate_summary_structure(product_summary_listings) }}
         </dl>
