@@ -36,7 +36,7 @@
 
 <body>
   <div class="flex flex-col min-h-screen max-w-full overflow-hidden">
-    <header class="bg-white">
+    <header class="z-[3]">
       <nav class="mx-auto flex max-w-7xl items-center justify-between lg:justify-start px-4 pt-6 pb-4 lg:px-8 border-b border-slate-900/5 relative"
         aria-label="Global">
         <div class="hidden lg:flex lg:gap-x-12 relative z-[2]">
@@ -117,7 +117,7 @@
       </div>
     </header>
 
-    <main class="mx-auto flex w-full max-w-7xl px-4 py-6 lg:px-8 flex-1 relative z-[1]">
+    <main class="mx-auto flex flex-col w-full max-w-7xl px-4 py-6 lg:px-8 flex-1 relative z-[1]">
       {% block content %}{% endblock %}
     </main>
     <div class="pointer-events-none fixed inset-x-0 bottom-0 px-6 pb-6 hidden">
@@ -208,32 +208,182 @@
         </p>
       </div>
     </footer>
+
+    <div class="relative z-10 modal-wrap hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+    
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[620px] sm:p-6">
+            <div class="btn-video__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+              <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                <path d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z"></path>
+              </svg>
+            </div>
+            <div class="max-w-full h-[320px]">
+              <iframe class="w-full h-full" width="" height="" src="https://www.youtube.com/embed/h9MujYgW1mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="relative z-10 modal-wrap-filter hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+    
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+          <div class="flex min-h-full items-end sm:items-center justify-center p-4 text-center sm:p-0">
+              <div
+                  class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 w-full max-w-[620px] sm:pt-6 sm:px-6 pb-[44px]">
+                  <div class="flex items-center pb-3 mb-3 border-b border-solid border-slate-100">
+                      <div class="font-semibold text-lg text-gray-900">Filter</div>
+                      <div
+                          class="btn-modal__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+                          <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                              <path
+                                  d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                              </path>
+                          </svg>
+                      </div>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
+                      <div class="flex flex-col">
+                          <label for="control-ref_sortedBy" class="font-semibold text-sm text-gray-900">
+                              Sorted By:
+                          </label>
+                          <div class="relative mt-2">
+                              <select id="control-ref_sortedBy" name="control-ref_sortedBy"
+                                  class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                                  <option>United States</option>
+                                  <option selected>Canada</option>
+                                  <option>Mexico</option>
+                              </select>
+                              <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                                  <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                      aria-hidden="true">
+                                      <path fill-rule="evenodd"
+                                          d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+                                          clip-rule="evenodd" />
+                                  </svg>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="flex flex-col">
+                          <label for="control-ref_priority" class="font-semibold text-sm text-gray-900">
+                              Priority:
+                          </label>
+                          <div class="relative mt-2">
+                              <select id="control-ref_priority" name="control-ref_priority"
+                                  class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                                  <option>United States</option>
+                                  <option selected>Canada</option>
+                                  <option>Mexico</option>
+                              </select>
+                              <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                                  <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                      aria-hidden="true">
+                                      <path fill-rule="evenodd"
+                                          d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+                                          clip-rule="evenodd" />
+                                  </svg>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="flex flex-col">
+                          <label for="control-ref_categories" class="font-semibold text-sm text-gray-900">
+                              Skill:
+                          </label>
+                          <div class="relative mt-2">
+                              <select id="control-ref_categories" name="control-ref_categories"
+                                  class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                                  <option>United States</option>
+                                  <option selected>Canada</option>
+                                  <option>Mexico</option>
+                              </select>
+                              <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                                  <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                      aria-hidden="true">
+                                      <path fill-rule="evenodd"
+                                          d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+                                          clip-rule="evenodd" />
+                                  </svg>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="flex flex-col">
+                          <label for="control-ref_tags" class="font-semibold text-sm text-gray-900">
+                              Tags:
+                          </label>
+                          <div class="relative mt-2">
+                              <select id="control-ref_tags" name="control-ref_tags"
+                                  class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                                  <option>United States</option>
+                                  <option selected>Canada</option>
+                                  <option>Mexico</option>
+                              </select>
+                              <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                                  <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                      aria-hidden="true">
+                                      <path fill-rule="evenodd"
+                                          d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+                                          clip-rule="evenodd" />
+                                  </svg>
+                              </span>
+                          </div>
+                      </div>
+                      <div class="flex flex-col">
+                          <label for="control-ref_statuses" class="font-semibold text-sm text-gray-900">
+                              Status:
+                          </label>
+                          <div class="relative mt-2">
+                              <select id="control-ref_statuses" name="control-ref_statuses"
+                                  class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                                  <option>United States</option>
+                                  <option selected>Canada</option>
+                                  <option>Mexico</option>
+                              </select>
+                              <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                                  <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                      aria-hidden="true">
+                                      <path fill-rule="evenodd"
+                                          d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z"
+                                          clip-rule="evenodd" />
+                                  </svg>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
   </div>
 
   <script>
+
+
+    // functionality for open mobile menu
+
     const menuWrap = document.querySelector('.menu-wrap');
     const menuOverlay = document.querySelector('.menu-overlay');
     const openMenuButton = document.querySelector('.btn-open-menu');
     const closeMenuButton = document.querySelector('.btn-close-menu');
     const body = document.body;
 
-    // Function to open the mobile menu
     function openMobileMenu() {
       menuWrap.classList.add('menu-open');
       body.classList.add('overflow-hidden');
     }
 
-    // Function to close the mobile menu
     function closeMobileMenu() {
       menuWrap.classList.remove('menu-open');
       body.classList.remove('overflow-hidden');
     }
 
-    // Event listener for the open menu button
     openMenuButton.addEventListener('click', openMobileMenu);
-    // Event listener for the close menu button
     closeMenuButton.addEventListener('click', closeMobileMenu);
-    // Event listener for the menu overlay to close the menu when clicked outside
     menuOverlay.addEventListener('click', closeMobileMenu);
 
   </script>

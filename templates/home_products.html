@@ -3,22 +3,24 @@
 {% block title %}Homepage - Products Listed{% endblock %}
 {% block content %}
 
-
 <div class="flex flex-col">
 
-    <div class="flex items-center justify-between w-full mb-12 border-b border-solid border-slate-100">
+    <div class="flex items-center justify-between w-full mb-12">
         <div class="flex items-center space-x-8 tabs-top">
-            <a href="#" class="active font-semibold py-5 text-sm inline-flex relative -mb-px text-[#1890ff] border-b-2 border-solid border-[#1890ff]">
+            <a href="#"
+                class="active font-semibold py-3 text-sm inline-flex relative -mb-px text-[#1890ff] border-b-2 border-solid border-[#1890ff]">
                 Challenges
             </a>
-            <a href="#" class="font-semibold py-5 text-sm inline-flex relative -mb-px text-gray-900 border-b-2 border-solid border-transparent">Products</a>
+            <a href="#"
+                class="font-semibold py-3 text-sm inline-flex relative -mb-px text-gray-900 border-b-2 border-solid border-transparent">Products</a>
         </div>
-        <div class="ml-auto bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer btn-modal__open">
+        <div
+            class="ml-auto bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer btn-modal__open">
             Filter
         </div>
     </div>
-    
-    <ul role="list" class="grid grid-cols-1 gap-5 lg:grid-cols-4">
+
+    <ul role="list" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {% for product_listing in products_listings %}
         <li class="overflow-hidden rounded-xl border border-gray-200">
             <!-- TODO:
@@ -55,55 +57,15 @@
     </ul>
 </div>
 
-<div class="relative z-10 modal-wrap hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-
-    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
-  
-    <div class="fixed inset-0 z-10 overflow-y-auto">
-      <div class="flex min-h-full items-end sm:items-start justify-center p-4 text-center sm:p-0">
-        <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[620px] sm:p-6">
-          <div class="flex items-center pb-3 mb-3 border-b border-solid border-slate-100">
-            <div class="font-semibold text-lg text-gray-900">Filter</div>
-            <div class="btn-modal__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
-                <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
-                  <path d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z"></path>
-                </svg>
-            </div>
-          </div>
-          <div class="flex flex-col w-full">
-            <div class="grid grid-cols-3">
-                <label for="control-ref_sortedBy" class="">
-                    Sorted By:
-                </label>
-                <div class="col-span-2"></div>
-            </div>
-            <div class="grid grid-cols-3">
-                <label for="control-ref_priority" class="">
-                    Priority:
-                </labe>
-                <div class="col-span-2"></div>
-            </div>
-            <div class="grid grid-cols-3">
-                <label for="control-ref_categories" class="">
-                    Skill:
-                </labe>
-                <div class="col-span-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 <script>
     const videoBtnsOpen = document.querySelectorAll('.btn-modal__open');
-    const modalWrap = document.querySelector('.modal-wrap');
+    const modalWrap = document.querySelector('.modal-wrap-filter');
     const modalWrapCloseBtn = document.querySelector('.btn-modal__close');
 
     videoBtnsOpen.forEach(btn => {
         btn.addEventListener('click', () => {
 
-        modalWrap.classList.remove('hidden');
+            modalWrap.classList.remove('hidden');
         });
     })
 
