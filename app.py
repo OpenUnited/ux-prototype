@@ -56,7 +56,11 @@ def product_challenges():
 
 @app.route('/product/product-tree')
 def product_product_tree():
-    return 'Product page with Product Tree tab active'
+    product_summary_listings_file = os.path.abspath("data-sets/product_summary_listings.json")
+    with open(product_summary_listings_file) as json_file:
+        raw_product_summary_listings = json.load(json_file)
+    product_summary_listings = raw_product_summary_listings["data"]["summary"]
+    return render_template("product_tree.html", product_summary_listings=product_summary_listings, current_page="tree_page")
 
 @app.route('/product/ideas-and-bugs')
 def product_ideas_bugs():

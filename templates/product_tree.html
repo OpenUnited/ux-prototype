@@ -82,35 +82,6 @@
   {% endfor %}
 {% endmacro %}
 
-<div class="flex flex-col">
-  <div class="flex flex-col">
-    <h2 class="text-xl md:text-2xl font-semibold tracking-tight text-gray-900">About OpenUnited Product Factory</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-3">
-      <div class="flex flex-col w-full">
-        <div class="flex flex-col gap-y-1.5 md:gap-y-2.5 text-sm leading-6 text-gray-700 pr-10 md:pr-0">
-          <div id="myContent" class="overflow-hidden line-clamp-3">
-            <p>Open-source software (OSS) has been one of the quietest revolutions in history. The incredible victory of
-              OSS over proprietary software has been invisible to the majority of the world’s population. OSS is still
-              not
-              understood by most people - despite its tremendous success since the early 1980s and explosion since the
-              early 2000s.</p>
-          </div>
-          <button id="show-more"
-            class="transition-all delay-600 text-blue-400 hover:text-blue-400/[0.85] mr-auto text-xs">Show more</a>
-        </div>
-      </div>
-      <div class="w-full h-[232px]">
-        <iframe width="100%" height="100%"
-          src="https://www.youtube.com/embed/OWXVryhdoVA?autoplay=0&mute=0&controls=0&origin=https%3A%2F%2Fopenunited.com&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1"
-          title="OpenUnited Short Explainer Contributor Focus" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-  <div class="flex border-y border-solid border-gray-300 mt-3 mb-4 pt-4 pb-5 font-semibold text-sm md:text-base">
-    <a href="#" class="transition-all delay-600 text-blue-400 hover:text-blue-400/[0.85]">3 Available Challenges</a>
-  </div>
   <div class="">
     <h3 class="text-xl text-gray-900">Product Tree</h3>
     <form class="mt-4 mb-4 lg:mb-7 flex items-center">
@@ -218,18 +189,6 @@
     });
   });
 
-  const showMoreButton = document.getElementById('show-more');
-  const contentElement = document.getElementById('myContent');
-  
-  showMoreButton.addEventListener('click', function () {
-    if (contentElement.classList.contains('line-clamp-3')) {
-      contentElement.classList.remove('line-clamp-3');
-      showMoreButton.textContent = 'Show less';
-    } else {
-      contentElement.classList.add('line-clamp-3');
-      showMoreButton.textContent = 'Show more';
-    }
-  });
 </script>
 
 {% endblock %}
