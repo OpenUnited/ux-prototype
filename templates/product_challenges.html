@@ -12,57 +12,61 @@
     <a href="#" class="text-black/[0.85] pointer-events-none">Check and update cypress tests, ensure they provide a solid foundation (later: get running in CI/CD pipeline)</a>
   </div>
   <h2 class="mt-2.5 mb-[50px] max-w-[536px] w-full text-neutral-800 text-xl">Check and update cypress tests, ensure they provide a solid foundation (later: get running in CI/CD pipeline)</h2>
-  <div class="flex flex-col">
-    <p>Please see: <a href="https://github.com/OpenUnited/product-factory-frontend/pull/72">https://github.com/OpenUnited/product-factory-frontend/pull/72</a></p>
+  <div class="flex flex-col mb-6 space-y-3.5 text-sm text-black/[0.85]">
+    <p>Please see: <a class="text-blue-400 font-semibold" href="https://github.com/OpenUnited/product-factory-frontend/pull/72">https://github.com/OpenUnited/product-factory-frontend/pull/72</a></p>
     <p>These cypress tests are from ~6 months ago and were never merged into master, and also never setup in our CI/CD. They may also reference our old test environment on Heroku (no longer there). The cypress tests need to be checked and updated.</p>
     <p>The task is to check these tests, make any changes necessary to ensure they are current/working (our codebase has been updated since these were written) and that this cypress work creates a solid foundation for additional frontend tests.</p>
     <p>As a next step after this task is complete, we will need to get these tests running in our CI/CD pipeline.</p>
   </div>
-  <div class="flex flex-col">
-    <div class="">Bounty:</div>
-    <div class="flex flex-col">
-      <div class="flex items-center grow">
-        <div class="w-[30%] min-w-[30%]">Skill</div>
-        <div class="w-[30%] min-w-[30%]">Expertise</div>
-        <div class="w-[10%] min-w-[10%]">Points</div>
-        <div class="w-[30%] min-w-[30%]">Action</div>
-      </div>
-      <div class="flex items-center grow">
-        <div class="w-[30%] min-w-[30%]">test</div>
-        <div class="w-[30%] min-w-[30%]">test</div>
-        <div class="w-[10%] min-w-[10%]">0.00</div>
-        <div class="w-[30%] min-w-[30%]">test</div>
+  <div class="flex flex-col w-full overflow-x-auto pb-3">
+    <div class="min-w-[440px] flex flex-col">
+      <div class="mb-2.5 font-medium text-sm text-black/[0.85]">Bounty:</div>
+      <div class="flex flex-col">
+        <div class="flex items-center grow">
+          <div class="w-[30%] min-w-[30%] bg-gray-50 font-medium border-b border-solid border-gray-300 whitespace-nowrap py-2.5 pl-3 pr-2 text-sm text-gray-900">Skill</div>
+          <div class="w-[30%] min-w-[30%] bg-gray-50 font-medium border-b border-solid border-gray-300 whitespace-nowrap py-2.5 pl-3 pr-2 text-sm text-gray-900">Expertise</div>
+          <div class="w-[15%] min-w-[15%] bg-gray-50 font-medium border-b border-solid border-gray-300 whitespace-nowrap py-2.5 pl-3 pr-2 text-sm text-gray-900">Points</div>
+          <div class="w-[25%] min-w-[25%] bg-gray-50 font-medium border-b border-solid border-gray-300 whitespace-nowrap py-2.5 pl-3 pr-2 text-sm text-gray-900">Action</div>
+        </div>
+        <div class="flex items-center grow">
+          <div class="w-[30%] min-w-[30%] border-b border-solid border-gray-300 whitespace-nowrap py-2.5 pl-3 pr-2 text-sm text-gray-900">test</div>
+          <div class="w-[30%] min-w-[30%] border-b border-solid border-gray-300 whitespace-nowrap py-2.5 pl-3 pr-2 text-sm text-gray-900">test</div>
+          <div class="w-[15%] min-w-[15%] border-b border-solid border-gray-300 whitespace-nowrap py-2.5 pl-3 pr-2 text-sm text-gray-900">0.00</div>
+          <div class="w-[25%] min-w-[25%] border-b border-solid border-gray-300 whitespace-nowrap py-2.5 pl-3 pr-2 text-sm text-gray-900">test</div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="flex items-center">
-    <div class="">Created By:</div>
-    <a href="#" class="flex items-center">
-      <div class="flex items-center justify-center shrink-0 w-9 h-9 mr-1.5">
+ <div class="flex flex-col space-y-2.5 my-6">
+  <div class="flex items-center text-xs text-black/[0.85]">
+    <strong>Created By:</strong>
+    <a href="#" class="flex items-center ml-4">
+      <div class="flex items-center justify-center shrink-0 w-8 h-8 mr-1.5">
         <img class="w-full h-full rounded-full bg-gray-50 ring-2 ring-white"
             src="https://images.unsplash.com/photo-1505840717430-882ce147ef2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
             alt="Emma Dorsey">
       </div>
-      <div class="">Adrian McPhee</div>
+      <div class="text-neutral-800">Adrian McPhee</div>
     </a>
   </div>
-  <div class="flex items-center">
-    Status: <span>Available</span>
+  <div class="flex items-center text-xs text-black/[0.85]">
+    <strong>Status:</strong> <span class="font-bold ml-1">Available</span>
   </div>
-  <div class="flex items-center">
-    Priority: <span>Medium</span>
+  <div class="flex items-center text-xs text-black/[0.85]">
+    <strong>Priority:</strong> <span class="text-green-400 ml-1">Medium</span>
   </div>
-  <div class="flex items-center">
-    <div class="">Reviewer:</div> 
-    <a href="#" class="flex items-center">
-      <div class="flex items-center justify-center shrink-0 w-9 h-9 mr-1.5">
+  <div class="flex items-center text-xs text-black/[0.85]">
+    <strong>Reviewer:</strong> 
+    <a href="#" class="flex items-center ml-4">
+      <div class="flex items-center justify-center shrink-0 w-8 h-8 mr-1.5">
         <img class="w-full h-full rounded-full bg-gray-50 ring-2 ring-white"
             src="/static/assets/images/user.png"
             alt="Emma Dorsey">
       </div>
-      <div class="">Adrian McPhee</div>
+      <div class="text-neutral-800">Adrian McPhee</div>
     </a>
   </div>
+ </div>
   <form action="" class="flex flex-col">
     <label for="thoughts" class="block text-sm font-medium leading-6 text-gray-900">Write your thoughts</label>
     <div class="mt-2">
