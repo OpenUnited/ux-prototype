@@ -79,11 +79,32 @@ menuOverlay.addEventListener("click", closeMobileMenu);
 
 // setup for select
 
-let selectCars = new vanillaSelectBox(
-	"#multiTest",
-    {
-      "placeHolder":"Choose up to 3 cars",
-      "maxSelect":3,
-      "translations": { "all": "All", "items": "Cars" } 
-    }
-);
+const selectControlRefSortedBy = document.querySelector('#control-ref_sortedBy');
+const selectControlRefPriority = document.querySelector('#control-ref_priority');
+const selectControlRefCategories = document.querySelector('#control-ref_categories');
+const selectControlRefTags = document.querySelector('#control-ref_tags');
+const selectControlRefStatuses = document.querySelector('#control-ref_statuses');
+
+const choicesSortedBy = new Choices(selectControlRefSortedBy, {
+
+});
+const choicesPriority = new Choices(selectControlRefPriority, {
+  placeholder: true,
+  removeItems: true,
+  removeItemButton: true,
+});
+const choicesCategories = new Choices(selectControlRefCategories, {
+  placeholder: true,
+  removeItems: true,
+  removeItemButton: true,
+});
+const choicesTags = new Choices(selectControlRefTags, {
+  placeholder: true,
+  removeItems: true,
+  removeItemButton: true,
+});
+const choicesStatuses = new Choices(selectControlRefStatuses, {
+  placeholder: true,
+  removeItems: true,
+  removeItemButton: true,
+});
