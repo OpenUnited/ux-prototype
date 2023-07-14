@@ -1,81 +1,89 @@
-  // filter modal open
+// filter modal open
 
-  const btnModapOpen = document.querySelectorAll('.btn-modal__open');
-  const modalWrapFilter = document.querySelector('.modal-wrap-filter');
-  const btnModalClose = document.querySelector('.btn-modal__close');
+const btnModapOpen = document.querySelectorAll(".btn-modal__open");
+const modalWrapFilter = document.querySelector(".modal-wrap-filter");
+const btnModalClose = document.querySelector(".btn-modal__close");
 
-  btnModapOpen.forEach(btn => {
-    btn.addEventListener('click', () => {
-
-      modalWrapFilter.classList.remove('hidden');
-    });
-  })
-
-  btnModalClose.addEventListener('click', () => {
-    modalWrapFilter.classList.add('hidden');
+btnModapOpen.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modalWrapFilter.classList.remove("hidden");
   });
+});
 
-  // video popup open
+btnModalClose.addEventListener("click", () => {
+  modalWrapFilter.classList.add("hidden");
+});
 
-  const videoBtnsOpen = document.querySelectorAll('.btn-video__open');
-  const modalWrap = document.querySelector('.modal-wrap');
-  const modalWrapCloseBtn = document.querySelector('.btn-video__close');
+// video popup open
 
-  modalWrap.querySelector('iframe').src = '';
+const videoBtnsOpen = document.querySelectorAll(".btn-video__open");
+const modalWrap = document.querySelector(".modal-wrap");
+const modalWrapCloseBtn = document.querySelector(".btn-video__close");
 
-  videoBtnsOpen.forEach(btn => {
-    btn.addEventListener('click', () => {
+modalWrap.querySelector("iframe").src = "";
 
-      modalWrap.classList.remove('hidden');
-      modalWrap.querySelector('iframe').src = btn.dataset.video;
-    });
-  })
-
-  modalWrapCloseBtn.addEventListener('click', () => {
-  modalWrap.classList.add('hidden');
+videoBtnsOpen.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modalWrap.classList.remove("hidden");
+    modalWrap.querySelector("iframe").src = btn.dataset.video;
   });
+});
 
-  // product tree functionality
+modalWrapCloseBtn.addEventListener("click", () => {
+  modalWrap.classList.add("hidden");
+});
 
-  const nestedTableNames = document.querySelectorAll('.nested-item__label-icon');
+// product tree functionality
 
-  nestedTableNames.forEach(item => {
-    item.addEventListener('click', () => {
-      
-      const child = item.closest(".nested-item__label").nextElementSibling;
-      child.classList.toggle('hidden');
+const nestedTableNames = document.querySelectorAll(".nested-item__label-icon");
 
-      const categoryOpenBtn = item.querySelector('.category-open-btn');
-      const categoryCloseBtn = item.querySelector('.category-close-btn');
+nestedTableNames.forEach((item) => {
+  item.addEventListener("click", () => {
+    const child = item.closest(".nested-item__label").nextElementSibling;
+    child.classList.toggle("hidden");
 
-      if (child.classList.contains('hidden')) {
-        categoryCloseBtn.classList.remove('hidden');
-        categoryOpenBtn.classList.add('hidden')
-      } else {
-        categoryCloseBtn.classList.add('hidden');
-        categoryOpenBtn.classList.remove('hidden')
-      }
-    });
+    const categoryOpenBtn = item.querySelector(".category-open-btn");
+    const categoryCloseBtn = item.querySelector(".category-close-btn");
+
+    if (child.classList.contains("hidden")) {
+      categoryCloseBtn.classList.remove("hidden");
+      categoryOpenBtn.classList.add("hidden");
+    } else {
+      categoryCloseBtn.classList.add("hidden");
+      categoryOpenBtn.classList.remove("hidden");
+    }
   });
+});
 
-  // functionality for open mobile menu
+// functionality for open mobile menu
 
-  const menuWrap = document.querySelector('.menu-wrap');
-  const menuOverlay = document.querySelector('.menu-overlay');
-  const openMenuButton = document.querySelector('.btn-open-menu');
-  const closeMenuButton = document.querySelector('.btn-close-menu');
-  const body = document.body;
+const menuWrap = document.querySelector(".menu-wrap");
+const menuOverlay = document.querySelector(".menu-overlay");
+const openMenuButton = document.querySelector(".btn-open-menu");
+const closeMenuButton = document.querySelector(".btn-close-menu");
+const body = document.body;
 
-  function openMobileMenu() {
-    menuWrap.classList.add('menu-open');
-    body.classList.add('overflow-hidden');
-  }
+function openMobileMenu() {
+  menuWrap.classList.add("menu-open");
+  body.classList.add("overflow-hidden");
+}
 
-  function closeMobileMenu() {
-    menuWrap.classList.remove('menu-open');
-    body.classList.remove('overflow-hidden');
-  }
+function closeMobileMenu() {
+  menuWrap.classList.remove("menu-open");
+  body.classList.remove("overflow-hidden");
+}
 
-  openMenuButton.addEventListener('click', openMobileMenu);
-  closeMenuButton.addEventListener('click', closeMobileMenu);
-  menuOverlay.addEventListener('click', closeMobileMenu);
+openMenuButton.addEventListener("click", openMobileMenu);
+closeMenuButton.addEventListener("click", closeMobileMenu);
+menuOverlay.addEventListener("click", closeMobileMenu);
+
+// setup for select
+
+let selectCars = new vanillaSelectBox(
+	"#multiTest",
+    {
+      "placeHolder":"Choose up to 3 cars",
+      "maxSelect":3,
+      "translations": { "all": "All", "items": "Cars" } 
+    }
+);

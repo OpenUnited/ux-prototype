@@ -1,0 +1,19 @@
+.menu-wrap .menu-overlay, 
+.menu-wrap .menu {
+ right: -100%;
+ transition: right 0.35s ease-in-out;
+}
+
+.menu-wrap.menu-open .menu-overlay, 
+.menu-wrap.menu-open .menu {
+ right: 0px;
+}
+
+.ideas-list__text a {
+  word-break: break-all;
+}
+
+.nested-item__wrap > .nested-item:first-child > .nested-item__label {
+  border-top: 0px!important;
+  padding-top: 0px!important;
+}

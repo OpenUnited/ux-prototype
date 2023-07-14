@@ -3,12 +3,6 @@
 {% block title %}Product - Ideas&Bugs{% endblock %}
 {% block product_content %}
 
-<style>
-  .ideas-list__text a {
-    word-break: break-all;
-  }
-</style>
-
 <ul role="list" class="divide-y divide-gray-100">
   {% for product_idea in product_ideas_listings %}
   <li class="flex items-start justify-between gap-y-4 py-5">
