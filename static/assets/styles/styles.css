@@ -41,6 +41,18 @@
 .choices__inner {
   background-color: #fff;
   border-color: #d9d9d9;
+  padding: 2px 24px 2px 4px;
+  min-height: 36px;
+}
+
+/* .choices__inner:hover {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  border-right-width: 1px;
+} */
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 2px;
 }
 
 .choices__input {
@@ -49,4 +61,38 @@
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
   background-color: #f5f5f5;
+}
+
+.choices__list--multiple .choices__item[data-deletable]:focus-visible {
+  outline-color: #e6f7ff;
+}
+
+.choices__list--multiple .choices__item.is-highlighted {
+  background-color: #e6f7ff;
+  border-color: #e6f7ff;
+}
+
+.choices[data-type*=select-one]::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(0%, -50%);
+  top: 50%;
+  margin-top: 0px;
+  border: 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.choices__list--single {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 100%;
+}
+
+.choices__list--single .choices__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
