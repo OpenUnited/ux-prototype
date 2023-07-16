@@ -31,36 +31,7 @@
   padding-inline-start: 8px;
   padding-inline-end: 4px;
   color: rgba(0, 0, 0, 0.85);
-}
-
-.choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
-  border-left: 0px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='64 64 896 896' focusable='false' data-icon='close' width='1em' height='1em' fill='currentColor' aria-hidden='true'%3E%3Cpath d='M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-.choices__inner {
-  background-color: #fff;
-  border-color: #d9d9d9;
-  padding: 2px 24px 2px 4px;
-  min-height: 36px;
-}
-
-/* .choices__inner:hover {
-  border-color: #40a9ff;
-  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
-  border-right-width: 1px;
-} */
-
-.choices[data-type*=select-one] .choices__inner {
-  padding-bottom: 2px;
-}
-
-.choices__input {
-  background-color: #fff;
-}
-
-.choices__list--dropdown .choices__item--selectable.is-highlighted {
-  background-color: #f5f5f5;
+  margin-bottom: 2px;
 }
 
 .choices__list--multiple .choices__item[data-deletable]:focus-visible {
@@ -70,6 +41,41 @@
 .choices__list--multiple .choices__item.is-highlighted {
   background-color: #e6f7ff;
   border-color: #e6f7ff;
+}
+
+.choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
+  border-left: 0px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='64 64 896 896' focusable='false' data-icon='close' width='1em' height='1em' fill='currentColor' aria-hidden='true'%3E%3Cpath d='M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.choices[data-type*=select-multiple] .choices__inner {
+  padding-bottom: 0px;
+}
+
+.choices__inner {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  padding: 2px 24px 2px 4px;
+  min-height: 30px;
+}
+
+/* .choices__inner:hover {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  border-right-width: 1px;
+} */
+
+.choices__input {
+  background-color: #fff;
+  margin-bottom: 2px;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: #f5f5f5;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 2px;
 }
 
 .choices[data-type*=select-one]::after {
