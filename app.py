@@ -44,7 +44,7 @@ def product_summary():
 
 @app.route('/product/initiatives')
 def product_initiatives():
-    return 'Product page with Initiatives tab active'
+    return render_template("product_initiatives.html", current_page="initiatives_page")
 
 @app.route('/product/challenges')
 def product_challenges():
@@ -76,7 +76,7 @@ def product_ideas_bugs():
 
 @app.route('/product/people')
 def product_people():
-    return 'Product page with People tab active'
+    return render_template("product_people.html", current_page="people_page")
 
 @app.route('/users/sign-up')
 def user_sign_up():
