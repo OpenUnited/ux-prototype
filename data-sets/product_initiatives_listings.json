@@ -1,0 +1,109 @@
+{
+  "data": {
+    "initiatives": [
+      {
+        "name": "Implement New Customer Portal",
+        "videoLink": "https://www.youtube.com/embed/OWXVryhdoVA",
+        "storiesAmount": "4/10",
+        "tags": [
+          {
+            "id": 1,
+            "name": "Python"
+          },
+          {
+            "id": 2,
+            "name": "Django"
+          },
+          {
+            "id": 3,
+            "name": "GraphQL"
+          },
+          {
+            "id": 4,
+            "name": "UX"
+          },
+          {
+            "id": 5,
+            "name": "SCSS"
+          }
+        ]
+      },
+      {
+        "name": "Implement 2",
+        "videoLink": "https://www.youtube.com/embed/OWXVryhdoVA",
+        "storiesAmount": "4/10",
+        "tags": [
+          {
+            "id": 1,
+            "name": "Python"
+          },
+          {
+            "id": 2,
+            "name": "Django"
+          },
+          {
+            "id": 3,
+            "name": "GraphQL"
+          }
+        ]
+      },
+      {
+        "name": "Implement 3",
+        "videoLink": "https://www.youtube.com/embed/OWXVryhdoVA",
+        "storiesAmount": "4/10",
+        "tags": [
+          {
+            "id": 1,
+            "name": "Python"
+          },
+          {
+            "id": 2,
+            "name": "Django"
+          },
+          {
+            "id": 3,
+            "name": "GraphQL"
+          }
+        ]
+      },
+      {
+        "name": "Implement 4",
+        "videoLink": "https://www.youtube.com/embed/OWXVryhdoVA",
+        "storiesAmount": "4/10",
+        "tags": [
+          {
+            "id": 1,
+            "name": "Python"
+          },
+          {
+            "id": 2,
+            "name": "Django"
+          },
+          {
+            "id": 3,
+            "name": "GraphQL"
+          }
+        ]
+      },
+      {
+        "name": "Implement 5",
+        "videoLink": "https://www.youtube.com/embed/OWXVryhdoVA",
+        "storiesAmount": "4/10",
+        "tags": [
+          {
+            "id": 1,
+            "name": "Python"
+          },
+          {
+            "id": 2,
+            "name": "Django"
+          },
+          {
+            "id": 3,
+            "name": "GraphQL"
+          }
+        ]
+      }
+    ]
+  }
+}

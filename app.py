@@ -44,7 +44,11 @@ def product_summary():
 
 @app.route('/product/initiatives')
 def product_initiatives():
-    return render_template("product_initiatives.html", current_page="initiatives_page")
+    product_initiatives_listings_file = os.path.abspath("data-sets/product_initiatives_listings.json")
+    with open(product_initiatives_listings_file) as json_file:
+        raw_product_initiatives_listings = json.load(json_file)
+    product_initiatives_listings = raw_product_initiatives_listings["data"]["initiatives"]
+    return render_template("product_initiatives.html", product_initiatives_listings=product_initiatives_listings, current_page="initiatives_page")
 
 @app.route('/product/challenges')
 def product_challenges():
