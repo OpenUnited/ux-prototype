@@ -14,6 +14,22 @@ btnModalClose.addEventListener("click", () => {
   modalWrapFilter.classList.add("hidden");
 });
 
+// form for idea / bug in modal open
+
+const btnAddModapOpen = document.querySelectorAll(".btn-add-modal__open");
+const modalWrapIdeasBugs = document.querySelector(".modal-wrap-ideas-bugs");
+const btnAddModalClose = document.querySelector(".btn-add-modal__close");
+
+btnAddModapOpen.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modalWrapIdeasBugs.classList.remove("hidden");
+  });
+});
+
+btnAddModalClose.addEventListener("click", () => {
+  modalWrapIdeasBugs.classList.add("hidden");
+});
+
 // video popup open
 
 const videoBtnsOpen = document.querySelectorAll(".btn-video__open");

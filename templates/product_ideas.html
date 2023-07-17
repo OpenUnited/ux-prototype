@@ -3,9 +3,30 @@
 {% block title %}Product - Ideas&Bugs{% endblock %}
 {% block product_content %}
 
+<div class="border-b border-gray-200 flex items-center justify-between grow w-full">
+  <nav class="-mb-px flex space-x-3 md:space-x-8" aria-label="Tabs">
+    <a href="#"
+      class="border-transparent text-gray-500 hover:border-gray-200 hover:text-gray-700 flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium">
+      Ideas
+      <span
+        class="bg-gray-100 text-gray-900 ml-1 md:ml-3 rounded-full py-0.5 px-1.5 md:px-2.5 text-xs font-medium inline-block">6</span>
+    </a>
+    <a href="#"
+      class="border-blue-400 text-blue-400 flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
+      aria-current="page">
+      Bugs
+      <span
+        class="bg-gray-50 text-blue-400 ml-1 md:ml-3 rounded-full py-0.5 px-1.5 md:px-2.5 text-xs font-medium inline-block">4</span>
+    </a>
+  </nav>
+  <button type="button"
+    class="btn-add-modal__open w-fit flex items-center rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all hover:bg-gray-50">Add
+    Bug</button>
+</div>
+
 <ul role="list" class="divide-y divide-gray-100">
   {% for product_idea in product_ideas_listings %}
-  <li class="flex items-start justify-between gap-y-4 py-5">
+  <li class="flex flex-col items-start justify-between gap-y-4 py-5">
     <div class="flex flex-col gap-y-2">
       <div class="flex items-start justify-between gap-x-4 xl:gap-x-6">
         <h3 class="text-sm font-semibold leading-6 text-gray-900">
@@ -20,6 +41,13 @@
       <div class="mt-1 flex flex-col gap-y-2 text-xs leading-5 text-gray-500 ideas-list__text">
         {{ product_idea.description|safe }}
       </div>
+    </div>
+    <div class="flex grow items-center justify-end text-sm font-medium leading-6 text-gray-900">
+      <div class="heart mr-2.5 ml-0.5">
+        <input type="checkbox" class="heart__checkbox">
+        <div class="heart__icon"></div>
+      </div>
+      <span class="pb-1">Votes: 12</span>
     </div>
   </li>
   {% endfor %}

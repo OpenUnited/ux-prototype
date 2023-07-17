@@ -326,6 +326,123 @@
         </div>
       </div>
     </div>
+
+    <div class="relative z-10 modal-wrap-ideas-bugs hidden" aria-labelledby="modal-title" role="dialog"
+      aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end sm:items-center justify-center p-4 text-center sm:p-0">
+          <div
+            class="relative transform rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 w-full max-w-[620px] sm:pt-6 sm:px-6 pb-[44px]">
+            <div class="flex items-center pb-3 mb-3 border-b border-solid border-slate-100">
+              <div class="modal-wrap-ideas-bugs__title font-semibold text-lg text-gray-900">Report your Idea, or Bug
+              </div>
+              <div
+                class="btn-add-modal__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+                <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <form class="mb-0">
+              <div class="pb-6">
+                <div class="grid grid-cols-1 gap-4">
+                  <div class="flex flex-col">
+                    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Please give your
+                      bug a name *:</label>
+                    <div class="mt-2">
+                      <input type="text" name="username" id="username" autocomplete="username"
+                        class="block w-full max-w-full rounded-l-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        placeholder="janesmith">
+                    </div>
+                  </div>
+
+                  <div class="col-span-full">
+                    <label for="about" class="block text-sm font-medium leading-6 text-gray-900">About</label>
+                    <div class="mt-2">
+                      <textarea id="about" name="about" rows="3"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                    </div>
+                    <p class="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p>
+                  </div>
+
+                  <div class="col-span-full">
+                    <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover
+                      photo</label>
+                    <div
+                      class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+                      <div class="text-center">
+                        <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor"
+                          aria-hidden="true">
+                          <path fill-rule="evenodd"
+                            d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                            clip-rule="evenodd" />
+                        </svg>
+                        <div class="mt-4 flex text-sm leading-6 text-gray-600">
+                          <label for="file-upload"
+                            class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                            <span>Upload a file</span>
+                            <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                          </label>
+                          <p class="pl-1">or drag and drop</p>
+                        </div>
+                        <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Product *:</label>
+                    <div class="mt-2">
+                      <input type="text" name="username" id="username" autocomplete="username"
+                        class="block w-full max-w-full rounded-l-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        placeholder="janesmith">
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Related
+                      capability:</label>
+                    <div class="mt-2">
+                      <input type="text" name="username" id="username" autocomplete="username"
+                        class="block w-full max-w-full rounded-l-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        placeholder="janesmith">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="relative flex gap-x-3">
+                <div class="flex h-6 items-center">
+                  <input id="candidates" name="candidates" type="checkbox"
+                    class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                </div>
+                <div class="text-sm leading-6">
+                  <label for="candidates" class="font-medium text-gray-900">Is this bug security
+                    related?</label>
+                </div>
+
+                <div class="flex items-center mr-4">
+                  <input checked id="purple-checkbox" type="checkbox" value="" class="w-4 h-4 text-purple-600 bg-gray-100 border-gray-300 rounded focus:ring-purple-500 dark:focus:ring-purple-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="purple-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Purple</label>
+                </div>
+              </div>
+
+              <div class="mt-6 flex items-center justify-end gap-x-6">
+                <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+                <button type="submit"
+                  class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- https://github.com/Choices-js/Choices -->
