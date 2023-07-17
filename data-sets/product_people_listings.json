@@ -1,0 +1,64 @@
+{
+  "data": {
+    "people": [
+      {
+        "category": "Leadership",
+        "subcategories": [
+          {
+            "name": "Adrian McPhee",
+            "image": "https://openunited.com/images/avatar/2022-01-29 13:26:46 728dcd2c.png",
+            "position": "CTO @ LeasePlan",
+            "subposition": "Entrepreneur - AuthMachine",
+            "twitterLink": "#",
+            "linkedinLink": "#"
+          },
+          {
+            "name": "Adrian McPhee",
+            "image": "https://openunited.com/images/avatar/2022-01-29 13:26:46 728dcd2c.png",
+            "position": "CTO @ LeasePlan",
+            "subposition": "Entrepreneur - AuthMachine",
+            "twitterLink": "#",
+            "linkedinLink": ""
+          }
+        ]
+      },
+      {
+        "category": "Contributors",
+        "subcategories": [
+          {
+            "name": "Adrian McPhee",
+            "image": "https://openunited.com/images/avatar/2022-01-29 13:26:46 728dcd2c.png",
+            "position": "CTO @ LeasePlan",
+            "subposition": "Entrepreneur - AuthMachine",
+            "twitterLink": "#",
+            "linkedinLink": "#"
+          },
+          {
+            "name": "Adrian McPhee",
+            "image": "https://openunited.com/images/avatar/2022-01-29 13:26:46 728dcd2c.png",
+            "position": "CTO @ LeasePlan",
+            "subposition": "Entrepreneur - AuthMachine",
+            "twitterLink": "#",
+            "linkedinLink": "#"
+          },
+          {
+            "name": "Adrian McPhee",
+            "image": "https://openunited.com/images/avatar/2022-01-29 13:26:46 728dcd2c.png",
+            "position": "CTO @ LeasePlan",
+            "subposition": "Entrepreneur - AuthMachine",
+            "twitterLink": "",
+            "linkedinLink": "#"
+          },
+          {
+            "name": "Adrian McPhee",
+            "image": "https://openunited.com/images/avatar/2022-01-29 13:26:46 728dcd2c.png",
+            "position": "CTO @ LeasePlan",
+            "subposition": "Entrepreneur - AuthMachine",
+            "twitterLink": "#",
+            "linkedinLink": "#"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -80,7 +80,11 @@ def product_ideas_bugs():
 
 @app.route('/product/people')
 def product_people():
-    return render_template("product_people.html", current_page="people_page")
+    product_people_listings_file = os.path.abspath("data-sets/product_people_listings.json")
+    with open(product_people_listings_file) as json_file:
+        raw_product_people_listings = json.load(json_file)
+    product_people_listings = raw_product_people_listings["data"]["people"]
+    return render_template("product_people.html", product_people_listings=product_people_listings, current_page="people_page")
 
 @app.route('/users/sign-up')
 def user_sign_up():
