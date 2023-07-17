@@ -1,3 +1,22 @@
+// Get all tab links and tab bodies
+const tabLinks = document.querySelectorAll('.tab-link');
+const tabBodies = document.querySelectorAll('.tab-body');
+
+// Add click event listeners to tab links
+tabLinks.forEach((tabLink, index) => {
+  tabLink.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Remove active class from all tab links and tab bodies
+    tabLinks.forEach((link) => link.classList.remove('active'));
+    tabBodies.forEach((body) => body.classList.remove('active'));
+
+    // Add active class to the clicked tab link and corresponding tab body
+    tabLink.classList.add('active');
+    tabBodies[index].classList.add('active');
+  });
+});
+
 // filter modal open
 
 const btnModapOpen = document.querySelectorAll(".btn-modal__open");
