@@ -4,7 +4,13 @@ import json
 
 app = Flask(__name__)
 
-
+@app.context_processor
+def inject_json_data():
+    home_filter_listings_file = os.path.abspath("data-sets/home_filter_listings.json")
+    with open(home_filter_listings_file) as json_file:
+        raw_home_filter_listings = json.load(json_file)
+    home_filter_listings = raw_home_filter_listings["data"]["filters"]
+    return dict(home_filter_listings=home_filter_listings)
 
 @app.route('/screen-list')
 def screen_list():

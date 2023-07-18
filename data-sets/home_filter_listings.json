@@ -1,0 +1,105 @@
+{
+  "data": {
+    "filters": [
+      {
+        "labelID": "control-ref_sortedBy",
+        "labelName": "Sorted By",
+        "selectType": "",
+        "children": [
+          {
+            "id": 1,
+            "title": "Name"
+          },
+          {
+            "id": 2,
+            "title": "Priority"
+          },
+          {
+            "id": 3,
+            "title": "Status"
+          }
+        ]
+      },
+      {
+        "labelID": "control-ref_priority",
+        "labelName": "Priority",
+        "selectType": "multiple",
+        "children": [
+          {
+            "id": 1,
+            "title": "High"
+          },
+          {
+            "id": 2,
+            "title": "Medium"
+          },
+          {
+            "id": 3,
+            "title": "Low"
+          }
+        ]
+      },
+      {
+        "labelID": "control-ref_categories",
+        "labelName": "Skill",
+        "selectType": "multiple",
+        "children": [
+          {
+            "id": 1,
+            "title": "Information Systems & Networking"
+          },
+          {
+            "id": 2,
+            "title": "Product, User Experience & Research"
+          },
+          {
+            "id": 3,
+            "title": "Software Development (inc. Web, Mobile)"
+          }
+        ]
+      },
+      {
+        "labelID": "control-ref_tags",
+        "labelName": "Tags",
+        "selectType": "multiple",
+        "children": [
+          {
+            "id": 1,
+            "title": "React"
+          },
+          {
+            "id": 2,
+            "title": "Vue"
+          },
+          {
+            "id": 3,
+            "title": "Next"
+          }
+        ]
+      },
+      {
+        "labelID": "control-ref_statuses",
+        "labelName": "Status",
+        "selectType": "multiple",
+        "children": [
+          {
+            "id": 1,
+            "title": "Done"
+          },
+          {
+            "id": 2,
+            "title": "Blocked"
+          },
+          {
+            "id": 3,
+            "title": "In review"
+          },
+          {
+            "id": 3,
+            "title": "Claimed"
+          }
+        ]
+      }
+    ]
+  }
+}

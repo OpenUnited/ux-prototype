@@ -252,75 +252,24 @@
               </div>
             </div>
             <div class="grid grid-cols-1 gap-5 w-full">
-              <div class="flex flex-col">
-                <label for="control-ref_sortedBy" class="font-semibold text-sm text-gray-900">
-                  Sorted By:
-                </label>
-                <div class="js-choice relative mt-2">
-                  <select id="control-ref_sortedBy" name="control-ref_sortedBy"
-                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
-                    <option selected>Item 1</option>
-                    <option>Item 2</option>
-                    <option>Item 3</option>
-                  </select>
+              {% for home_filter in home_filter_listings %}
+                <div class="flex flex-col">
+                  <label for="{{ home_filter.labelID }}" class="font-semibold text-sm text-gray-900">
+                    {{ home_filter.labelName }}
+                  </label>
+                  <div class="js-choice relative mt-2">
+                    <select {{ home_filter.selectType }} id="{{ home_filter.labelID }}" name="{{ home_filter.labelID }}"
+                      class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                      <option value="">Make your choose</option>
+                      {% for home_filter_option in home_filter.children %}
+                      <option value="{{ home_filter_option.id }}">
+                        {{ home_filter_option.title }}
+                      </option>
+                      {% endfor %}
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="flex flex-col">
-                <label for="control-ref_priority" class="font-semibold text-sm text-gray-900">
-                  Priority:
-                </label>
-                <div class="js-choice relative mt-2">
-                  <select multiple id="control-ref_priority" name="control-ref_priority"
-                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
-                    <option value="">Select a priority</option>
-                    <option>Item 1</option>
-                    <option>Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2 Item 2</option>
-                    <option>Item 3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="flex flex-col">
-                <label for="control-ref_categories" class="font-semibold text-sm text-gray-900">
-                  Skill:
-                </label>
-                <div class="js-choice relative mt-2">
-                  <select multiple id="control-ref_categories" name="control-ref_categories"
-                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
-                    <option value="">Select skill</option>
-                    <option>Item 1</option>
-                    <option>Item 2</option>
-                    <option>Item 3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="flex flex-col">
-                <label for="control-ref_tags" class="font-semibold text-sm text-gray-900">
-                  Tags:
-                </label>
-                <div class="js-choice relative mt-2">
-                  <select multiple id="control-ref_tags" name="control-ref_tags"
-                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
-                    <option value="">Select a tag</option>
-                    <option>Item 1</option>
-                    <option>Item 2</option>
-                    <option>Item 3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="flex flex-col">
-                <label for="control-ref_statuses" class="font-semibold text-sm text-gray-900">
-                  Status:
-                </label>
-                <div class="js-choice relative mt-2">
-                  <select multiple id="control-ref_statuses" name="control-ref_statuses"
-                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
-                    <option value="">Select a status</option>
-                    <option>Item 1</option>
-                    <option>Item 2</option>
-                    <option>Item 3</option>
-                  </select>
-                </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>
