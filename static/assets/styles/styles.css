@@ -310,3 +310,61 @@
   color: #60a5fa;
   background-color: #f9fafb;
 }
+
+.treeselect-list__item-icon svg {
+  stroke: #6b7280;
+}
+
+.treeselect-list__item-checkbox-container {
+  border-color: #ddd;
+}
+
+.treeselect-list__item-label {
+  color: rgb(17, 24, 39);
+}
+
+.treeselect-list__item-checkbox-container:focus-visible {
+  outline-color: #60a5fa;
+}
+
+.treeselect-input {
+  padding-left: 12px;
+}
+
+.treeselect-input--focused, .treeselect-list--focused {
+  border-color: #e5e7eb;
+}
+
+.treeselect-input__tags-element {
+  min-height: 24px;
+  line-height: 1.2;
+  background: #f5f5f5;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+  cursor: default;
+  transition: font-size 0.3s, line-height 0.3s, height 0.3s;
+  user-select: none;
+  margin-inline-end: 4px;
+  padding-inline-start: 8px;
+  padding-inline-end: 4px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 2px;
+}
+
+.treeselect-input__tags-element:hover {
+  background-color: #f5f5f5;
+  opacity: 0.9;
+}
+
+.treeselect-list__item--checked .treeselect-list__item-checkbox-container, .treeselect-list__item--partial-checked .treeselect-list__item-checkbox-container {
+  background-color: #60a5fa;
+  border-color: #60a5fa;
+}
+
+.treeselect-list__item--focused {
+  background-color: rgb(249, 250, 251)!important;
+}
+
+.treeselect-list__item--checked {
+  background-color: #e6f7ff;
+}

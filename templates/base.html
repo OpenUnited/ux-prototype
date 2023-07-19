@@ -19,6 +19,7 @@
   </script> -->
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/treeselectjs@0.9.2/dist/treeselectjs.css" />
   <link rel="stylesheet" href="/static/assets/styles/styles.css">
 
   <title>{% block title %}{% endblock %}</title>
@@ -286,7 +287,7 @@
           <div
             class="relative transform rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 w-full max-w-[620px] sm:pt-6 sm:px-6 pb-[44px]">
             <div class="flex items-center pb-3 mb-3 border-b border-solid border-slate-100">
-              <div class="modal-wrap-ideas-bugs__title font-semibold text-lg text-gray-900">Report your Idea, or Bug
+              <div class="modal-wrap-ideas-bugs__title font-semibold text-lg text-gray-900">Add your Idea, or Bug
               </div>
               <div
                 class="btn-add-modal__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
@@ -305,25 +306,25 @@
                       bug a name *:</label>
                     <div class="mt-2">
                       <input type="text" name="username" id="username" autocomplete="username"
-                        class="block w-full max-w-full rounded-l-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        class="block w-full max-w-full rounded-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
                         placeholder="janesmith">
                     </div>
                   </div>
 
                   <div class="col-span-full">
-                    <label for="about" class="block text-sm font-medium leading-6 text-gray-900">About</label>
+                    <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Please describe the idea *:</label>
                     <div class="mt-2">
                       <textarea id="about" name="about" rows="3"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                     </div>
-                    <p class="mt-3 text-sm leading-6 text-gray-600">Write a few sentences about yourself.</p>
+                    <p class="mt-2 text-sm leading-6 text-gray-600">Write a few sentences about the bug, or idea.</p>
                   </div>
 
                   <div class="col-span-full">
                     <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover
                       photo</label>
                     <div
-                      class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+                      class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-6">
                       <div class="text-center">
                         <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor"
                           aria-hidden="true">
@@ -348,18 +349,15 @@
                     <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Product *:</label>
                     <div class="mt-2">
                       <input type="text" name="username" id="username" autocomplete="username"
-                        class="block w-full max-w-full rounded-l-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
-                        placeholder="janesmith">
+                        class="block w-full max-w-full rounded-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        placeholder="Headline">
                     </div>
                   </div>
 
                   <div class="flex flex-col">
-                    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Related
-                      capability:</label>
+                    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Related capability:</label>
                     <div class="mt-2">
-                      <input type="text" name="username" id="username" autocomplete="username"
-                        class="block w-full max-w-full rounded-l-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
-                        placeholder="janesmith">
+                      <div class="treeselect-demo focus-visible:outline-transparent"></div>
                     </div>
                   </div>
 
@@ -396,6 +394,7 @@
 
   <!-- https://github.com/Choices-js/Choices -->
   <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/treeselectjs@0.9.2/dist/treeselectjs.umd.js"></script>
 
   <script type="text/javascript" src="/static/assets/scripts/main.js"></script>
 
