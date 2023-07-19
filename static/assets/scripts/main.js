@@ -16,7 +16,7 @@ tabLinks.forEach((tabLink, index) => {
     tabLink.classList.add('active');
     tabBodies[index].classList.add('active');
 
-    if(tabLink.classList.contains('active') && tabLink.classList.contains('tab-link-ideas')) {
+    if (tabLink.classList.contains('active') && tabLink.classList.contains('tab-link-ideas')) {
       ideasBtnModal.innerHTML = "Add Idea";
       ideasBtnModal.dataset.id = "modal-idea"
     } else {
@@ -49,21 +49,21 @@ const btnAddModapOpen = document.querySelector(".btn-add-modal__open");
 const modalWrapIdeasBugs = document.querySelectorAll(".modal-wrap-ideas-bugs");
 const btnsIdeaModalClose = document.querySelectorAll(".btn-idea-modal__close");
 
-if(btnAddModapOpen) {
+if (btnAddModapOpen) {
 
   btnAddModapOpen.addEventListener("click", () => {
-  
+
     modalWrapIdeasBugs.forEach((modal) => {
-  
-      if(ideasBtnModal.dataset.id === modal.dataset.modal) {
+
+      if (ideasBtnModal.dataset.id === modal.dataset.modal) {
         modal.classList.remove("hidden");
       } else {
         modal.classList.add("hidden");
       }
-  
+
     })
   });
-  
+
 }
 
 btnsIdeaModalClose.forEach((btn) => {
@@ -426,5 +426,5 @@ domElements.forEach((domElement) => {
   treeselect.srcElement.addEventListener('input', (e) => {
     console.log('Selected value:', e.detail)
   });
-  
+
 });

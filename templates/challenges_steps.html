@@ -94,9 +94,62 @@
         </li>
       </ul>
     </div>
-    <div class="flex flex-col px-[34px] py-[54px] border-[3px] border-solid border-[#F4F6F7]">
-      
-    </div>
+    <form class="flex flex-col grow px-[34px] py-[54px] border-[3px] border-solid border-[#F4F6F7]">
+      <div class="flex flex-col">
+        <div class="flex flex-col">
+          <label for="question-1" class="text-2xl text-black/[0.85] font-semobild mb-6 max-w-[610px] w-full">Does solving your challenge require one skill, or multiple skills?</label>
+          <fieldset>
+            <legend class="text-base font-semibold leading-6 text-gray-900">Select a mailing list</legend>
+          
+            <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6">
+              <label class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-[18px] pl-[34px] pr-4 focus:outline-none">
+                <input type="radio" name="project-type" class="opacity-0 w-0 h-0" value="Newsletter" checked>
+
+                <div class="h-[22px] w-[22px] flex items-center justify-center shrink-0">
+                  <div class="check-icon checked h-full w-full flex items-center justify-center border-2 border-solid border-[#1890FF] bg-white rounded-full p-0.5">
+                    <div class="w-3 h-3 flex items-center justify-center rounded-full bg-[#1890FF]"></div>
+                  </div>
+                  <div class="unchecked h-full w-full flex items-center justify-center border-2 border-solid border-[#D9D9D9] bg-white rounded-full p-1.5">
+                    <div class="w-3 h-3 flex items-center justify-center rounded-full bg-white"></div>
+                  </div>
+                </div>
+
+                <span class="flex flex-1 ml-9">
+                  <span class="flex flex-col">
+                    <span id="project-type-0-label" class="block text-sm font-medium text-gray-900">Newsletter</span>
+                    <span id="project-type-0-description-0" class="mt-1 flex items-center text-sm text-gray-500">Last message sent an hour ago</span>
+                    <span id="project-type-0-description-1" class="mt-6 text-sm font-medium text-gray-900">621 users</span>
+                  </span>
+                </span>
+
+              </label>
+              <label class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-[18px] pl-[34px] pr-4 focus:outline-none">
+                <input type="radio" name="project-type" class="opacity-0 w-0 h-0" value="Existing Customers">
+
+                <div class="h-[22px] w-[22px] flex items-center justify-center shrink-0">
+                  <div class="check-icon checked h-full w-full flex items-center justify-center border-2 border-solid border-[#1890FF] bg-white rounded-full p-0.5">
+                    <div class="w-3 h-3 flex items-center justify-center rounded-full bg-[#1890FF]"></div>
+                  </div>
+                  <div class="unchecked h-full w-full flex items-center justify-center border-2 border-solid border-[#D9D9D9] bg-white rounded-full p-1.5">
+                    <div class="w-3 h-3 flex items-center justify-center rounded-full bg-white"></div>
+                  </div>
+                </div>
+
+                <span class="flex flex-1 ml-9">
+                  <span class="flex flex-col">
+                    <span id="project-type-1-label" class="block text-sm font-medium text-gray-900">Existing Customers</span>
+                    <span id="project-type-1-description-0" class="mt-1 flex items-center text-sm text-gray-500">Last message sent 2 weeks ago</span>
+                    <span id="project-type-1-description-1" class="mt-6 text-sm font-medium text-gray-900">1200 users</span>
+                  </span>
+                </span>
+
+              </label>
+            </div>
+          </fieldset>
+          
+        </div>
+      </div>
+    </form>
   </div>
 
   <div class="mt-auto flex flex-col sm:flex-row sm:items-center sm:justify-between">

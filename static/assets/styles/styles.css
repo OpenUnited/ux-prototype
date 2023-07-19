@@ -368,3 +368,19 @@
 .treeselect-list__item--checked {
   background-color: #e6f7ff;
 }
+
+input[type="radio"] ~ div > .unchecked {
+  display: flex;
+}
+
+input[type="radio"] ~ div > .checked {
+  display: none;
+}
+
+input[type="radio"]:checked ~ div > .checked {
+  display: flex;
+}
+
+input[type="radio"]:checked ~ div > .unchecked {
+  display: none;
+}
