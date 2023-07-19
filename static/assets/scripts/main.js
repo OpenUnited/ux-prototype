@@ -1,6 +1,7 @@
 // Get all tab links and tab bodies
 const tabLinks = document.querySelectorAll('.tab-link');
 const tabBodies = document.querySelectorAll('.tab-body');
+const ideasBtnModal = document.querySelector('.ideas-btn-modal');
 
 // Add click event listeners to tab links
 tabLinks.forEach((tabLink, index) => {
@@ -14,6 +15,15 @@ tabLinks.forEach((tabLink, index) => {
     // Add active class to the clicked tab link and corresponding tab body
     tabLink.classList.add('active');
     tabBodies[index].classList.add('active');
+
+    if(tabLink.classList.contains('active') && tabLink.classList.contains('tab-link-ideas')) {
+      ideasBtnModal.innerHTML = "Add Idea";
+      ideasBtnModal.dataset.id = "modal-idea"
+    } else {
+      ideasBtnModal.innerHTML = "Add Bug";
+      ideasBtnModal.dataset.id = "modal-bug"
+    }
+
   });
 });
 
@@ -35,18 +45,30 @@ btnModalClose.addEventListener("click", () => {
 
 // form for idea / bug in modal open
 
-const btnAddModapOpen = document.querySelectorAll(".btn-add-modal__open");
-const modalWrapIdeasBugs = document.querySelector(".modal-wrap-ideas-bugs");
-const btnAddModalClose = document.querySelector(".btn-add-modal__close");
+const btnAddModapOpen = document.querySelector(".btn-add-modal__open");
+const modalWrapIdeasBugs = document.querySelectorAll(".modal-wrap-ideas-bugs");
+const btnsIdeaModalClose = document.querySelectorAll(".btn-idea-modal__close");
 
-btnAddModapOpen.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    modalWrapIdeasBugs.classList.remove("hidden");
-  });
+
+btnAddModapOpen.addEventListener("click", () => {
+
+  modalWrapIdeasBugs.forEach((modal) => {
+
+    if(ideasBtnModal.dataset.id === modal.dataset.modal) {
+      modal.classList.remove("hidden");
+    } else {
+      modal.classList.add("hidden");
+    }
+
+  })
 });
 
-btnAddModalClose.addEventListener("click", () => {
-  modalWrapIdeasBugs.classList.add("hidden");
+btnsIdeaModalClose.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modalWrapIdeasBugs.forEach((modal) => {
+      modal.classList.add("hidden");
+    })
+  });
 });
 
 // video popup open
@@ -388,17 +410,18 @@ const options = [
   }
 ]
 
-const domElement = document.querySelector('.treeselect-demo')
-const treeselect = new Treeselect({
-  parentHtmlContainer: domElement,
-  options: options,
-})
+const domElements = document.querySelectorAll('.treeselect-demo')
 
-treeselect.srcElement.addEventListener('input', (e) => {
-  console.log('Selected value:', e.detail)
-})
+domElements.forEach((domElement) => {
 
-slot.addEventListener('click', (e) => {
-  e.preventDefault()
-  alert('Slot click!')
-})
+  const treeselect = new Treeselect({
+    parentHtmlContainer: domElement,
+    value: [],
+    options: options,
+  })
+
+  treeselect.srcElement.addEventListener('input', (e) => {
+    console.log('Selected value:', e.detail)
+  });
+  
+});

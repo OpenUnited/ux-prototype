@@ -5,22 +5,21 @@
 
 <div class="border-b border-gray-200 flex items-center justify-between grow w-full">
   <nav class="-mb-px flex space-x-3 md:space-x-8" aria-label="Tabs">
-    <a href="#" class="tab-link border-transparent text-gray-500 hover:border-gray-200 hover:text-gray-700 flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium">
+    <a href="#" class="tab-link tab-link-ideas border-transparent text-gray-500 hover:border-gray-200 hover:text-gray-700 flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium active" aria-current="page">
       Ideas
       <span class="bg-gray-100 text-gray-900 ml-1 md:ml-3 rounded-full py-0.5 px-1.5 md:px-2.5 text-xs font-medium inline-block">6</span>
     </a>
-    <a href="#" class="tab-link border-transparent text-gray-500 flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium active" aria-current="page">
+    <a href="#" class="tab-link tab-link-bugs border-transparent text-gray-500 flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium">
       Bugs
       <span class="bg-gray-100 text-gray-900 ml-1 md:ml-3 rounded-full py-0.5 px-1.5 md:px-2.5 text-xs font-medium inline-block">4</span>
     </a>
   </nav>
   <button type="button"
-    class="btn-add-modal__open w-fit flex items-center rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all hover:bg-gray-50">Add
-    Bug</button>
+    class="ideas-btn-modal btn-add-modal__open w-fit flex items-center rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all hover:bg-gray-50" data-id="modal-idea">Add Idea</button>
 </div>
 
 <div class="tab-content">
-  <div class="tab-body">
+  <div class="tab-body active">
     <div class="pt-6 text-gray-700 text-lg leading-6 font-semibold">Ideas Tab</div>
     <ul role="list" class="divide-y divide-gray-100">
       {% for product_idea in product_ideas_listings %}
@@ -51,7 +50,7 @@
       {% endfor %}
     </ul>
   </div>
-  <div class="tab-body active">
+  <div class="tab-body">
     <div class="pt-6 text-gray-700 text-lg leading-6 font-semibold">Bugs Tab</div>
     
     <div class="flex flex-col text-center items-center mt-5">
