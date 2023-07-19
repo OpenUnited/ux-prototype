@@ -22,6 +22,10 @@ def screen_list():
 def home_splash():
     return render_template("home_splash.html")
 
+@app.route('/challenges/steps')
+def challenges_steps():
+    return render_template("challenges_steps.html")
+
 @app.route('/challenges')
 def home_challenges():
     challenge_listings_file = os.path.abspath("data-sets/challenge_listings.json")
