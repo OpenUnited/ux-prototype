@@ -3,12 +3,12 @@
 {% block title %}Challenges Steps{% endblock %}
 {% block content %}
 
-<div class="flex flex-col grow">
+<div class="flex flex-col grow pb-14 lg:pb-0">
 
-  <div class="flex flex-col sm:flex-row space-x-4 pt-[50px] pb-[112px]">
-    <div class="flex flex-col pt-[34px] px-5 pb-[46px] border-[3px] border-solid border-[#F4F6F7]">
-      <div class="relative pb-20 last:pb-0">
-        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#1890FF]" aria-hidden="true"></span>
+  <div class="flex flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-4 lg:pt-[50px] pb-8 lg:pb-[112px]">
+    <div class="flex flex-col px-4 py-2.5 sm:pt-[34px] sm:px-5 sm:pb-[46px] border-2 sm:border-[3px] border-solid border-[#F4F6F7]">
+      <div class="relative sm:pb-20 last:pb-0" data-stepNumb="1">
+        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#1890FF] hidden sm:block" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
           <div>
             <span
@@ -17,71 +17,70 @@
             </span>
           </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-black/[0.85]">
+            <div class="text-sm leading-6 text-black/[0.85] font-semibold sm:font-normal">
               Choose challenge type
             </div>
           </div>
         </div>
       </div>
-
-      <div class="relative pb-20 last:pb-0">
-        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF]" aria-hidden="true"></span>
+      <div class="relative sm:pb-20 last:pb-0 hidden sm:block" data-stepNumb="2">
+        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
           <div>
             <span
-              class="h-6 w-6 rounded-full bg-white border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-[#BFBFBF]">
+              class="h-6 w-6 rounded-full bg-[#1890FF] sm:bg-white sm:border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white sm:text-[#BFBFBF]">
               2
             </span>
           </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-[#8C8C8C]">
+            <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Specify requirements
             </div>
           </div>
         </div>
       </div>
-      <div class="relative pb-20 last:pb-0">
-        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF]" aria-hidden="true"></span>
+      <div class="relative sm:pb-20 last:pb-0 hidden sm:block" data-stepNumb="3">
+        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
           <div>
             <span
-              class="h-6 w-6 rounded-full bg-white border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-[#BFBFBF]">
+              class="h-6 w-6 rounded-full bg-[#1890FF] sm:bg-white sm:border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white sm:text-[#BFBFBF]">
               3
             </span>
           </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-[#8C8C8C]">
+            <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Add brief
             </div>
           </div>
         </div>
       </div>
-      <div class="relative pb-20 last:pb-0">
-        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF]" aria-hidden="true"></span>
+      <div class="relative sm:pb-20 last:pb-0 hidden sm:block" data-stepNumb="4">
+        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
           <div>
             <span
-              class="h-6 w-6 rounded-full bg-white border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-[#BFBFBF]">
+              class="h-6 w-6 rounded-full bg-[#1890FF] sm:bg-white sm:border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white sm:text-[#BFBFBF]">
               4
             </span>
           </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-[#8C8C8C]">
+            <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Add additional info
             </div>
           </div>
         </div>
       </div>
-      <div class="relative pb-20 last:pb-0">
+      <div class="relative sm:pb-20 last:pb-0 hidden sm:block" data-stepNumb="5">
         <div class="relative flex space-x-3">
           <div>
             <span
-              class="h-6 w-6 rounded-full bg-white border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-[#BFBFBF]">
+              class="h-6 w-6 rounded-full bg-[#1890FF] sm:bg-white sm:border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white sm:text-[#BFBFBF]">
               5
             </span>
           </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-[#8C8C8C]">
+            <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Review and publish
             </div>
           </div>
@@ -89,16 +88,16 @@
       </div>
     </div>
     <form
-      class="flex flex-col justify-between grow px-5 px-5 lg:px-[34px] py-6 lg:py-[54px] mb-0 sm:border-[3px] border-solid border-[#F4F6F7]">
-      <div class="flex flex-col space-y-[72px]" data-stepId="1">
+      class="flex flex-col justify-between grow sm:px-5 lg:px-[34px] sm:py-6 lg:py-[54px] mb-0 sm:border-[3px] border-solid border-[#F4F6F7]">
+      <div class="flex flex-col space-y-6 sm:space-y-10 lg:space-y-[72px]" data-stepId="1">
         <div class="flex flex-col">
           <fieldset>
-            <legend for="question-1" class="text-2xl text-black/[0.85] font-semobild mb-6 max-w-[484px] w-full">Does
+            <legend for="question-1" class="text-xl sm:text-2xl text-black/[0.85] font-semobild mb-4 sm:mb-6 max-w-[484px] w-full">Does
               solving your challenge require one skill, or multiple skills?</legend>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
               <label
-                class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-[18px] pl-5 xl:pl-[34px] pr-4 focus:outline-none">
+                class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-3 sm:py-[18px] pl-4 sm:pl-5 xl:pl-[34px] pr-2.5 sm:pr-4 focus:outline-none">
                 <input type="radio" name="skills-amount" class="opacity-0 w-0 h-0" value="type-1" checked>
 
                 <div class="h-[22px] w-[22px] flex items-center justify-center shrink-0">
@@ -112,20 +111,20 @@
                   </div>
                 </div>
 
-                <span class="flex items-center flex-1 ml-4 xl:ml-9">
-                  <div class="w-[54px] h-[54px] flex shrink-0 items-center justify-center mr-3">
+                <span class="flex items-center flex-1 ml-2.5 sm:ml-4 xl:ml-9">
+                  <div class="w-8 sm:w-[54px] h-8 sm:h-[54px] flex shrink-0 items-center justify-center mr-2.5">
                     <img class="w-full h-full object-center object-contain" src="/static/assets/images/skill-1.png"
                       alt="#">
                   </div>
                   <span class="flex flex-col">
-                    <span class="inline-flex text-lg font-medium text-black/[0.85] mb-1.5">One Skill</span>
-                    <span class="inline-flex text-sm text-black/[0.85]">E.g. Frontend Development</span>
+                    <span class="inline-flex text-base sm:text-lg font-medium text-black/[0.85] sm:mb-1.5">One Skill</span>
+                    <span class="inline-flex text-xs sm:text-sm text-black/[0.85]">E.g. Frontend Development</span>
                   </span>
                 </span>
 
               </label>
               <label
-                class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-[18px] pl-5 xl:pl-[34px] pr-4 focus:outline-none">
+                class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-3 sm:py-[18px] pl-4 sm:pl-5 xl:pl-[34px] pr-2.5 sm:pr-4 focus:outline-none">
                 <input type="radio" name="skills-amount" class="opacity-0 w-0 h-0" value="type-2">
 
                 <div class="h-[22px] w-[22px] flex items-center justify-center shrink-0">
@@ -139,14 +138,14 @@
                   </div>
                 </div>
 
-                <span class="flex items-center flex-1 ml-4 xl:ml-9">
-                  <div class="w-[54px] h-[54px] flex shrink-0 items-center justify-center mr-3">
+                <span class="flex items-center flex-1 ml-2.5 sm:ml-4 xl:ml-9">
+                  <div class="w-8 sm:w-[54px] h-8 sm:h-[54px] flex shrink-0 items-center justify-center mr-2.5">
                     <img class="w-full h-full object-center object-contain" src="/static/assets/images/skill-2.svg"
                       alt="#">
                   </div>
                   <span class="flex flex-col">
-                    <span class="inline-flex text-lg font-medium text-black/[0.85] mb-1.5">Multi Skills</span>
-                    <span class="inline-flex text-sm text-black/[0.85]">E.g. User Research and Graphic Design</span>
+                    <span class="inline-flex text-base sm:text-lg font-medium text-black/[0.85] sm:mb-1.5">Multi Skills</span>
+                    <span class="inline-flex text-xs sm:text-sm text-black/[0.85]">E.g. User Research and Graphic Design</span>
                   </span>
                 </span>
 
@@ -157,12 +156,12 @@
         </div>
         <div class="flex flex-col">
           <fieldset>
-            <legend for="question-1" class="text-2xl text-black/[0.85] font-semobild mb-6 max-w-[484px] w-full">How will
+            <legend for="question-1" class="text-xl sm:text-2xl text-black/[0.85] font-semobild mb-4 sm:mb-6 max-w-[484px] w-full">How will
               solving this challenge be rewarded?</legend>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
               <label
-                class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-[18px] pl-5 xl:pl-[34px] pr-4 focus:outline-none">
+                class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-3 sm:py-[18px] pl-4 sm:pl-5 xl:pl-[34px] pr-2.5 sm:pr-4 focus:outline-none">
                 <input type="radio" name="challenge-rewarded" class="opacity-0 w-0 h-0" value="type-1" checked>
 
                 <div class="h-[22px] w-[22px] flex items-center justify-center shrink-0">
@@ -176,20 +175,20 @@
                   </div>
                 </div>
 
-                <span class="flex items-center flex-1 ml-4 xl:ml-9">
-                  <div class="w-[54px] h-[54px] flex shrink-0 items-center justify-center mr-3">
+                <span class="flex items-center flex-1 ml-2.5 sm:ml-4 xl:ml-9">
+                  <div class="w-8 sm:w-[54px] h-8 sm:h-[54px] flex shrink-0 items-center justify-center mr-2.5">
                     <img class="w-full h-full object-center object-contain" src="/static/assets/images/skill-3.svg"
                       alt="#">
                   </div>
                   <span class="flex flex-col">
-                    <span class="inline-flex text-lg font-medium text-black/[0.85] mb-1.5">Non-liquid points</span>
-                    <span class="inline-flex text-sm text-black/[0.85]">Can not be redeemed for money</span>
+                    <span class="inline-flex text-base sm:text-lg font-medium text-black/[0.85] sm:mb-1.5">Non-liquid points</span>
+                    <span class="inline-flex text-xs sm:text-sm text-black/[0.85]">Can not be redeemed for money</span>
                   </span>
                 </span>
 
               </label>
               <label
-                class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-[18px] pl-5 xl:pl-[34px] pr-4 focus:outline-none">
+                class="relative flex items-center cursor-pointer rounded border border-solid border-[#F0F0F0] bg-white py-3 sm:py-[18px] pl-4 sm:pl-5 xl:pl-[34px] pr-2.5 sm:pr-4 focus:outline-none">
                 <input type="radio" name="challenge-rewarded" class="opacity-0 w-0 h-0" value="type-2">
 
                 <div class="h-[22px] w-[22px] flex items-center justify-center shrink-0">
@@ -203,14 +202,14 @@
                   </div>
                 </div>
 
-                <span class="flex items-center flex-1 ml-4 xl:ml-9">
-                  <div class="w-[54px] h-[54px] flex shrink-0 items-center justify-center mr-3">
+                <span class="flex items-center flex-1 ml-2.5 sm:ml-4 xl:ml-9">
+                  <div class="w-8 sm:w-[54px] h-8 sm:h-[54px] flex shrink-0 items-center justify-center mr-2.5">
                     <img class="w-full h-full object-center object-contain" src="/static/assets/images/skill-4.svg"
                       alt="#">
                   </div>
                   <span class="flex flex-col">
-                    <span class="inline-flex text-lg font-medium text-black/[0.85] mb-1.5">Liquid points</span>
-                    <span class="inline-flex text-sm text-black/[0.85]">Can be redeemd for money</span>
+                    <span class="inline-flex text-base sm:text-lg font-medium text-black/[0.85] sm:mb-1.5">Liquid points</span>
+                    <span class="inline-flex text-xs sm:text-sm text-black/[0.85]">Can be redeemd for money</span>
                   </span>
                 </span>
 
