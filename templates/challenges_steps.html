@@ -3,9 +3,9 @@
 {% block title %}Challenges Steps{% endblock %}
 {% block content %}
 
-<div class="flex flex-col grow pb-14 lg:pb-0">
+<div class="flex flex-col grow pb-8 lg:pb-0">
 
-  <div class="flex flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-4 lg:pt-[50px] pb-8 lg:pb-12" data-current-step="1">
+  <div class="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-4 lg:pt-[50px] sm:pb-8 lg:pb-12" data-current-step="1">
     <div
       class="steps flex flex-col px-4 py-2.5 sm:pt-[34px] sm:px-5 sm:pb-[46px] border-2 sm:border-[3px] border-solid border-[#F4F6F7]">
       <div class="active step-numb relative" data-step-numb="1">
@@ -13,7 +13,7 @@
         <div class="relative flex space-x-3">
           <div class="step-numb__item"> <span>1</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-black/[0.85] font-semibold sm:font-normal">
+            <div class="step-numb__text text-sm leading-6 text-black/[0.85] font-semibold sm:font-normal">
               Choose challenge type
             </div>
           </div>
@@ -24,7 +24,7 @@
         <div class="relative flex space-x-3">
           <div class="step-numb__item"> <span>2</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
+            <div class="step-numb__text text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Specify requirements
             </div>
           </div>
@@ -35,7 +35,7 @@
         <div class="relative flex space-x-3">
           <div class="step-numb__item"> <span>3</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
+            <div class="step-numb__text text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Add brief
             </div>
           </div>
@@ -46,7 +46,7 @@
         <div class="relative flex space-x-3">
           <div class="step-numb__item"> <span>4</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
+            <div class="step-numb__text text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Add additional info
             </div>
           </div>
@@ -56,7 +56,7 @@
         <div class="relative flex space-x-3">
           <div class="step-numb__item"> <span>5</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
-            <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
+            <div class="step-numb__text text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Review and publish
             </div>
           </div>
@@ -66,11 +66,11 @@
     <form
       class="challenges-steps flex flex-col justify-between grow sm:px-5 lg:px-[34px] sm:py-6 lg:pb-9 lg:pt-[34px] mb-0 sm:border-[3px] border-solid border-[#F4F6F7]">
 
-      <div class="active flex-col space-y-6 sm:space-y-10 lg:space-y-12 mb-10" data-step-id="1">
+      <div class="active flex-col space-y-6 sm:space-y-10 lg:space-y-12 mb-8 sm:mb-10" data-step-id="1">
         <div class="flex flex-col">
           <fieldset>
             <legend for="question-1"
-              class="text-xl sm:text-2xl text-black/[0.85] font-semobild mb-4 sm:mb-6 max-w-[484px] w-full">Does
+              class="text-xl sm:text-2xl text-black/[0.85] font-semobild mb-4 sm:mb-6 w-full">Does
               solving your challenge require one skill, or multiple skills?</legend>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
@@ -138,7 +138,7 @@
         <div class="flex flex-col">
           <fieldset>
             <legend for="question-1"
-              class="text-xl sm:text-2xl text-black/[0.85] font-semobild mb-4 sm:mb-6 max-w-[484px] w-full">How will
+              class="text-xl sm:text-2xl text-black/[0.85] font-semobild mb-4 sm:mb-6 w-full">How will
               solving this challenge be rewarded?</legend>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
@@ -211,7 +211,7 @@
 
       </div>
       <div class="flex-col mb-10" data-step-id="5">
-        <div class="flex flex-col max-w-[850px] w-full">
+        <div class="flex flex-col max-w-[850px]">
           <div class="text-2xl font-medium text-black/[0.85] mb-9">Summary</div>
           <label for="title" class="text-lg text-black/[0.85] mb-2">Title</label>
           <input type="text" id="title" name="title"
@@ -219,9 +219,54 @@
             placeholder="Admin or manager should be able to approve or reject tasks">
           <label for="description" class="text-lg text-black/[0.85] mb-2">Description</label>
           <textarea name="description" id="description"
-            class="pt-2 px-4 pb-3 min-h-[164px] w-full text-sm text-black border border-solid border-[#D9D9D9] focus:outline-none"
+            class="pt-2 px-4 pb-3 min-h-[164px] w-full text-sm text-black border border-solid border-[#D9D9D9] focus:outline-none rounded-sm"
             placeholder="Lorem ipsum"></textarea>
-          <div class="mt-[18px]"></div>
+
+            <div class="-mx-4 mt-[18px] flow-root sm:mx-0 max-w-[682px] w-full">
+              <table class="min-w-full">
+                <colgroup>
+                  <col class="w-5/6">
+                  <col class="w-1/6">
+                </colgroup>
+                <thead class="border-b border-gray-300 text-gray-900">
+                  <tr>
+                    <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">Skill & Expertise</th>
+                    <th scope="col" class="py-3.5 pl-3 pr-4 text-sm font-semibold text-gray-900 sm:pr-0 text-center">Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-200">
+                    <td class="max-w-0 py-5 pl-4 pr-3 text-sm sm:pl-0">
+                      <div class="font-medium text-gray-900">Softwara Development > Frontend Development (React, Typescript)</div>
+                    </td>
+                    <td class="py-5 pl-3 pr-4 text-sm text-gray-500 sm:pr-0 text-center">3</td>
+                  </tr>
+                  <tr class="border-b border-gray-200">
+                    <td class="max-w-0 py-5 pl-4 pr-3 text-sm sm:pl-0">
+                      <div class="font-medium text-gray-900">Design > UX Design (Figma)</div>
+                    </td>
+                    <td class="py-5 pl-3 pr-4 text-sm text-gray-500 sm:pr-0 text-center">10</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th scope="row" class="hidden pl-4 pr-3 pt-6 text-right text-sm font-normal text-gray-500 sm:table-cell sm:pl-0">Total</th>
+                    <th scope="row" class="pl-4 pr-3 pt-6 text-left text-sm font-normal text-gray-500 sm:hidden">Total</th>
+                    <td class="pl-3 pr-4 pt-6 text-sm text-gray-500 sm:pr-0 text-center">13</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="hidden pl-4 pr-3 pt-4 text-right text-sm font-normal text-gray-500 sm:table-cell sm:pl-0">Your balance</th>
+                    <th scope="row" class="pl-4 pr-3 pt-4 text-left text-sm font-normal text-gray-500 sm:hidden">Your balance</th>
+                    <td class="pl-3 pr-4 pt-4 text-sm text-gray-500 sm:pr-0 text-center">46</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="hidden pl-4 pr-3 pt-4 text-right text-sm font-semibold text-gray-900 sm:table-cell sm:pl-0">Ramaining balance after publishing</th>
+                    <th scope="row" class="pl-4 pr-3 pt-4 text-left text-sm font-semibold text-gray-900 sm:hidden">Ramaining balance after publishing</th>
+                    <td class="pl-3 pr-4 pt-4 text-sm font-semibold text-gray-900 sm:pr-0 text-center">33</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
         </div>
       </div>
 
@@ -233,11 +278,11 @@
             class="bg-transparent text-sm font-semibold text-sm leading-6 text-gray-900 leading-6 transition-all delay-600 rounded px-3.5 py-1.5 hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent hover:underline underline-offset-2 cursor-pointer">Cancel</button>
         </div>
         <div class="sm:ml-auto mt-3 md:mt-0 flex items-center justify-end space-x-4">
-          <button type="button" class="w-fit bg-white text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-gray-900 shadow-sm hover:bg-gray-900/[0.8] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent cursor-pointer border border-solid border-[#ddd] 
+          <button type="button" class="w-fit min-w-[96px] bg-white text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-gray-900 shadow-sm hover:bg-gray-900/[0.8] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent cursor-pointer border border-solid border-[#ddd] 
           hover:border-gray-900/[0.8] hidden" 
-          data-step-previous="">Previous</button>
-          <button type="button" class="w-fit bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer" 
-          data-step-next="">Next</button>
+          data-step-previous=""><span aria-hidden="true" class="pointer-events-none">←</span> Previous</button>
+          <button type="button" class="w-fit min-w-[96px] bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer" 
+          data-step-next="">Next <span aria-hidden="true" class="pointer-events-none">→</span></button>
         </div>
       </div>
 
