@@ -429,5 +429,68 @@ domElements.forEach((domElement) => {
 
 });
 
-// for challenges steps:
+// for challenges steps
 
+const stepNumbs = document.querySelectorAll('[data-step-numb]');
+const stepForms = document.querySelectorAll('[data-step-id]');
+const stepCurrent = document.querySelector('[data-current-step');
+const stepNext = document.querySelector('[data-step-next]');
+const stepPrevious = document.querySelector('[data-step-previous]');
+
+function changeStep (currentStep) {
+  
+  stepNumbs.forEach((numb) => {
+    
+    if(Number(numb.dataset.stepNumb) === currentStep) {
+      numb.classList.add('active');
+    } else {
+      numb.classList.remove('active');
+    }
+  });
+
+  stepForms.forEach((form) => {
+    
+    if(Number(form.dataset.stepId) === currentStep) {
+      form.classList.add('active');
+    } else {
+      form.classList.remove('active');
+    }
+  });
+
+  console.log(currentStep);
+
+  if(currentStep === 1) {
+    stepPrevious.classList.add('hidden');
+  } else {
+    stepPrevious.classList.remove('hidden');
+  };
+
+  if(currentStep === 5) {
+    stepNext.classList.add('hidden');
+  } else {
+    stepNext.classList.remove('hidden');
+  };
+
+}
+
+stepNext.addEventListener('click', () => {
+
+  if(Number(stepCurrent.dataset.currentStep) === 5) {
+    return;
+  }
+
+  stepCurrent.dataset.currentStep = Number(stepCurrent.dataset.currentStep) + 1;
+  changeStep( Number(stepCurrent.dataset.currentStep) );
+
+});
+
+stepPrevious.addEventListener('click', () => {
+
+  if(Number(stepCurrent.dataset.currentStep) === 1) {
+    return;
+  }
+
+  stepCurrent.dataset.currentStep = Number(stepCurrent.dataset.currentStep) - 1;
+  changeStep( Number(stepCurrent.dataset.currentStep) );
+
+});
