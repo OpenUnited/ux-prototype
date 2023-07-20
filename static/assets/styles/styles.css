@@ -386,9 +386,7 @@ input[type="radio"]:checked ~ div > .unchecked {
 }
 
 .step-numb.active {
-  background-color: black;
 }
 
 [data-step-id].active {
-  background-color: black;
 }
