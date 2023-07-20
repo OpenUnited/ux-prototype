@@ -7,7 +7,7 @@
 
   <div class="flex flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-4 lg:pt-[50px] pb-8 lg:pb-[112px]">
     <div class="flex flex-col px-4 py-2.5 sm:pt-[34px] sm:px-5 sm:pb-[46px] border-2 sm:border-[3px] border-solid border-[#F4F6F7]">
-      <div class="relative sm:pb-20 last:pb-0" data-stepNumb="1">
+      <div class="step-numb active relative sm:pb-20 last:pb-0" data-step-numb="1">
         <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#1890FF] hidden sm:block" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
           <div>
@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="relative sm:pb-20 last:pb-0 hidden sm:block" data-stepNumb="2">
+      <div class="step-numb relative sm:pb-20 last:pb-0 hidden sm:block" data-step-numb="2">
         <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
           <div>
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="relative sm:pb-20 last:pb-0 hidden sm:block" data-stepNumb="3">
+      <div class="step-numb relative sm:pb-20 last:pb-0 hidden sm:block" data-step-numb="3">
         <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
           <div>
@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="relative sm:pb-20 last:pb-0 hidden sm:block" data-stepNumb="4">
+      <div class="step-numb relative sm:pb-20 last:pb-0 hidden sm:block" data-step-numb="4">
         <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
           <div>
@@ -71,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div class="relative sm:pb-20 last:pb-0 hidden sm:block" data-stepNumb="5">
+      <div class="step-numb relative sm:pb-20 last:pb-0 hidden sm:block" data-step-numb="5">
         <div class="relative flex space-x-3">
           <div>
             <span
@@ -88,8 +88,8 @@
       </div>
     </div>
     <form
-      class="flex flex-col justify-between grow sm:px-5 lg:px-[34px] sm:py-6 lg:py-[54px] mb-0 sm:border-[3px] border-solid border-[#F4F6F7]">
-      <div class="flex flex-col space-y-6 sm:space-y-10 lg:space-y-[72px]" data-stepId="1">
+      class="challenges-steps flex flex-col justify-between grow sm:px-5 lg:px-[34px] sm:py-6 lg:py-[54px] mb-0 sm:border-[3px] border-solid border-[#F4F6F7]">
+      <div class="flex flex-col space-y-6 sm:space-y-10 lg:space-y-[72px] active" data-step-id="1">
         <div class="flex flex-col">
           <fieldset>
             <legend for="question-1" class="text-xl sm:text-2xl text-black/[0.85] font-semobild mb-4 sm:mb-6 max-w-[484px] w-full">Does
@@ -118,7 +118,7 @@
                   </div>
                   <span class="flex flex-col">
                     <span class="inline-flex text-base sm:text-lg font-medium text-black/[0.85] sm:mb-1.5">One Skill</span>
-                    <span class="inline-flex text-xs sm:text-sm text-black/[0.85]">E.g. Frontend Development</span>
+                    <span class="inline-flex text-xs sm:text-sm text-bluack/[0.85]">E.g. Frontend Development</span>
                   </span>
                 </span>
 
@@ -219,18 +219,44 @@
 
         </div>
       </div>
+      <div class="flex flex-col" data-step-id="2">
+        <div class="flex flex-col">
+
+        </div>
+      </div>
+      <div class="flex flex-col" data-step-id="3">
+        <div class="flex flex-col">
+          
+        </div>
+      </div>
+
+      <div class="flex flex-col" data-step-id="4">
+        <div class="flex flex-col">
+          
+        </div>
+      </div>
+
+      <div class="flex flex-col" data-step-id="5">
+        <div class="flex flex-col">
+          
+        </div>
+      </div>
     </form>
   </div>
 
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-    <div class="flex items-center justify-start space-x-4">
+    <div class="flex items-center justify-end sm:justify-start space-x-4">
       <button class="bg-white text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-gray-900 shadow-sm hover:bg-gray-900/[0.8] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent cursor-pointer border border-solid border-[#ddd] 
         hover:border-gray-900/[0.8] btn-modal__open">Save as a draft</button>
       <button
         class="bg-transparent text-sm font-semibold text-sm leading-6 text-gray-900 leading-6 transition-all delay-600 rounded px-3.5 py-1.5 hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent hover:underline underline-offset-2 cursor-pointer">Cancel</button>
     </div>
-    <button
-      class="mt-4 sm:mt-0 sm:ml-auto w-fit bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer btn-modal__open">Next</button>
+    <div class="sm:ml-auto mt-4 sm:mt-0 flex items-center space-x-4">
+      <button class="w-1/2 sm:w-fit bg-white text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-gray-900 shadow-sm hover:bg-gray-900/[0.8] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent cursor-pointer border border-solid border-[#ddd] 
+        hover:border-gray-900/[0.8] btn-modal__open" data-step-previous="">Previous</button>
+      <button
+        class="w-1/2 sm:w-fit bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer" data-step-next="">Next</button>
+    </div>
   </div>
 </div>
 
