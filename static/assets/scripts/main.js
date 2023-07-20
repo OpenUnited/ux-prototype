@@ -457,8 +457,6 @@ function changeStep (currentStep) {
     }
   });
 
-  console.log(currentStep);
-
   if(currentStep === 1) {
     stepPrevious.classList.add('hidden');
   } else {

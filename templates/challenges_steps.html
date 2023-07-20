@@ -6,16 +6,11 @@
 <div class="flex flex-col grow pb-14 lg:pb-0">
 
   <div class="flex flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-4 lg:pt-[50px] pb-8 lg:pb-[112px]" data-current-step="1">
-    <div class="flex flex-col px-4 py-2.5 sm:pt-[34px] sm:px-5 sm:pb-[46px] border-2 sm:border-[3px] border-solid border-[#F4F6F7]">
-      <div class="step-numb active relative sm:pb-20 last:pb-0" data-step-numb="1">
-        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#1890FF] hidden sm:block" aria-hidden="true"></span>
+    <div class="steps flex flex-col px-4 py-2.5 sm:pt-[34px] sm:px-5 sm:pb-[46px] border-2 sm:border-[3px] border-solid border-[#F4F6F7]">
+      <div class="step-numb relative active" data-step-numb="1">
+        <span class="step-numb__divider" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
-          <div>
-            <span
-              class="h-6 w-6 rounded-full bg-[#1890FF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white">
-              1
-            </span>
-          </div>
+          <div class="step-numb__item"> <span>1</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
             <div class="text-sm leading-6 text-black/[0.85] font-semibold sm:font-normal">
               Choose challenge type
@@ -23,15 +18,10 @@
           </div>
         </div>
       </div>
-      <div class="step-numb relative sm:pb-20 last:pb-0 hidden sm:block" data-step-numb="2">
-        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
+      <div class="step-numb relative" data-step-numb="2">
+        <span class="step-numb__divider" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
-          <div>
-            <span
-              class="h-6 w-6 rounded-full bg-[#1890FF] sm:bg-white sm:border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white sm:text-[#BFBFBF]">
-              2
-            </span>
-          </div>
+          <div class="step-numb__item"> <span>2</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
             <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Specify requirements
@@ -39,15 +29,10 @@
           </div>
         </div>
       </div>
-      <div class="step-numb relative sm:pb-20 last:pb-0 hidden sm:block" data-step-numb="3">
-        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
+      <div class="step-numb relative" data-step-numb="3">
+        <span class="step-numb__divider" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
-          <div>
-            <span
-              class="h-6 w-6 rounded-full bg-[#1890FF] sm:bg-white sm:border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white sm:text-[#BFBFBF]">
-              3
-            </span>
-          </div>
+          <div class="step-numb__item"> <span>3</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
             <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Add brief
@@ -55,15 +40,10 @@
           </div>
         </div>
       </div>
-      <div class="step-numb relative sm:pb-20 last:pb-0 hidden sm:block" data-step-numb="4">
-        <span class="absolute left-3 top-[14px] -ml-px h-full w-px bg-[#BFBFBF] hidden sm:block" aria-hidden="true"></span>
+      <div class="step-numb relative" data-step-numb="4">
+        <span class="step-numb__divider" aria-hidden="true"></span>
         <div class="relative flex space-x-3">
-          <div>
-            <span
-              class="h-6 w-6 rounded-full bg-[#1890FF] sm:bg-white sm:border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white sm:text-[#BFBFBF]">
-              4
-            </span>
-          </div>
+          <div class="step-numb__item"> <span>4</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
             <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Add additional info
@@ -71,14 +51,9 @@
           </div>
         </div>
       </div>
-      <div class="step-numb relative sm:pb-20 last:pb-0 hidden sm:block" data-step-numb="5">
+      <div class="step-numb relative" data-step-numb="5">
         <div class="relative flex space-x-3">
-          <div>
-            <span
-              class="h-6 w-6 rounded-full bg-[#1890FF] sm:bg-white sm:border border-solid border-[#BFBFBF] flex items-center justify-center ring-8 ring-white text-xs leading-5 text-white sm:text-[#BFBFBF]">
-              5
-            </span>
-          </div>
+          <div class="step-numb__item"> <span>5</span> </div>
           <div class="flex min-w-0 flex-1 ml-4">
             <div class="text-sm leading-6 text-black/[0.85] sm:text-[#8C8C8C] font-semibold sm:font-normal">
               Review and publish
@@ -251,7 +226,7 @@
       <button
         class="bg-transparent text-sm font-semibold text-sm leading-6 text-gray-900 leading-6 transition-all delay-600 rounded px-3.5 py-1.5 hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent hover:underline underline-offset-2 cursor-pointer">Cancel</button>
     </div>
-    <div class="sm:ml-auto mt-4 sm:mt-0 flex items-center space-x-4">
+    <div class="sm:ml-auto mt-4 sm:mt-0 flex items-center justify-end space-x-4">
       <button class="w-1/2 sm:w-fit bg-white text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-gray-900 shadow-sm hover:bg-gray-900/[0.8] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent cursor-pointer border border-solid border-[#ddd] 
         hover:border-gray-900/[0.8] hidden" data-step-previous="">Previous</button>
       <button
