@@ -93,6 +93,23 @@ modalWrapCloseBtn.addEventListener("click", () => {
   modalWrap.classList.add("hidden");
 });
 
+// skills popup open
+
+const skillsBtnOpen = document.querySelector(".skills-modal__open");
+const modalWrapSkills = document.querySelector(".modal-wrap__skills");
+const modalSkillsCloseBtn = document.querySelector(".btn-skills__close");
+
+if(skillsBtnOpen) {
+    skillsBtnOpen.addEventListener("click", () => {
+    modalWrapSkills.classList.remove("hidden");
+    console.log(modalWrapSkills)
+  });
+}
+
+modalSkillsCloseBtn.addEventListener("click", () => {
+  modalWrapSkills.classList.add("hidden");
+});
+
 // product tree functionality
 
 const nestedTableNames = document.querySelectorAll(".nested-item__label-icon");
