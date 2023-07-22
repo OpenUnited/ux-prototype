@@ -56,7 +56,7 @@
 .choices__inner {
   background-color: #fff;
   border-color: #d9d9d9;
-  padding: 2px 24px 2px 4px;
+  padding: 2px 24px 2px 12px;
   min-height: 30px;
 }
 
@@ -477,4 +477,14 @@ input[type="radio"]:checked ~ div > .unchecked {
 
 .step-numb.active ~ .step-numb .step-numb__item span {
   display: block;
+}
+
+.hint-popup {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hint:hover .hint-popup {
+  visibility: visible;
+  opacity: 1;
 }

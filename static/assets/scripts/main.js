@@ -144,6 +144,7 @@ const selectControlRefPriority = document.querySelector('#control-ref_priority')
 const selectControlRefCategories = document.querySelector('#control-ref_categories');
 const selectControlRefTags = document.querySelector('#control-ref_tags');
 const selectControlRefStatuses = document.querySelector('#control-ref_statuses');
+const selectPriority = document.querySelector('#priority');
 
 const choicesSortedBy = new Choices(selectControlRefSortedBy, {
 
@@ -164,6 +165,11 @@ const choicesTags = new Choices(selectControlRefTags, {
   removeItemButton: true,
 });
 const choicesStatuses = new Choices(selectControlRefStatuses, {
+  placeholder: true,
+  removeItems: true,
+  removeItemButton: true,
+});
+const choicesSelectPriority = new Choices(selectPriority, {
   placeholder: true,
   removeItems: true,
   removeItemButton: true,
