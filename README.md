@@ -4,6 +4,8 @@ Congratulations, you can now be a "UX Developer"!
 
 TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifications. We now do UX/UI prototyping and specifications as code, in this repo, using TailwindCSS and [TailwindUI](https://tailwindui.com/).
 
+In this repo, we prototype and specify the target UX. Whilst we try to align the contents in this app with reality (e.g. data structures in json files reflect the real platform), this repo is however not deployed to production. The [platform repo](https://github.com/OpenUnited/platform) has all production code, for the backend and deliberately simple frontend.
+
 ## Getting started / how to run this app
 
 Good if you fork this repo, then depending on your local environment, do something like the following with "OpenUnited" changed for your own GitHub username:
