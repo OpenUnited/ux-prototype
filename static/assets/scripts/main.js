@@ -459,9 +459,12 @@ const stepForms = document.querySelectorAll('[data-step-id]');
 const stepCurrent = document.querySelector('[data-current-step');
 const stepNext = document.querySelector('[data-step-next]');
 const stepPrevious = document.querySelector('[data-step-previous]');
+const changeStepEdit = document.querySelector('#change-step-edit');
 
 function changeStep (currentStep) {
   
+  stepCurrent.dataset.currentStep = Number(currentStep);
+
   stepNumbs.forEach((numb) => {
     
     if(Number(numb.dataset.stepNumb) === currentStep) {
@@ -494,14 +497,19 @@ function changeStep (currentStep) {
 
 }
 
+changeStepEdit.addEventListener('click', () => {
+
+  changeStep(2);
+
+})
+
 stepNext.addEventListener('click', () => {
 
   if(Number(stepCurrent.dataset.currentStep) === 5) {
     return;
   }
 
-  stepCurrent.dataset.currentStep = Number(stepCurrent.dataset.currentStep) + 1;
-  changeStep( Number(stepCurrent.dataset.currentStep) );
+  changeStep( Number(stepCurrent.dataset.currentStep) + 1 );
 
 });
 
@@ -511,7 +519,6 @@ stepPrevious.addEventListener('click', () => {
     return;
   }
 
-  stepCurrent.dataset.currentStep = Number(stepCurrent.dataset.currentStep) - 1;
-  changeStep( Number(stepCurrent.dataset.currentStep) );
+  changeStep( Number(stepCurrent.dataset.currentStep) - 1);
 
 });
