@@ -460,9 +460,10 @@ const stepCurrent = document.querySelector('[data-current-step');
 const stepNext = document.querySelector('[data-step-next]');
 const stepPrevious = document.querySelector('[data-step-previous]');
 const changeStepEdit = document.querySelector('#change-step-edit');
+const publishBtn = document.querySelector('#publish-btn');
 
 function changeStep (currentStep) {
-  
+
   stepCurrent.dataset.currentStep = Number(currentStep);
 
   stepNumbs.forEach((numb) => {
@@ -491,8 +492,10 @@ function changeStep (currentStep) {
 
   if(currentStep === 5) {
     stepNext.classList.add('hidden');
+    publishBtn.classList.remove('hidden');
   } else {
     stepNext.classList.remove('hidden');
+    publishBtn.classList.add('hidden');
   };
 
 }
@@ -522,3 +525,4 @@ stepPrevious.addEventListener('click', () => {
   changeStep( Number(stepCurrent.dataset.currentStep) - 1);
 
 });
+
