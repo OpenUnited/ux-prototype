@@ -415,18 +415,27 @@ input[type="radio"]:checked ~ div > .unchecked {
   padding-bottom: 0px;
 }
 
-@media(max-width: 639px) {
-  .step-numb {
-    padding-bottom: 28px;
-  }
-}
-
 .step-numb.active .step-numb__divider {
   background-color: #1890FF;
 }
 
 .step-numb.active ~ .step-numb .step-numb__divider {
   background-color: #BFBFBF;
+}
+
+@media(max-width: 639px) {
+  .step-numb {
+    padding-bottom: 0px;
+    display: none;
+  }
+
+  .step-numb.active {
+    display: inline-flex;
+  }
+
+  .step-numb__divider {
+    display: none;
+  }
 }
 
 .step-numb__item {
