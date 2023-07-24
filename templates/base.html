@@ -493,8 +493,9 @@
 
       <div class="fixed inset-0 z-10 overflow-y-auto">
         <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:px-0">
+          <!-- removed overflow-hidden for show select -->
           <div
-            class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full max-w-[568px] lg:max-w-[808px] px-5 lg:px-[70px] py-[30px] lg:py-[58px] sm:mx-5">
+            class="relative transform rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full max-w-[568px] lg:max-w-[808px] px-5 lg:px-[70px] py-[30px] lg:py-[58px] sm:mx-5">
             <div
               class="btn-skills__close relative -mt-0.5 sm:-mt-1.5 -mr-1 sm:-mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
               <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
@@ -510,7 +511,7 @@
                 </div>
                 <div class="text-base mt-2">Please add skills that are required for completing this challenge</div>
                 <div class="mt-[18px]">
-                  <div class="treeselect-demo focus-visible:outline-transparent"></div>
+                  <div class="treeselect-skills focus-visible:outline-transparent"></div>
                 </div>
                 <div class="mt-10 lg:mt-[76px] text-2xl text-black/[0.85] font-bold">Add expertise</div>
                 <div class="text-base mt-2">Please add skills that are required for completing this challenge</div>
@@ -533,7 +534,7 @@
                         </td>
                         <td class="max-w-0 py-5 pl-1.5 sm:pl-4 pr-1.5 sm:pr-3 text-xs sm:pl-0">
                           <div class="font-medium text-gray-900">
-                            <div class="treeselect-demo focus-visible:outline-transparent"></div>
+                            <div class="treeselect-expertise focus-visible:outline-transparent"></div>
                           </div>
                         </td>
                       </tr>
