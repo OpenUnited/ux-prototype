@@ -96,6 +96,14 @@ def product_people():
     product_people_listings = raw_product_people_listings["data"]["people"]
     return render_template("product_people.html", product_people_listings=product_people_listings, current_page="people_page")
 
+@app.route('/profile/empty')
+def profile_empty():
+    return render_template("profile_empty.html")
+
+@app.route('/profile')
+def profile():
+    return render_template("profile.html")
+
 @app.route('/users/sign-up')
 def user_sign_up():
     return 'User Sign Up'

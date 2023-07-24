@@ -773,4 +773,3 @@ stepPrevious.addEventListener('click', () => {
   changeStep(Number(stepCurrent.dataset.currentStep) - 1);
 
 });
-
