@@ -550,6 +550,40 @@
       </div>
     </div>
 
+    <div class="relative z-10 modal-cancel hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:px-0">
+          <div
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:mx-5 w-full max-w-[360px] px-5 lg:px-6 pb-[30px] lg:pb-8 pt-5">
+            <div class="btn-cancel__close relative -mt-0.5 sm:-mt-1.5 -mr-1 sm:-mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+              <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                </path>
+              </svg>
+            </div>
+
+            <div class="flex flex-col text-center">
+              <div class="text-2xl text-black/[0.85] mb-8 lg:mb-10">Save as Draft?</div>
+              <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button type="button"
+                  class="w-full sm:w-fit md:min-w-[96px] bg-green-500 text-sm font-semibold leading-6 transition-all delay-600 rounded px-3 md:px-3.5 py-1.5 text-white shadow-sm hover:bg-green-500/[0.85] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500/[0.85] cursor-pointer">
+                  Save as Draft
+                </button>
+                <button type="button" class="w-full sm:w-fit bg-white text-sm font-semibold leading-6 transition-all delay-600 rounded px-2.5 md:px-3.5 py-1.5 text-gray-900 shadow-sm hover:bg-gray-900/[0.8] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent cursor-pointer border border-solid border-[#ddd] hover:border-gray-900/[0.8]">
+                  Delete my Draft
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- https://github.com/Choices-js/Choices -->

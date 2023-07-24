@@ -43,6 +43,22 @@ btnModalClose.addEventListener("click", () => {
   modalWrapFilter.classList.add("hidden");
 });
 
+// cancel modal open
+
+const btnCancel = document.querySelectorAll(".btn-cancel");
+const modalCancel = document.querySelector(".modal-cancel");
+const btnCancelClose = document.querySelector(".btn-cancel__close");
+
+btnCancel.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modalCancel.classList.remove("hidden");
+  });
+});
+
+btnCancelClose.addEventListener("click", () => {
+  modalCancel.classList.add("hidden");
+});
+
 // form for idea / bug in modal open
 
 const btnAddModapOpen = document.querySelector(".btn-add-modal__open");
