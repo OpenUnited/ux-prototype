@@ -15,7 +15,7 @@
             class="font-semibold py-3 text-sm inline-flex relative -mb-px text-gray-900 border-b-2 border-solid border-transparent">Products</a>
     </div>
     <button type="button"
-        class="ml-auto bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer btn-modal__open">
+        class="appearance-none ml-auto bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer btn-modal__open">
         Filter
     </button>
   </div>
@@ -37,7 +37,7 @@
           <div class="w-full font-semibold text-gray-500">Product</div>
           <div class="flex justify-between gap-x-2">
             {% if challenge_listing.product.videoUrl %}
-            <button class="flex flex-none items-center cursor-pointer">
+            <button class="appearance-none flex flex-none items-center cursor-pointer">
               <svg class="h-4 w-4 flex-none" viewBox="64 64 896 896" focusable="false" data-icon="play-square"
                 fill="currentColor" aria-hidden="true">
                 <path
@@ -61,7 +61,7 @@
           <div class="w-full font-semibold text-gray-500">Initiative</div>
           <div class="flex justify-between gap-x-2">
             {% if challenge_listing.initiative.videoUrl %}
-            <button class="flex flex-none items-center cursor-pointer">
+            <button class="appearance-none flex flex-none items-center cursor-pointer">
               <svg class="h-4 w-4 flex-none" viewBox="64 64 896 896" focusable="false" data-icon="play-square"
                 fill="currentColor" aria-hidden="true">
                 <path
