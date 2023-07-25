@@ -505,3 +505,39 @@ input[type="radio"]:checked ~ div > .unchecked {
   visibility: visible;
   opacity: 1;
 }
+
+.form-buttons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-buttons__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+[data-current-step="5"] .form-buttons {
+  flex-direction: row-reverse;
+  width: fit-content;
+  align-items: flex-start;
+}
+
+@media(max-width: 639px) {
+  [data-current-step="5"] .form-buttons > div:first-child {
+    margin-left: 12px;
+  }
+}
+
+[data-current-step="5"] .form-buttons__wrap {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+[data-current-step="5"] #publish-btn {
+  margin-top: 0px;
+}
