@@ -283,6 +283,8 @@
   color: #60a5fa;
 }
 
+/* tabs */
+
 .tab-content .tab-body {
   display: none;
 }
@@ -309,6 +311,12 @@
 .tab-link.active:hover span {
   color: #60a5fa;
   background-color: #f9fafb;
+}
+
+/* treeselect */
+
+.treeselect-list {
+  transform: translate3d(0);
 }
 
 .treeselect-list__item-icon svg {
