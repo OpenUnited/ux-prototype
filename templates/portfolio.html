@@ -3,8 +3,8 @@
 {% block title %}Portfolio{% endblock %}
 {% block content %}
 
-<div class="flex flex-col max-w-[880px] w-full mx-auto">
-  <div class="flex flex-col w-full gap-9 sm:flex-row">
+<div class="flex flex-col max-w-[960px] w-full mx-auto lg:pt-10 pb-10 lg:pb-20">
+  <div class="flex flex-col w-full gap-5 sm:gap-9 sm:flex-row">
     <div class="w-[100px] h-[100px] flex shrink-0 items-center justify-center rounded-full font-semibold text-[38px] leading-[46px] text-white" style="background: linear-gradient(318deg, #1734CC 0%, #F833CD 100%)">JS</div>
     <div class="max-w-xl flex-auto">
       <h3 class="text-2xl font-semibold leading-8 tracking-tight text-gray-900">Leslie Alexander 
@@ -55,10 +55,100 @@
       
     </div>
   </div>
-  <div class="flex flex-col w-full mt-5">
-
+  <div class="flex flex-col w-full mt-10 rounded border border-solid border-[#D9D9D9] pb-2 pt-3 px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+      <div class="flex flex-col w-full col-span-1 lg:col-span-2">
+        <div class="flex flex-col">
+          <div class="text-xs leading-5 font-semibold text-[#141414]">
+            AuthMachine
+          </div>
+          <div class="text-xs leading-5 text-black">Website: <a href="#" class="text-blue-400 hover:text-blue-500 transition-all hover:underline underline-offset-2">Authmachine.com</a></div>
+        </div>
+        <div class="w-full h-[172px] group-hover:opacity-90 mt-3 mb-4 border border-solid border-[#D9D9D9]">
+          <iframe class="" width="100%" height="100%"
+            src="https://www.youtube.com/embed/OWXVryhdoVA?autoplay=0&mute=0&controls=0&origin=https%3A%2F%2Fopenunited.com&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&enablejsapi=1&widgetid=1"
+            title="OpenUnited Short Explainer Contributor Focus" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+            Python
+          </div>
+          <div class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+            Css
+          </div>
+          <div class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+            Java
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:pt-10 col-span-1">
+        <div class="text-sm mb-2.5 text-[#262626]">Summary</div>
+        <div class="text-xs leading-5 text-[#8C8C8C]">We are creating a peer enabled mental health and wellness platform for men to help solve the...  We are creating a peer enabled mental health and wellness platform for men to help solve the... We are creating a peer enabled mental health and wellness platform for men to help solve the...  We are creating a peer enabled mental health and wellness platform for men to help solve the...</div>
+      </div>
+      <div class="flex flex-col lg:pt-1 col-span-1 sm:col-span-2 lg:col-span-1">
+        <div class="flex items-center justify-end gap-1.5 lg:gap-3 shrink-0 mb-4">
+          <svg class="w-[14px] lg:w-[18px] h-[14px] lg:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+            <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#FA8C16"/>
+          </svg>
+          <svg class="w-[14px] lg:w-[18px] h-[14px] lg:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+            <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#FA8C16"/>
+          </svg>
+          <svg class="w-[14px] lg:w-[18px] h-[14px] lg:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+            <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#FA8C16"/>
+          </svg>
+          <svg class="w-[14px] lg:w-[18px] h-[14px] lg:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+            <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#FA8C16"/>
+          </svg>
+          <svg class="w-[14px] lg:w-[18px] h-[14px] lg:h-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
+            <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#FA8C16"/>
+          </svg>
+        </div>
+        <div class="bg-[#F5F5F5] pt-2 px-2.5 pb-4 rounded">
+          <div class="font-semibold text-[#262626] text-sm mb-1.5 pl-6">Review</div>
+          <div class="text-[#8C8C8C] text-xs leading-5">We are creating a peer enabled mental health and wellness platform for men to help solve the...  We are creating a peer enabled mental health and wellness platform for men to help solve the...</div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-6 flex flex-col">
+      <div class="flex flex-col sm:flex-row sm:items-center px-3 py-2.5 sm:py-1.5 bg-[#FAFAFA] border-y border-solid border-[#F5F5F5]">
+        <div class="flex items-center grow">
+          <div class="w-6 h-6 flex shrink-0 items-center justify-center mr-3">
+            <img class="w-full h-full object-cover object-center" src="/static/assets/images/robot.jpg" alt="#">
+          </div>
+          <div class="flex flex-col text-sm">
+            <div class="text-black">Inittiative Name</div>
+            <div class="text-[#8C8C8C]">Todo: doesn't work on iPad</div>
+          </div>
+        </div>
+        <div class="flex items-center shrink-0 space-x-4 mt-2 sm:mt-0">
+          <div class="flex items-center uppercase text-sm font-semibold text-[#52C41A]">
+            Finished
+            <span class="ml-2 w-[14px] h-[14px] inline-flex items-center justify-center">
+              <img class="w-full h-full object-contain object-center" src="/static/assets/images/checked-green.svg" alt="#">
+            </span>
+          </div>
+          <div class="flex items-center text-[#BFBFBF] text-[13px] leading-5">
+            08.08.20
+          </div>
+        </div>
+      </div>
+      <div class="ml-4 sm:ml-[46px] bg-white border-b last:border-b-0 border-solid border-[#F5F5F5] flex flex-col sm:flex-row sm:items-center text-sm text-[#262626] pb-3 pt-4 sm:py-3 px-5">
+        <div class="grow">Implement User Stat Service #224</div>
+        <div class="w-20 mt-2 sm:mt-0">Done</div>
+      </div>
+      <div class="ml-4 sm:ml-[46px] bg-white border-b last:border-b-0 border-solid border-[#F5F5F5] flex flex-col sm:flex-row sm:items-center text-sm text-[#262626] pb-3 pt-4 sm:py-3 px-5">
+        <div class="grow">Implement User Stat Service #225</div>
+        <div class="w-20 mt-2 sm:mt-0">Claimed</div>
+      </div>
+      <div class="ml-4 sm:ml-[46px] bg-white border-b last:border-b-0 border-solid border-[#F5F5F5] flex flex-col sm:flex-row sm:items-center text-sm text-[#262626] pb-3 pt-4 sm:py-3 px-5">
+        <div class="grow">Implement User Stat Service #228</div>
+        <div class="w-20 mt-2 sm:mt-0">Claimed</div>
+      </div>
+    </div>
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8 mt-5">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8 mt-6 lg:mt-10">
     <div class="flex flex-col rounded bg-white border border-solid border-[#D9D9D9] pt-2.5 px-3 pb-5">
       <div class="flex items-center mb-3">
         <div class="flex flex-col grow">
@@ -84,7 +174,6 @@
             <path d="M17.4182 6.33831L12.0222 5.51709L9.60999 0.396152C9.54411 0.255944 9.43572 0.142442 9.30183 0.0734507C8.96604 -0.100141 8.55799 0.0445188 8.39009 0.396152L5.97791 5.51709L0.581865 6.33831C0.433096 6.36057 0.297079 6.43401 0.192941 6.54529C0.0670438 6.68079 -0.00233122 6.86309 5.98176e-05 7.05213C0.00245086 7.24117 0.0764123 7.42149 0.205692 7.55345L4.10981 11.5394L3.18744 17.1677C3.16581 17.2987 3.17965 17.4333 3.22738 17.5564C3.27511 17.6795 3.35483 17.7862 3.4575 17.8643C3.56016 17.9424 3.68166 17.9887 3.80823 17.9982C3.9348 18.0077 4.06136 17.9798 4.17356 17.9177L9.00004 15.2605L13.8265 17.9177C13.9583 17.9912 14.1113 18.0157 14.258 17.989C14.6277 17.9222 14.8764 17.555 14.8126 17.1677L13.8903 11.5394L17.7944 7.55345C17.9007 7.4444 17.9708 7.30197 17.992 7.14618C18.0494 6.75671 17.7901 6.39618 17.4182 6.33831Z" fill="#E8E8E8"/>
           </svg>
         </div>
-        
       </div>
       <div class="group relative flex flex-col">
         <div class="w-full h-[172px] group-hover:opacity-90">
