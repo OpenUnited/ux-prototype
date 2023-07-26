@@ -5,3 +5,4 @@ import './modals.js';
 import './setup-choices.js';
 import './tree-multiselect.js'
 import './steps-challenges.js'
+import './confetti.js'
