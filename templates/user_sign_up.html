@@ -23,12 +23,12 @@
       <div class="bg-white px-6 py-12 sm:shadow sm:rounded-lg sm:px-12" data-user-steps="1">
 
         <div class="mb-10 flex relative items-start">
-          <div class="active flex items-center" data-user-step="1">
+          <div class="active register-step flex items-center" data-user-step="1">
             <div class="user-step-name flex flex-col items-center justify-center space-y-1.5 text-center">
               <div class="w-10 h-10 flex items-center justify-center rounded-full">
-                <div class="empty hidden w-full rounded-full h-full border-2 border-solid border-[#bfbfbf] text-[#bfbfbf] text-sm flex items-center justify-center">1</div>
+                <div class="empty w-full rounded-full h-full border-2 border-solid border-[#bfbfbf] text-[#bfbfbf] text-sm flex items-center justify-center">1</div>
                 <div class="filled w-full h-full rounded-full text-white bg-[#1890FF] flex items-center justify-center text-sm">1</div>
-                <div class="done hidden w-full h-full rounded-full border-2 border-solid border-[#1890FF] flex items-center justify-center">
+                <div class="done w-full h-full rounded-full border-2 border-solid border-[#1890FF] flex items-center justify-center">
                   <img src="/static/assets/images/check.svg" alt="#">
                 </div>
               </div>
@@ -38,12 +38,12 @@
             </div>
           </div>
           <div class="user-step-divider h-0.5 w-full bg-[#f5f5f5] w-full mx-1 sm:mx-4 relative top-4 -mt-px inline-flex"></div>
-          <div class="flex items-center" data-user-step="2">
+          <div class="register-step flex items-center" data-user-step="2">
             <div class="user-step-name flex flex-col items-center justify-center space-y-1.5 text-center">
               <div class="w-10 h-10 flex items-center justify-center rounded-full">
                 <div class="empty w-full h-full rounded-full border-2 border-solid border-[#bfbfbf] text-[#bfbfbf] text-sm flex items-center justify-center">2</div>
-                <div class="filled hidden w-full h-full rounded-full text-white bg-[#1890FF] flex items-center justify-center text-sm">1</div>
-                <div class="done hidden w-full h-full rounded-full border-2 border-solid border-[#1890FF] flex items-center justify-center">
+                <div class="filled hidden w-full h-full rounded-full text-white bg-[#1890FF] flex items-center justify-center text-sm">2</div>
+                <div class="done w-full h-full rounded-full border-2 border-solid border-[#1890FF] flex items-center justify-center">
                   <img src="/static/assets/images/check.svg" alt="#">
                 </div>
               </div>
@@ -53,11 +53,11 @@
             </div>
           </div>
           <div class="user-step-divider h-0.5 w-full bg-[#f5f5f5] w-full mx-1 sm:mx-4 relative top-4 -mt-px inline-flex"></div>
-          <div class="flex items-center" data-user-step="3">
+          <div class="register-step flex items-center" data-user-step="3">
             <div class="user-step-name flex flex-col items-center justify-center space-y-1.5 text-center">
               <div class="w-10 h-10 flex items-center justify-center rounded-full">
-                <div class="empty w-full h-full rounded-full border-2 border-solid border-[#bfbfbf] text-[#bfbfbf] text-sm flex items-center justify-center">2</div>
-                <div class="filled hidden w-full h-full rounded-full text-white bg-[#1890FF] flex items-center justify-center text-sm">1</div>
+                <div class="empty w-full h-full rounded-full border-2 border-solid border-[#bfbfbf] text-[#bfbfbf] text-sm flex items-center justify-center">3</div>
+                <div class="filled hidden w-full h-full rounded-full text-white bg-[#1890FF] flex items-center justify-center text-sm">3</div>
                 <div class="done hidden w-full h-full rounded-full border-2 border-solid border-[#1890FF] flex items-center justify-center">
                   <img src="/static/assets/images/check.svg" alt="#">
                 </div>
@@ -70,7 +70,7 @@
         </div>
 
         <form class="mb-0" action="#" method="POST">
-          <div class="active flex flex-col" data-user-content="1">
+          <div class="active register-content flex-col" data-user-content="1">
             <div class="max-w-full w-full text-center mx-auto text-sm text-black/[0.85] mb-8 underline underline-offset-2">
               Let's start with your first name and email address.
             </div>
@@ -100,7 +100,7 @@
               </div>
             </div>
           </div>
-          <div class="hidden flex flex-col" data-user-content="2">
+          <div class="register-content flex-col" data-user-content="2">
             <div class="space-y-6 mb-0">
               <div class="w-fit mx-auto text-center flex items-center px-3 py-1.5 py-2.5 rounded-md border border-solid border-[#1890ff] text-sm text-black/[0.85] bg-[#e6f7ff]">
                 Please check your email for six-digit code
@@ -128,7 +128,7 @@
               </div>
             </div>
           </div>
-          <div class="hidden flex flex-col" data-user-content="3">
+          <div class="register-content flex-col" data-user-content="3">
             <div class="space-y-6 mb-0">
               <div class="w-fit mx-auto text-center flex items-center px-3 py-1.5 py-2.5 rounded-md border border-solid border-[#00B400] text-sm text-black/[0.85] bg-[#DBFFDB]">
                 Email verified! Please set your username and password.
