@@ -70,7 +70,7 @@
         </div>
 
         <form class="mb-0" action="#" method="POST">
-          <div class="hidden flex flex-col" data-user-content="1">
+          <div class="active flex flex-col" data-user-content="1">
             <div class="max-w-full w-full text-center mx-auto text-sm text-black/[0.85] mb-8 underline underline-offset-2">
               Let's start with your first name and email address.
             </div>
@@ -96,11 +96,11 @@
               </div>
     
               <div>
-                <button type="submit" class="flex w-full justify-center rounded-md bg-[#1890ff] px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1890ff]">Send Verification Code</button>
+                <button data-btn="1" type="button" class="flex w-full justify-center rounded-md bg-[#1890ff] px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1890ff]">Send Verification Code</button>
               </div>
             </div>
           </div>
-          <div class="flex flex-col" data-user-content="2">
+          <div class="hidden flex flex-col" data-user-content="2">
             <div class="space-y-6 mb-0">
               <div class="w-fit mx-auto text-center flex items-center px-3 py-1.5 py-2.5 rounded-md border border-solid border-[#1890ff] text-sm text-black/[0.85] bg-[#e6f7ff]">
                 Please check your email for six-digit code
@@ -124,8 +124,51 @@
                 <div class="flex items-center text-sm text-black/[0.85] relative mb-2">
                   Didn’t recieve the code? <a class="font-semibold leading-6 text-[#1890ff] hover:text-blue-500 inline-flex items-center ml-1.5" href="#">Resend it</a>
                 </div>
-                <button type="submit" class="flex w-full justify-center rounded-md bg-[#1890ff] px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1890ff]">Verify</button>
+                <button data-btn="1" type="button" class="flex w-full justify-center rounded-md bg-[#1890ff] px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1890ff]">Verify</button>
               </div>
+            </div>
+          </div>
+          <div class="hidden flex flex-col" data-user-content="3">
+            <div class="space-y-6 mb-0">
+              <div class="w-fit mx-auto text-center flex items-center px-3 py-1.5 py-2.5 rounded-md border border-solid border-[#00B400] text-sm text-black/[0.85] bg-[#DBFFDB]">
+                Email verified! Please set your username and password.
+              </div>
+
+              <div>
+                <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Choose username</label>
+                <div class="mt-2">
+                  <input id="username" name="username" type="text" autocomplete="username" required class="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-300 sm:text-sm sm:leading-6 focus-visible:outline-transparent">
+                </div>
+              </div>
+    
+              <div>
+                <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                <div class="mt-2">
+                  <input id="password" name="password" type="password" autocomplete="password" required class="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-300 sm:text-sm sm:leading-6 focus-visible:outline-transparent">
+                </div>
+
+                <div class="password-checker flex flex-col mt-3">
+                  <ul class="medium w-full grid grid-cols-4 gap-[3px]">
+                    <li class="h-1 bg-[#c4c4c4]"></li>
+                    <li class="h-1 bg-[#c4c4c4]"></li>
+                    <li class="h-1 bg-[#c4c4c4]"></li>
+                    <li class="h-1 bg-[#c4c4c4]"></li>
+                  </ul>
+                  <div class="title text-[10px] leading-3 title-medium mt-1 text-right">medium</div>
+                </div>
+              </div>
+
+              <div>
+                <label for="password-confirm" class="block text-sm font-medium leading-6 text-gray-900">Confirm password</label>
+                <div class="mt-2">
+                  <input id="password-confirm" name="password-confirm" type="password-confirm" autocomplete="password-confirm" required class="block w-full rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-300 sm:text-sm sm:leading-6 focus-visible:outline-transparent">
+                </div>
+              </div>
+
+              <div>
+                <button data-btn="1" type="button" class="flex w-full justify-center rounded-md bg-[#1890ff] px-3 py-2.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1890ff]">Submit</button>
+              </div>
+
             </div>
           </div>
         </form>

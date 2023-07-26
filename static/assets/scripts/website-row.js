@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const addButton = document.getElementById('add-website');
   const container = document.querySelector('.container-website');
 
-  addButton.addEventListener('click', function() {
+  if(addButton) { 
+    
+    addButton.addEventListener('click', function() {
     const newRow = document.createElement('div');
     newRow.className = 'row-website flex flex-col md:flex-row md:items-center w-full space-y-4 md:space-y-0 md:space-x-6';
     newRow.innerHTML = `
@@ -58,4 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
     newRow.appendChild(removeButton);
 
   });
+  }
+
 });

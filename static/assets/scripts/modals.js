@@ -10,9 +10,12 @@ btnModapOpen.forEach((btn) => {
   });
 });
 
-btnModalClose.addEventListener("click", () => {
-  modalWrapFilter.classList.add("hidden");
-});
+if(btnModalClose) {
+
+  btnModalClose.addEventListener("click", () => {
+    modalWrapFilter.classList.add("hidden");
+  });
+}
 
 // cancel modal open
 
@@ -26,9 +29,12 @@ btnCancel.forEach((btn) => {
   });
 });
 
-btnCancelClose.addEventListener("click", () => {
-  modalCancel.classList.add("hidden");
-});
+if(btnCancelClose) {
+
+  btnCancelClose.addEventListener("click", () => {
+    modalCancel.classList.add("hidden");
+  });
+}
 
 // modal: form for idea / bug
 
@@ -67,7 +73,9 @@ const videoBtnsOpen = document.querySelectorAll(".btn-video__open");
 const modalWrap = document.querySelector(".modal-wrap");
 const modalWrapCloseBtn = document.querySelector(".btn-video__close");
 
-modalWrap.querySelector("iframe").src = "";
+if(modalWrap) {
+  modalWrap.querySelector("iframe").src = "";
+}
 
 videoBtnsOpen.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -76,9 +84,11 @@ videoBtnsOpen.forEach((btn) => {
   });
 });
 
-modalWrapCloseBtn.addEventListener("click", () => {
-  modalWrap.classList.add("hidden");
-});
+if(modalWrapCloseBtn) {
+  modalWrapCloseBtn.addEventListener("click", () => {
+    modalWrap.classList.add("hidden");
+  });
+}
 
 // skills popup open
 
@@ -93,6 +103,8 @@ if (skillsBtnOpen) {
   });
 }
 
-modalSkillsCloseBtn.addEventListener("click", () => {
-  modalWrapSkills.classList.add("hidden");
-});
+if(modalSkillsCloseBtn) {
+  modalSkillsCloseBtn.addEventListener("click", () => {
+    modalWrapSkills.classList.add("hidden");
+  });
+}
