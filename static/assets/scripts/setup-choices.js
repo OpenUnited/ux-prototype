@@ -6,10 +6,19 @@ const selectControlRefCategories = document.querySelector('#control-ref_categori
 const selectControlRefTags = document.querySelector('#control-ref_tags');
 const selectControlRefStatuses = document.querySelector('#control-ref_statuses');
 const selectPriority = document.querySelector('#priority');
+const selectTypeOfWebsites = document.querySelectorAll('.type-of-website');
+
+selectTypeOfWebsites.forEach((item) => {
+  if(item) {
+    const choicesTypeOfWebsite = new Choices(item, {
+      itemSelectText: '',
+    });
+  }
+})
 
 if (selectControlRefSortedBy) {
   const choicesSortedBy = new Choices(selectControlRefSortedBy, {
-  
+    itemSelectText: '',
   });
 }
 
@@ -18,6 +27,7 @@ if (selectControlRefPriority) {
     placeholder: true,
     removeItems: true,
     removeItemButton: true,
+    itemSelectText: '',
   });
 }
 
@@ -26,6 +36,7 @@ if (selectControlRefCategories) {
     placeholder: true,
     removeItems: true,
     removeItemButton: true,
+    itemSelectText: '',
   });
 }
 
@@ -34,6 +45,7 @@ if (selectControlRefTags) {
     placeholder: true,
     removeItems: true,
     removeItemButton: true,
+    itemSelectText: '',
   });
 }
 
@@ -42,6 +54,7 @@ if (selectControlRefStatuses) {
     placeholder: true,
     removeItems: true,
     removeItemButton: true,
+    itemSelectText: '',
   });
 }
 
@@ -50,5 +63,6 @@ if (selectPriority) {
     placeholder: true,
     removeItems: true,
     removeItemButton: true,
+    itemSelectText: '',
   });
 }

@@ -1,4 +1,3 @@
-
 // options for multiselect tree
 
 const options = [
