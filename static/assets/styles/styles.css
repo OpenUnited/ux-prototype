@@ -623,3 +623,31 @@ input[type=number] {
 [data-user-steps="3"] .register-step[data-user-step="2"] .empty {
   display: none;
 }
+
+.user-step-divider {
+  background-color: #f5f5f5;
+}
+
+[data-user-steps="2"] .user-step-divider-1 {
+  background-color: #1890FF;
+}
+
+[data-user-steps="3"] .user-step-divider-1 {
+  background-color: #1890FF;
+}
+
+[data-user-steps="3"] .user-step-divider-2 {
+  background-color: #1890FF;
+}
+
+[data-user-steps="2"] .register-step[data-user-step="2"] .user-step-title {
+  color: #1890FF;
+}
+
+[data-user-steps="3"] .register-step[data-user-step="2"] .user-step-title {
+  color: #1890FF;
+}
+
+[data-user-steps="3"] .register-step[data-user-step="3"] .user-step-title {
+  color: #1890FF;
+}
