@@ -115,3 +115,7 @@ def user_sign_in():
 @app.route('/users/password-reset')
 def user_password_reset():
     return render_template("user_reset_password.html")
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template("portfolio.html")
