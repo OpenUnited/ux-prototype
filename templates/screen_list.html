@@ -150,8 +150,8 @@
                                     class="hover:text-indigo-500 transition-all delay-600">Empty State</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
-                                <div class="rounded-md bg-white font-medium text-indigo-600">
-                                    In Process
+                                <div class="rounded-md bg-white font-medium text-green-600">
+                                    Done
                                 </div>
                             </span>
                         </span>
@@ -159,6 +159,43 @@
                             <span class="flex-grow">
                                 <a href="{{ url_for('profile') }}"
                                     class="hover:text-indigo-500 transition-all delay-600">Filled State</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-green-600">
+                                    Done
+                                </div>
+                            </span>
+                        </span>
+                    </span>
+                </dd>
+            </div>
+            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt class="text-sm font-medium leading-6 text-gray-900">User</dt>
+                <dd class="mt-1 flex text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                    <span class="flex flex-col flex-grow">
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{ url_for('user_sign_up') }}" class="hover:text-indigo-500 transition-all delay-600">Sign Up</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600">
+                                    In Process
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{ url_for('user_sign_in') }}" class="hover:text-indigo-500 transition-all delay-600">Sign In</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-indigo-600">
+                                    In Process
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{ url_for('user_password_reset') }}" class="hover:text-indigo-500 transition-all delay-600">Reset Password</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-indigo-600">
@@ -220,43 +257,6 @@
                         <span class="flex">
                             <span class="flex-grow">
                                 <a href="#" class="hover:text-indigo-500 transition-all delay-600">Portfolio</a>
-                            </span>
-                            <span class="ml-4 flex-shrink-0">
-                                <div class="rounded-md bg-white font-medium text-red-600">
-                                    Not started
-                                </div>
-                            </span>
-                        </span>
-                    </span>
-                </dd>
-            </div>
-            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt class="text-sm font-medium leading-6 text-gray-900">User</dt>
-                <dd class="mt-1 flex text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                    <span class="flex flex-col flex-grow">
-                        <span class="flex">
-                            <span class="flex-grow">
-                                <a href="#" class="hover:text-indigo-500 transition-all delay-600">Sign Up</a>
-                            </span>
-                            <span class="ml-4 flex-shrink-0">
-                                <div class="rounded-md bg-white font-medium text-red-600">
-                                    Not started
-                                </div>
-                            </span>
-                        </span>
-                        <span class="flex">
-                            <span class="flex-grow">
-                                <a href="#" class="hover:text-indigo-500 transition-all delay-600">Sign In</a>
-                            </span>
-                            <span class="ml-4 flex-shrink-0">
-                                <div class="rounded-md bg-white font-medium text-red-600">
-                                    Not started
-                                </div>
-                            </span>
-                        </span>
-                        <span class="flex">
-                            <span class="flex-grow">
-                                <a href="#" class="hover:text-indigo-500 transition-all delay-600">Reset Password</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-red-600">

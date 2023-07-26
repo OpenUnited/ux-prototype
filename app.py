@@ -106,12 +106,12 @@ def profile():
 
 @app.route('/users/sign-up')
 def user_sign_up():
-    return 'User Sign Up'
+    return render_template("user_sign_up.html")
 
 @app.route('/users/sign-in')
 def user_sign_in():
-    return 'User Sign In'
+    return render_template("user_sign_in.html")
 
 @app.route('/users/password-reset')
 def user_password_reset():
-    return 'Reset Password'
+    return render_template("user_reset_password.html")
