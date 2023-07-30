@@ -542,12 +542,6 @@ input[type="radio"]:checked ~ div > .unchecked {
   align-items: flex-start;
 }
 
-@media(max-width: 639px) {
-  [data-current-step="5"] .form-buttons > div:first-child {
-    margin-left: 12px;
-  }
-}
-
 [data-current-step="5"] .form-buttons__wrap {
   flex-direction: row;
   align-items: flex-start;
