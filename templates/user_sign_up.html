@@ -114,19 +114,12 @@
                       Please check your email for six-digit code
                     </div>
       
-                    <div class="flex flex-col">
+                    <label class="flex flex-col digit-code">
                       <div class="text-sm text-black/[0.85] mb-2">
                         Six-digit code
                       </div>
-                      <div class="flex items-center justify-between w-full">
-                        <input id="0" name="digit-code-1" placeholder="0" class="text-center appearance-none w-10 sm:w-14 lg:w-12 h-10 sm:h-14 lg:h-12 p-0.5 rounded-md bg-white border border-solid border-[#d9d9d9] focus:outline-none" type="number">
-                        <input id="1" name="digit-code-2" placeholder="0" class="text-center appearance-none w-10 sm:w-14 lg:w-12 h-10 sm:h-14 lg:h-12 p-0.5 rounded-md bg-white border border-solid border-[#d9d9d9] focus:outline-none" type="number">
-                        <input id="2" name="digit-code-3" placeholder="0" class="text-center appearance-none w-10 sm:w-14 lg:w-12 h-10 sm:h-14 lg:h-12 p-0.5 rounded-md bg-white border border-solid border-[#d9d9d9] focus:outline-none" type="number">
-                        <input id="3" name="digit-code-4" placeholder="0" class="text-center appearance-none w-10 sm:w-14 lg:w-12 h-10 sm:h-14 lg:h-12 p-0.5 rounded-md bg-white border border-solid border-[#d9d9d9] focus:outline-none" type="number">
-                        <input id="4" name="digit-code-5" placeholder="0" class="text-center appearance-none w-10 sm:w-14 lg:w-12 h-10 sm:h-14 lg:h-12 p-0.5 rounded-md bg-white border border-solid border-[#d9d9d9] focus:outline-none" type="number">
-                        <input id="5" name="digit-code-6" placeholder="0" class="text-center appearance-none w-10 sm:w-14 lg:w-12 h-10 sm:h-14 lg:h-12 p-0.5 rounded-md bg-white border border-solid border-[#d9d9d9] focus:outline-none" type="number">
-                      </div>
-                    </div>
+                      <input type="text" autocomplete="one-time-code" inputmode="numeric" maxlength="6" pattern="\d{6}">
+                    </label>
           
                     <div>
                       <div class="flex items-center text-sm text-black/[0.85] relative mb-2">
@@ -152,7 +145,7 @@
                     <div>
                       <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
                       <div class="mt-2">
-                        <input id="password" name="password" type="password" autocomplete="password" required placeholder="••••••" class="block w-full h-10 rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-300 sm:text-sm sm:leading-6 focus-visible:outline-transparent">
+                        <input id="password" name="password" type="password" autocomplete="new-password" required placeholder="••••••" class="block w-full h-10 rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-300 sm:text-sm sm:leading-6 focus-visible:outline-transparent">
                       </div>
       
                       <div class="password-checker flex flex-col mt-3">
@@ -169,7 +162,7 @@
                     <div>
                       <label for="password-confirm" class="block text-sm font-medium leading-6 text-gray-900">Confirm password</label>
                       <div class="mt-2">
-                        <input id="password-confirm" name="password-confirm" type="password-confirm" autocomplete="password-confirm" required placeholder="••••••" class="block w-full h-10 rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-300 sm:text-sm sm:leading-6 focus-visible:outline-transparent">
+                        <input id="password-confirm" name="password-confirm" type="password-confirm" autocomplete="new-password" required placeholder="••••••" class="block w-full h-10 rounded-md border-0 py-1.5 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-300 sm:text-sm sm:leading-6 focus-visible:outline-transparent">
                       </div>
                     </div>
       
