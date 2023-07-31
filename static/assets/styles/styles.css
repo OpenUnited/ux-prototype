@@ -658,10 +658,10 @@ input[autocomplete=one-time-code] {
 	all: unset;
 	background: 
 	linear-gradient(90deg, 
-		var(--otp-bg, #BBB) calc(var(--otp-gap) * var(--otp-ls)),
+		var(--otp-bg, #1890ff4d) calc(var(--otp-gap) * var(--otp-ls)),
 		transparent 0),
 		linear-gradient(90deg, 
-		var(--otp-bg, #EEE) calc(var(--otp-gap) * var(--otp-ls)),
+		var(--otp-bg, #1890ff26) calc(var(--otp-gap) * var(--otp-ls)),
 		transparent 0
 	);
 	background-position: calc(var(--_otp-digit) * var(--_otp-bgsz)) 0, 0 0;
@@ -671,11 +671,20 @@ input[autocomplete=one-time-code] {
 	caret-shape: block;
 	clip-path: inset(0% calc(var(--otp-ls) / 2) 0% 0%);
 	font-family: ui-monospace, monospace;
-	font-size: var(--otp-fz, 2.5em);
+	font-size: var(--otp-fz, 2em);
 	inline-size: calc(var(--otp-digits) * var(--_otp-bgsz));
 	letter-spacing: var(--otp-ls);
-	padding-block: var(--otp-pb, 1ch);
+	padding-block: var(--otp-pb, 0.5ch);
 	padding-inline-start: calc(((var(--otp-ls) - 1ch) / 2) * var(--otp-gap));
+
+  position: relative;
+  margin-left: 21px;
+}
+
+@media(max-width: 639px) {
+  input[autocomplete=one-time-code] {
+    font-size: var(--otp-fz, 1.5em);
+  }
 }
 
 /* For this demo */
