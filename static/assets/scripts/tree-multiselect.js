@@ -444,7 +444,7 @@ function mapOptionsExpertiseToOptions(optionsExpertise) {
 
 const domElementsSkills = document.querySelectorAll('.treeselect-skills');
 
-console.log(domElementsSkills)
+// console.log(domElementsSkills)
 
 domElementsSkills.forEach((domElement) => {
 

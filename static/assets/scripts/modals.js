@@ -99,7 +99,7 @@ const modalSkillsCloseBtn = document.querySelector(".btn-skills__close");
 if (skillsBtnOpen) {
   skillsBtnOpen.addEventListener("click", () => {
     modalWrapSkills.classList.remove("hidden");
-    console.log(modalWrapSkills)
+    // console.log(modalWrapSkills);
   });
 }
 
