@@ -119,3 +119,11 @@ def user_password_reset():
 @app.route('/portfolio')
 def portfolio():
     return render_template("portfolio.html")
+
+@app.route('/portfolio-figma')
+def portfolio_figma():
+    return render_template("portfolio_figma.html")
+
+@app.route('/portfolio-clients')
+def portfolio_clients():
+    return render_template("portfolio_clients.html")
