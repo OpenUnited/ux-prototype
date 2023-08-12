@@ -56,31 +56,36 @@ const portfolioTable = document.querySelector('#portfolio-table');
 const rows = document.querySelectorAll(".table-row");
 
 rows.forEach((row) => {
-  const tableLink = row.querySelector('[data-table-link]');
+  const tableLinkCells = row.querySelectorAll('[data-table-link]');
+
+  tableLinkCells.forEach((tableLink) => {
+    let clonedPopup;
+
+    tableLink?.addEventListener("mouseover", (event) => {
+      const tablePopup = tableLink.querySelector('[data-table-popup]');
   
-  let clonedPopup;
-
-  tableLink?.addEventListener("mouseover", (event) => {
-    const tablePopup = row.querySelector('[data-table-popup]');
-    if(!tablePopup) return
-    tablePopup.classList.remove('hidden');
-    clonedPopup = cutCopyAndRemove(portfolioTable, tablePopup);
-
-    clonedPopup.style.position = "absolute";
-    clonedPopup.style.top = `${tableLink.offsetTop - clonedPopup.clientHeight}px`; // Adjust the positioning as needed
-    clonedPopup.style.left = `${tableLink.offsetLeft}px`;
-
-    clonedPopup.addEventListener("mouseleave", (event) => {
+      if(!tablePopup) return
+      tablePopup.classList.remove('hidden');
+      clonedPopup = cutCopyAndRemove(portfolioTable, tablePopup);
+  
+      clonedPopup.style.position = "absolute";
+      clonedPopup.style.top = `${tableLink.offsetTop - clonedPopup.clientHeight}px`; // Adjust the positioning as needed
+      clonedPopup.style.left = `${tableLink.offsetLeft}px`;
+  
+      clonedPopup.addEventListener("mouseleave", (event) => {
+        clonedPopup.classList.add('hidden');
+        clonedPopup = cutCopyAndRemove(tableLink, clonedPopup);
+      })
+    });
+  
+    tableLink?.addEventListener("mouseleave", (event) => {
+      if (event.relatedTarget === clonedPopup) return;
+  
       clonedPopup.classList.add('hidden');
-      clonedPopup = cutCopyAndRemove(tableLink.parentElement, clonedPopup);
-    })
+      clonedPopup = cutCopyAndRemove(tableLink, clonedPopup);
+  
+    });
   });
-
-  tableLink?.addEventListener("mouseleave", (event) => {
-    if (event.relatedTarget === clonedPopup) return;
-
-    clonedPopup.classList.add('hidden');
-    clonedPopup = cutCopyAndRemove(tableLink.parentElement, clonedPopup);
-
-  });
+  
+  
 });
