@@ -23,7 +23,7 @@
               <div class="border-b border-solid border-gray-300 pb-1.5 mb-2 flex items-center">
                 <div class="text-sm font-medium leading-6 text-gray-900 mr-1">Points:</div>
                 <div class="text-sm text-gray-500"> =< 8000</div>
-                </div>
+              </div>
                 <div>
                   <div class="mb-1 text-sm font-medium leading-6 text-gray-900">Privileges:</div>
                   <div class="text-sm text-gray-500">Invite new products to openunited.com and grant points</div>
@@ -347,7 +347,6 @@
             <div
               class="flex items-center justify-center rounded-full border border-solid border-blue-400 py-px px-[5px] ml-2.5 text-[10px] font-bold text-blue-400">
               3
-
             </div>
           </div>
           <div
@@ -362,7 +361,6 @@
             <div
               class="flex items-center justify-center rounded-full border border-solid border-blue-400 py-px px-[5px] ml-2.5 text-[10px] font-bold text-blue-400">
               3
-
             </div>
           </div>
           <div
@@ -542,243 +540,262 @@
           </div>
         </div>
         <div class="text-lg font-semibold mb-2.5 mt-6">Open Products I contribute to</div>
-        <div class="overflow-x-auto pb-4 table-products-contribute">
-          <div class="w-full min-w-[660px] flex flex-col">
-            <div class="grid grid-cols-12 gap-1">
-              <div class="col-span-4 bg-gray-50 border-b border-solid border-[#e4e8f1] 
-              py-2.5 px-2 text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Product</div>
-              <div class="col-span-6 bg-gray-50 border-b border-solid border-[#e4e8f1] py-1 px-2 
-              text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Challenges</div>
-              <div class="col-span-2 bg-gray-50 border-b border-solid border-[#e4e8f1] py-1 px-2 
-              text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Points Earned</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">OpenUnited
-                  Platform</a>
+        
+        <div class="relative" id="portfolio-table">
+          <div class="overflow-x-auto pb-4 table-products-contribute">
+            <div class="w-full min-w-[660px] flex flex-col">
+              <div class="grid grid-cols-12 gap-1">
+                <div class="col-span-4 bg-gray-50 border-b border-solid border-[#e4e8f1] 
+                py-2.5 px-2 text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Product</div>
+                <div class="col-span-6 bg-gray-50 border-b border-solid border-[#e4e8f1] py-1 px-2 
+                text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Challenges</div>
+                <div class="col-span-2 bg-gray-50 border-b border-solid border-[#e4e8f1] py-1 px-2 
+                text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Points Earned</div>
               </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio Implement new portfolio</a>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group" data-table-link="">
+                  <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">OpenUnited
+                    Platform</a>
+                  <div class="absolute hidden block w-60 p-3 bg-white border border-solid border-gray-300 shadow-md rounded-md" data-table-popup="">
+                    <div class="flex flex-col">
+                      <div class="border-b border-solid border-gray-300 pb-1.5 mb-2 flex items-center">
+                        <div class="text-sm font-medium leading-6 text-gray-900 mr-1">Points:</div>
+                        <div class="text-sm text-gray-500"> =< 8000</div>
+                      </div>
+                      <div>
+                        <div class="mb-1 text-sm font-medium leading-6 text-gray-900">Privileges:</div>
+                        <div class="text-sm text-gray-500">Invite new products to openunited.com and grant points</div>
+                      </div>
+                      <a href="{{ url_for('status_and_points') }}" class="text-xs mt-1.5 text-blue-400 transition-all underline-offset-2 underline hover:no-underline">
+                        Learn more about Status & Points
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio Implement new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">50</div>
               </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">50</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">150</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
-            <div class="grid grid-cols-12 gap-1 table-row hidden">
-              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-  
-              </div>
-              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
-                <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
-                  new portfolio</a>
-              </div>
-              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
-            </div>
 
-            <button type="button" class="appearance-none py-1.5 px-3 flex items-center justify-center text-center mt-4 w-full max-w-[240px] md:ml-auto mr-auto cursor-pointer
-            border border-solid border-blue-400 text-sm rounded-md bg-blue-400/[0.1] hover:bg-blue-400/[0.2] transition-all cursor-pointer text-blue-500 table-products-contribute__button">Show more</button>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">150</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+              <div class="grid grid-cols-12 gap-1 table-row hidden">
+                <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm relative group">
+    
+                </div>
+                <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm group">
+                  <a href="{{ url_for('home_challenges') }}" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline relative z-[2]">Implement
+                    new portfolio</a>
+                </div>
+                <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+              </div>
+  
+              <button type="button" class="appearance-none py-1.5 px-3 flex items-center justify-center text-center mt-4 w-full max-w-[240px] md:ml-auto mr-auto cursor-pointer
+              border border-solid border-blue-400 text-sm rounded-md bg-blue-400/[0.1] hover:bg-blue-400/[0.2] transition-all cursor-pointer text-blue-500 table-products-contribute__button">Show more</button>
+            </div>
           </div>
         </div>
-
+  
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2.5 mt-6">
           <div class="flex flex-col">
             <h2 class="text-xl font-bold tracking-tight text-gray-900">Reviews</h2>
@@ -1029,6 +1046,7 @@
             <!-- More reviews... -->
           </div>
         </div>
+        
       </div>
     </div>
   </div>
