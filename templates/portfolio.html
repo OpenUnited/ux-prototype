@@ -3,13 +3,13 @@
 {% block title %} Portfolio {% endblock %}
 {% block content %}
 
-<div class="flex-auto">
+<div class="flex-auto pb-14">
   <div class="relative z-[1] w-full h-[296px] rounded-md -mb-40 bg-gradient-to-r from-purple-100 to-indigo-400">
     <!-- <img src="#" class="h-full w-full object-cover object-center rounded-md" alt="#"> -->
   </div>
   <div class="relative z-[2] flex flex-col lg:flex-row w-full max-w-[98%] w-full mx-auto">
-    <div class="w-full lg:w-[320px] mr-6 flex flex-col shrink-0">
-      <div class="relative z-[2] w-[306px] h-[306px] mx-auto">
+    <div class="w-full lg:w-[320px] lg:mr-6 flex flex-col shrink-0">
+      <div class="relative z-[2] w-[272px] sm:w-[306px] h-[272px] sm:h-[306px] mx-auto">
         <div
           class="w-full h-full mx-auto rounded-full shadow-xl bg-white flex shrink-0 item-center justify-center">
           <img src="/static/assets/images/avatar.jpg" class="h-full w-full object-cover object-center rounded-full"
@@ -18,7 +18,7 @@
         <div class="group absolute rounded-full bg-white py-0.5 px-2 right-2 bottom-10 border border-solid border-green-600 
         inline-flex shadow-xl text-green-600 text-lg flex shrink-0 items-center justify-center cursor-pointer">
           Beekeeper
-          <div class="absolute hidden group-hover:block bottom-8 left-4 block w-60 p-3 bg-white border border-solid border-gray-300 shadow-md rounded-md">
+          <div class="absolute hidden group-hover:block group-focus:block bottom-8 -left-[116px] sm:left-4 block w-60 p-3 bg-white border border-solid border-gray-300 shadow-md rounded-md">
             <div class="flex flex-col">
               <div class="border-b border-solid border-gray-300 pb-1.5 mb-2 flex items-center">
                 <div class="text-sm font-medium leading-6 text-gray-900 mr-1">Points:</div>
@@ -103,9 +103,8 @@
                   </div>
                   <div class="pt-3">
                     <div class="flex items-center border-b border-solid border-[#d0d7de] pb-3 mb-3">
-                      Created Challenges <div
-                        class="ml-3 bg-gray-50 text-blue-400 rounded-lg text-xs px-1 py-0.5 border border-solid border-blue-400">
-                        x3</div>
+                      Created Challenges 
+                      <div class="ml-3 bg-gray-50 text-blue-400 rounded-lg text-xs px-1 py-0.5 border border-solid border-blue-400">x3</div>
                     </div>
                     <div class="flex flex-col">
                       <div class="text-[#656d76] text-xs mb-2">List of created Challenges</div>
@@ -141,7 +140,7 @@
                   class="absolute -bottom-1.5 -right-1.5 z-[2] bg-gray-50 text-blue-400 rounded-lg text-xs px-1 py-0.5 border border-solid border-blue-400">
                   x2</div>
                 <div
-                  class="hidden group-hover:block absolute z-[3] bottom-10 right-auto w-[280px] p-3 bg-white border border-solid border-[#d0d7de] shadow-md rounded-md">
+                  class="hidden group-focus:block group-hover:block absolute z-[3] bottom-10 right-auto w-[280px] p-3 bg-white border border-solid border-[#d0d7de] shadow-md rounded-md">
                   <div
                     class="h-20 w-20 flex shrink-0 items-center justify-center mx-auto bg-white shadow-md rounded-md">
                     <img src="/static/assets/images/achievement-2.svg"
@@ -180,7 +179,7 @@
                   class="absolute -bottom-1.5 -right-1.5 z-[2] bg-gray-50 text-blue-400 rounded-lg text-xs px-1 py-0.5 border border-solid border-blue-400">
                   x2</div>
                 <div
-                  class="hidden group-hover:block absolute z-[3] bottom-10 right-auto w-[280px] p-3 bg-white border border-solid border-[#d0d7de] shadow-md rounded-md">
+                  class="hidden group-focus:block group-hover:block absolute z-[3] bottom-10 -left-[134px] lg:right-auto w-[280px] p-3 bg-white border border-solid border-[#d0d7de] shadow-md rounded-md">
                   <div
                     class="h-20 w-20 flex shrink-0 items-center justify-center mx-auto bg-white shadow-md rounded-md">
                     <img src="/static/assets/images/achievement-2.svg"
@@ -219,7 +218,7 @@
                   class="absolute -bottom-1.5 -right-1.5 z-[2] bg-gray-50 text-blue-400 rounded-lg text-xs px-1 py-0.5 border border-solid border-blue-400">
                   x2</div>
                 <div
-                  class="hidden group-hover:block absolute z-[3] bottom-10 right-auto w-[280px] p-3 bg-white border border-solid border-[#d0d7de] shadow-md rounded-md">
+                  class="hidden group-focus:block group-hover:block absolute z-[3] bottom-10 right-auto w-[280px] p-3 bg-white border border-solid border-[#d0d7de] shadow-md rounded-md">
                   <div
                     class="h-20 w-20 flex shrink-0 items-center justify-center mx-auto bg-white shadow-md rounded-md">
                     <img src="/static/assets/images/achievement-2.svg"
@@ -258,7 +257,7 @@
                   class="absolute -bottom-1.5 -right-1.5 z-[2] bg-gray-50 text-blue-400 rounded-lg text-xs px-1 py-0.5 border border-solid border-blue-400">
                   x2</div>
                 <div
-                  class="hidden group-hover:block absolute z-[3] bottom-10 right-auto w-[280px] p-3 bg-white border border-solid border-[#d0d7de] shadow-md rounded-md">
+                  class="hidden group-focus:block group-hover:block absolute z-[3] bottom-10 right-auto w-[280px] p-3 bg-white border border-solid border-[#d0d7de] shadow-md rounded-md">
                   <div
                     class="h-20 w-20 flex shrink-0 items-center justify-center mx-auto bg-white shadow-md rounded-md">
                     <img src="/static/assets/images/achievement-2.svg"
@@ -290,7 +289,7 @@
           </div>
         </div>
       </div>
-      <div class="grow border border-solid border-[#d0d7de] p-6 bg-white rounded-md mt-[54px]">
+      <div class="grow border border-solid border-[#d0d7de] px-4 py-5 sm:p-6 bg-white rounded-md mt-[54px]">
         <div class="flex items-center pb-2.5 mb-4 border-b border-solid border-[#d0d7de]">
           <h2 class="text-2xl text-black/[0.85] inline-flex font-semibold">Hey! Nice to meet you.</h2>
         </div>
@@ -536,243 +535,244 @@
           </div>
         </div>
         <div class="text-lg font-semibold mb-2.5 mt-6">Open Products I contribute to</div>
-        <div class="flex flex-col min-w-[660px] overflow-x-auto table-products-contribute">
+        <div class="overflow-x-auto pb-4 table-products-contribute">
+          <div class="w-full min-w-[660px] flex flex-col">
+            <div class="grid grid-cols-12 gap-1">
+              <div class="col-span-4 bg-gray-50 border-b border-solid border-[#e4e8f1] 
+              py-2.5 px-2 text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Product</div>
+              <div class="col-span-6 bg-gray-50 border-b border-solid border-[#e4e8f1] py-1 px-2 
+              text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Challenges</div>
+              <div class="col-span-2 bg-gray-50 border-b border-solid border-[#e4e8f1] py-1 px-2 
+              text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Points Earned</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">OpenUnited
+                  Platform</a>
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio Implement new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">50</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">150</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
+            <div class="grid grid-cols-12 gap-1 table-row hidden">
+              <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+  
+              </div>
+              <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-sm">
+                <a href="#" class="text-blue-400 transition-all underline-offset-2 underline hover:no-underline">Implement
+                  new portfolio</a>
+              </div>
+              <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center text-sm">320</div>
+            </div>
 
-          <div class="grid grid-cols-12 gap-1">
-            <div class="col-span-4 bg-gray-50 border-b border-solid border-[#e4e8f1] 
-            py-2.5 px-2 text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Product</div>
-            <div class="col-span-6 bg-gray-50 border-b border-solid border-[#e4e8f1] py-1 px-2 
-            text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Challenges</div>
-            <div class="col-span-2 bg-gray-50 border-b border-solid border-[#e4e8f1] py-1 px-2 
-            text-gray-900 text-xs font-semibold flex items-center justify-center text-center">Points Earned</div>
+            <button type="button" class="appearance-none py-1.5 px-3 flex items-center justify-center text-center mt-4 w-full max-w-[240px] md:ml-auto mr-auto cursor-pointer
+            border border-solid border-blue-400 text-sm rounded-md bg-blue-400/[0.1] hover:bg-blue-400/[0.2] transition-all cursor-pointer text-blue-500 table-products-contribute__button">Show more</button>
           </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">OpenUnited
-                Platform</a>
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio Implement new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">50</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">150</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-          <div class="grid grid-cols-12 gap-1 table-row hidden">
-            <div class="col-span-4 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-
-            </div>
-            <div class="col-span-6 border-b border-solid border-[#e4e8f1] py-2 px-2.5">
-              <a href="#" class="text-blue-400 transition-all underline-offset-2 no-underline hover:underline">Implement
-                new portfolio</a>
-            </div>
-            <div class="col-span-2 border-b border-solid border-[#e4e8f1] py-2 px-2.5 text-center">320</div>
-          </div>
-
-          <button type="button" class="appearance-none py-1.5 px-3 flex items-center justify-center text-center mt-4 w-full max-w-[240px] mx-auto cursor-pointer
-          border border-solid border-blue-400 text-sm rounded-md bg-blue-400/[0.1] hover:bg-blue-400/[0.2] transition-all cursor-pointer text-blue-500 table-products-contribute__button">Show more</button>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2.5 mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-2.5 mt-6">
           <div class="flex flex-col">
             <h2 class="text-xl font-bold tracking-tight text-gray-900">Reviews</h2>
             <div class="mt-3 flex items-center">
