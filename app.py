@@ -127,3 +127,7 @@ def portfolio_figma():
 @app.route('/portfolio-clients')
 def portfolio_clients():
     return render_template("portfolio_clients.html")
+
+@app.route('/status-and-points')
+def status_and_points():
+    return render_template("status_and_points.html")

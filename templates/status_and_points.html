@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %} Status & Points {% endblock %}
+{% block content %}
+
+<div class="flex flex-col grow pb-8 lg:pb-0 max-w-[900px] w-full mx-auto">
+
+  <h2 class="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mb-6 md:mb-10 lg:pt-[30px]">Status & Points</h2>
+
+  <div class="space-y-3">
+    <div class="text-lg font-semibold">
+      Your “status” on OpenUnited
+    </div>
+    <p class="text-sm">
+      Primary OpenUnited activities relate to Challenges and their Bounties, Ideas & Bugs. Whilst earning payments by completing payment-eligible Bounties requires that you have first built your status to "Honeybee" or higher, you can claim Bounties on Challenges immediately after joining.
+    </p>
+    <p class="text-sm">Irrespective of status, all users are able to submit Ideas & Bugs on public products and to claim most Bounties.</p>
+    <p class="text-sm">So, if you haven’t already; please join OpenUnited and get started today.</p>
+    <div class="text-lg font-semibold">
+      What is meant by “status”?
+    </div>
+    <p class="text-sm">Your status on OpenUnited reflects your level of engagement and the trust you have earnt using
+      the platform. Your status is measured in points, and you earn and lose points by performing
+      actions on OpenUnited</p>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-6">
+      <div class="flex flex-col">
+        <p class="text-base mb-4 font-semibold">Your status <span class="text-green-600 font-bold">increases</span> when:</p>
+        <ul class="list-disc text-sm space-y-2.5 pl-6">
+          <li>
+            You successfully complete Bounties on Challenges (points depend on the Bounty)
+          </li>
+          <li>Ideas & Bugs you create are accepted by the related product team</li>
+          <li>Your accepted Ideas & Bugs are upvoted</li>
+          <li>As a Manager or Admin of a product, Bounties that you create are claimed and completed</li>
+          <li>You invite a person and they successfully register on OpenUnited</li>
+          <li>The user you invited completes their first bounty successfully</li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
+        <p class="text-base mb-4 font-semibold">Your status <span class="text-red-600 font-bold">decreases </span> when:</p>
+        <ul class="list-disc text-sm space-y-2.5 pl-6">
+          <li>You claim bounties and do not complete them successfully</li>
+          <li>You receive a warning for violating terms of use</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-sm">Some OpenUnited functionality, such as the ability to earn payment for payment-eligible Bounties, requires a particular status. Ultimately, the more you use openunited.com in a constructive way, the more points you earn, the higher your status and the more privileges you unlock.</p>
+    
+  </div>
+
+</div>
+
+{% endblock %}
