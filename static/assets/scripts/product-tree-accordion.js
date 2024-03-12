@@ -1,73 +1,141 @@
-//product tree colapse
-const nestedTableNames = document.querySelectorAll(
-  ".nested-item__label-colapse"
-);
-nestedTableNames.forEach((item) => {
-  item.addEventListener("click", () => {
-    const child = item.closest(".nested-item__label").nextElementSibling;
-    child.classList.toggle("h-full");
-    child.classList.toggle("opacity-100");
-    const categoryCloseBtn = item.querySelector(".category-close-btn");
-
-    if (child.classList.contains("h-full")) {
-      categoryCloseBtn.classList.remove("rotate-180");
-    } else {
-      categoryCloseBtn.classList.add("rotate-180");
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("add_item").addEventListener("click", function () {
-    let container = document.querySelector(".nested-item__child");
-
-    if (!container) {
-      container = document.createElement("div");
-      container.classList.add(
-        "nested-item__child",
-        "ml-10",
-        "h-0",
-        "opacity-0",
-        "transition-all",
-        "duration-300",
-        "ease-linear"
-      );
-      container.innerHTML = "set new child";
-      document.querySelector(".nested").appendChild(container);
-    }
-
-    let newIndex = document.querySelectorAll(".nested-item__label").length;
-    let newItem = document.createElement("input");
-    newItem.classList.add("nested-item", "flex", "flex-col", "pl-4", "lg:pl-8");
-    newItem.placeholder = "set new child";
-    newItem.setAttribute("id", newIndex);
-    container.appendChild(newItem);
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  let nestedItems = document.querySelectorAll(".nested-item__child");
-
-  nestedItems.forEach(function (item) {
-    new Sortable(item, {
-      group: "nested",
-      animation: 150,
-      fallbackOnBody: true,
-      swapThreshold: 0.65,
-      // Customize the options based on your requirements
-      onAdd: function (evt) {
-        // Handle the drop event if needed
-        console.log("Dropped:", evt);
+$(function () {
+  $("#jstree_demo")
+    .jstree({
+      core: {
+        mulitple: false,
+        animation: 100,
+        check_callback: true,
+        themes: {
+          variant: "medium",
+          dots: false,
+        },
       },
+
+      types: {
+        default: {
+          icon: "glyphicon glyphicon-flash",
+        },
+        demo: {
+          icon: "glyphicon glyphicon-th-large",
+        },
+      },
+
+      conditionalselect: function (node, event) {
+        return false;
+      },
+
+      plugins: [
+        // "contextmenu",
+        "dnd",
+        "massload",
+        "search",
+        // "sort",
+        "state",
+        "types",
+        "unique",
+        "wholerow",
+        "conditionalselect",
+        "changed",
+      ],
+      search: {
+        case_insensitive: true,
+        show_only_matches: true,
+      },
+      contextmenu: {
+        show_at_node: false,
+      },
+    })
+    .on("show_contextmenu.jstree", function (e, data) {})
+    .on("search.jstree", function (nodes, str, res) {
+      if (str.nodes.length === 0) {
+        $("#jstree_demo").jstree(true).hide_all();
+      }
+    });
+});
+
+$("#search-field").keyup(function () {
+  $("#jstree_demo").jstree(true).show_all();
+  $("#jstree_demo").jstree("search", $(this).val());
+});
+
+// $(document).on("click", ".jstree-anchor", function (e) {
+//   const videoBtnsOpen = document.querySelectorAll(".btn-video__open");
+//   const modalWrap = document.querySelector(".modal-wrap");
+//   const modalWrapCloseBtn = document.querySelector(".btn-video__close");
+
+//   if (!modalWrap) {
+//     modalWrap.querySelector("iframe").src = "";
+//   }
+
+//   videoBtnsOpen.forEach((btn) => {
+//     modalWrap.classList.remove("hidden");
+//     modalWrap.querySelector("iframe").src = btn.dataset.video;
+//   });
+//   if (modalWrapCloseBtn) {
+//     modalWrapCloseBtn.addEventListener("click", () => {
+//       modalWrap.classList.add("hidden");
+//     });
+//   }
+// });
+
+// $(document).on("click", ".delete_node", function (e) {
+//   const id =
+//     e.target.parentElement.parentElement.parentElement.parentElement
+//       .parentElement.id;
+//   $("#jstree_demo").on("delete_node.jstree");
+//   // Trigger the delete_node event for the first node
+//   $("#jstree_demo").jstree("delete_node", id);
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  deleteNode();
+  editNode();
+});
+const deleteNode = () => {
+  const deleteBtns = document.querySelectorAll(".delete_node");
+  deleteBtns.forEach((item) => {
+    item.addEventListener("click", () => {
+      const closestLi = item.closest("li");
+      $("#jstree_demo").jstree("delete_node", closestLi.id);
+      deleteNode();
+      // editNode();
     });
   });
-});
-document.addEventListener("DOMContentLoaded", function () {
-  let nestedItems = document.querySelector(".tree_container");
-  new Sortable(nestedItems, {
-    animation: 150,
-    ghostClass: "blue-background-class",
-  });
+};
+deleteNode();
+
+$("#jstree_demo").on("before_open.jstree", function (e, data) {
+  deleteNode();
+  editNode();
 });
 
-nested - item;
+const editNode = () => {
+  const editBtns = document.querySelectorAll(".edit_node");
+  editBtns.forEach((item) => {
+    item.addEventListener("click", () => {
+      const treeText = item
+        .closest(".nested-item__label")
+        .querySelector(".tree-text");
+      const input = item
+        .closest(".nested-item__label")
+        .querySelector(".rename_input");
+      treeText.classList.add("hidden");
+      input.classList.remove("hidden");
+      input.value = treeText.innerText;
+      input.on("focus", function (event) {
+        event.stopPropagation(); // Prevent event propagation
+      });
+    });
+  });
+};
+$("#jstree_demo").on("move_node.jstree", function (event, data) {
+  deleteNode();
+  editNode();
+});
+
+setInterval(() => {
+  const cb = $("#jstree_demo").jstree(true).get_json("#", { flat: true });
+}, 3000);
+
+deleteNode();
+editNode();
