@@ -76,6 +76,14 @@ def product_product_tree():
     product_summary_listings = raw_product_summary_listings["data"]["summary"]
     return render_template("product_tree.html", product_summary_listings=product_summary_listings, current_page="tree_page")
 
+@app.route('/product/product-tree-interactive')
+def product_product_tree_interactive():
+    product_summary_listings_file = os.path.abspath("data-sets/product_summary_listings.json")
+    with open(product_summary_listings_file) as json_file:
+        raw_product_summary_listings = json.load(json_file)
+    product_summary_listings = raw_product_summary_listings["data"]["summary"]
+    return render_template("product_tree_interactive.html", product_summary_listings=product_summary_listings, current_page="tree_page_interactive")
+
 @app.route('/product/ideas-and-bugs')
 def product_ideas_bugs():
     product_ideas_listings_file = os.path.abspath("data-sets/product_ideas_listings.json")

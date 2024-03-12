@@ -10,8 +10,7 @@ btnModapOpen.forEach((btn) => {
   });
 });
 
-if(btnModalClose) {
-
+if (btnModalClose) {
   btnModalClose.addEventListener("click", () => {
     modalWrapFilter.classList.add("hidden");
   });
@@ -29,8 +28,7 @@ btnCancel.forEach((btn) => {
   });
 });
 
-if(btnCancelClose) {
-
+if (btnCancelClose) {
   btnCancelClose.addEventListener("click", () => {
     modalCancel.classList.add("hidden");
   });
@@ -43,27 +41,22 @@ const modalWrapIdeasBugs = document.querySelectorAll(".modal-wrap-ideas-bugs");
 const btnsIdeaModalClose = document.querySelectorAll(".btn-idea-modal__close");
 
 if (btnAddModapOpen) {
-
   btnAddModapOpen.addEventListener("click", () => {
-
     modalWrapIdeasBugs.forEach((modal) => {
-
       if (ideasBtnModal.dataset.id === modal.dataset.modal) {
         modal.classList.remove("hidden");
       } else {
         modal.classList.add("hidden");
       }
-
-    })
+    });
   });
-
 }
 
 btnsIdeaModalClose.forEach((btn) => {
   btn.addEventListener("click", () => {
     modalWrapIdeasBugs.forEach((modal) => {
       modal.classList.add("hidden");
-    })
+    });
   });
 });
 
@@ -73,7 +66,7 @@ const videoBtnsOpen = document.querySelectorAll(".btn-video__open");
 const modalWrap = document.querySelector(".modal-wrap");
 const modalWrapCloseBtn = document.querySelector(".btn-video__close");
 
-if(modalWrap) {
+if (modalWrap) {
   modalWrap.querySelector("iframe").src = "";
 }
 
@@ -84,7 +77,7 @@ videoBtnsOpen.forEach((btn) => {
   });
 });
 
-if(modalWrapCloseBtn) {
+if (modalWrapCloseBtn) {
   modalWrapCloseBtn.addEventListener("click", () => {
     modalWrap.classList.add("hidden");
   });
@@ -103,7 +96,7 @@ if (skillsBtnOpen) {
   });
 }
 
-if(modalSkillsCloseBtn) {
+if (modalSkillsCloseBtn) {
   modalSkillsCloseBtn.addEventListener("click", () => {
     modalWrapSkills.classList.add("hidden");
   });
