@@ -6,9 +6,9 @@
 {% macro generate_summary_structure(data, depth = 0) %}
 {% for item in data %}
 <li data-jstree='{ "opened" : false }' id="{{item['name']}}"
-  class="nested-item shadow-inner py-3 flex flex-col {% if depth > 1 %}pl-4 lg:pl-8{% endif %}">
+  class="nested-item py-3 flex flex-col {% if depth > 1 %}pl-4 lg:pl-8{% endif %}">
   <div
-    class="nested-item__label h-max flex items-start py-1.5 w-full gap-2 group/item  hover:bg-light-blue px-2 transition-all ease-linear duration-200 rounded">
+    class="nested-item__label shadow-inner h-max flex items-start py-1.5 w-max sm:w-full gap-2 group/item  hover:bg-light-blue px-2 transition-all ease-linear duration-200 rounded">
     <div class="flex flex-col w-full">
       <div class="flex w-full justify-between items-center">
         <div class="flex items-center gap-1">
@@ -18,7 +18,7 @@
           <span class="flex flex-wrap items-center font-semibold">
             <a href="{{item['link']}}"
               class="tree-text mr-2 text-base text-dark group-hover/item:text-blue-400 transition-all ease-linear duration-200">{{item['name']}}</a>
-            <input type="text" class="hidden mr-2 text-base text-dark rename_input" />
+            <input type="text" class="hidden mr-2 text-base text-dark rename_input" autofocus />
             <button
               class="btn-video__open appearance-none rounded border border-light-gray flex items-center whitespace-nowrap px-4 py-1"
               data-video="{{item['linkYoutubeVideo']}}">
@@ -29,16 +29,19 @@
             </button>
           </span>
         </div>
-        <div class="flex gap-2 items-center">
-          <button class="edit_node w-6 h-6 ">
+        <div class="flex gap-3 items-center">
+          <button class="add_node w-5 h-5">
+            <img src="/static/assets/images/add.svg" class="" alt="#">
+          </button>
+          <button class="edit_node w-5 h-5">
             <img src="/static/assets/images/edit_icon.svg" class="" alt="#">
           </button>
-          <button class="delete_node w-4 h-5 ">
+          <button class="delete_node w-5 h-5 ">
             <img src="/static/assets/images/delete.svg" class="" alt="#">
           </button>
         </div>
       </div>
-      <span class="flex text-sm leading-6 text-gray-700 font-normal mt-0.5">
+      <span class="flex text-sm leading-6 text-gray-700 font-normal mt-0.5 line-clamp-1 sm:line-clamp-none">
         {{item['description']}}
       </span>
     </div>
@@ -53,8 +56,8 @@
 {% endmacro %}
 
 <div class="">
-  <h3 class="text-xl text-gray-900 font-bold">Product Tree</h3>
-  <form class="mt-4 mb-4 lg:mb-7 flex items-center">
+  <h3 class="text-xl text-gray-900 font-bold">Product Tree-Interactive</h3>
+  <div class="mt-4 mb-4 lg:mb-7 flex items-center">
     <input type="text" name="search-field" id="search-field"
       class="block w-full sm:max-w-[320px] rounded-l-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
       placeholder="Search text">
@@ -67,11 +70,15 @@
         </path>
       </svg>
     </button>
-  </form>
+  </div>
 
   <div class="flex flex-col flex-grow nested">
     <div class="mt-4 lg:mt-6">
-      <div id="jstree_demo" class="tree-demo flex flex-col gap-4 tree_container">
+      <button id="AddFirst"
+        class="bg-indigo-600 rounded text-white px-4 py-2 transition-all ease-linear duration-100 mb-10">Create
+        tree</button>
+      <div id="jstree_demo"
+        class="tree-demo flex flex-col gap-4 tree_container overflow-x-auto sm:overflow-x-hidden overflow-y-hidden">
         <ul>
           {{ generate_summary_structure(product_summary_listings) }}
         </ul>
