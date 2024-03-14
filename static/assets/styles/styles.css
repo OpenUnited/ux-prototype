@@ -718,6 +718,7 @@ input[autocomplete=one-time-code] {
   gap: 10px;
   display: flex !important;
   flex-direction: column;
+  margin-top: 16px;
 }
 
 .jstree-default .jstree-search .tree-text {

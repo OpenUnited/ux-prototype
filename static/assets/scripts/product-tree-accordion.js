@@ -2,7 +2,7 @@ $(function () {
   $("#jstree_demo")
     .jstree({
       core: {
-        mulitple: false,
+        multiple: false,
         animation: 100,
         check_callback: true,
         themes: {
@@ -10,7 +10,6 @@ $(function () {
           dots: false,
         },
       },
-
       types: {
         default: {
           icon: "glyphicon glyphicon-flash",
@@ -19,17 +18,13 @@ $(function () {
           icon: "glyphicon glyphicon-th-large",
         },
       },
-
       conditionalselect: function (node, event) {
         return false;
       },
-
       plugins: [
-        // "contextmenu",
         "dnd",
-        "massload",
+        // "massload",
         "search",
-        // "sort",
         "state",
         "types",
         "unique",
@@ -58,84 +53,131 @@ $("#search-field").keyup(function () {
   $("#jstree_demo").jstree("search", $(this).val());
 });
 
-// $(document).on("click", ".jstree-anchor", function (e) {
-//   const videoBtnsOpen = document.querySelectorAll(".btn-video__open");
-//   const modalWrap = document.querySelector(".modal-wrap");
-//   const modalWrapCloseBtn = document.querySelector(".btn-video__close");
+$("#AddFirst").on("click", create_node);
+const newNode = (text, id) => {
+  let newNodeText = ` <div
+  class="nested-item__label shadow-inner h-max flex items-start py-4 w-full gap-2 group/item  hover:bg-light-blue px-2 transition-all ease-linear duration-200 rounded">
+  <div class="flex flex-col w-full">
+    <div class="flex w-full justify-between items-center">
+      <div class="flex items-center gap-1">
+        <button class="w-3 h-3">
+          <img src="/static/assets/images/drag.svg" class="w-full h-full object-contain object-center" alt="#">
+        </button>
+        <span class="flex flex-wrap items-center font-semibold">
+          <a href="{{item['link']}}"
+            class="tree-text mr-2 text-base text-dark group-hover/item:text-blue-400 transition-all ease-linear duration-200">${
+              text || "New item"
+            }</a>
+          <input type="text" class="hidden mr-2 text-base text-dark rename_input" />
+        </span>
+      </div>
+      <div class="flex gap-3 items-center">
+        <button class="add_node w-5 h-5">
+           <img src="/static/assets/images/add.svg" class="" alt="#">
+        </button>
+        <button class="edit_node w-5 h-5">
+          <img src="/static/assets/images/edit_icon.svg" class="" alt="#">
+        </button>
+        <button class="delete_node w-5 h-5 ">
+          <img src="/static/assets/images/delete.svg" class="" alt="#">
+        </button>
+      </div>
+    </div>
+    <span class="hidden">${id}</span>
+  </div>
+  </div>`;
+  return newNodeText;
+};
 
-//   if (!modalWrap) {
-//     modalWrap.querySelector("iframe").src = "";
-//   }
+function create_node() {
+  let ref = $("#jstree_demo").jstree(true),
+    sel = ref.get_selected();
+  if (!sel.length) {
+    sel[0] = "#";
+  }
+  sel = sel[0];
 
-//   videoBtnsOpen.forEach((btn) => {
-//     modalWrap.classList.remove("hidden");
-//     modalWrap.querySelector("iframe").src = btn.dataset.video;
-//   });
-//   if (modalWrapCloseBtn) {
-//     modalWrapCloseBtn.addEventListener("click", () => {
-//       modalWrap.classList.add("hidden");
-//     });
-//   }
-// });
+  sel = ref.create_node(sel, { text: newNode(null, Math.random()) }, "last");
+}
 
-// $(document).on("click", ".delete_node", function (e) {
-//   const id =
-//     e.target.parentElement.parentElement.parentElement.parentElement
-//       .parentElement.id;
-//   $("#jstree_demo").on("delete_node.jstree");
-//   // Trigger the delete_node event for the first node
-//   $("#jstree_demo").jstree("delete_node", id);
-// });
+const setupDeleteNode = () => {
+  $("#jstree_demo").on("click", ".delete_node", function () {
+    const closestLi = $(this).closest("li")[0];
+    $("#jstree_demo").jstree("delete_node", closestLi.id);
+  });
+};
 
-document.addEventListener("DOMContentLoaded", function () {
-  deleteNode();
-  editNode();
-});
-const deleteNode = () => {
-  const deleteBtns = document.querySelectorAll(".delete_node");
-  deleteBtns.forEach((item) => {
-    item.addEventListener("click", () => {
-      const closestLi = item.closest("li");
-      $("#jstree_demo").jstree("delete_node", closestLi.id);
-      deleteNode();
-      // editNode();
+const setupEditNode = () => {
+  $("#jstree_demo").on("click", ".edit_node", function (event) {
+    event.stopPropagation();
+    const label = $(this).closest(".nested-item__label");
+    const a = $(this).closest(".jstree-anchor");
+    a.removeAttr("href");
+    a.removeClass();
+    a.addClass("flex ml-5 mt-[-30px] relative focus-visible:outline-0");
+    const treeText = label.find(".tree-text");
+    const input = label.find(".rename_input");
+    treeText.addClass("hidden");
+    input.removeClass("hidden");
+    input.val(treeText.text());
+    input.focus();
+
+    input.off("keypress").on("keypress", function (e) {
+      const li = e.target.closest("li");
+      const parentElement = e.target.closest(".nested-item__label");
+      if (e.key === "Enter") {
+        treeText.removeClass("hidden");
+        input.addClass("hidden");
+        a.removeClass();
+        a.addClass("jstree-anchor");
+        treeText.text(input.val());
+        $("#jstree_demo").jstree("rename_node", li.id, parentElement.outerHTML);
+        setupEditNode();
+      }
+    });
+    input.click(function (e) {
+      e.stopPropagation();
     });
   });
 };
-deleteNode();
+
+const setupCreateNode = () => {
+  $("#jstree_demo").on("click", ".add_node", function () {
+    const parentNode = $(this).closest("li")[0];
+
+    $("#jstree_demo").jstree(true).open_node(parentNode.id);
+    const id = $("#jstree_demo").jstree("create_node", parentNode.id, {
+      text: newNode(null, Math.random()),
+    });
+  });
+};
+const viewVideo = () => {
+  const videoBtnsOpen = document.querySelectorAll(".btn-video__open");
+  const modalWrap = document.querySelector(".modal-wrap");
+  const modalWrapCloseBtn = document.querySelector(".btn-video__close");
+
+  if (modalWrap) {
+    modalWrap.querySelector("iframe").src = "";
+  }
+  videoBtnsOpen.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      modalWrap.classList.remove("hidden");
+      modalWrap.querySelector("iframe").src = btn.dataset.video;
+    });
+  });
+
+  if (modalWrapCloseBtn) {
+    modalWrapCloseBtn.addEventListener("click", () => {
+      modalWrap.classList.add("hidden");
+    });
+  }
+};
+$(document).ready(function () {
+  setupDeleteNode();
+  setupEditNode();
+  setupCreateNode();
+});
 
 $("#jstree_demo").on("before_open.jstree", function (e, data) {
-  deleteNode();
-  editNode();
+  viewVideo();
 });
-
-const editNode = () => {
-  const editBtns = document.querySelectorAll(".edit_node");
-  editBtns.forEach((item) => {
-    item.addEventListener("click", () => {
-      const treeText = item
-        .closest(".nested-item__label")
-        .querySelector(".tree-text");
-      const input = item
-        .closest(".nested-item__label")
-        .querySelector(".rename_input");
-      treeText.classList.add("hidden");
-      input.classList.remove("hidden");
-      input.value = treeText.innerText;
-      input.on("focus", function (event) {
-        event.stopPropagation(); // Prevent event propagation
-      });
-    });
-  });
-};
-$("#jstree_demo").on("move_node.jstree", function (event, data) {
-  deleteNode();
-  editNode();
-});
-
-setInterval(() => {
-  const cb = $("#jstree_demo").jstree(true).get_json("#", { flat: true });
-}, 3000);
-
-deleteNode();
-editNode();
