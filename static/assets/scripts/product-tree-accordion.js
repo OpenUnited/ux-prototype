@@ -23,40 +23,35 @@ $(function () {
       },
       plugins: [
         "dnd",
-        // "massload",
+        "massload",
         "search",
         "state",
         "types",
         "unique",
         "wholerow",
-        "conditionalselect",
         "changed",
+        "conditionalselect",
       ],
       search: {
-        case_insensitive: true,
         show_only_matches: true,
-      },
-      contextmenu: {
-        show_at_node: false,
+        show_only_matches_children: true,
       },
     })
     .on("show_contextmenu.jstree", function (e, data) {})
     .on("search.jstree", function (nodes, str, res) {
       if (str.nodes.length === 0) {
         $("#jstree_demo").jstree(true).hide_all();
+        $(".search_empty").removeClass("hidden");
+      } else {
+        $(".search_empty").addClass("hidden");
       }
     });
-});
-
-$("#search-field").keyup(function () {
-  $("#jstree_demo").jstree(true).show_all();
-  $("#jstree_demo").jstree("search", $(this).val());
 });
 
 $("#AddFirst").on("click", create_node);
 const newNode = (text, id) => {
   let newNodeText = ` <div
-  class="nested-item__label shadow-inner h-max flex items-start py-4 w-full gap-2 group/item  hover:bg-light-blue px-2 transition-all ease-linear duration-200 rounded">
+  class="nested-item__label shadow-inner h-max flex items-start w-full gap-2 group/item py-3 hover:bg-light-blue px-2 transition-all ease-linear duration-200 rounded">
   <div class="flex flex-col w-full">
     <div class="flex w-full justify-between items-center">
       <div class="flex items-center gap-1">
@@ -78,6 +73,9 @@ const newNode = (text, id) => {
         <button class="edit_node w-5 h-5">
           <img src="/static/assets/images/edit_icon.svg" class="" alt="#">
         </button>
+        <button class="check_node w-5 h-5 hidden">
+            <img src="/static/assets/images/check-green.svg" class="check" alt="#">
+          </button>
         <button class="delete_node w-5 h-5 ">
           <img src="/static/assets/images/delete.svg" class="" alt="#">
         </button>
@@ -90,6 +88,8 @@ const newNode = (text, id) => {
 };
 
 function create_node() {
+  clearSearchNode();
+  $(".search_empty").addClass("hidden");
   let ref = $("#jstree_demo").jstree(true),
     sel = ref.get_selected();
   if (!sel.length) {
@@ -97,7 +97,7 @@ function create_node() {
   }
   sel = sel[0];
 
-  sel = ref.create_node(sel, { text: newNode(null, Math.random()) }, "last");
+  sel = ref.create_node(sel, { text: newNode(null, Math.random()) }, "first");
 }
 
 const setupDeleteNode = () => {
@@ -110,34 +110,53 @@ const setupDeleteNode = () => {
 const setupEditNode = () => {
   $("#jstree_demo").on("click", ".edit_node", function (event) {
     event.stopPropagation();
+    $(this).addClass("hidden");
+    $(this).siblings(".check_node").removeClass("hidden");
     const label = $(this).closest(".nested-item__label");
     const a = $(this).closest(".jstree-anchor");
     a.removeAttr("href");
     a.removeClass();
     a.addClass("flex ml-5 mt-[-30px] relative focus-visible:outline-0");
     const treeText = label.find(".tree-text");
+    const treeDescText = label.find(".text_desc");
     const input = label.find(".rename_input");
-    treeText.addClass("hidden");
-    input.removeClass("hidden");
-    input.val(treeText.text());
+    const descInput = label.find(".renameDesc_input");
+    inputChange(treeText, input, true);
+    inputChange(treeDescText, descInput);
+  });
+};
+const inputChange = (treeText, input, focus) => {
+  treeText.addClass("hidden");
+  input.removeClass("hidden");
+  input.val(treeText.text());
+  if (focus) {
     input.focus();
-
-    input.off("keypress").on("keypress", function (e) {
-      const li = e.target.closest("li");
-      const parentElement = e.target.closest(".nested-item__label");
-      if (e.key === "Enter") {
-        treeText.removeClass("hidden");
-        input.addClass("hidden");
-        a.removeClass();
-        a.addClass("jstree-anchor");
-        treeText.text(input.val());
-        $("#jstree_demo").jstree("rename_node", li.id, parentElement.outerHTML);
-        setupEditNode();
-      }
-    });
-    input.click(function (e) {
-      e.stopPropagation();
-    });
+  }
+};
+const inputChangeSave = (treeText, input) => {
+  treeText.removeClass("hidden");
+  input.addClass("hidden");
+  treeText.text(input.val());
+};
+const saveEditNode = () => {
+  $("#jstree_demo").on("click", ".check_node", function (e) {
+    e.stopPropagation();
+    $(this).addClass("hidden");
+    $(this).siblings(".edit_node").removeClass("hidden");
+    const label = $(this).closest(".nested-item__label");
+    const li = e.target.closest("li");
+    const input = label.find(".rename_input");
+    const descInput = label.find(".renameDesc_input");
+    const treeText = label.find(".tree-text");
+    const treeDescText = label.find(".text_desc");
+    const parentElement = e.target.closest(".nested-item__label");
+    const a = $(this).closest(".jstree-anchor");
+    inputChangeSave(treeText, input);
+    inputChangeSave(treeDescText, descInput);
+    a.removeClass();
+    a.addClass("jstree-anchor");
+    $("#jstree_demo").jstree("rename_node", li.id, parentElement.outerHTML);
+    saveEditNode();
   });
 };
 
@@ -146,9 +165,14 @@ const setupCreateNode = () => {
     const parentNode = $(this).closest("li")[0];
 
     $("#jstree_demo").jstree(true).open_node(parentNode.id);
-    const id = $("#jstree_demo").jstree("create_node", parentNode.id, {
-      text: newNode(null, Math.random()),
-    });
+    const id = $("#jstree_demo").jstree(
+      "create_node",
+      parentNode.id,
+      {
+        text: newNode(null, Math.random()),
+      },
+      "first"
+    );
   });
 };
 const viewVideo = () => {
@@ -172,10 +196,27 @@ const viewVideo = () => {
     });
   }
 };
+const searchNode = () => {
+  $("#search-field").keyup(function () {
+    if ($(this).val().trim() === "") {
+      $(".search_empty").addClass("hidden");
+    }
+    $("#jstree_demo").jstree(true).show_all();
+    $(".jstree-node").show();
+    $("#jstree_demo").jstree("search", $(this).val());
+    $(".jstree-hidden").hide();
+    $("a.jstree-search").parent("li").find(".jstree-hidden").show();
+  });
+};
+const clearSearchNode = () => {
+  $("#search-field").val("").change().focus();
+};
 $(document).ready(function () {
   setupDeleteNode();
   setupEditNode();
   setupCreateNode();
+  searchNode();
+  saveEditNode();
 });
 
 $("#jstree_demo").on("before_open.jstree", function (e, data) {

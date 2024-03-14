@@ -72,7 +72,6 @@ if (modalWrap) {
 
 videoBtnsOpen.forEach((btn) => {
   btn.addEventListener("click", () => {
-    console.log(123);
     modalWrap.classList.remove("hidden");
     modalWrap.querySelector("iframe").src = btn.dataset.video;
   });
@@ -93,7 +92,6 @@ const modalSkillsCloseBtn = document.querySelector(".btn-skills__close");
 if (skillsBtnOpen) {
   skillsBtnOpen.addEventListener("click", () => {
     modalWrapSkills.classList.remove("hidden");
-    // console.log(modalWrapSkills);
   });
 }
 
