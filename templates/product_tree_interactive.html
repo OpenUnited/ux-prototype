@@ -18,7 +18,7 @@
           <span class="flex flex-wrap items-center font-semibold">
             <a href="{{item['link']}}"
               class="tree-text mr-2 text-base text-dark group-hover/item:text-blue-400 transition-all ease-linear duration-200">{{item['name']}}</a>
-            <input type="text" class="hidden mr-2 text-base text-dark rename_input" />
+            <input type="text" class="hidden mr-2 text-base text-dark rename_input border border-light-gray rounded" />
             <button
               class="btn-video__open appearance-none rounded border border-light-gray flex items-center whitespace-nowrap px-4 py-1"
               data-video="{{item['linkYoutubeVideo']}}">
@@ -44,10 +44,10 @@
           </button>
         </div>
       </div>
-      <span class="text_desc flex text-sm leading-6 text-gray-700 font-normal mt-0.5">
-        {{item['description']}}
-      </span>
-      <input type="text" class="hidden mr-2 text-base text-dark renameDesc_input" />
+      <span class="text_desc flex text-sm leading-6 text-gray-700 font-normal mt-0.5">{{item['description']}}</span>
+      <input type="text"
+        class="hidden ml-4 mr-2 text-base text-dark renameDesc_input border border-light-gray rounded mt-2"
+        placeholder="Add description" />
     </div>
   </div>
   {% if item["children"] %}

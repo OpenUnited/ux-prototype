@@ -63,7 +63,7 @@ const newNode = (text, id) => {
             class="tree-text mr-2 text-base text-dark group-hover/item:text-blue-400 transition-all ease-linear duration-200">${
               text || "New item"
             }</a>
-          <input type="text" class="hidden mr-2 text-base text-dark rename_input" />
+          <input type="text" class="hidden mr-2 text-base text-dark rename_input border border-light-gray rounded" />
         </span>
       </div>
       <div class="flex gap-3 items-center">
@@ -81,6 +81,8 @@ const newNode = (text, id) => {
         </button>
       </div>
     </div>
+      <span class="text_desc flex text-sm leading-6 text-gray-700 font-normal mt-0.5"></span>
+    <input type="text" class="hidden ml-4 mr-2 text-base text-dark renameDesc_input mt-2 border border-light-gray rounded" placeholder="Add description" />
     <span class="hidden">${id}</span>
   </div>
   </div>`;
@@ -166,7 +168,6 @@ const setupCreateNode = () => {
     e.stopPropagation();
     const parentNode = $(this).closest("li")[0];
 
-    $("#jstree_demo").jstree(true).open_node(parentNode.id);
     const id = $("#jstree_demo").jstree(
       "create_node",
       parentNode.id,
@@ -175,6 +176,7 @@ const setupCreateNode = () => {
       },
       "first"
     );
+    $("#jstree_demo").jstree(true).open_node(parentNode.id);
   });
 };
 const viewVideo = () => {
@@ -227,7 +229,7 @@ $("#jstree_demo").on("before_open.jstree", function (e, data) {
 
 $(document).on("click", ".jstree-anchor", function (e) {
   e.preventDefault();
-  window.location.href = window.origin + "/product/product-tree-detail";
+  window.location.href = window.origin + "/product/product-area-detail";
 });
 
 const quill = new Quill("#editor", {
