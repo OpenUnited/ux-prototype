@@ -101,7 +101,8 @@ function create_node() {
 }
 
 const setupDeleteNode = () => {
-  $("#jstree_demo").on("click", ".delete_node", function () {
+  $("#jstree_demo").on("click", ".delete_node", function (e) {
+    e.stopPropagation();
     const closestLi = $(this).closest("li")[0];
     $("#jstree_demo").jstree("delete_node", closestLi.id);
   });
@@ -161,7 +162,8 @@ const saveEditNode = () => {
 };
 
 const setupCreateNode = () => {
-  $("#jstree_demo").on("click", ".add_node", function () {
+  $("#jstree_demo").on("click", ".add_node", function (e) {
+    e.stopPropagation();
     const parentNode = $(this).closest("li")[0];
 
     $("#jstree_demo").jstree(true).open_node(parentNode.id);
