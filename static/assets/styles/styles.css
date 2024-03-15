@@ -724,3 +724,7 @@ input[autocomplete=one-time-code] {
 .jstree-default .jstree-search .tree-text {
   color: rgb(79 70 229) !important;
 }
+
+.scolled-content::-webkit-scrollbar {
+  display: none;
+}

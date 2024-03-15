@@ -84,6 +84,14 @@ def product_product_tree_interactive():
     product_summary_listings = raw_product_summary_listings["data"]["summary"]
     return render_template("product_tree_interactive.html", product_summary_listings=product_summary_listings, current_page="tree_page_interactive")
 
+@app.route('/product/product-tree-detail')
+def product_product_tree_detail():
+    challenge_listings_file = os.path.abspath("data-sets/challenge_listings.json")
+    with open(challenge_listings_file) as json_file:
+        raw_challenge_listings = json.load(json_file)
+    challenge_listings = raw_challenge_listings["data"]["challengelisting"]
+    return render_template("product_tree_detail.html", challenge_listings=challenge_listings)
+
 @app.route('/product/ideas-and-bugs')
 def product_ideas_bugs():
     product_ideas_listings_file = os.path.abspath("data-sets/product_ideas_listings.json")

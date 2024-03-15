@@ -89,11 +89,23 @@
                         <span class="flex">
                             <span class="flex-grow">
                                 <a href="{{url_for('product_product_tree')}}"
-                                    class="hover:text-indigo-500 transition-all delay-600">Product Tree (Capability Detail)</a>
+                                    class="hover:text-indigo-500 transition-all delay-600">Product Tree (Capability
+                                    Detail)</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-green-600">
                                     Done
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{url_for('product_product_tree_interactive')}}"
+                                    class="hover:text-indigo-500 transition-all delay-600">Product Tree-Interactive</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-green-600">
+                                    In progress
                                 </div>
                             </span>
                         </span>
@@ -175,7 +187,8 @@
                     <span class="flex flex-col flex-grow">
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="{{ url_for('user_sign_up') }}" class="hover:text-indigo-500 transition-all delay-600">Sign Up</a>
+                                <a href="{{ url_for('user_sign_up') }}"
+                                    class="hover:text-indigo-500 transition-all delay-600">Sign Up</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-green-600">
@@ -185,7 +198,8 @@
                         </span>
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="{{ url_for('user_sign_in') }}" class="hover:text-indigo-500 transition-all delay-600">Sign In</a>
+                                <a href="{{ url_for('user_sign_in') }}"
+                                    class="hover:text-indigo-500 transition-all delay-600">Sign In</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-green-600">
@@ -195,7 +209,8 @@
                         </span>
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="{{ url_for('user_password_reset') }}" class="hover:text-indigo-500 transition-all delay-600">Reset Password</a>
+                                <a href="{{ url_for('user_password_reset') }}"
+                                    class="hover:text-indigo-500 transition-all delay-600">Reset Password</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-green-600">
@@ -212,17 +227,8 @@
                     <span class="flex flex-col flex-grow">
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="{{ url_for('portfolio_figma') }}" class="hover:text-indigo-500 transition-all delay-600">Portfolio (Figma Design)</a>
-                            </span>
-                            <span class="ml-4 flex-shrink-0">
-                                <div class="rounded-md bg-white font-medium text-green-600">
-                                    Done 
-                                </div>
-                            </span>
-                        </span>
-                        <span class="flex">
-                            <span class="flex-grow">
-                                <a href="{{ url_for('portfolio_clients') }}" class="hover:text-indigo-500 transition-all delay-600">Portfolio (For clients)</a>
+                                <a href="{{ url_for('portfolio_figma') }}"
+                                    class="hover:text-indigo-500 transition-all delay-600">Portfolio (Figma Design)</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-green-600">
@@ -232,7 +238,8 @@
                         </span>
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="{{ url_for('portfolio') }}" class="hover:text-indigo-500 transition-all delay-600">Portfolio (For devs)</a>
+                                <a href="{{ url_for('portfolio_clients') }}"
+                                    class="hover:text-indigo-500 transition-all delay-600">Portfolio (For clients)</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-green-600">
@@ -242,7 +249,19 @@
                         </span>
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="{{ url_for('status_and_points') }}" class="hover:text-indigo-500 transition-all delay-600">Status & Points</a>
+                                <a href="{{ url_for('portfolio') }}"
+                                    class="hover:text-indigo-500 transition-all delay-600">Portfolio (For devs)</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-green-600">
+                                    Done
+                                </div>
+                            </span>
+                        </span>
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{ url_for('status_and_points') }}"
+                                    class="hover:text-indigo-500 transition-all delay-600">Status & Points</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
                                 <div class="rounded-md bg-white font-medium text-green-600">

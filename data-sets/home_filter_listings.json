@@ -95,8 +95,12 @@
             "title": "In review"
           },
           {
-            "id": 3,
+            "id": 4,
             "title": "Claimed"
+          },
+          {
+            "id": 5,
+            "title": "Available"
           }
         ]
       }
