@@ -100,3 +100,25 @@ if (modalSkillsCloseBtn) {
     modalWrapSkills.classList.add("hidden");
   });
 }
+
+// open create new challange modal
+
+const btnCreateChallanegOpen = document.querySelectorAll(
+  ".btn-modal-challenge"
+);
+const modalWrapCreateChallenge = document.querySelector(
+  ".modal-wrap-create-challange"
+);
+const btnChallengeModalClose = document.querySelector(".btn-challenge__close");
+
+btnCreateChallanegOpen.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modalWrapCreateChallenge.classList.remove("hidden");
+  });
+});
+
+if (btnChallengeModalClose) {
+  btnChallengeModalClose.addEventListener("click", () => {
+    modalWrapCreateChallenge.classList.add("hidden");
+  });
+}

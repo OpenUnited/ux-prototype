@@ -222,3 +222,17 @@ $(document).ready(function () {
 $("#jstree_demo").on("before_open.jstree", function (e, data) {
   viewVideo();
 });
+
+$(document).on("click", ".jstree-anchor", function (e) {
+  e.preventDefault();
+  window.location.href = window.origin + "/product/product-tree-detail";
+});
+
+const quill = new Quill("#editor", {
+  modules: {
+    syntax: true,
+    toolbar: "#toolbar-container",
+  },
+  placeholder: "Compose an epic...",
+  theme: "snow",
+});
