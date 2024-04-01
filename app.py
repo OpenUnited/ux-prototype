@@ -147,3 +147,7 @@ def portfolio_clients():
 @app.route('/status-and-points')
 def status_and_points():
     return render_template("status_and_points.html")
+
+@app.route('/bounty_claim_requests_table')
+def bounty_claim_requests_table():
+    return render_template("bounty_claim_requests_table.html")
