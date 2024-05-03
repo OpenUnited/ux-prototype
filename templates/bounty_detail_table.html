@@ -1,0 +1,119 @@
+{% set TASK_TYPES = ["Draft", "Blocked", "Available", "Claimed", "Done", "In Review"] %}
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+            <tr>
+                <th scope="col" class="px-2 py-3">
+                    Bounty
+                </th>
+                <th scope="col" class="px-2 py-3">
+                    Skill
+                </th>
+                <th scope="col" class="px-2 py-3">
+                    Expertise
+                </th>
+
+                <th scope="col" class="px-2 py-3">
+                    Points
+                </th>
+                <th scope="col" class="px-2 py-3">
+                    Status
+                </th>
+                <th scope="col" class="px-2 py-3">
+                    Claimed By
+                </th>
+                <th scope="col" class="px-2 py-3">
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for bounty in bounties %}
+
+            <tr class="bg-white border-b">
+                <td class="relative whitespace-normal py-4 pl-3 pr-4 text-sm font-medium sm:pr-0">
+                    <a href=""
+                        class="text-indigo-600 hover:text-indigo-900">{{ bounty.title }}</a>
+                </td>
+                <th scope="row" class="px-2 py-1 font-medium text-gray-900 whitespace-nowrap">
+                    {{ bounty.skill }}
+                </th>
+                <td class="px-2 py-1">
+                   {# {{ bounty.get_expertise_as_str() }} #}
+                </td>
+                <td class="px-2 py-1">
+                    {{ bounty.points }}
+                </td>
+                <td class="px-2 py-1">
+                    {{  TASK_TYPES[bounty.status] }}
+                </td>
+                <td class="px-2 py-1">
+
+
+                    {% if bounty.status == 2 %}
+                        Unclaimed
+                    {% elif claimed_by %}
+                    <div class="flex items-center text-xs text-black/[0.85]">
+                        <a href="{{ claimed_by.get_absolute_url() }}" class="flex items-center ml-4">
+                            <div class="flex items-center justify-center shrink-0 w-8 h-8 mr-1.5">
+                                <img class="w-full h-full rounded-full bg-gray-50 ring-2 ring-white"
+                                    src="{{ claimed_by.get_photo_url() }}" alt="Created By">
+                            </div>
+                            <div class="text-neutral-800">
+                                {{ claimed_by.get_full_name() }}
+                            </div>
+                        </a>
+                    </div>
+                    {% endif %}
+                    <p>
+                    </p>
+                </td>
+                <td class="relative whitespace-nowrap">
+                    <button
+                        hx-post=""
+                        class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
+                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim
+                    </button>
+
+                        <a href=""
+                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1">Edit</a>
+
+                        <a hx-get=""
+                            hx-confirm="Are you sure to delete this bounty?" hx-target="body" hx-swap="innerHTML"
+                            hx-push-url="true"
+                            class="text-red-700 cursor-pointer hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900 mr-1">Delete
+                        </a>
+                    
+                        <button hx-post=""
+                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
+                            hx-swap="outerHTML" hx-target="this" hx-vals='{"from": "bounty_detail_table.html"}' hx-confirm="Are you sure to cancel your bounty claim request?">
+                            Cancel Request
+                        </button>
+
+            
+
+                </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</div>
+
+<p>
+    <a class="inline-block" href="">
+        <button class="p-4 rounded-md bg-indigo-600 mt-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
+            type="button">
+            Create another bounty for this challenge</button>
+    </a>
+</p>
+
+<p>
+    <a class="inline-block" href="">
+        <button class="p-4 rounded-md bg-indigo-600 mt-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
+            type="button">
+            Create a bounty for this</button>
+    </a>
+</p>
+
