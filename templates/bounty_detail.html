@@ -61,7 +61,7 @@
                 <div class="flex items-center text-xs font-semibold leading-6">
                     <span class="flex shrink-0 items-center justify-center w-4 h-4 mr-1">
                         {% set expertise_icon_path = 'images/skills/' ~ exp ~ '.svg' %}
-                        <img src="static/assets/images/react.svg" class="w-full h-full object-contain object-center"
+                        <img src="{{url_for('static', filename='assets/images/react.svg')}}" class="w-full h-full object-contain object-center"
                             alt="#">
                     </span>
                     {{ exp.name }}

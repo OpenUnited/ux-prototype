@@ -5,7 +5,7 @@
   <!-- tailwind version 3.3.2 -->
   <script src="https://cdn.tailwindcss.com?plugins=line-clamp"></script>
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <link rel="stylesheet" href="/static/assets/styles/styles.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='assets/styles/styles.css')}}">
 
   <title>
     Sign In OpenUnited
@@ -263,5 +263,5 @@
     </div>
   </div>
 
-  <script type="module" src="/static/assets/scripts/main.js"></script>
+  <script type="module" src="{{url_for('static', filename='assets/scripts/main.js')}}"></script>
 </body>
