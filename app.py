@@ -90,17 +90,9 @@ def product_initiatives():
 
 @app.route("/product/challenges")
 def product_challenges():
-    product_challenges_listings_file = os.path.abspath(
-        "data-sets/product_challenges_listings.json"
-    )
-    with open(product_challenges_listings_file) as json_file:
-        raw_product_challenges_listings = json.load(json_file)
-    product_challenges_listings = raw_product_challenges_listings["data"][
-        "tasklistingByProduct"
-    ]
     return render_template(
         "product_challenges.html",
-        product_challenges_listings=product_challenges_listings,
+        challenges=app_data.get_challenges()[:5],
         current_page="challenges_page",
     )
 
