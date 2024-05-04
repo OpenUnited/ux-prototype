@@ -87,7 +87,7 @@
                         <div class="flex justify-between gap-x-2">
                             {% if challenge_listing.product.videoUrl %}
                             <button class="appearance-none flex flex-none items-center cursor-pointer">
-                                <img src="/static/assets/images/play.svg" class="w-[14px] h-[15px]" alt="#">
+                                <img src="{{url_for('static', filename='assets/images/play.svg')}}" class="w-[14px] h-[15px]" alt="#">
                             </button>
                             {% endif %}
                             <div class="flex-1">
@@ -103,7 +103,7 @@
                         <div class="flex justify-between gap-x-2">
                             {% if challenge_listing.initiative.videoUrl %}
                             <button class="appearance-none flex flex-none items-center cursor-pointer">
-                                <img src="/static/assets/images/play.svg" class="w-[14px] h-[15px]" alt="#" />
+                                <img src="{{url_for('static', filename='assets/images/play.svg')}}" class="w-[14px] h-[15px]" alt="#" />
                             </button>
                             {% endif %}
                             <div class="flex-1">

@@ -15,7 +15,7 @@ def inject_json_data():
     return dict(home_filter_listings=home_filter_listings)
 
 
-@app.route("/screen-list")
+@app.route("/screen-list/")
 def screen_list():
     return render_template("screen_list.html")
 
@@ -28,12 +28,12 @@ def home_splash():
     return render_template("home_splash.html")
 
 
-@app.route("/challenges/steps")
+@app.route("/challenges/steps/")
 def challenges_steps():
     return render_template("challenges_steps.html")
 
 
-@app.route("/challenges")
+@app.route("/challenges/")
 def home_challenges():
     challenge_listings_file = os.path.abspath("data-sets/challenge_listings.json")
     with open(challenge_listings_file) as json_file:
@@ -44,7 +44,7 @@ def home_challenges():
     )
 
 
-@app.route("/products")
+@app.route("/products/")
 def home_products():
     products_listings_file = os.path.abspath("data-sets/products_listings.json")
     with open(products_listings_file) as json_file:
@@ -56,7 +56,7 @@ def home_products():
 # #product pages
 
 
-@app.route("/product/summary")
+@app.route("/product/summary/")
 def product_summary():
     product_summary_listings_file = os.path.abspath(
         "data-sets/product_summary_listings.json"
@@ -71,7 +71,7 @@ def product_summary():
     )
 
 
-@app.route("/product/initiatives")
+@app.route("/product/initiatives/")
 def product_initiatives():
     product_initiatives_listings_file = os.path.abspath(
         "data-sets/product_initiatives_listings.json"
@@ -88,7 +88,7 @@ def product_initiatives():
     )
 
 
-@app.route("/product/challenges")
+@app.route("/product/challenges/")
 def product_challenges():
     return render_template(
         "product_challenges.html",
@@ -97,7 +97,7 @@ def product_challenges():
     )
 
 
-@app.route("/product/product-tree")
+@app.route("/product/product-tree/")
 def product_product_tree():
     product_summary_listings_file = os.path.abspath(
         "data-sets/product_summary_listings.json"
@@ -112,7 +112,7 @@ def product_product_tree():
     )
 
 
-@app.route("/product/product-tree-interactive")
+@app.route("/product/product-tree-interactive/")
 def product_product_tree_interactive():
     product_summary_listings_file = os.path.abspath(
         "data-sets/product_summary_listings.json"
@@ -127,7 +127,7 @@ def product_product_tree_interactive():
     )
 
 
-@app.route("/product/product-area-detail")
+@app.route("/product/product-area-detail/")
 def product_product_area_detail():
     challenge_listings_file = os.path.abspath("data-sets/challenge_listings.json")
     with open(challenge_listings_file) as json_file:
@@ -138,7 +138,7 @@ def product_product_area_detail():
     )
 
 
-@app.route("/product/ideas-and-bugs")
+@app.route("/product/ideas-and-bugs/")
 def product_ideas_bugs():
     product_ideas_listings_file = os.path.abspath(
         "data-sets/product_ideas_listings.json"
@@ -158,7 +158,7 @@ def product_ideas_bugs():
     )
 
 
-@app.route("/product/people")
+@app.route("/product/people/")
 def product_people():
     product_people_listings_file = os.path.abspath(
         "data-sets/product_people_listings.json"
@@ -173,57 +173,57 @@ def product_people():
     )
 
 
-@app.route("/profile/empty")
+@app.route("/profile/empty/")
 def profile_empty():
     return render_template("profile_empty.html")
 
 
-@app.route("/profile")
+@app.route("/profile/")
 def profile():
     return render_template("profile.html")
 
 
-@app.route("/users/sign-up")
+@app.route("/users/sign-up/")
 def user_sign_up():
     return render_template("user_sign_up.html")
 
 
-@app.route("/users/sign-in")
+@app.route("/users/sign-in/")
 def user_sign_in():
     return render_template("user_sign_in.html")
 
 
-@app.route("/users/password-reset")
+@app.route("/users/password-reset/")
 def user_password_reset():
     return render_template("user_reset_password.html")
 
 
-@app.route("/portfolio")
+@app.route("/portfolio/")
 def portfolio():
     return render_template("portfolio.html")
 
 
-@app.route("/portfolio-figma")
+@app.route("/portfolio-figma/")
 def portfolio_figma():
     return render_template("portfolio_figma.html")
 
 
-@app.route("/portfolio-clients")
+@app.route("/portfolio-clients/")
 def portfolio_clients():
     return render_template("portfolio_clients.html")
 
 
-@app.route("/status-and-points")
+@app.route("/status-and-points/")
 def status_and_points():
     return render_template("status_and_points.html")
 
 
-@app.route("/bounty_claim_requests_table")
+@app.route("/bounty_claim_requests_table/")
 def bounty_claim_requests_table():
     return render_template("bounty_claim_requests_table.html")
 
 
-@app.route("/challenge-detail-page")
+@app.route("/challenge-detail-page/")
 def challenge_detail_page():
     return render_template(
         "challenge_detail.html",
@@ -234,7 +234,7 @@ def challenge_detail_page():
     )
 
 
-@app.route("/review-submissions")
+@app.route("/review-submissions/")
 def review_submissions():
     return render_template(
         "bounty_delivery_attempt_detail.html",
@@ -246,7 +246,7 @@ def review_submissions():
     )
 
 
-@app.route("/work-submissions")
+@app.route("/work-submissions/")
 def work_submissions():
     return render_template(
         "bounty_claim_attempt.html",
@@ -254,7 +254,7 @@ def work_submissions():
     )
 
 
-@app.route("/bounty-detail")
+@app.route("/bounty-detail/")
 def bounty_detail():
     return render_template(
         "bounty_detail.html",
