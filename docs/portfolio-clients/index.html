@@ -1,0 +1,1524 @@
+
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- tailwind version 3.3.2 -->
+  <script src="https://cdn.tailwindcss.com?plugins=line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#181826',
+            'light-gray': '#D3D9E1',
+            'gray-dark': '#a3acb9',
+            'light-blue': '#f0f9ff',
+            'light-indigo': 'rgb(54 42 255 / 8%)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/treeselectjs@0.9.2/dist/treeselectjs.css" />
+  <link rel="stylesheet" href="/static/assets/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.snow.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.js"></script>
+  <title> Portfolio For clients </title>
+</head>
+
+<body>
+  <div class="flex flex-col min-h-screen max-w-full overflow-hidden">
+    <header class="z-[3]">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between lg:justify-start px-4 pt-6 pb-4 lg:px-8 border-b border-slate-900/5 relative"
+        aria-label="Global">
+        <div class="hidden lg:flex lg:gap-x-12 relative z-[2]">
+          <a href="/challenges/" class="text-sm font-semibold leading-6 text-gray-900">Find a
+            Challenge</a>
+          <a href="/" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+        </div>
+        <div class="flex justify-start lg:justify-center grow w-full h-8 lg:inset-x-0 lg:absolute z-[1]">
+          <a href="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">OpenUnited</span>
+            <img class="h-8 w-auto" src="/static/assets/images/logo.svg" alt="">
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button"
+            class="appearance-none -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 btn-open-menu">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:items-center lg:justify-end lg:gap-x-5 relative z-[2] ml-auto">
+          <a href="/users/sign-in/" class="text-sm font-semibold leading-6 text-gray-900">
+            Sign in <span aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="/users/sign-up/"
+            class="text-sm font-semibold leading-6 transition-all delay-600 rounded bg-indigo-600 px-3.5 py-1.5 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            Sign up
+          </a>
+        </div>
+      </nav>
+
+      <div class="flex items-center justify-center text-sm font-medium leading-6 text-gray-600 py-4">
+        <span class="mb-[3px]">Join Us on</span>
+        <a href="https://discord.gg/T3xevYvWey" class="ml-2 h-6 w-20">
+          <img class="w-full h-full" src="/static/assets/images/discord-logo.png" alt="">
+        </a>
+      </div>
+      <div class="lg:hidden menu-wrap" role="dialog" aria-modal="true">
+
+        <div class="fixed inset-y-0 w-full z-10 menu-overlay"></div>
+        <div
+          class="fixed inset-y-0 z-[11] overflow-y-auto bg-white px-4 py-6 sm:max-w-sm w-full sm:ring-1 sm:ring-gray-900/10 menu">
+          <div class="flex items-center justify-between">
+            <a href="/" class="-m-1.5 p-1.5">
+              <span class="sr-only">OpenUnited</span>
+              <img class="h-8 w-auto" src="/static/assets/images/logo.svg" alt="">
+            </a>
+            <button type="button"
+              class="appearance-none -m-2.5 rounded-md p-2.5 text-gray-700 focus-visible:outline-none btn-close-menu">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <ul class="space-y-5 flex flex-col pt-20 sm:pt-[30%] pb-10">
+            <li class="flex">
+              <a href="/challenges/" class="text-sm font-semibold leading-6 text-gray-900">Find a
+                Challenge</a>
+            </li>
+            <li class="flex">
+              <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Explainer Video</a>
+            </li>
+            <li class="flex">
+              <a href="/users/sign-in/" class="text-sm font-semibold leading-6 text-gray-900">
+                Sign in <span aria-hidden="true">&rarr;</span>
+              </a>
+            </li>
+            <li class="flex">
+              <a href="/users/sign-up/"
+                class="text-sm font-semibold leading-6 text-gray-900 transition-all delay-600 rounded bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                Sign up
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto flex flex-col w-full max-w-7xl px-4 py-6 lg:px-8 flex-1 relative">
+      
+
+<div class="flex-auto pb-6">
+  <div class="sm:px-8 lg:mt-9">
+    <div class="mx-auto w-full max-w-7xl lg:px-8">
+      <div class="relative xl:px-12">
+        <div class="mx-auto max-w-2xl lg:max-w-5xl gap-5 sm:gap-8 flex flex-col-reverse md:flex-row">
+          <div class="max-w-2xl w-full">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">Software
+              designer, founder, and amateur astronaut.</h1>
+            <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">I’m Spencer, a software designer and entrepreneur
+              based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower
+              regular people to explore space on their own terms.</p>
+            <div class="mt-6 flex gap-4 sm:gap-6">
+              <a class="group -m-1 p-1" aria-label="Follow on Twitter" href="https://twitter.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                  class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
+                  <path
+                    d="M20.055 7.983c.011.174.011.347.011.523 0 5.338-3.92 11.494-11.09 11.494v-.003A10.755 10.755 0 0 1 3 18.186c.308.038.618.057.928.058a7.655 7.655 0 0 0 4.841-1.733c-1.668-.032-3.13-1.16-3.642-2.805a3.753 3.753 0 0 0 1.76-.07C5.07 13.256 3.76 11.6 3.76 9.676v-.05a3.77 3.77 0 0 0 1.77.505C3.816 8.945 3.288 6.583 4.322 4.737c1.98 2.524 4.9 4.058 8.034 4.22a4.137 4.137 0 0 1 1.128-3.86A3.807 3.807 0 0 1 19 5.274a7.657 7.657 0 0 0 2.475-.98c-.29.934-.9 1.729-1.713 2.233A7.54 7.54 0 0 0 22 5.89a8.084 8.084 0 0 1-1.945 2.093Z">
+                  </path>
+                </svg>
+              </a>
+              <a class="group -m-1 p-1" aria-label="Follow on Instagram" href="https://instagram.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                  class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
+                  <path
+                    d="M12 3c-2.444 0-2.75.01-3.71.054-.959.044-1.613.196-2.185.418A4.412 4.412 0 0 0 4.51 4.511c-.5.5-.809 1.002-1.039 1.594-.222.572-.374 1.226-.418 2.184C3.01 9.25 3 9.556 3 12s.01 2.75.054 3.71c.044.959.196 1.613.418 2.185.23.592.538 1.094 1.039 1.595.5.5 1.002.808 1.594 1.038.572.222 1.226.374 2.184.418C9.25 20.99 9.556 21 12 21s2.75-.01 3.71-.054c.959-.044 1.613-.196 2.185-.419a4.412 4.412 0 0 0 1.595-1.038c.5-.5.808-1.002 1.038-1.594.222-.572.374-1.226.418-2.184.044-.96.054-1.267.054-3.711s-.01-2.75-.054-3.71c-.044-.959-.196-1.613-.419-2.185A4.412 4.412 0 0 0 19.49 4.51c-.5-.5-1.002-.809-1.594-1.039-.572-.222-1.226-.374-2.184-.418C14.75 3.01 14.444 3 12 3Zm0 1.622c2.403 0 2.688.009 3.637.052.877.04 1.354.187 1.67.31.421.163.72.358 1.036.673.315.315.51.615.673 1.035.123.317.27.794.31 1.671.043.95.052 1.234.052 3.637s-.009 2.688-.052 3.637c-.04.877-.187 1.354-.31 1.67-.163.421-.358.72-.673 1.036a2.79 2.79 0 0 1-1.035.673c-.317.123-.794.27-1.671.31-.95.043-1.234.052-3.637.052s-2.688-.009-3.637-.052c-.877-.04-1.354-.187-1.67-.31a2.789 2.789 0 0 1-1.036-.673 2.79 2.79 0 0 1-.673-1.035c-.123-.317-.27-.794-.31-1.671-.043-.95-.052-1.234-.052-3.637s.009-2.688.052-3.637c.04-.877.187-1.354.31-1.67.163-.421.358-.72.673-1.036.315-.315.615-.51 1.035-.673.317-.123.794-.27 1.671-.31.95-.043 1.234-.052 3.637-.052Z">
+                  </path>
+                  <path
+                    d="M12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-7.622a4.622 4.622 0 1 0 0 9.244 4.622 4.622 0 0 0 0-9.244Zm5.884-.182a1.08 1.08 0 1 1-2.16 0 1.08 1.08 0 0 1 2.16 0Z">
+                  </path>
+                </svg>
+              </a>
+              <a class="group -m-1 p-1" aria-label="Follow on GitHub" href="https://github.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                  class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 2C6.475 2 2 6.588 2 12.253c0 4.537 2.862 8.369 6.838 9.727.5.09.687-.218.687-.487 0-.243-.013-1.05-.013-1.91C7 20.059 6.35 18.957 6.15 18.38c-.113-.295-.6-1.205-1.025-1.448-.35-.192-.85-.667-.013-.68.788-.012 1.35.744 1.538 1.051.9 1.551 2.338 1.116 2.912.846.088-.666.35-1.115.638-1.371-2.225-.256-4.55-1.14-4.55-5.062 0-1.115.387-2.038 1.025-2.756-.1-.256-.45-1.307.1-2.717 0 0 .837-.269 2.75 1.051.8-.23 1.65-.346 2.5-.346.85 0 1.7.115 2.5.346 1.912-1.333 2.75-1.05 2.75-1.05.55 1.409.2 2.46.1 2.716.637.718 1.025 1.628 1.025 2.756 0 3.934-2.337 4.806-4.562 5.062.362.32.675.936.675 1.897 0 1.371-.013 2.473-.013 2.82 0 .268.188.589.688.486a10.039 10.039 0 0 0 4.932-3.74A10.447 10.447 0 0 0 22 12.253C22 6.588 17.525 2 12 2Z">
+                  </path>
+                </svg>
+              </a>
+              <a class="group -m-1 p-1" aria-label="Follow on LinkedIn" href="https://linkedin.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                  class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
+                  <path
+                    d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z">
+                  </path>
+                </svg>
+              </a>
+              <a class="group -m-1 p-1" aria-label="Follow on Behance" href="https://www.behance.net/">
+                <svg
+                  class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.625 2.625H3.375C2.96016 2.625 2.625 2.96016 2.625 3.375V20.625C2.625 21.0398 2.96016 21.375 3.375 21.375H20.625C21.0398 21.375 21.375 21.0398 21.375 20.625V3.375C21.375 2.96016 21.0398 2.625 20.625 2.625ZM14.0273 8.22422H17.2711V9.01406H14.0273V8.22422ZM12 14.7375C11.8483 15.0255 11.6316 15.2742 11.3672 15.4641C11.0906 15.6562 10.7836 15.7969 10.4578 15.8789C10.117 15.9702 9.76536 16.0152 9.4125 16.0125H5.53125V8.01797H9.30469C9.68672 8.01797 10.0336 8.05312 10.35 8.11875C10.6641 8.18437 10.9312 8.29688 11.1562 8.44922C11.3789 8.60156 11.5547 8.80547 11.6789 9.05859C11.8008 9.30937 11.8641 9.62344 11.8641 9.99609C11.8641 10.3992 11.7727 10.732 11.5898 11.0016C11.4047 11.2711 11.1375 11.4891 10.7742 11.6602C11.2688 11.8008 11.632 12.0516 11.8711 12.4031C12.1148 12.7594 12.2344 13.1859 12.2344 13.6875C12.2344 14.0953 12.157 14.4445 12 14.7375ZM18.5344 13.5H14.3531C14.3531 13.9547 14.5102 14.3906 14.7469 14.625C14.9859 14.857 15.3281 14.9742 15.7758 14.9742C16.0992 14.9742 16.3734 14.8922 16.6078 14.7305C16.8398 14.5688 16.9805 14.3977 17.032 14.2195H18.4336C18.2086 14.9156 17.8664 15.4125 17.4023 15.7125C16.943 16.0125 16.3805 16.1625 15.7266 16.1625C15.2695 16.1625 14.8594 16.0875 14.4914 15.9445C14.1375 15.8062 13.8188 15.5953 13.5563 15.3234C13.2974 15.0442 13.0974 14.7159 12.968 14.3578C12.825 13.9617 12.7547 13.5445 12.7594 13.125C12.7594 12.6914 12.832 12.2883 12.9727 11.9133C13.2422 11.1844 13.8023 10.6008 14.5172 10.2984C14.8992 10.1391 15.3094 10.0594 15.7242 10.0641C16.2164 10.0641 16.643 10.1578 17.0133 10.35C17.3698 10.5335 17.6793 10.7965 17.918 11.1187C18.1547 11.4398 18.3211 11.8055 18.4266 12.218C18.5273 12.6234 18.5625 13.05 18.5344 13.5ZM15.675 11.2594C15.4219 11.2594 15.2086 11.3039 15.0445 11.3906C14.8805 11.4773 14.7445 11.5852 14.6414 11.7094C14.5432 11.8293 14.4706 11.9681 14.4281 12.1172C14.3906 12.2414 14.3648 12.368 14.3555 12.4969H16.9453C16.9078 12.0914 16.7672 11.7914 16.5797 11.5805C16.3828 11.3719 16.0664 11.2594 15.675 11.2594ZM9.85078 11.0227C10.0547 10.875 10.1531 10.6312 10.1531 10.2961C10.1602 10.1367 10.1273 9.97969 10.057 9.83672C9.99375 9.72188 9.9 9.62578 9.78516 9.55781C9.66608 9.4856 9.53382 9.4378 9.39609 9.41719C9.24609 9.38906 9.09375 9.375 8.94375 9.37734H7.29609V11.2453H9.07969C9.38672 11.2477 9.64687 11.1727 9.85078 11.0227ZM10.1273 12.7102C9.89766 12.5344 9.59062 12.4477 9.20859 12.4477H7.29141V14.6508H9.17109C9.34687 14.6508 9.50859 14.6344 9.66562 14.6016C9.82266 14.5688 9.96328 14.5125 10.0828 14.4328C10.2023 14.3555 10.2984 14.25 10.3711 14.1141C10.4414 13.9781 10.4766 13.8047 10.4766 13.5961C10.4766 13.1812 10.3594 12.8883 10.1273 12.7102Z" />
+                </svg>
+              </a>
+              <a class="group -m-1 p-1" aria-label="Follow on Dribble" href="https://dribbble.com/shots">
+                <svg
+                  class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M11.6859 10.125C10.7297 8.42578 9.70078 6.99844 9.54844 6.78984C7.93594 7.55156 6.72891 9.0375 6.35625 10.8258C6.61406 10.8305 8.99063 10.8422 11.6859 10.125ZM13.2445 10.6359C13.3781 10.9102 13.507 11.1891 13.6266 11.4703C13.6688 11.5687 13.7109 11.6672 13.7508 11.768C15.668 11.5266 17.5758 11.9133 17.7656 11.9531C17.7539 10.5914 17.2664 9.34219 16.4648 8.36016C16.3406 8.52656 15.375 9.76641 13.2445 10.6359ZM20.625 2.625H3.375C2.96016 2.625 2.625 2.96016 2.625 3.375V20.625C2.625 21.0398 2.96016 21.375 3.375 21.375H20.625C21.0398 21.375 21.375 21.0398 21.375 20.625V3.375C21.375 2.96016 21.0398 2.625 20.625 2.625ZM12 18.75C8.27812 18.75 5.25 15.7219 5.25 12C5.25 8.27812 8.27812 5.25 12 5.25C15.7219 5.25 18.75 8.27812 18.75 12C18.75 15.7219 15.7219 18.75 12 18.75ZM14.1023 12.6773C14.857 14.7492 15.1641 16.4367 15.2227 16.7883C16.5164 15.9141 17.4375 14.5289 17.693 12.9234C17.4961 12.8625 15.9094 12.3891 14.1023 12.6773ZM12.4031 12.0586C12.4781 12.0352 12.5531 12.0117 12.6305 11.9906C12.4852 11.6625 12.3281 11.3344 12.1641 11.0133C9.28594 11.8758 6.48984 11.8383 6.23906 11.8336C6.23672 11.8922 6.23672 11.9508 6.23672 12.0094C6.23672 13.4906 6.79687 14.843 7.71797 15.8648C7.84687 15.6398 9.42891 13.0195 12.4031 12.0586ZM15.8227 7.69453C15.1287 7.07706 14.2953 6.63702 13.394 6.41211C12.4928 6.18719 11.5504 6.18411 10.6477 6.40313C10.807 6.61641 11.8547 8.04141 12.7992 9.77813C14.85 9.00938 15.7172 7.84219 15.8227 7.69453ZM12.9844 12.9562C9.73359 14.0883 8.56406 16.3453 8.46094 16.5563C9.43828 17.318 10.6664 17.7727 12 17.7727C12.7992 17.7727 13.5609 17.6109 14.2523 17.3156C14.1656 16.8094 13.8328 15.0469 13.0219 12.9422L12.9844 12.9562Z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-[200px] h-[200px] flex shrink-0 items-center justify-center rounded-full shadow md:ml-auto mr-auto">
+            <img src="/static/assets/images/user.png" class="w-full h-full object-cover object-center rounded-full"
+              alt="#">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-16 sm:mt-20">
+    <div class="-my-4 flex justify-center gap-5 overflow-hidden lg:overflow-visible py-4 sm:gap-8">
+      <div
+        class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
+        <img alt="" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover"
+          src="/static/assets/images/portfolio-example.jpg">
+      </div>
+      <div
+        class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
+        <img alt="" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover"
+          style="color:transparent" sizes="(min-width: 640px) 18rem, 11rem"
+          src="/static/assets/images/portfolio-example-2.jpg">
+      </div>
+      <div
+        class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
+        <img alt="" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover"
+          style="color:transparent" sizes="(min-width: 640px) 18rem, 11rem"
+          src="/static/assets/images/portfolio-example.jpg">
+      </div>
+      <div
+        class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2">
+        <img alt="" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover"
+          style="color:transparent" sizes="(min-width: 640px) 18rem, 11rem"
+          src="/static/assets/images/portfolio-example-2.jpg">
+      </div>
+      <div
+        class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2">
+        <img alt="" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover"
+          style="color:transparent" sizes="(min-width: 640px) 18rem, 11rem"
+          src="/static/assets/images/portfolio-example.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="lg:px-8 mt-10 sm:mt-16 lg:mt-28">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+      <div class="mx-auto grid max-w-full grid-cols-1 gap-y-16 lg:gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div class="flex flex-col gap-10 order-2 lg:order-1 lg:pt-4">
+          <div class="flex flex-col">
+            <div class="text-[22px] font-bold tracking-tight text-gray-900">Challenges</div>
+            <div class="flex flex-col">
+              <div
+                class="flex max-w-xl flex-col items-start justify-between border-b last:border-b-0 border-solid border-zinc-100 py-4">
+                <div class="flex items-center flex-wrap text-xs">
+                  <div class="text-gray-500 ml-4 first:ml-0 mt-1.5">Required skills</div>
+                  <div
+                    class="relative z-10 rounded-sm bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100 ml-4 first:ml-0 mt-1.5">
+                    Full-stack Development</div>
+                </div>
+                <div class="group relative">
+                  <a href="#"
+                    class="mt-1 inline-flex text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    Tweak "add product" logic
+                  </a>
+                  <p class="mt-2.5 line-clamp-3 text-sm leading-6 text-gray-600">The admin of a Product (not the
+                    whole platform) should be able to invite people to the product.</p>
+                </div>
+                <a href="#"
+                  class="relative z-10 mt-3 flex items-center text-sm font-medium text-blue-400 transition-all underline-offset-2 hover:underline">
+                  Check details
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                    <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="flex max-w-xl flex-col items-start justify-between border-b last:border-b-0 border-solid border-zinc-100 py-4">
+                <div class="flex items-center flex-wrap text-xs">
+                  <div class="text-gray-500 ml-4 first:ml-0 mt-1.5">Required skills</div>
+                  <div
+                    class="relative z-10 rounded-sm bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100 ml-4 first:ml-0 mt-1.5">
+                    Full-stack Development</div>
+                </div>
+                <div class="group relative">
+                  <a href="#"
+                    class="mt-1 inline-flex text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    Tweak "add product" logic
+                  </a>
+                  <p class="mt-2.5 line-clamp-3 text-sm leading-6 text-gray-600">The admin of a Product (not the
+                    whole platform) should be able to invite people to the product.</p>
+                </div>
+                <a href="#"
+                  class="relative z-10 mt-3 flex items-center text-sm font-medium text-blue-400 transition-all underline-offset-2 hover:underline">
+                  Check details
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                    <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="flex max-w-xl flex-col items-start justify-between border-b last:border-b-0 border-solid border-zinc-100 py-4">
+                <div class="flex items-center flex-wrap text-xs">
+                  <div class="text-gray-500 ml-4 first:ml-0 mt-1.5">Required skills</div>
+                  <div
+                    class="relative z-10 rounded-sm bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100 ml-4 first:ml-0 mt-1.5">
+                    Full-stack Development</div>
+                </div>
+                <div class="group relative">
+                  <a href="#"
+                    class="mt-1 inline-flex text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    Tweak "add product" logic
+                  </a>
+                  <p class="mt-2.5 line-clamp-3 text-sm leading-6 text-gray-600">The admin of a Product (not the
+                    whole platform) should be able to invite people to the product.</p>
+                </div>
+                <a href="#"
+                  class="relative z-10 mt-3 flex items-center text-sm font-medium text-blue-400 transition-all underline-offset-2 hover:underline">
+                  Check details
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                    <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="text-[22px] font-bold tracking-tight text-gray-900">Products</div>
+            <div class="flex flex-col">
+              <div
+                class="flex sm:grid grid-cols-2 flex-wrap sm:flex-nowrap w-full border-b last:border-b-0 border-solid border-zinc-100 py-4 gap-4">
+                <div class="w-full">
+                  <iframe class="w-full h-[172px]" src="https://www.youtube.com/embed/OWXVryhdoVA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="w-full flex flex-col py-1.5 sm:py-2.5">
+                  <a href="#"
+                    class="inline-flex text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    OpenUnited Product Factory
+                  </a>
+                  <p class="mt-2.5 line-clamp-3 text-sm leading-6 text-gray-600">Open-source software (OSS) has been
+                    one of the quietest revolutions in history.</p>
+                  <a href="#"
+                    class="mt-auto relative z-10 flex items-center text-sm font-medium text-blue-400 transition-all underline-offset-2 hover:underline">
+                    Check details
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex sm:grid grid-cols-2 flex-wrap sm:flex-nowrap w-full border-b last:border-b-0 border-solid border-zinc-100 py-4 gap-4">
+                <div class="w-full">
+                  <iframe class="w-full h-[172px]" src="https://www.youtube.com/embed/OWXVryhdoVA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="w-full flex flex-col py-1.5 sm:py-2.5">
+                  <a href="#"
+                    class="inline-flex text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    OpenUnited Product Factory
+                  </a>
+                  <p class="mt-2.5 line-clamp-3 text-sm leading-6 text-gray-600">Open-source software (OSS) has been
+                    one of the quietest revolutions in history.</p>
+                  <a href="#"
+                    class="mt-auto relative z-10 flex items-center text-sm font-medium text-blue-400 transition-all underline-offset-2 hover:underline">
+                    Check details
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex sm:grid grid-cols-2 flex-wrap sm:flex-nowrap w-full border-b last:border-b-0 border-solid border-zinc-100 py-4 gap-4">
+                <div class="w-full">
+                  <iframe class="w-full h-[172px]" src="https://www.youtube.com/embed/OWXVryhdoVA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="w-full flex flex-col py-1.5 sm:py-2.5">
+                  <a href="#"
+                    class="inline-flex text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    OpenUnited Product Factory
+                  </a>
+                  <p class="mt-2.5 line-clamp-3 text-sm leading-6 text-gray-600">Open-source software (OSS) has been
+                    one of the quietest revolutions in history.</p>
+                  <a href="#"
+                    class="mt-auto relative z-10 flex items-center text-sm font-medium text-blue-400 transition-all underline-offset-2 hover:underline">
+                    Check details
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="ml-1 h-4 w-4 stroke-current">
+                      <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:pl-16 xl:pl-24 order-1 lg:order-2 flex flex-col min-h-screen relative">
+          <div class="flex flex-col-reverse lg:flex-col flex-col space-y-8 lg:space-y-10">
+            <div class="rounded-2xl border border-zinc-100 p-4 sm:p-6 dark:border-zinc-700/40 space-y-4">
+              <div class="flex flex-col">
+                <div class="flex text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                  Product Team
+                </div>
+                <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  The list is empty
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    50+
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                  Contributors
+                </div>
+                <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  The list is empty
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    <img src="/static/assets/images/avatar.jpg" class="w-full h-full object-cover object-center"
+                      alt="#">
+                  </div>
+                  <div
+                    class="mt-2 ml-2 first:ml-0 w-8 h-8 flex shrink-0 items-center justify-center 
+                    bg-[#f9fafb] font-semibold text-[10px] text-gray-500 border border-solid border-gray-900[0.5] rounded-full">
+                    50+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-2xl border border-zinc-100 p-4 sm:p-6 dark:border-zinc-700/40 w-full">
+              <h2 class="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true" class="h-6 w-6 flex-none">
+                  <path d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+                    class="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"></path>
+                  <path
+                    d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
+                    class="stroke-zinc-400 dark:stroke-zinc-500"></path>
+                </svg>
+                <span class="ml-3">Work</span>
+              </h2>
+              <ol class="mt-6 space-y-4 jobs-list">
+                <li class="jobs-list__item flex flex-col">
+                  <div class="flex gap-3 sm:gap-4">
+                    <div
+                      class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                      <img alt="" loading="lazy" decoding="async" class="h-7 w-7" style="color:transparent"
+                        src="/static/assets/images/employer-example.svg">
+                    </div>
+                    <div class="flex flex-col grow">
+                      <dl class="flex flex-auto flex-wrap gap-x-2">
+                        <dt class="sr-only">Company</dt>
+                        <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">Planetaria
+                        </dd>
+                        <dt class="sr-only">Role</dt>
+                        <dd class="text-xs text-zinc-500 dark:text-zinc-400">CEO</dd>
+                        <dt class="sr-only">Date</dt>
+                        <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2019 until Present">
+                          <time datetime="2019">2019</time> <span aria-hidden="true">—</span> <time
+                            datetime="2023">Present</time></dd>
+                      </dl>
+                      <div class="flex flex-col">
+                        <div class="flex items-center mt-2">
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-gray-300 mr-1 dark:text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <p class="ml-1.5 text-xs font-medium text-gray-500 dark:text-gray-400">4.95 out of 5</p>
+                        </div>
+                        <div class="text-xs text-zinc-600 leading-5 mt-1">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio ipsam corrupti
+                          temporibus iure asperiores assumenda laborum consequuntur, ea dicta voluptatibus quia
+                          deserunt fugiat qui in? Commodi voluptate omnis harum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="jobs-list__item flex flex-col">
+                  <div class="flex gap-3 sm:gap-4">
+                    <div
+                      class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                      <img alt="" loading="lazy" decoding="async" class="h-7 w-7" style="color:transparent"
+                        src="/static/assets/images/employer-example.svg">
+                    </div>
+                    <div class="flex flex-col grow">
+                      <dl class="flex flex-auto flex-wrap gap-x-2">
+                        <dt class="sr-only">Company</dt>
+                        <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">Planetaria
+                        </dd>
+                        <dt class="sr-only">Role</dt>
+                        <dd class="text-xs text-zinc-500 dark:text-zinc-400">CEO</dd>
+                        <dt class="sr-only">Date</dt>
+                        <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2019 until Present">
+                          <time datetime="2019">2019</time> <span aria-hidden="true">—</span> <time
+                            datetime="2023">Present</time></dd>
+                      </dl>
+                      <div class="flex flex-col">
+                        <div class="flex items-center mt-2">
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-gray-300 mr-1 dark:text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <p class="ml-1.5 text-xs font-medium text-gray-500 dark:text-gray-400">4.95 out of 5</p>
+                        </div>
+                        <div class="text-xs text-zinc-600 leading-5 mt-1">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio ipsam corrupti
+                          temporibus iure asperiores assumenda laborum consequuntur, ea dicta voluptatibus quia
+                          deserunt fugiat qui in? Commodi voluptate omnis harum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="jobs-list__item hidden flex flex-col">
+                  <div class="flex gap-3 sm:gap-4">
+                    <div
+                      class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                      <img alt="" loading="lazy" decoding="async" class="h-7 w-7" style="color:transparent"
+                        src="/static/assets/images/employer-example.svg">
+                    </div>
+                    <div class="flex flex-col grow">
+                      <dl class="flex flex-auto flex-wrap gap-x-2">
+                        <dt class="sr-only">Company</dt>
+                        <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">Planetaria
+                        </dd>
+                        <dt class="sr-only">Role</dt>
+                        <dd class="text-xs text-zinc-500 dark:text-zinc-400">CEO</dd>
+                        <dt class="sr-only">Date</dt>
+                        <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2019 until Present">
+                          <time datetime="2019">2019</time> <span aria-hidden="true">—</span> <time
+                            datetime="2023">Present</time></dd>
+                      </dl>
+                      <div class="flex flex-col">
+                        <div class="flex items-center mt-2 hidden">
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-gray-300 mr-1 dark:text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <p class="ml-1.5 text-xs font-medium text-gray-500 dark:text-gray-400">4.95 out of 5</p>
+                        </div>
+                        <div class="text-xs text-zinc-600 leading-5 mt-1">
+                          No review yet
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="jobs-list__item hidden flex flex-col">
+                  <div class="flex gap-3 sm:gap-4">
+                    <div
+                      class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                      <img alt="" loading="lazy" decoding="async" class="h-7 w-7" style="color:transparent"
+                        src="/static/assets/images/employer-example.svg">
+                    </div>
+                    <div class="flex flex-col grow">
+                      <dl class="flex flex-auto flex-wrap gap-x-2">
+                        <dt class="sr-only">Company</dt>
+                        <dd class="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">Planetaria
+                        </dd>
+                        <dt class="sr-only">Role</dt>
+                        <dd class="text-xs text-zinc-500 dark:text-zinc-400">CEO</dd>
+                        <dt class="sr-only">Date</dt>
+                        <dd class="ml-auto text-xs text-zinc-400 dark:text-zinc-500" aria-label="2019 until Present">
+                          <time datetime="2019">2019</time> <span aria-hidden="true">—</span> <time
+                            datetime="2023">Present</time></dd>
+                      </dl>
+                      <div class="flex flex-col">
+                        <div class="flex items-center mt-2">
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-[#f8b034] mr-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <svg class="w-4 h-4 text-gray-300 mr-1 dark:text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                          </svg>
+                          <p class="ml-1.5 text-xs font-medium text-gray-500 dark:text-gray-400">4.95 out of 5</p>
+                        </div>
+                        <div class="text-xs text-zinc-600 leading-5 mt-1">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse distinctio ipsam corrupti
+                          temporibus iure asperiores assumenda laborum consequuntur, ea dicta voluptatibus quia
+                          deserunt fugiat qui in? Commodi voluptate omnis harum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <button type="butoon"
+                  class="btn-jobs__more inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 dark:bg-zinc-800/50 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70 group mt-6 w-full">
+                  <span class="btn-jobs__more-text">
+                    Show more
+                  </span>
+                  <span class="btn-jobs__more-icon h-4 w-4">
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"
+                      class="h-full w-full stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50">
+                      <path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </span>
+                </button>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col mx-auto max-w-2xl lg:max-w-5xl mt-8 sm:mt-16">
+    <div class="text-[22px] font-bold tracking-tight text-gray-900">Ideas and Bugs</div>
+    <div class="flex flex-col">
+      <div class="flex flex-col w-full border-b last:border-b-0 border-solid border-zinc-100 py-4">
+        <a href="#" class="flex items-center justify-between w-full text-sm font-semibold leading-6 text-gray-900 transition-all hover:text-blue-400">
+          Task Roulette Task Roulette Task Roulette Task Roulette Task Roulette
+          <div class="flex shrink-0 items-center justify-center w-5 h-5 ml-1">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-full h-full stroke-current">
+              <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </a>
+        <div class="relative z-10 rounded-sm bg-gray-50 px-1.5 py-0.5 font-medium text-gray-600 text-xs leading-[1.2] hover:bg-gray-100 mt-1.5 inline-flex w-fit">Idea</div>
+      </div>
+      <div class="flex flex-col w-full border-b last:border-b-0 border-solid border-zinc-100 py-4">
+        <a href="#" class="flex items-center justify-between w-full text-sm font-semibold leading-6 text-gray-900 transition-all hover:text-blue-400">
+          Task Roulette Task Roulette Task Roulette Task Roulette Task Roulette
+          <div class="flex shrink-0 items-center justify-center w-5 h-5 ml-1">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-full h-full stroke-current">
+              <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </a>
+        <div class="relative z-10 rounded-sm bg-gray-50 px-1.5 py-0.5 font-medium text-gray-600 text-xs leading-[1.2] hover:bg-gray-100 mt-1.5 inline-flex w-fit">Idea</div>
+      </div>
+      <div class="flex flex-col w-full border-b last:border-b-0 border-solid border-zinc-100 py-4">
+        <a href="#" class="flex items-center justify-between w-full text-sm font-semibold leading-6 text-gray-900 transition-all hover:text-blue-400">
+          Task Roulette Task Roulette Task Roulette Task Roulette Task Roulette
+          <div class="flex shrink-0 items-center justify-center w-5 h-5 ml-1">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" class="w-full h-full stroke-current">
+              <path d="M6.75 5.75 9.25 8l-2.5 2.25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </a>
+        <div class="relative z-10 rounded-sm bg-gray-50 px-1.5 py-0.5 font-medium text-gray-600 text-xs leading-[1.2] hover:bg-gray-100 mt-1.5 inline-flex w-fit">Bug</div>
+      </div>
+      <div class="flex w-full border-b last:border-b-0 border-solid border-zinc-100 py-4">
+        <a href="#" class="text-sm font-semibold leading-6 text-blue-400 transition-all underline-offset-2 hover:underline">
+          Check more..
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col mx-auto max-w-2xl lg:max-w-5xl mt-8 sm:mt-16">
+    <div class="text-[22px] font-bold tracking-tight text-gray-900 pb-4">Initiatives</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="w-full group relative border border-solid border-[#D9D9D9] rounded flex flex-col">
+        <div class="w-full h-[172px] group-hover:opacity-90 rounded-t p-px">
+          <iframe class="rounded-t" width="100%" height="100%"
+            src="https://www.youtube.com/embed/OWXVryhdoVA?autoplay=0&amp;mute=0&amp;controls=0&amp;origin=https%3A%2F%2Fopenunited.com&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1"
+            title="OpenUnited Short Explainer Contributor Focus" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </div>
+        <div class="py-3 px-4 flex flex-col grow">
+          <div class="flex flex-wrap mb-1.5">
+
+            <div
+              class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+              Python
+            </div>
+
+            <div
+              class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+              Django
+            </div>
+
+            <div
+              class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+              GraphQL
+            </div>
+
+          </div>
+          <div class="mt-auto space-y-3 flex flex-col">
+            <a href="#" class="text-base text-black transition-all hover:text-blue-400">
+              Implement 3
+            </a>
+            <p class="text-sm text-gray-500">
+              <span class="mr-0.5">4/10</span> Available Stories
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full group relative border border-solid border-[#D9D9D9] rounded flex flex-col">
+        <div class="w-full h-[172px] group-hover:opacity-90 rounded-t p-px">
+          <iframe class="rounded-t" width="100%" height="100%"
+            src="https://www.youtube.com/embed/OWXVryhdoVA?autoplay=0&amp;mute=0&amp;controls=0&amp;origin=https%3A%2F%2Fopenunited.com&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=1"
+            title="OpenUnited Short Explainer Contributor Focus" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </div>
+        <div class="py-3 px-4 flex flex-col grow">
+          <div class="flex flex-wrap mb-1.5">
+
+            <div
+              class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+              Python
+            </div>
+
+            <div
+              class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+              Django
+            </div>
+
+            <div
+              class="mb-1.5 mr-1.5 px-2 text-xs leading-5 text-neutral-800 rounded border border-solid border-[#D9D9D9] bg-[#F5F5F5]">
+              GraphQL
+            </div>
+
+          </div>
+          <div class="mt-auto space-y-3 flex flex-col">
+            <a href="#" class="text-base text-black transition-all hover:text-blue-400">
+              Implement 3
+            </a>
+            <p class="text-sm text-gray-500">
+              <span class="mr-0.5">4/10</span> Available Stories
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </main>
+
+    <div class="pointer-events-none fixed inset-x-0 bottom-0 px-6 pb-6 hidden">
+      <div class="pointer-events-auto ml-auto max-w-xl rounded-xl bg-white p-6 shadow-lg ring-1 ring-gray-900/10">
+        <p class="text-sm leading-6 text-gray-900">This website uses cookies to supplement a balanced diet and provide a
+          much deserved reward to the senses after consuming bland but nutritious meals. Accepting our cookies is
+          optional but recommended, as they are delicious. See our
+          <a href="#" class="font-semibold text-indigo-600">cookie policy</a>.
+        </p>
+        <div class="mt-4 flex items-center gap-x-5">
+          <button type="button"
+            class="appearance-none rounded-md bg-gray-900 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all delay-600 hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
+            Accept all</button>
+          <button type="button" class="appearance-none text-sm font-semibold leading-6 text-gray-900">Reject
+            all</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="relative">
+      <div class="mx-auto max-w-7xl overflow-hidden px-6 py-6 lg:px-8">
+        <nav class="-mb-6 grid grid-cols-2 sm:grid-cols-1 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
+          <div class="pb-6">
+            <a href="#" class="text-sm leading-6 text-gray-600 transition-all delay-600 hover:text-gray-900">Enterprise
+              Customers</a>
+          </div>
+          <div class="pb-6">
+            <a href="#" class="text-sm leading-6 text-gray-600 transition-all delay-600 hover:text-gray-900">Privacy
+              Policy</a>
+          </div>
+          <div class="pb-6">
+            <a href="#" class="text-sm leading-6 text-gray-600 transition-all delay-600 hover:text-gray-900">Terms of
+              Use</a>
+          </div>
+          <div class="pb-6">
+            <a href="mailto:contact@openunited.com"
+              class="text-sm leading-6 text-gray-600 transition-all delay-600 hover:text-gray-900">Contact Us</a>
+          </div>
+        </nav>
+        <div class="mt-10 flex justify-center space-x-4 sm:space-x-10">
+          <a href="#" class="text-gray-400 transition-all delay-600 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 transition-all delay-600 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://twitter.com/open_united" class="text-gray-400 transition-all delay-600 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+          <a href="https://github.com/OpenUnited" class="text-gray-400 transition-all delay-600 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@openunited4845"
+            class="text-gray-400 transition-all delay-600 hover:text-gray-500">
+            <span class="sr-only">YouTube</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="https://discord.gg/T3xevYvWey" class="text-gray-400 transition-all delay-600 hover:text-gray-500">
+            <span class="sr-only">Discord</span>
+            <svg class="h-6 w-6" fill="currentColor">
+              <path
+                d="M9.555 9.23c-.74 0-1.324.624-1.324 1.385S8.827 12 9.555 12c.739 0 1.323-.624 1.323-1.385.013-.761-.584-1.385-1.323-1.385Zm4.737 0c-.74 0-1.324.624-1.324 1.385S13.564 12 14.292 12c.74 0 1.324-.624 1.324-1.385s-.584-1.385-1.324-1.385Z">
+              </path>
+              <path
+                d="M20.404 0H3.442c-.342 0-.68.065-.995.19a2.614 2.614 0 0 0-.843.536 2.46 2.46 0 0 0-.562.801c-.13.3-.197.62-.196.944v16.225c0 .324.066.645.196.944.13.3.321.572.562.801.241.23.527.412.843.537.315.124.653.189.995.19h14.354l-.67-2.22 1.62 1.428 1.532 1.344L23 24V2.472c0-.324-.066-.644-.196-.944a2.46 2.46 0 0 0-.562-.8A2.614 2.614 0 0 0 21.4.19a2.726 2.726 0 0 0-.995-.19V0Zm-4.886 15.672s-.456-.516-.836-.972c1.659-.444 2.292-1.428 2.292-1.428a7.38 7.38 0 0 1-1.456.707 8.67 8.67 0 0 1-1.836.517 9.347 9.347 0 0 1-3.279-.012 11.074 11.074 0 0 1-1.86-.516 7.621 7.621 0 0 1-.924-.409c-.039-.023-.076-.035-.113-.06-.027-.011-.04-.023-.052-.035-.228-.12-.354-.204-.354-.204s.608.96 2.215 1.416c-.38.456-.848.996-.848.996-2.797-.084-3.86-1.824-3.86-1.824 0-3.864 1.822-6.996 1.822-6.996 1.823-1.296 3.557-1.26 3.557-1.26l.127.145c-2.278.623-3.33 1.57-3.33 1.57s.279-.143.747-.347c1.355-.564 2.43-.72 2.873-.756.077-.012.14-.024.216-.024a10.804 10.804 0 0 1 6.368 1.129s-1.001-.9-3.153-1.526l.178-.19s1.735-.037 3.557 1.259c0 0 1.823 3.133 1.823 6.996 0 0-1.076 1.74-3.874 1.824Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <div class="relative z-10 modal-wrap hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <div
+            class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[620px] sm:p-6">
+            <div
+              class="btn-video__close relative -mt-0.5 sm:-mt-1.5 -mr-1 sm:-mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+              <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                </path>
+              </svg>
+            </div>
+            <div class="max-w-full h-[320px]">
+              <iframe class="w-full h-full" width="" height="" src="https://www.youtube.com/embed/h9MujYgW1mw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-10 modal-wrap-filter hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end sm:items-center justify-center p-4 text-center sm:p-0">
+          <div
+            class="relative transform rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 w-full max-w-[620px] sm:pt-6 sm:px-6 pb-[44px]">
+            <div class="flex items-center pb-3 mb-3 border-b border-solid border-slate-100">
+              <div class="font-semibold text-lg text-gray-900">Filter</div>
+              <div
+                class="btn-modal__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+                <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-5 w-full">
+              
+              <div class="flex flex-col">
+                <label for="control-ref_sortedBy" class="font-semibold text-sm text-gray-900">
+                  Sorted By
+                </label>
+                <div class="js-choice relative mt-2">
+                  <select  id="control-ref_sortedBy" name="control-ref_sortedBy"
+                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                    <option value="">Make your choose</option>
+                    
+                    <option value="1">
+                      Name
+                    </option>
+                    
+                    <option value="2">
+                      Priority
+                    </option>
+                    
+                    <option value="3">
+                      Status
+                    </option>
+                    
+                  </select>
+                </div>
+              </div>
+              
+              <div class="flex flex-col">
+                <label for="control-ref_priority" class="font-semibold text-sm text-gray-900">
+                  Priority
+                </label>
+                <div class="js-choice relative mt-2">
+                  <select multiple id="control-ref_priority" name="control-ref_priority"
+                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                    <option value="">Make your choose</option>
+                    
+                    <option value="1">
+                      High
+                    </option>
+                    
+                    <option value="2">
+                      Medium
+                    </option>
+                    
+                    <option value="3">
+                      Low
+                    </option>
+                    
+                  </select>
+                </div>
+              </div>
+              
+              <div class="flex flex-col">
+                <label for="control-ref_categories" class="font-semibold text-sm text-gray-900">
+                  Skill
+                </label>
+                <div class="js-choice relative mt-2">
+                  <select multiple id="control-ref_categories" name="control-ref_categories"
+                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                    <option value="">Make your choose</option>
+                    
+                    <option value="1">
+                      Information Systems &amp; Networking
+                    </option>
+                    
+                    <option value="2">
+                      Product, User Experience &amp; Research
+                    </option>
+                    
+                    <option value="3">
+                      Software Development (inc. Web, Mobile)
+                    </option>
+                    
+                  </select>
+                </div>
+              </div>
+              
+              <div class="flex flex-col">
+                <label for="control-ref_tags" class="font-semibold text-sm text-gray-900">
+                  Tags
+                </label>
+                <div class="js-choice relative mt-2">
+                  <select multiple id="control-ref_tags" name="control-ref_tags"
+                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                    <option value="">Make your choose</option>
+                    
+                    <option value="1">
+                      React
+                    </option>
+                    
+                    <option value="2">
+                      Vue
+                    </option>
+                    
+                    <option value="3">
+                      Next
+                    </option>
+                    
+                  </select>
+                </div>
+              </div>
+              
+              <div class="flex flex-col">
+                <label for="control-ref_statuses" class="font-semibold text-sm text-gray-900">
+                  Status
+                </label>
+                <div class="js-choice relative mt-2">
+                  <select multiple id="control-ref_statuses" name="control-ref_statuses"
+                    class="appearance-none block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-[#1890ff] focus-visible:outline-0 text-sm sm:leading-6 text-gray-500">
+                    <option value="">Make your choose</option>
+                    
+                    <option value="1">
+                      Done
+                    </option>
+                    
+                    <option value="2">
+                      Blocked
+                    </option>
+                    
+                    <option value="3">
+                      In review
+                    </option>
+                    
+                    <option value="4">
+                      Claimed
+                    </option>
+                    
+                    <option value="5">
+                      Available
+                    </option>
+                    
+                  </select>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-10 modal-wrap-ideas-bugs hidden" data-modal="modal-idea" aria-labelledby="modal-title"
+      role="dialog" aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end sm:items-center justify-center p-4 text-center sm:p-0">
+          <div
+            class="relative transform rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 w-full max-w-[620px] sm:pt-6 sm:px-6 pb-[44px]">
+            <div class="flex items-center pb-3 mb-3 border-b border-solid border-slate-100">
+              <div class="modal-wrap-ideas-bugs__title font-semibold text-lg text-gray-900">Add Idea</div>
+              <div
+                class="btn-idea-modal__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+                <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <form class="mb-0">
+              <div class="pb-6">
+                <div class="grid grid-cols-1 gap-4">
+                  <div class="flex flex-col">
+                    <label for="idea-name" class="block text-sm font-medium leading-6 text-gray-900">Please give your
+                      idea a name *:</label>
+                    <div class="mt-2">
+                      <input type="text" name="idea-name" id="idea-name"
+                        class="block w-full max-w-full rounded-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        placeholder="janesmith">
+                    </div>
+                  </div>
+
+                  <div class="col-span-full">
+                    <label for="idea-description" class="block text-sm font-medium leading-6 text-gray-900">Please
+                      describe the idea *:</label>
+                    <div class="mt-2">
+                      <textarea id="idea-description" name="idea-description" rows="3"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-transparent sm:text-sm sm:leading-6"></textarea>
+                    </div>
+                    <p class="mt-2 text-sm leading-6 text-gray-600">Write a few sentences about your idea.</p>
+                  </div>
+
+                  <div class="col-span-full">
+                    <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover
+                      photo</label>
+                    <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-6">
+                      <div class="text-center">
+                        <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor"
+                          aria-hidden="true">
+                          <path fill-rule="evenodd"
+                            d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                            clip-rule="evenodd" />
+                        </svg>
+                        <div class="mt-4 flex text-sm leading-6 text-gray-600">
+                          <label for="file-upload"
+                            class="relative cursor-pointer rounded-md bg-white font-semibold text-blue-400 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-400 focus-within:ring-offset-2 hover:text-blue-500">
+                            <span>Upload a file</span>
+                            <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                          </label>
+                          <p class="pl-1">or drag and drop</p>
+                        </div>
+                        <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <label for="product-name" class="block text-sm font-medium leading-6 text-gray-900">Product
+                      *:</label>
+                    <div class="mt-2">
+                      <input type="text" name="product-name" id="product-name"
+                        class="block w-full max-w-full rounded-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        placeholder="Headline">
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Related
+                      capability:</label>
+                    <div class="mt-2">
+                      <div class="treeselect-demo focus-visible:outline-transparent"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="mt-3 flex items-center justify-end gap-x-4">
+                <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+                <button type="submit"
+                  class="appearance-none rounded-md bg-blue-400 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 transition-all">Ok</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-10 modal-wrap-ideas-bugs hidden" data-modal="modal-bug" aria-labelledby="modal-title"
+      role="dialog" aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end sm:items-center justify-center p-4 text-center sm:p-0">
+          <div
+            class="relative transform rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 w-full max-w-[620px] sm:pt-6 sm:px-6 pb-[44px]">
+            <div class="flex items-center pb-3 mb-3 border-b border-solid border-slate-100">
+              <div class="modal-wrap-ideas-bugs__title font-semibold text-lg text-gray-900">Add Bug</div>
+              <div
+                class="btn-idea-modal__close relative -mt-1.5 -mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+                <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <form class="mb-0">
+              <div class="pb-6">
+                <div class="grid grid-cols-1 gap-4">
+                  <div class="flex flex-col">
+                    <label for="bug-name" class="block text-sm font-medium leading-6 text-gray-900">Please give your bug
+                      a name *:</label>
+                    <div class="mt-2">
+                      <input type="text" name="bug-name" id="bug-name"
+                        class="block w-full max-w-full rounded-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        placeholder="janesmith">
+                    </div>
+                  </div>
+
+                  <div class="col-span-full">
+                    <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Please describe the bug
+                      *:</label>
+                    <div class="mt-2">
+                      <textarea id="about" name="about" rows="3"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-transparent sm:text-sm sm:leading-6"></textarea>
+                    </div>
+                    <p class="mt-2 text-sm leading-6 text-gray-600">Write a few sentences about your idea.</p>
+                  </div>
+
+                  <div class="col-span-full">
+                    <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover
+                      photo</label>
+                    <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-6">
+                      <div class="text-center">
+                        <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor"
+                          aria-hidden="true">
+                          <path fill-rule="evenodd"
+                            d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                            clip-rule="evenodd" />
+                        </svg>
+                        <div class="mt-4 flex text-sm leading-6 text-gray-600">
+                          <label for="file-upload"
+                            class="relative cursor-pointer rounded-md bg-white font-semibold text-blue-400 focus-within:outline-none focus-within:ring-2 focus-within:ring-blue-400 focus-within:ring-offset-2 hover:text-blue-500">
+                            <span>Upload a file</span>
+                            <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                          </label>
+                          <p class="pl-1">or drag and drop</p>
+                        </div>
+                        <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <label for="product-name" class="block text-sm font-medium leading-6 text-gray-900">Product
+                      *:</label>
+                    <div class="mt-2">
+                      <input type="text" name="product-name" id="product-name"
+                        class="block w-full max-w-full rounded-md border-0 py-1.5 px-3 text-gray-900 text-sm shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus-visible:outline-none sm:text-sm sm:leading-6 h-9"
+                        placeholder="Headline">
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Related
+                      capability:</label>
+                    <div class="mt-2">
+                      <div class="treeselect-demo focus-visible:outline-transparent"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="checkbox__wrap">
+                <input class="checkbox__input" id="check-related" name="rememberMe" type="checkbox">
+                <label for="check-related" class="checkbox__label">
+                  <div class="checkbox__faces">
+                    <div class="checkbox__icon">
+                      <i class="icon ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+                          <path d="M12 1.8L10.3 0 4.1 6.5 1.7 4 0 5.8 4.1 10 12 1.8z"></path>
+                        </svg>
+                      </i>
+                    </div>
+                  </div>
+                  <div class="checkbox__text">Is this bug security related?</div>
+                </label>
+              </div>
+
+              <div class="mt-3 flex items-center justify-end gap-x-4">
+                <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
+                <button type="submit"
+                  class="appearance-none rounded-md bg-blue-400 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400 transition-all">Ok</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-10 modal-wrap__skills hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:px-0">
+          <!-- removed overflow-hidden for show select -->
+          <div
+            class="relative transform rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full max-w-[568px] lg:max-w-[808px] px-5 lg:px-[70px] py-[30px] lg:py-[58px] sm:mx-5">
+            <div
+              class="btn-skills__close relative -mt-0.5 sm:-mt-1.5 -mr-1 sm:-mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+              <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                </path>
+              </svg>
+            </div>
+            <div class="max-w-full">
+              <div class="max-w-[502px]">
+                <div class="text-2xl text-black/[0.85] font-bold">
+                  Add skills
+                </div>
+                <div class="text-base mt-2">Please add skills that are required for completing this challenge</div>
+                <div class="mt-[18px]">
+                  <div class="treeselect-skills focus-visible:outline-transparent"></div>
+                </div>
+                <div class="mt-10 lg:mt-[76px] text-2xl text-black/[0.85] font-bold">Add expertise</div>
+                <div class="text-base mt-2">Please add skills that are required for completing this challenge</div>
+                <div class="mt-[34px] flow-root max-w-full w-full">
+                  <table class="min-w-full">
+                    <colgroup>
+                      <col class="w-1/3 sm:w-1/2">
+                      <col class="w-2/3 sm:w-1/2">
+                    </colgroup>
+                    <thead class="border-b border-gray-300 text-gray-900">
+                      <tr>
+                        <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
+                          Skill</th>
+                        <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">
+                          Expertise</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b border-gray-200">
+                        <td class="max-w-0 py-5 pl-1.5 sm:pl-4 pr-1.5 sm:pr-3 text-xs sm:pl-0">
+                          <div class="font-medium text-gray-900">Product, Use.. > UX/UI Design</div>
+                        </td>
+                        <td class="max-w-0 py-5 pl-1.5 sm:pl-4 pr-1.5 sm:pr-3 text-xs sm:pl-0">
+                          <div class="font-medium text-gray-900">
+                            <div class="treeselect-expertise focus-visible:outline-transparent"></div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="flex items-center justify-end mt-[34px]">
+                <button type="button"
+                  class="appearance-none w-fit md:min-w-[96px] bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3 md:px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative z-10 modal-cancel hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity modal-wrap__overlay"></div>
+
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:px-0">
+          <div
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:mx-5 w-full max-w-[360px] px-5 lg:px-6 pb-[30px] lg:pb-8 pt-5">
+            <div
+              class="btn-cancel__close relative -mt-0.5 sm:-mt-1.5 -mr-1 sm:-mr-2.5 ml-auto w-5 h-5 mb-2.5 cursor-pointer hover:opacity-80">
+              <svg class="w-full h-full" viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z">
+                </path>
+              </svg>
+            </div>
+
+            <div class="flex flex-col text-center">
+              <div class="text-2xl text-black/[0.85] mb-8 lg:mb-10">Save as Draft?</div>
+              <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button type="button"
+                  class="appearance-none w-full sm:w-fit md:min-w-[96px] bg-green-500 text-sm font-semibold leading-6 transition-all delay-600 rounded px-3 md:px-3.5 py-1.5 text-white shadow-sm hover:bg-green-500/[0.85] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500/[0.85] cursor-pointer">
+                  Save as Draft
+                </button>
+                <button type="button"
+                  class="appearance-none w-full sm:w-fit bg-white text-sm font-semibold leading-6 transition-all delay-600 rounded px-2.5 md:px-3.5 py-1.5 text-gray-900 shadow-sm hover:bg-gray-900/[0.8] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-transparent cursor-pointer border border-solid border-[#ddd] hover:border-gray-900/[0.8]">
+                  Delete my Draft
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="confetti-boom" class="relative z-10 modal-publish hidden" aria-labelledby="modal-title" role="dialog"
+      aria-modal="true">
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity modal-wrap__overlay"></div>
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full justify-center p-4 text-center items-center sm:px-0">
+          <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl 
+          transition-all sm:my-8 sm:mx-5 w-full max-w-[360px] px-5 lg:px-6 pb-8 pt-10">
+            <div class="w-full text-lg text-gray-600 font-semibold space-y-2 text-center">
+              <p>Congratulations!</p>
+              <p>Your Challenge has been posted</p>
+              <p class="text-xs leading-5 text-[#1890FF] mt-6 underline underline-offset-2">In 5 seconds u'll return to
+                main page</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- https://github.com/Choices-js/Choices -->
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/treeselectjs@0.9.2/dist/treeselectjs.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.11.0/tsparticles.confetti.bundle.min.js"></script>
+
+  <script type="module" src="/static/assets/scripts/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+</body>
+
+</html>
