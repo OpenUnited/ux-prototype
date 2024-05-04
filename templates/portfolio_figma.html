@@ -10,7 +10,7 @@
       <h3 class="text-2xl font-semibold leading-8 tracking-tight text-gray-900">Leslie Alexander 
         <span class="inline-flex items-center text-black text-sm font-bold ml-2">
           <span class="w-4 h-4 inline-flex shrink-0 items-center justify-center mr-1">
-            <img src="/static/assets/images/star.svg" alt="#">
+            <img src="{{url_for('static', filename='assets/images/star.svg')}}" alt="#">
           </span>
           815
         </span>
@@ -117,7 +117,7 @@
       <div class="flex flex-col sm:flex-row sm:items-center px-3 py-2.5 sm:py-1.5 bg-[#FAFAFA] border-y border-solid border-[#F5F5F5]">
         <div class="flex items-center grow">
           <div class="w-6 h-6 flex shrink-0 items-center justify-center mr-3">
-            <img class="w-full h-full object-cover object-center" src="/static/assets/images/robot.jpg" alt="#">
+            <img src="{{url_for('static', filename='assets/images/robot.jpg')}}" alt="#">
           </div>
           <div class="flex flex-col text-sm">
             <div class="text-black">Inittiative Name</div>
@@ -128,7 +128,7 @@
           <div class="flex items-center uppercase text-sm font-semibold text-[#52C41A]">
             Finished
             <span class="ml-2 w-[14px] h-[14px] inline-flex items-center justify-center">
-              <img class="w-full h-full object-contain object-center" src="/static/assets/images/checked-green.svg" alt="#">
+              <img src="{{url_for('static', filename='assets/images/checked-green.svg')}}" alt="#">
             </span>
           </div>
           <div class="flex items-center text-[#BFBFBF] text-[13px] leading-5">

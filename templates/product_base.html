@@ -149,8 +149,8 @@
         <!-- Sidebar component, swap this element with another sidebar if you like -->
         <div class="flex grow flex-col gap-y-5 overflow-y-auto lg:border-r border-gray-200 bg-white lg:px-6">
             <div class="hidden lg:flex shrink-0 items-center">
-              <img src="{{url_for('static', filename='assets/images/logo.svg')}}" alt="OpenUnited"/>
-                    
+                <img class="h-20 w-auto rounded-full overflow-hidden"
+                    src="{{url_for('static', filename='assets/images/logo.svg')}}" alt="OpenUnited">
             </div>
             <nav class="flex flex-1 flex-col">
                 <div class="flex flex-1 flex-col gap-y-7">
