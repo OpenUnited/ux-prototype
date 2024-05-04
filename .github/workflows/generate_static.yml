@@ -28,7 +28,7 @@ jobs:
     - name: Run a one-line script
       run: python freeze.py
     - name: switching from HTTPS to SSH
-      run: git remote set-url origin ${{ secrets.STATIC_SSH_KEY }}
+      run: git remote set-url origin git@github.com:OpenUnited/ux-prototype.git
     - name: check for changes
       run: git status
     - name: stage changed files
