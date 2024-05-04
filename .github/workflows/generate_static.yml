@@ -2,17 +2,25 @@ name: Flask App CI/CD
 
 on:
   push:
-    branches: [ main]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
 jobs:
-  build:
 
+  build:
     runs-on: macos-latest
     
     steps:
     - uses: actions/checkout@v1
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
     - name: Run check of pwd
       run: pwd
     - name: Run check of what's in pwd
@@ -31,5 +39,3 @@ jobs:
       run: git fetch origin main
     - name: push code to main
       run: git push origin HEAD:main
-    
-
