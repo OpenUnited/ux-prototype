@@ -22,11 +22,14 @@ jobs:
         python freeze.py
     - name: Commit changes
       run: |
-        git config --global user.name 'GitHub Actions'
-        git config --global user.email 'github-actions@github.com'
-        git add .
-        git commit -m "Auto-update the docs"
-
+        if [ -n "$(git status --porcelain)" ]; then
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m "Auto-update the docs"
+        else
+          echo "No changes to commit"
+        fi
         
     - name: Push changes
       uses: ad-m/github-push-action@master
@@ -34,12 +37,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
 
-      
-
-        # TODO, we need to check if we have changes or not on the docs. 
-        # if [ -n "$(git status --porcelain)" ]; then
-        #   git add .
-        #   git commit -m "Auto-update the docs"
-        # else
-        #   echo "No changes to commit"
-        # fi
+    
