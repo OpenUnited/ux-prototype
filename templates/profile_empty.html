@@ -6,7 +6,7 @@
 <div class="flex flex-col lg:flex-row grow justify-center lg:pt-[50px] space-y-6 lg:space-y-0 lg:space-x-12">
   <div class="flex items-center shrink-0 flex-col lg:w-[244px]">
     <div class="w-40 h-40 flex items-center justify-center rounded-full bg-no-repeat bg-center bg-cover" style="background-image: url('/static/assets/images/profile-empty.png')">
-      <!-- <img class="w-full h-full object-cover object-center rounded-full" src="/static/assets/images/avatar.jpg" alt="#"> -->
+      <!-- <img class="w-full h-full object-cover object-center rounded-full" src="{{url_for('static', filename='assets/images/avatar.jpg')}}" alt="#"> -->
     </div>
     <div class="flex flex-col items-center">
       <label for="file-upload"
@@ -175,7 +175,7 @@
         <div class="w-full flex items-center justify-start">
           <button type="button" id="add-website" class="text-xs leading-5 text-[#1890FF] transition-all no-underline underline-offset-2 hover:underline inline-flex items-center">
             <span class="w-[10px] h-[10px] inline-flex shrink-0 items-center justify-center mr-1">
-              <img src="/static/assets/images/plus.svg" alt="#">
+              <img src="{{url_for('static', filename='assets/images/plus.svg')}}" alt="#">
             </span>
             Add website
           </button>
