@@ -289,24 +289,37 @@
                     <span class="flex flex-col flex-grow">
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="#" class="hover:text-indigo-500 transition-all delay-600">Claim Flow</a>
+                                <a href="{{ url_for('challenge_detail_page') }}" class="hover:text-indigo-500 transition-all delay-600">Claim Flow</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
-                                <div class="rounded-md bg-white font-medium text-red-600">
-                                    Not started
+                                <div class="rounded-md bg-white font-medium text-yellow-600">
+                                   Draft
                                 </div>
                             </span>
                         </span>
+
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="#" class="hover:text-indigo-500 transition-all delay-600">Work Submission</a>
+                                <a href="{{ url_for('work_submissions') }}" class="hover:text-indigo-500 transition-all delay-600">Work Submission</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
-                                <div class="rounded-md bg-white font-medium text-red-600">
-                                    Not started
+                                <div class="rounded-md bg-white font-medium text-yellow-600">
+                                    Draft
                                 </div>
                             </span>
                         </span>
+
+                        <span class="flex">
+                            <span class="flex-grow">
+                                <a href="{{ url_for('bounty_detail') }}" class="hover:text-indigo-500 transition-all delay-600">Bounty detail</a>
+                            </span>
+                            <span class="ml-4 flex-shrink-0">
+                                <div class="rounded-md bg-white font-medium text-yellow-600">
+                                    Draft
+                                </div>
+                            </span>
+                        </span>
+                        
                     </span>
                 </dd>
             </div>
@@ -316,11 +329,11 @@
                     <span class="flex flex-col flex-grow">
                         <span class="flex">
                             <span class="flex-grow">
-                                <a href="#" class="hover:text-indigo-500 transition-all delay-600">Flow</a>
+                                <a href="{{ url_for('review_submissions') }}" class="hover:text-indigo-500 transition-all delay-600">Flow</a>
                             </span>
                             <span class="ml-4 flex-shrink-0">
-                                <div class="rounded-md bg-white font-medium text-red-600">
-                                    Not started
+                                <div class="rounded-md bg-white font-medium text-yellow-600">
+                                    Draft
                                 </div>
                             </span>
                         </span>
