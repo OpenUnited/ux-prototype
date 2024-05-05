@@ -8,7 +8,7 @@ A quick explanation of what this repo is about:
 
 2) This application uses Flask and Jinja templates, with [sample/fixture data in json files](https://github.com/OpenUnited/ux-prototype/tree/main/data-sets). The [platform repo](https://github.com/OpenUnited/platform) has all production code and uses a different stack but also uses Jinja templates and TailwindUI, so the design work from this repo is often directly transferrable.
 
-3) The dynamically rendered views/screens of this application are statically rendered into the [/docs](https://github.com/OpenUnited/ux-prototype/tree/main/docs) folder so that we can cheaply and easily serve [the pages in this repo with GitHub Pages](https://openunited.github.io/ux-prototype/screen-list/). This happens (automatically on push via GitHub Actions)[https://github.com/OpenUnited/ux-prototype/blob/main/.github/workflows/generate_static.yml].
+3) The dynamically rendered views/screens of this application are statically rendered into the [/docs](https://github.com/OpenUnited/ux-prototype/tree/main/docs) folder so that we can cheaply and easily serve [the pages in this repo with GitHub Pages](https://openunited.github.io/ux-prototype/screen-list/). This happens [automatically on push via GitHub Actions](https://github.com/OpenUnited/ux-prototype/blob/main/.github/workflows/generate_static.yml).
 
 ## Getting started / how to run this app
 
