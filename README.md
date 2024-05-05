@@ -1,10 +1,14 @@
 # ux-prototype
 
-Congratulations, you can now be a "UX Developer"!
+Congratulations, you can now be a "UX Developer"! In this repo, we prototype and specify the target UX.
 
-TL;DR: we decided to discontinue using Figma for UX/UI prototyping and specifications. We now do UX/UI prototyping and specifications as code, in this repo, using TailwindCSS and [TailwindUI](https://tailwindui.com/).
+A quick explanation of what this repo is about:
 
-In this repo, we prototype and specify the target UX. Whilst we try to align the content of this repo with reality (e.g. data structures in json files reflect the real platform), this repo is however not deployed to production. The [platform repo](https://github.com/OpenUnited/platform) has all production code, for the backend and deliberately simple frontend.
+1) OpenUnited does UX/UI prototyping and specifications as code, in this "UX Prototype" repo, using TailwindCSS and [TailwindUI](https://tailwindui.com/). This repo is not used in production. Wherever possible, we aim to use off-the-shelf Tailwind UI components.
+
+2) This application uses Flask and Jinja templates, with sample/fixture data in json files. The [platform repo](https://github.com/OpenUnited/platform) has all production code and uses a different stack but also uses Jinja templates and TailwindUI, so the design work from this repo is often directly transferrable.
+
+3) The dynamically rendered views/screens of this application are statically rendered into the [/docs](https://github.com/OpenUnited/ux-prototype/tree/main/docs) folder so that we can cheaply and easily serve [the pages in this repo with GitHub Pages](https://openunited.github.io/ux-prototype/screen-list/). This happens (automatically on push via GitHub Actions)[https://github.com/OpenUnited/ux-prototype/blob/main/.github/workflows/generate_static.yml].
 
 ## Getting started / how to run this app
 
