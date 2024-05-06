@@ -4,16 +4,45 @@
 
 {% block content %}
 {% include 'helper/breadcrumbs_bounty_detail.html' %}
-<div class="flex bg-white pt-6 pb-8 mb-4">
-    <div class="w-4/5 mr-4">
+<div class="flex bg-white pt-6 pb-8 mb-4 justify-between">
+    <div class="w-[70%] mr-4 shadow-sm p-4 border border-gray-100 rounded">
         <div>
             <div class="flex justify-between">
                 <h1 class="text-xl font-medium mb-4">Bounty Description</h1>
 
-            <a href="#"
-                class="text-white ml-auto mr-4 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2">Edit
-                Bounty
-            </a>
+                <div class="w-max flex justify-center">
+                    <button
+                        class="flex justify-center text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
+                        type="button" data-dropdown-toggle="dropdown">
+                        <img src="../static/assets/images/more.png" alt="">
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded-xl shadow my-4"
+                        id="dropdown">
+                        <ul class="py-1" aria-labelledby="dropdown">
+                            <li>
+                                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                    hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Edit</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                    hx-swap="outerHTML" hx-target="this" hx-vals='{"from": "bounty_detail_table.html"}'
+                                    hx-confirm="Are you sure to cancel your bounty claim request?">Cancel
+                                    Request</a>
+                            </li>
+                            <li>
+                                <a href="#" hx-get="" hx-confirm="Are you sure to delete this bounty?" hx-target="body"
+                                    hx-swap="innerHTML" hx-push-url="true"
+                                    class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 text-red-600">Delete
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="my-4">
                 <span class="text-gray-400 block text-sm my-1">Created at:
@@ -36,12 +65,12 @@
         {% endwith %}
         {% endif %}
     </div>
-    <div class="w-1/5 text-sm flex flex-wrap">
+    <div class="shadow-sm p-4 border border-gray-100 rounded text-sm flex flex-wrap">
         <div class="w-1/2 my-4">
             <h1 class="font-medium text-gray-400">Assignee</h1>
             {% if is_assigned %}
-            <a href="{{ assigned_to.get_absolute_url() }}"
-                class="font-medium text-blue-600 hover:underline">{{ assigned_to }}</a>
+            <a href="{{ assigned_to.get_absolute_url() }}" class="font-medium text-blue-600 hover:underline">{{
+                assigned_to }}</a>
             {% else %}
             <span class="block text-sm font-medium">None</span>
             <a href="#" class="font-medium text-blue-600 hover:underline">Create bounty claim request</a>
@@ -61,8 +90,8 @@
                 <div class="flex items-center text-xs font-semibold leading-6">
                     <span class="flex shrink-0 items-center justify-center w-4 h-4 mr-1">
                         {% set expertise_icon_path = 'images/skills/' ~ exp ~ '.svg' %}
-                        <img src="{{url_for('static', filename='assets/images/react.svg')}}" class="w-full h-full object-contain object-center"
-                            alt="#">
+                        <img src="{{url_for('static', filename='assets/images/react.svg')}}"
+                            class="w-full h-full object-contain object-center" alt="#">
                     </span>
                     {{ exp.name }}
                 </div>
@@ -73,7 +102,8 @@
         <div class="w-1/2 my-4">
             <h1 class="font-medium text-gray-400">Skill</h1>
             <span
-                class="inline-flex items-center rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700 my-2">{{ skill.name }}</span>
+                class="inline-flex items-center rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700 my-2">{{
+                skill.name }}</span>
         </div>
 
         <div class="w-1/2 my-4">
@@ -82,4 +112,5 @@
         </div>
     </div>
 </div>
+<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 {% endblock %}
