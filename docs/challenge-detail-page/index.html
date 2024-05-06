@@ -179,7 +179,7 @@
             </div>
         </li>
     </ol>
-</nav> 
+</nav>
 
     <h2 class="mt-2.5 mb-4 w-full text-neutral-800 text-xl">Develop Fitness Tracking Feature</h2>
     <div class="space-y-3.5 text-sm text-black/[0.85]">
@@ -197,7 +197,7 @@
 
     <div class="flex flex-col mt-6">
         
-<div class="relative overflow-x-auto">
+<div class="relative overflow-x-auto sm:overflow-x-visible">
     <table class="w-full text-sm text-left text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
@@ -220,7 +220,7 @@
                 <th scope="col" class="px-2 py-3">
                     Claimed By
                 </th>
-                <th scope="col" class="px-2 py-3">
+                <th scope="col" class="px-2 py-3 text-center">
                     Actions
                 </th>
             </tr>
@@ -230,14 +230,13 @@
 
             <tr class="bg-white border-b">
                 <td class="relative whitespace-normal py-4 pl-3 pr-4 text-sm font-medium sm:pr-0">
-                    <a href=""
-                        class="text-indigo-600 hover:text-indigo-900">Enhance Fitness Monitoring Capability</a>
+                    <a href="" class="text-indigo-600 hover:text-indigo-900">Enhance Fitness Monitoring Capability</a>
                 </td>
                 <th scope="row" class="px-2 py-1 font-medium text-gray-900 whitespace-nowrap">
                     
                 </th>
                 <td class="px-2 py-1">
-                   
+                    
                 </td>
                 <td class="px-2 py-1">
                     55
@@ -249,34 +248,48 @@
 
 
                     
-                        Unclaimed
+                    Unclaimed
                     
                     <p>
                     </p>
                 </td>
                 <td class="relative whitespace-nowrap">
-                    <button
-                        hx-post=""
-                        class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
-                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim
-                    </button>
+                    <div class="max-w-lg mx-auto flex justify-center">
+                        <button
+                            class="flex justify-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
+                            type="button" data-dropdown-toggle="dropdown"><svg class="w-4 h-4" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg></button>
 
-                        <a href=""
-                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1">Edit</a>
-
-                        <a hx-get=""
-                            hx-confirm="Are you sure to delete this bounty?" hx-target="body" hx-swap="innerHTML"
-                            hx-push-url="true"
-                            class="text-red-700 cursor-pointer hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900 mr-1">Delete
-                        </a>
-                    
-                        <button hx-post=""
-                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
-                            hx-swap="outerHTML" hx-target="this" hx-vals='{"from": "bounty_detail_table.html"}' hx-confirm="Are you sure to cancel your bounty claim request?">
-                            Cancel Request
-                        </button>
-
-            
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded-xl shadow my-4"
+                            id="dropdown">
+                            <ul class="py-1" aria-labelledby="dropdown">
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Edit</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                        hx-swap="outerHTML" hx-target="this"
+                                        hx-vals='{"from": "bounty_detail_table.html"}'
+                                        hx-confirm="Are you sure to cancel your bounty claim request?">Cancel
+                                        Request</a>
+                                </li>
+                                <li>
+                                    <a href="#" hx-get="" hx-confirm="Are you sure to delete this bounty?"
+                                        hx-target="body" hx-swap="innerHTML" hx-push-url="true"
+                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 text-red-600">Delete
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </td>
 
@@ -285,14 +298,13 @@
 
             <tr class="bg-white border-b">
                 <td class="relative whitespace-normal py-4 pl-3 pr-4 text-sm font-medium sm:pr-0">
-                    <a href=""
-                        class="text-indigo-600 hover:text-indigo-900">Revamp Alert System</a>
+                    <a href="" class="text-indigo-600 hover:text-indigo-900">Revamp Alert System</a>
                 </td>
                 <th scope="row" class="px-2 py-1 font-medium text-gray-900 whitespace-nowrap">
                     
                 </th>
                 <td class="px-2 py-1">
-                   
+                    
                 </td>
                 <td class="px-2 py-1">
                     30
@@ -304,34 +316,48 @@
 
 
                     
-                        Unclaimed
+                    Unclaimed
                     
                     <p>
                     </p>
                 </td>
                 <td class="relative whitespace-nowrap">
-                    <button
-                        hx-post=""
-                        class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
-                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim
-                    </button>
+                    <div class="max-w-lg mx-auto flex justify-center">
+                        <button
+                            class="flex justify-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
+                            type="button" data-dropdown-toggle="dropdown"><svg class="w-4 h-4" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg></button>
 
-                        <a href=""
-                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1">Edit</a>
-
-                        <a hx-get=""
-                            hx-confirm="Are you sure to delete this bounty?" hx-target="body" hx-swap="innerHTML"
-                            hx-push-url="true"
-                            class="text-red-700 cursor-pointer hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900 mr-1">Delete
-                        </a>
-                    
-                        <button hx-post=""
-                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
-                            hx-swap="outerHTML" hx-target="this" hx-vals='{"from": "bounty_detail_table.html"}' hx-confirm="Are you sure to cancel your bounty claim request?">
-                            Cancel Request
-                        </button>
-
-            
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded-xl shadow my-4"
+                            id="dropdown">
+                            <ul class="py-1" aria-labelledby="dropdown">
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Edit</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                        hx-swap="outerHTML" hx-target="this"
+                                        hx-vals='{"from": "bounty_detail_table.html"}'
+                                        hx-confirm="Are you sure to cancel your bounty claim request?">Cancel
+                                        Request</a>
+                                </li>
+                                <li>
+                                    <a href="#" hx-get="" hx-confirm="Are you sure to delete this bounty?"
+                                        hx-target="body" hx-swap="innerHTML" hx-push-url="true"
+                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 text-red-600">Delete
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </td>
 
@@ -340,14 +366,13 @@
 
             <tr class="bg-white border-b">
                 <td class="relative whitespace-normal py-4 pl-3 pr-4 text-sm font-medium sm:pr-0">
-                    <a href=""
-                        class="text-indigo-600 hover:text-indigo-900">Optimize Energy Consumption</a>
+                    <a href="" class="text-indigo-600 hover:text-indigo-900">Optimize Energy Consumption</a>
                 </td>
                 <th scope="row" class="px-2 py-1 font-medium text-gray-900 whitespace-nowrap">
                     
                 </th>
                 <td class="px-2 py-1">
-                   
+                    
                 </td>
                 <td class="px-2 py-1">
                     25
@@ -359,34 +384,48 @@
 
 
                     
-                        Unclaimed
+                    Unclaimed
                     
                     <p>
                     </p>
                 </td>
                 <td class="relative whitespace-nowrap">
-                    <button
-                        hx-post=""
-                        class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
-                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim
-                    </button>
+                    <div class="max-w-lg mx-auto flex justify-center">
+                        <button
+                            class="flex justify-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
+                            type="button" data-dropdown-toggle="dropdown"><svg class="w-4 h-4" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg></button>
 
-                        <a href=""
-                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1">Edit</a>
-
-                        <a hx-get=""
-                            hx-confirm="Are you sure to delete this bounty?" hx-target="body" hx-swap="innerHTML"
-                            hx-push-url="true"
-                            class="text-red-700 cursor-pointer hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900 mr-1">Delete
-                        </a>
-                    
-                        <button hx-post=""
-                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
-                            hx-swap="outerHTML" hx-target="this" hx-vals='{"from": "bounty_detail_table.html"}' hx-confirm="Are you sure to cancel your bounty claim request?">
-                            Cancel Request
-                        </button>
-
-            
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded-xl shadow my-4"
+                            id="dropdown">
+                            <ul class="py-1" aria-labelledby="dropdown">
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Edit</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                        hx-swap="outerHTML" hx-target="this"
+                                        hx-vals='{"from": "bounty_detail_table.html"}'
+                                        hx-confirm="Are you sure to cancel your bounty claim request?">Cancel
+                                        Request</a>
+                                </li>
+                                <li>
+                                    <a href="#" hx-get="" hx-confirm="Are you sure to delete this bounty?"
+                                        hx-target="body" hx-swap="innerHTML" hx-push-url="true"
+                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 text-red-600">Delete
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </td>
 
@@ -395,14 +434,13 @@
 
             <tr class="bg-white border-b">
                 <td class="relative whitespace-normal py-4 pl-3 pr-4 text-sm font-medium sm:pr-0">
-                    <a href=""
-                        class="text-indigo-600 hover:text-indigo-900">Implement Advanced Sleep Analysis</a>
+                    <a href="" class="text-indigo-600 hover:text-indigo-900">Implement Advanced Sleep Analysis</a>
                 </td>
                 <th scope="row" class="px-2 py-1 font-medium text-gray-900 whitespace-nowrap">
                     
                 </th>
                 <td class="px-2 py-1">
-                   
+                    
                 </td>
                 <td class="px-2 py-1">
                     40
@@ -414,34 +452,48 @@
 
 
                     
-                        Unclaimed
+                    Unclaimed
                     
                     <p>
                     </p>
                 </td>
                 <td class="relative whitespace-nowrap">
-                    <button
-                        hx-post=""
-                        class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
-                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim
-                    </button>
+                    <div class="max-w-lg mx-auto flex justify-center">
+                        <button
+                            class="flex justify-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
+                            type="button" data-dropdown-toggle="dropdown"><svg class="w-4 h-4" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg></button>
 
-                        <a href=""
-                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1">Edit</a>
-
-                        <a hx-get=""
-                            hx-confirm="Are you sure to delete this bounty?" hx-target="body" hx-swap="innerHTML"
-                            hx-push-url="true"
-                            class="text-red-700 cursor-pointer hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900 mr-1">Delete
-                        </a>
-                    
-                        <button hx-post=""
-                            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-1 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-900 mr-1"
-                            hx-swap="outerHTML" hx-target="this" hx-vals='{"from": "bounty_detail_table.html"}' hx-confirm="Are you sure to cancel your bounty claim request?">
-                            Cancel Request
-                        </button>
-
-            
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded-xl shadow my-4"
+                            id="dropdown">
+                            <ul class="py-1" aria-labelledby="dropdown">
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                        hx-swap="outerHTML" hx-target="this" claim-bounty="true">Claim</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Edit</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                                        hx-swap="outerHTML" hx-target="this"
+                                        hx-vals='{"from": "bounty_detail_table.html"}'
+                                        hx-confirm="Are you sure to cancel your bounty claim request?">Cancel
+                                        Request</a>
+                                </li>
+                                <li>
+                                    <a href="#" hx-get="" hx-confirm="Are you sure to delete this bounty?"
+                                        hx-target="body" hx-swap="innerHTML" hx-push-url="true"
+                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 text-red-600">Delete
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </td>
 
@@ -468,6 +520,7 @@
     </a>
 </p>
 
+<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
     </div>
     
 
@@ -479,7 +532,7 @@
                     <img class="w-full h-full rounded-full bg-gray-50 ring-2 ring-white"
                         src="../static/assets/images/profile-empty.png" alt="Created By">
                 </div>
-                <div class="text-neutral-800"> dogukan  </div>
+                <div class="text-neutral-800"> dogukan </div>
             </a>
             <span>&nbsp;at April 5, 2024 </span>
         </div>

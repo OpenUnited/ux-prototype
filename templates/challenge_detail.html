@@ -7,7 +7,7 @@
 {% set PRIORITY = ["High", "Low"] %}
 
 <div class="flex flex-col">
-    {% include 'helper/breadcrumbs_challenge_detail.html' %} 
+    {% include 'helper/breadcrumbs_challenge_detail.html' %}
 
     <h2 class="mt-2.5 mb-4 w-full text-neutral-800 text-xl">{{ challenge.title }}</h2>
     <div class="space-y-3.5 text-sm text-black/[0.85]">
@@ -26,18 +26,18 @@
     <div class="flex flex-col mt-6">
         {% include 'bounty_detail_table.html' %}
     </div>
-    {# 
-        {% if challenge.attachment.exists() %}
-        <div class="mt-4">
-            {% with attachments=challenge.attachment.all() %}
-            <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                    {% include 'product_management/partials/attachments.html' %}
-                </dd>
-            </div>
-            {% endwith %}
+    {#
+    {% if challenge.attachment.exists() %}
+    <div class="mt-4">
+        {% with attachments=challenge.attachment.all() %}
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                {% include 'product_management/partials/attachments.html' %}
+            </dd>
         </div>
-        {% endif %}
+        {% endwith %}
+    </div>
+    {% endif %}
     #}
 
     <div class="flex flex-col space-y-2.5 my-6">
@@ -48,7 +48,7 @@
                     <img class="w-full h-full rounded-full bg-gray-50 ring-2 ring-white"
                         src="{{url_for('static', filename='assets/images/profile-empty.png')}}" alt="Created By">
                 </div>
-                <div class="text-neutral-800"> {{ created_by.username }}  </div>
+                <div class="text-neutral-800"> {{ created_by.username }} </div>
             </a>
             <span>&nbsp;at {{ challenge.created_at }} </span>
         </div>
@@ -57,7 +57,7 @@
             {% if current_user_created_claim_request %}
             <span class="font-bold ml-1">Claim Request Under Review</span>
             {% else %}
-            <span class="font-bold ml-1">{{  TASK_TYPES[challenge.status] }}</span>
+            <span class="font-bold ml-1">{{ TASK_TYPES[challenge.status] }}</span>
             {% endif %}
         </div>
         <div class="flex items-center text-xs text-black/[0.85]">
