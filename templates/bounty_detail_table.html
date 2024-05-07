@@ -2,7 +2,7 @@
 <div class="relative overflow-x-auto sm:overflow-x-visible">
     <table class="w-full text-sm text-left text-gray-500">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
-            <tr>
+            <tr class="[&_th]:whitespace-nowrap">
                 <th scope="col" class="px-2 py-3">
                     Bounty
                 </th>
@@ -32,7 +32,7 @@
 
             <tr class="bg-white border-b">
                 <td class="relative whitespace-normal py-4 pl-3 pr-4 text-sm font-medium sm:pr-0">
-                    <a href="" class="text-indigo-600 hover:text-indigo-900">{{ bounty.title }}</a>
+                    <a href="" class="text-indigo-600 hover:text-indigo-900 whitespace-nowrap">{{ bounty.title }}</a>
                 </td>
                 <th scope="row" class="px-2 py-1 font-medium text-gray-900 whitespace-nowrap">
                     {{ bounty.skill }}
