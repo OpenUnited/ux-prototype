@@ -2,111 +2,148 @@
 
 {% block title %}Homepage - Challenges Listed{% endblock %}
 {% block content %}
-
-<div class="flex flex-col">
-
+<div class="flex flex-col pb-20">
   <div class="flex items-center justify-between w-full mb-12">
     <div class="flex items-center space-x-8 tabs-top">
-        <a href="{{ url_for('home_splash') }}"
-            class="active font-semibold py-3 text-sm inline-flex relative -mb-px text-[#1890ff] border-b-2 border-solid border-[#1890ff]">
-            Challenges
-        </a>
-        <a href="{{ url_for('home_products') }}"
-            class="font-semibold py-3 text-sm inline-flex relative -mb-px text-gray-900 border-b-2 border-solid border-transparent">Products</a>
+      <a href="{{ url_for('home_splash') }}"
+        class="active font-semibold py-3 text-sm inline-flex relative -mb-px text-[#1890ff] border-b-2 border-solid border-[#1890ff]">
+        Bounties
+      </a>
+      <a href="{{ url_for('home_products') }}"
+        class="font-semibold py-3 text-sm inline-flex relative -mb-px text-gray-900 border-b-2 border-solid border-transparent">Products</a>
     </div>
     <button type="button"
-        class="appearance-none ml-auto bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer btn-modal__open">
-        Filter
+      class="appearance-none ml-auto bg-[#1890ff] text-sm font-semibold leading-6 transition-all delay-600 rounded px-3.5 py-1.5 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 cursor-pointer btn-modal__open">
+      Filter
     </button>
   </div>
 
-  <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+  <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
     {% for challenge_listing in challenge_listings %}
-    <li class="overflow-hidden rounded-xl border border-gray-200">
-      <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-4">
-        <a href="/{{ challenge_listing.product.owner }}/{{ challenge_listing.product.slug }}/challenges/{{ challenge_listing['publishedId'] }}"
-          class="text-lg font-medium leading-6 text-blue-400">{{ challenge_listing["title"] }}</a>
+    <li class="col-span-1 rounded-t-lg bg-white shadow relative divide-y divide-gray-200">
+      <div class="flex w-full items-center justify-between space-x-6 p-6">
+        <div class="flex-1 truncate">
+          <div class="flex items-center space-x-3 justify-between">
+            <a href="/{{ challenge_listing.product.owner }}/{{ challenge_listing.product.slug }}/challenges/{{ challenge_listing['publishedId'] }}"
+              class="truncate text-sm font-medium text-gray-900">{{ challenge_listing["title"] }}</a>
+            <div
+              class="inline-flex flex-shrink-0 items-center rounded-full bg-green-50 px-1.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
+              {% if TASK_TYPES[challenge_listing.status] == 'Claimed' %}
+              Claimed by <a class="text-blue-400 pl-1" href="/{{ challenge_listing.assignedToPerson.slug }}">{{
+                challenge_listing.assignedToPerson.firstName }}</a>
+              {% elif TASK_TYPES[challenge_listing.status] == 'In Review' %}
+              In Review <a class="text-blue-400" href="/{{ challenge_listing.reviewer.username }}">{{
+                challenge_listing.reviewer.firstName }}</a>
+              {% else %}
+              {{ TASK_TYPES[challenge_listing.status] }}
+              {% endif %}
+            </div>
+          </div>
+          <p class="mt-1 truncate text-sm text-gray-500"> {{ challenge_listing["shortDescription"] }}</p>
+          <p class="mt-1 truncate text-sm text-gray-500 mt-2">Full-stack Development (Python, Django)</p>
+        </div>
       </div>
-      <div class="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6">
-        <div class="py-3">
-          <div class="w-full truncate text-gray-500">
-            {{ challenge_listing["shortDescription"] }}
+      <div>
+        <div class="-mt-px flex divide-x divide-gray-200">
+          <div class="flex w-0 flex-1">
+            <button
+              class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+              <svg class="h-5 w-5 text-[#facc15] fill-[#fef08a]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round"
+                  d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
+              20
+            </button>
+          </div>
+          <div class="-ml-px flex w-0 flex-1">
+            <button
+              class="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg class="h-6 w-6 text-gray-400 fill-gray-400" fill="" width="20" height="20" viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="43.93" y="68.27" width="36.07" height="7.99" rx="2" ry="2" />
+                <path d="M33.82,76.26h-4a2,2,0,0,1-2-2v-4a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v4A1.9,1.9,0,0,1,33.82,76.26Z"
+                  fill-rule="evenodd" />
+                <path d="M33.82,58.41h-4a2,2,0,0,1-2-2v-4a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v4A1.9,1.9,0,0,1,33.82,58.41Z"
+                  fill-rule="evenodd" />
+                <rect x="43.93" y="50.42" width="36.07" height="7.99" rx="2" ry="2" />
+                <rect x="49.92" y="32.57" width="30.08" height="7.99" rx="2" ry="2" />
+                <path
+                  d="M47.55,26.33l-2.12-2.12a1.44,1.44,0,0,0-2.12,0L30.08,37.32l-5.37-5.24a1.44,1.44,0,0,0-2.12,0L20.47,34.2a1.44,1.44,0,0,0,0,2.12l7.36,7.36a3,3,0,0,0,4.24,0L47.55,28.46A1.69,1.69,0,0,0,47.55,26.33Z"
+                  fill-rule="evenodd" />
+              </svg>
+              Claim
+            </button>
           </div>
         </div>
-        <div class="py-3">
-          <div class="w-full font-semibold text-gray-500">Product</div>
-          <div class="flex justify-between gap-x-2">
+      </div>
+      <button class="w-full py-4 text-sm font-semibold text-gray-900 flex gap-1 justify-center view-more">View more
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+          class="h-5 w-5 text-gray-400 fill-gray-400">
+          <path fillRule="evenodd"
+            d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+            clipRule="evenodd" />
+        </svg>
+      </button>
+      <div
+        class="more_detail_bountry !border-t-gray-200 hidden z-10 absolute divide-y divide-gray-200 rounded-b-lg bg-white shadow-[0_20px_30px_-15px_rgba(0,0,0,0.3)] w-full transition-all ease-in duration-500 p-6">
+        <div class="flex justify-between py-2">
+          <div class="truncate text-sm font-medium text-gray-900">Product</div>
+          <div class="flex justify-between gap-1">
             {% if challenge_listing.product.videoUrl %}
             <button class="appearance-none flex flex-none items-center cursor-pointer">
-              <svg class="h-4 w-4 flex-none" viewBox="64 64 896 896" focusable="false" data-icon="play-square"
-                fill="currentColor" aria-hidden="true">
-                <path
-                  d="M442.3 677.6l199.4-156.7a11.3 11.3 0 000-17.7L442.3 346.4c-7.4-5.8-18.3-.6-18.3 8.8v313.5c0 9.4 10.9 14.7 18.3 8.9z">
-                </path>
-                <path
-                  d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z">
-                </path>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-4 text-indigo-500" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
               </svg>
             </button>
             {% endif %}
             <div class="flex-1">
-              <a class="text-blue-400"
-                href="{{ url_for('home_products') }}">{{
+              <a class="text-indigo-500 text-sm w-full block text-end" href="{{ url_for('home_products') }}">{{
                 challenge_listing.product.name }}</a>
             </div>
           </div>
         </div>
-        {% if challenge_listing.initiative %}
-        <div class="py-3">
-          <div class="w-full font-semibold text-gray-500">Initiative</div>
-          <div class="flex justify-between gap-x-2">
+        <div class="flex justify-between py-2">
+          <div class="truncate text-sm font-medium text-gray-900">Initiative</div>
+          <div class="max-w-[210px] flex">
             {% if challenge_listing.initiative.videoUrl %}
             <button class="appearance-none flex flex-none items-center cursor-pointer">
-              <svg class="h-4 w-4 flex-none" viewBox="64 64 896 896" focusable="false" data-icon="play-square"
-                fill="currentColor" aria-hidden="true">
-                <path
-                  d="M442.3 677.6l199.4-156.7a11.3 11.3 0 000-17.7L442.3 346.4c-7.4-5.8-18.3-.6-18.3 8.8v313.5c0 9.4 10.9 14.7 18.3 8.9z">
-                </path>
-                <path
-                  d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z">
-                </path>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-4 text-indigo-500" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
               </svg>
             </button>
             {% endif %}
-            <div class="flex-1">
-              <a class="text-blue-400"
+            <div>
+              <a class="text-indigo-500 text-sm w-full block text-end"
                 href="/{{ challenge_listing.product.owner }}/{{ challenge_listing.product.slug }}/initiatives/{{ challenge_listing.initiative.id }}">
                 {{ challenge_listing.initiative.name }}
               </a>
             </div>
           </div>
         </div>
-        {% endif %}
-        <div class="flex gap-x-4 py-3">
-          <div class="font-semibold text-gray-500">Priority</div>
-          <div class="text-gray-500">
+        <div class="flex justify-between py-2">
+          <div class="truncate text-sm font-medium text-gray-900">Challenge</div>
+          <div>
+            <a href="/{{ challenge_listing.product.owner }}/{{ challenge_listing.product.slug }}/challenges/{{ challenge_listing['publishedId'] }}"
+              class="text-indigo-500 text-sm w-full block text-end max-w-[210px]">{{ challenge_listing["title"] }}</a>
+          </div>
+        </div>
+        <div class="flex justify-between py-2">
+          <div class="truncate text-sm font-medium text-gray-900">Priority</div>
+          <div class="text-gray-500 text-sm">
             {{ challenge_listing.challenge.priority }}
           </div>
         </div>
-        <div class="flex gap-x-4 py-3">
-          <div class="font-semibold text-gray-500">Status</div>
-          <div class="text-gray-500">
-            {% if TASK_TYPES[challenge_listing.status] == 'Claimed' %}
-            Claimed by <a class="text-blue-400" href="/{{ challenge_listing.assignedToPerson.slug }}">{{
-              challenge_listing.assignedToPerson.firstName }}</a>
-            {% elif TASK_TYPES[challenge_listing.status] == 'In Review' %}
-            In Review <a class="text-blue-400" href="/{{ challenge_listing.reviewer.username }}">{{
-              challenge_listing.reviewer.firstName }}</a>
-            {% else %}
-            {{ TASK_TYPES[challenge_listing.status] }}
-            {% endif %}
-          </div>
-        </div>
         {% if challenge_listing.category %}
-        <div class="py-3">
-          <div class="font-semibold text-gray-500 mb-1">Required skills</div>
-          <div>
-            <span class="text-gray-600 text-xs bg-gray-100 p-1">
+        <div class="flex justify-between py-2">
+          <div class="truncate text-sm font-medium text-gray-900">Required skills</div>
+          <div
+            class="inline-flex flex-shrink-0 items-center rounded-full bg-green-50 px-1.5 py-0.5 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">
+            <span class="">
               {{ challenge_listing.category }}
               {% if challenge_listing.expertise %}
               (
