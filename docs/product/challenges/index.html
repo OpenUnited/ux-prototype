@@ -183,8 +183,7 @@
                 <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
                     <div class="flex shrink-0 items-center">
                         <img class="h-16 w-auto rounded-full overflow-hidden"
-                            src="../../static/assets/images/logo.svg"
-                            alt="OpenUnited">
+                            src="../../static/assets/images/logo.svg" alt="OpenUnited">
                     </div>
                     <nav class="flex flex-1 flex-col">
                         <div class="flex flex-1 flex-col gap-y-7">
@@ -255,7 +254,7 @@
                 <img class="h-20 w-auto rounded-full overflow-hidden"
                     src="../../static/assets/images/logo.svg" alt="OpenUnited">
             </div>
-            <nav class="flex flex-1 flex-col">
+            <nav class="hidden flex-1 flex-col sm:flex">
                 <div class="flex flex-1 flex-col gap-y-7">
                     <ul role="list" class="lg:-mx-2 lg:space-y-1 flex flex-row lg:flex-col pb-2 lg:pb-0">
                         <li>
@@ -290,12 +289,73 @@
                                     Product Tree
                                 </a>
                         </li>
+
                         <li>
                             
-                                <a href="../product-tree-interactive/index.html"
+                                <a href="../ideas-and-bugs/index.html"
                                     class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
                                     
-                                    Product Tree Interactive
+                                    Ideas & Bugs
+                                </a>
+                        </li>
+
+                        <li>
+                            
+                                <a href="../people/index.html"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    
+                                    People
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="flex sm:hidden w-max">
+                <button
+                    class="flex gap-2 px-3.5 py-2.5 justify-center text-gray-700 bg-white border border-gray-300 focus:bg-white font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
+                    type="button" data-dropdown-toggle="dropdown">
+                    <span>Challenges</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+
+                </button>
+
+                <!-- Dropdown menu -->
+                <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded-xl shadow my-4"
+                    id="dropdown">
+                    <ul class="py-1 min-w-[200px]" aria-labelledby="dropdown">
+                        <li>
+                            
+                                <a href="../summary/index.html"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    
+                                    Summary
+                                </a>
+                        </li>
+                        <li>
+                            
+                                <a href="../initiatives/index.html"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    
+                                    Initiatives
+                                </a>
+                        </li>
+                        <li>
+                            
+                            <a href=""
+                                class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                
+                                    Challenges
+                                </a>
+                        </li>
+                        <li>
+                            
+                                <a href="../product-tree/index.html"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    
+                                    Product Tree
                                 </a>
                         </li>
                         <li>
@@ -317,7 +377,7 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </div>
         </div>
     </div>
 
@@ -339,134 +399,176 @@
 
 
 
-<div class="relative sm:rounded-lg">
-    <a class="mb-6 float-right" href="#">
+
+
+<div class="relative sm:rounded-lg flex flex-col">
+    <a class="mb-6 float-right w-max self-end" href="#">
         <button type="button"
             class="rounded-md bg-indigo-50 ml-2 px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-100">Create
             Challenge</button>
     </a>
 
     
-    <table class="w-full shadow-md text-sm text-left text-gray-500">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Title
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Short Desription
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Status
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Priority
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    <span class="sr-only">Visit</span>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <tr class="bg-white border-b hover:bg-gray-50 ">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900">
-                    Develop Fitness Tracking Feature
-                </th>
-                <td class="px-6 py-4">
+    <ul role="list" class="grid-cols-1 grid sm:grid-cols-2 gap-x-6 gap-y-8 xl:gap-x-8">
+        
+        <li class="overflow-hidden rounded-xl border border-gray-200 flex flex-col">
+            <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 px-6 py-4">
+                <div class="text-sm font-medium leading-6 text-gray-900">Develop Fitness Tracking Feature</div>
+                <div class="relative ml-auto">
+                    <button type="button" class="-m-2.5 block p-2.5 text-gray-400 hover:text-gray-500"
+                        id="options-menu-0-button" aria-expanded="false" aria-haspopup="true">
+                        <span class="sr-only">Open options</span>
+                        <a href="#">
+                            <img src="/static/assets/images/visit.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="divide-y divide-gray-100 px-6 text-sm leading-6 flex flex-col justify-between h-full">
+                <div class="flex py-3 text-gray-500">
                     Implement a new fitness tracking feature that accurately records various workout metrics such as steps, distance, calories burned, and heart rate.
-                </td>
-                <td class="px-6 py-4">
-                    Available
-                </td>
-                <td class="px-6 py-4">
-                    High
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <a href="#"
-                        class="font-medium text-blue-600 hover:underline">Visit</a>
-                </td>
-            </tr>
-            
-            <tr class="bg-white border-b hover:bg-gray-50 ">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900">
-                    Enhance Notification System
-                </th>
-                <td class="px-6 py-4">
-                    Improve the notification system to provide users with more customizable options and better manage the delivery of notifications from connected smartphones.
-                </td>
-                <td class="px-6 py-4">
-                    Available
-                </td>
-                <td class="px-6 py-4">
-                    Medium
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <a href="#"
-                        class="font-medium text-blue-600 hover:underline">Visit</a>
-                </td>
-            </tr>
-            
-            <tr class="bg-white border-b hover:bg-gray-50 ">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900">
-                    Optimize Battery Life
-                </th>
-                <td class="px-6 py-4">
-                    Optimize the software to improve battery life and ensure longer usage time between charges for Smartwatch Pro users.
-                </td>
-                <td class="px-6 py-4">
-                    Available
-                </td>
-                <td class="px-6 py-4">
-                    Low
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <a href="#"
-                        class="font-medium text-blue-600 hover:underline">Visit</a>
-                </td>
-            </tr>
-            
-            <tr class="bg-white border-b hover:bg-gray-50 ">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900">
-                    Implement Sleep Tracking
-                </th>
-                <td class="px-6 py-4">
-                    Integrate a sleep tracking feature that monitors sleep patterns and provides insights to help users improve their sleep quality.
-                </td>
-                <td class="px-6 py-4">
-                    Available
-                </td>
-                <td class="px-6 py-4">
-                    Medium
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <a href="#"
-                        class="font-medium text-blue-600 hover:underline">Visit</a>
-                </td>
-            </tr>
-            
-            <tr class="bg-white border-b hover:bg-gray-50 ">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900">
-                    Improve Heart Rate Monitoring Accuracy
-                </th>
-                <td class="px-6 py-4">
-                    Enhance the heart rate monitoring algorithm to improve accuracy and provide users with more reliable heart rate data during workouts and daily activities.
-                </td>
-                <td class="px-6 py-4">
-                    Available
-                </td>
-                <td class="px-6 py-4">
-                    High
-                </td>
-                <td class="px-6 py-4 text-right">
-                    <a href="#"
-                        class="font-medium text-blue-600 hover:underline">Visit</a>
-                </td>
-            </tr>
-            
+                </div>
+                <div class="flex justify-end gap-x-4 py-3">
+                    <div class="flex items-start gap-2">
+                        <span class="bg-gray-200 rounded-[16px] py-1 px-2 text-xs text-gray-700"> High</span>
+                        <div
+                            class="rounded-[16px] py-1 px-2 text-xs font-medium border bg-green-50
+text-green-700 border-green-700">
+                            Active
+                        </div>
 
-        </tbody>
-    </table>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="overflow-hidden rounded-xl border border-gray-200 flex flex-col">
+            <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 px-6 py-4">
+                <div class="text-sm font-medium leading-6 text-gray-900">Enhance Notification System</div>
+                <div class="relative ml-auto">
+                    <button type="button" class="-m-2.5 block p-2.5 text-gray-400 hover:text-gray-500"
+                        id="options-menu-0-button" aria-expanded="false" aria-haspopup="true">
+                        <span class="sr-only">Open options</span>
+                        <a href="#">
+                            <img src="/static/assets/images/visit.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="divide-y divide-gray-100 px-6 text-sm leading-6 flex flex-col justify-between h-full">
+                <div class="flex py-3 text-gray-500">
+                    Improve the notification system to provide users with more customizable options and better manage the delivery of notifications from connected smartphones.
+                </div>
+                <div class="flex justify-end gap-x-4 py-3">
+                    <div class="flex items-start gap-2">
+                        <span class="bg-gray-200 rounded-[16px] py-1 px-2 text-xs text-gray-700"> Medium</span>
+                        <div
+                            class="rounded-[16px] py-1 px-2 text-xs font-medium border bg-green-50
+text-green-700 border-green-700">
+                            Active
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="overflow-hidden rounded-xl border border-gray-200 flex flex-col">
+            <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 px-6 py-4">
+                <div class="text-sm font-medium leading-6 text-gray-900">Optimize Battery Life</div>
+                <div class="relative ml-auto">
+                    <button type="button" class="-m-2.5 block p-2.5 text-gray-400 hover:text-gray-500"
+                        id="options-menu-0-button" aria-expanded="false" aria-haspopup="true">
+                        <span class="sr-only">Open options</span>
+                        <a href="#">
+                            <img src="/static/assets/images/visit.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="divide-y divide-gray-100 px-6 text-sm leading-6 flex flex-col justify-between h-full">
+                <div class="flex py-3 text-gray-500">
+                    Optimize the software to improve battery life and ensure longer usage time between charges for Smartwatch Pro users.
+                </div>
+                <div class="flex justify-end gap-x-4 py-3">
+                    <div class="flex items-start gap-2">
+                        <span class="bg-gray-200 rounded-[16px] py-1 px-2 text-xs text-gray-700"> Low</span>
+                        <div
+                            class="rounded-[16px] py-1 px-2 text-xs font-medium border bg-green-50
+text-green-700 border-green-700">
+                            Active
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="overflow-hidden rounded-xl border border-gray-200 flex flex-col">
+            <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 px-6 py-4">
+                <div class="text-sm font-medium leading-6 text-gray-900">Implement Sleep Tracking</div>
+                <div class="relative ml-auto">
+                    <button type="button" class="-m-2.5 block p-2.5 text-gray-400 hover:text-gray-500"
+                        id="options-menu-0-button" aria-expanded="false" aria-haspopup="true">
+                        <span class="sr-only">Open options</span>
+                        <a href="#">
+                            <img src="/static/assets/images/visit.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="divide-y divide-gray-100 px-6 text-sm leading-6 flex flex-col justify-between h-full">
+                <div class="flex py-3 text-gray-500">
+                    Integrate a sleep tracking feature that monitors sleep patterns and provides insights to help users improve their sleep quality.
+                </div>
+                <div class="flex justify-end gap-x-4 py-3">
+                    <div class="flex items-start gap-2">
+                        <span class="bg-gray-200 rounded-[16px] py-1 px-2 text-xs text-gray-700"> Medium</span>
+                        <div
+                            class="rounded-[16px] py-1 px-2 text-xs font-medium border bg-green-50
+text-green-700 border-green-700">
+                            Active
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="overflow-hidden rounded-xl border border-gray-200 flex flex-col">
+            <div class="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 px-6 py-4">
+                <div class="text-sm font-medium leading-6 text-gray-900">Improve Heart Rate Monitoring Accuracy</div>
+                <div class="relative ml-auto">
+                    <button type="button" class="-m-2.5 block p-2.5 text-gray-400 hover:text-gray-500"
+                        id="options-menu-0-button" aria-expanded="false" aria-haspopup="true">
+                        <span class="sr-only">Open options</span>
+                        <a href="#">
+                            <img src="/static/assets/images/visit.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="divide-y divide-gray-100 px-6 text-sm leading-6 flex flex-col justify-between h-full">
+                <div class="flex py-3 text-gray-500">
+                    Enhance the heart rate monitoring algorithm to improve accuracy and provide users with more reliable heart rate data during workouts and daily activities.
+                </div>
+                <div class="flex justify-end gap-x-4 py-3">
+                    <div class="flex items-start gap-2">
+                        <span class="bg-gray-200 rounded-[16px] py-1 px-2 text-xs text-gray-700"> High</span>
+                        <div
+                            class="rounded-[16px] py-1 px-2 text-xs font-medium border bg-green-50
+text-green-700 border-green-700">
+                            Active
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+
+    </ul>
     
 </div>
 
@@ -475,6 +577,7 @@
     </section>
 </div>
 
+<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 
     </main>
 
