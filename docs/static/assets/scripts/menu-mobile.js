@@ -16,14 +16,14 @@ function closeMobileMenu() {
   body.classList.remove("overflow-hidden");
 }
 
-if(openMenuButton) {
+if (openMenuButton) {
   openMenuButton.addEventListener("click", openMobileMenu);
 }
 
-if(closeMenuButton) {
+if (closeMenuButton) {
   closeMenuButton.addEventListener("click", closeMobileMenu);
 }
 
-if(menuOverlay) {
+if (menuOverlay) {
   menuOverlay.addEventListener("click", closeMobileMenu);
 }

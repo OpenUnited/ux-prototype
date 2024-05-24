@@ -183,8 +183,7 @@
                 <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
                     <div class="flex shrink-0 items-center">
                         <img class="h-16 w-auto rounded-full overflow-hidden"
-                            src="../../static/assets/images/logo.svg"
-                            alt="OpenUnited">
+                            src="../../static/assets/images/logo.svg" alt="OpenUnited">
                     </div>
                     <nav class="flex flex-1 flex-col">
                         <div class="flex flex-1 flex-col gap-y-7">
@@ -255,7 +254,7 @@
                 <img class="h-20 w-auto rounded-full overflow-hidden"
                     src="../../static/assets/images/logo.svg" alt="OpenUnited">
             </div>
-            <nav class="flex flex-1 flex-col">
+            <nav class="hidden flex-1 flex-col sm:flex">
                 <div class="flex flex-1 flex-col gap-y-7">
                     <ul role="list" class="lg:-mx-2 lg:space-y-1 flex flex-row lg:flex-col pb-2 lg:pb-0">
                         <li>
@@ -290,12 +289,73 @@
                                     Product Tree
                                 </a>
                         </li>
+
                         <li>
                             
-                                <a href="../product-tree-interactive/index.html"
+                                <a href="../ideas-and-bugs/index.html"
                                     class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
                                     
-                                    Product Tree Interactive
+                                    Ideas & Bugs
+                                </a>
+                        </li>
+
+                        <li>
+                            
+                                <a href="../people/index.html"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    
+                                    People
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="flex sm:hidden w-max">
+                <button
+                    class="flex gap-2 px-3.5 py-2.5 justify-center text-gray-700 bg-white border border-gray-300 focus:bg-white font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
+                    type="button" data-dropdown-toggle="dropdown">
+                    <span>Product Tree</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+
+                </button>
+
+                <!-- Dropdown menu -->
+                <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded-xl shadow my-4"
+                    id="dropdown">
+                    <ul class="py-1 min-w-[200px]" aria-labelledby="dropdown">
+                        <li>
+                            
+                                <a href="../summary/index.html"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    
+                                    Summary
+                                </a>
+                        </li>
+                        <li>
+                            
+                                <a href="../initiatives/index.html"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    
+                                    Initiatives
+                                </a>
+                        </li>
+                        <li>
+                            
+                                <a href="../challenges/index.html"
+                                    class="text-gray-700 hover:text-blue-400 hover:bg-gray-50 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                    
+                                    Challenges
+                                </a>
+                        </li>
+                        <li>
+                            
+                            <a href=""
+                                class="bg-gray-50 text-blue-400 group flex gap-x-3 rounded-md py-2 px-3 lg:px-2 text-sm leading-6 font-semibold whitespace-nowrap">
+                                
+                                    Product Tree
                                 </a>
                         </li>
                         <li>
@@ -317,7 +377,7 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </div>
         </div>
     </div>
 
@@ -2187,6 +2247,7 @@
     </section>
 </div>
 
+<script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 
     </main>
 
